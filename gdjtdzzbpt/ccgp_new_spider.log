@@ -1,0 +1,48 @@
+2020-01-21 16:46:09,658  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-01-21 16:46:09,666  middleware.py:48 : INFO  Enabled spider middlewares:
+['ccgp_new.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-01-21 16:46:09,669  middleware.py:48 : INFO  Enabled item pipelines:
+['ccgp_new.pipelines.CommonPipeline']
+2020-01-21 16:46:09,669  engine.py:257 : INFO  Spider opened
+2020-01-21 16:46:09,675  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-01-21 16:46:09,676  middlewares.py:62 : INFO  Spider opened: ccgp_new_spider
+2020-01-21 16:46:09,678  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-01-21 16:46:11,407  ccgp_new_spider.py:269 : INFO  Get page list url, page:[1], url:[http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index=0&bidSort=2&buyerName=&projectId=&pinMu=&bidType=&dbselect=bidx&kw=&start_time=2019%3A07%3A23&end_time=2020%3A01%3A21&timeType=5&displayZone=&zoneId=&pppStatus=0&agentName=], status:[200], body md5:[85ca6e8fe0eaba05a4342c2db04e2164]
+2020-01-21 16:46:11,420  ccgp_new_spider.py:271 : INFO  Crawl info: {'dfgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'stop_page_num': 700, 'stop_item_num': 500000}}
+2020-01-21 16:46:11,423  ccgp_new_spider.py:287 : INFO  Parse item, [dfgg_search]-[1/1]
+2020-01-21 16:46:11,907  jy_utils.py:49 : INFO  Got url[http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202001/t20200121_13799056.htm] content using proxy:[47.112.112.102:3128]
+2020-01-21 16:46:11,984  ccgp_new_spider.py:287 : INFO  Parse item, [dfgg_search]-[2/1]
+2020-01-21 16:46:12,534  jy_utils.py:49 : INFO  Got url[http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202001/t20200121_13799037.htm] content using proxy:[31.220.55.166:8080]
+2020-01-21 16:46:12,590  crawler.py:276 : INFO  Received SIGINT, shutting down gracefully. Send again to force 
+2020-01-21 16:46:12,616  engine.py:296 : INFO  Closing spider (shutdown)
+2020-01-21 16:46:12,635  ccgp_new_spider.py:287 : INFO  Parse item, [dfgg_search]-[3/1]
+2020-01-21 16:46:12,952  jy_utils.py:49 : INFO  Got url[http://www.ccgp.gov.cn/cggg/dfgg/jzxtpgg/202001/t20200121_13799036.htm] content using proxy:[120.234.63.196:3128]
+2020-01-21 16:46:13,032  ccgp_new_spider.py:287 : INFO  Parse item, [dfgg_search]-[4/1]
+2020-01-21 16:46:13,154  jy_utils.py:49 : INFO  Got url[http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202001/t20200121_13799009.htm] content using proxy:[124.75.27.100:8080]
+2020-01-21 16:46:13,248  ccgp_new_spider.py:287 : INFO  Parse item, [dfgg_search]-[5/1]
+2020-01-21 16:46:13,461  jy_utils.py:49 : INFO  Got url[http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202001/t20200121_13799028.htm] content using proxy:[39.137.69.9:8080]
+2020-01-21 16:46:13,525  ccgp_new_spider.py:287 : INFO  Parse item, [dfgg_search]-[6/1]
+2020-01-21 16:46:17,041  crawler.py:283 : INFO  Received SIGINT twice, forcing unclean shutdown
+2020-01-21 16:46:17,048  jy_utils.py:49 : INFO  Got url[http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202001/t20200121_13799032.htm] content using proxy:[52.80.58.248:3128]
+2020-01-21 16:46:17,149  ccgp_new_spider.py:287 : INFO  Parse item, [dfgg_search]-[7/1]
+2020-01-21 16:46:18,750  jy_utils.py:49 : INFO  Got url[http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202001/t20200121_13799011.htm] content using proxy:[183.91.33.41:8082]
