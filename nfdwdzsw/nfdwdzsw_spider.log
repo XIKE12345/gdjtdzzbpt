@@ -1,0 +1,249 @@
+2020-02-04 19:11:48,278  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-04 19:11:48,283  middleware.py:48 : INFO  Enabled spider middlewares:
+['nfdwdzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-04 19:11:48,285  middleware.py:48 : INFO  Enabled item pipelines:
+['nfdwdzsw.pipelines.CommonPipeline']
+2020-02-04 19:11:48,285  engine.py:257 : INFO  Spider opened
+2020-02-04 19:11:48,291  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 19:11:48,292  middlewares.py:62 : INFO  Spider opened: nfdwdzsw_spider
+2020-02-04 19:11:48,295  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-04 19:11:48,308  nfdwdzsw.py:239 : INFO  start crawling...
+2020-02-04 19:13:03,583  nfdwdzsw.py:279 : INFO  Use proxy[] to generate scrapy request
+2020-02-04 19:13:03,585  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 19:14:45,006  nfdwdzsw.py:279 : INFO  Use proxy[] to generate scrapy request
+2020-02-04 19:14:45,008  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 19:14:45,012  nfdwdzsw.py:330 : INFO  Get page list url, page:[1], url:[http://www.bidding.csg.cn/zbgg/index.jhtml], status:[200], body md5:[1b986c0c0625a694ae8f697008c3e76c]
+2020-02-04 19:14:45,012  nfdwdzsw.py:332 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-04 19:11:48', 'crawl_end_time': ''}}
+2020-02-04 19:14:45,070  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-04 19:14:45,188  nfdwdzsw.py:496 : INFO  Get [http://www.bidding.csg.cn/zbgg/1200244795.jhtml] content by direct requests
+2020-02-04 19:14:45,283  nfdwdzsw.py:375 : INFO  item is: {'_id': '236aa819733817549130a6a69e3c1add',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'notice_time': '2019.12.10 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'bidding.csg.cn',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1580814885190,
+ 'title': '关于扩大投标保证保险试点范围的公告',
+ 'tos': '招标公告',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200244795.jhtml'}
+2020-02-04 19:15:15,702  pipelines.py:68 : ERROR  save item to mongodb failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/nfdwdzsw/nfdwdzsw/pipelines.py", line 66, in process_item
+    self.mongo_db[self.mongo_collection].save(dict(item))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/collection.py", line 3163, in save
+    collation=collation)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/topology.py", line 485, in get_server_session
+    None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-04 19:15:15,716  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 1 items (at 1 items/min)
+2020-02-04 19:15:15,717  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[2/1]
+2020-02-04 19:22:18,742  jy_utils.py:55 : WARNING  Get html by proxy failed, please double check proxy srv [http://192.168.100.120:5010]
+2020-02-04 19:22:18,900  nfdwdzsw.py:375 : INFO  item is: {'_id': '541f5ade0664c032a8633a298b6dba73',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'notice_time': '2019.10.31 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'bidding.csg.cn',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1580815338844,
+ 'title': '关于试点增加投标保证保险作为投标保证金缴纳方式的公告',
+ 'tos': '招标公告',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200238252.jhtml'}
+2020-02-04 19:22:49,360  pipelines.py:68 : ERROR  save item to mongodb failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/nfdwdzsw/nfdwdzsw/pipelines.py", line 66, in process_item
+    self.mongo_db[self.mongo_collection].save(dict(item))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/collection.py", line 3163, in save
+    collation=collation)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/topology.py", line 485, in get_server_session
+    None)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pymongo/topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-04 19:24:04,635  nfdwdzsw.py:279 : INFO  Use proxy[] to generate scrapy request
+2020-02-04 19:24:04,638  logstats.py:48 : INFO  Crawled 3 pages (at 0 pages/min), scraped 2 items (at 1 items/min)
+2020-02-04 19:24:04,639  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[3/1]
+2020-02-04 19:31:07,502  jy_utils.py:55 : WARNING  Get html by proxy failed, please double check proxy srv [http://192.168.100.120:5010]
+2020-02-04 19:31:07,707  nfdwdzsw.py:375 : INFO  item is: {'_id': 'e05d05b7e621dc237456c3847b321601',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'notice_time': '2020.02.04 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'bidding.csg.cn',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1580815867646,
+ 'title': '关于超高压2019年第一批综合服务类招标项目（19-1-JZ）(南宁局车辆...',
+ 'tos': '招标公告',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200250277.jhtml'}
+2020-02-04 19:31:26,749  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-04 19:31:26,756  middleware.py:48 : INFO  Enabled spider middlewares:
+['nfdwdzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-04 19:31:26,758  middleware.py:48 : INFO  Enabled item pipelines:
+['nfdwdzsw.pipelines.CommonPipeline']
+2020-02-04 19:31:26,759  engine.py:257 : INFO  Spider opened
+2020-02-04 19:31:26,764  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 19:31:26,764  middlewares.py:62 : INFO  Spider opened: nfdwdzsw_spider
+2020-02-04 19:31:26,766  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-04 19:31:26,777  nfdwdzsw.py:239 : INFO  start crawling...
+2020-02-04 19:32:42,130  nfdwdzsw.py:279 : INFO  Use proxy[] to generate scrapy request
+2020-02-04 19:32:42,134  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 19:33:26,766  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 19:34:26,767  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 19:35:26,764  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 19:36:26,765  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 19:37:50,040  nfdwdzsw.py:279 : INFO  Use proxy[] to generate scrapy request
+2020-02-04 19:37:50,042  nfdwdzsw.py:330 : INFO  Get page list url, page:[1], url:[http://www.bidding.csg.cn/zbgg/index.jhtml], status:[200], body md5:[1b986c0c0625a694ae8f697008c3e76c]
+2020-02-04 19:37:50,042  nfdwdzsw.py:332 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-04 19:31:26', 'crawl_end_time': ''}}
+2020-02-04 19:37:50,084  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-04 19:37:50,183  nfdwdzsw.py:496 : INFO  Get [http://www.bidding.csg.cn/zbgg/1200244795.jhtml] content by direct requests
+2020-02-04 19:37:50,247  nfdwdzsw.py:375 : INFO  item is: {'_id': '236aa819733817549130a6a69e3c1add',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'notice_time': '2019.12.10 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'bidding.csg.cn',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1580816270184,
+ 'title': '关于扩大投标保证保险试点范围的公告',
+ 'tos': '招标公告',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200244795.jhtml'}
+2020-02-04 19:37:50,248  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[2/1]
+2020-02-04 19:44:52,340  jy_utils.py:55 : WARNING  Get html by proxy failed, please double check proxy srv [http://192.168.100.120:5010]
+2020-02-04 19:44:52,549  nfdwdzsw.py:375 : INFO  item is: {'_id': '541f5ade0664c032a8633a298b6dba73',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'notice_time': '2019.10.31 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'bidding.csg.cn',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1580816692465,
+ 'title': '关于试点增加投标保证保险作为投标保证金缴纳方式的公告',
+ 'tos': '招标公告',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200238252.jhtml'}
+2020-02-04 19:44:52,550  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[3/1]
+2020-02-04 19:51:54,766  jy_utils.py:55 : WARNING  Get html by proxy failed, please double check proxy srv [http://192.168.100.120:5010]
+2020-02-04 19:51:54,974  nfdwdzsw.py:375 : INFO  item is: {'_id': 'e05d05b7e621dc237456c3847b321601',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'notice_time': '2020.02.04 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'bidding.csg.cn',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1580817114897,
+ 'title': '关于超高压2019年第一批综合服务类招标项目（19-1-JZ）(南宁局车辆...',
+ 'tos': '招标公告',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200250277.jhtml'}
+2020-02-04 19:51:54,975  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[4/1]
+2020-02-04 19:58:57,139  jy_utils.py:55 : WARNING  Get html by proxy failed, please double check proxy srv [http://192.168.100.120:5010]
+2020-02-04 19:58:58,377  nfdwdzsw.py:375 : INFO  item is: {'_id': '9ce1634aa0693fb8bd84951ebfd38769',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'notice_time': '2020.02.04 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'bidding.csg.cn',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1580817538279,
+ 'title': '海南电网有限责任公司2020年电网建设项目片区监理招标公告',
+ 'tos': '招标公告',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200250271.jhtml'}
+2020-02-04 19:58:58,378  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[5/1]
+2020-02-04 20:06:01,151  jy_utils.py:55 : WARNING  Get html by proxy failed, please double check proxy srv [http://192.168.100.120:5010]
+2020-02-04 20:06:01,374  nfdwdzsw.py:375 : INFO  item is: {'_id': '3f0b4c2f437ef2ccfe39b98d6b02ee6a',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'notice_time': '2020.02.04 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'bidding.csg.cn',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1580817961283,
+ 'title': '海南电网有限责任公司2020年基建配网工程电子化移交服务招标公告',
+ 'tos': '招标公告',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200250270.jhtml'}
+2020-02-04 20:06:01,376  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[6/1]
