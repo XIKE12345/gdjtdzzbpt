@@ -48,7 +48,6 @@
       <change afterPath="$PROJECT_DIR$/../beijingEnergy/common/jy_common_items.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../beijingEnergy/common/jy_crawl_helper.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../beijingEnergy/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chinapost_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../deyang/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../deyang/.idea/deyang.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../deyang/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
@@ -8853,6 +8852,9 @@
       <change afterPath="$PROJECT_DIR$/../wanzhou/wanzhou/spiders/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wanzhou/wanzhou/spiders/wanzhou_spiders.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wanzhou/wanzhou/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chinapost/spiders/chinapost.py" beforeDir="false" afterPath="$PROJECT_DIR$/chinapost/spiders/chinapost.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chinapost_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/chinapost_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/gdjtdzzbpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/gdjtdzzbpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" afterDir="false" />
@@ -8978,19 +8980,27 @@
       <option name="project" value="LOCAL" />
       <updated>1580828770338</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="中国邮政 招标公告爬虫。">
+      <created>1580881188203</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580881188204</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="国电集团电子招标平台 爬虫数据代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="国电集团电子招标平台 爬虫数据代码" />
+    <MESSAGE value="中国邮政 招标公告爬虫。" />
+    <option name="LAST_COMMIT_MESSAGE" value="中国邮政 招标公告爬虫。" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="38" key="CommitChangelistDialog2" timestamp="1580828754012">
+    <state x="321" y="38" key="CommitChangelistDialog2" timestamp="1580886133276">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="321" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1580828754012" />
+    <state x="321" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1580886133276" />
     <state x="585" y="240" width="424" height="295" key="Github.ShareDialog" timestamp="1580828357534">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -8999,10 +9009,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="201" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1580822187434" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1580828781038">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1580881205872">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1580828781038" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1580881205872" />
     <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1580866109174">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

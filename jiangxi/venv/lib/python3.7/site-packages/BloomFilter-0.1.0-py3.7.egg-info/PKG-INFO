@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: BloomFilter
+Version: 0.1.0
+Summary: A simple implement of bloom filter
+Home-page: UNKNOWN
+Author: Ziang Guo
+Author-email: iziang@yeah.net
+License: BSD
+Description: Introduction
+        --------------
+        
+        A Bloom filter is a space-efficient probabilistic data structure, conceived by Burton Howard Bloom in 1970, that is used to test whether an element is a member of a set. False positive matches are possible, but false negatives are not, thus a Bloom filter has a 100% recall rate. In other words, a query returns either "possibly in set" or "definitely not in set".
+        
+        A very simple implement of bloom filter
+        
+        
+        Referencek
+        --------------
+         - Bloom filter
+           http://en.wikipedia.org/wiki/Bloom_filter
+        
+Keywords: A simple implement of bloom filter
+Platform: Any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

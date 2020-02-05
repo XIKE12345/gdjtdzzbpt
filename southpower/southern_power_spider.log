@@ -1,0 +1,449 @@
+2020-02-04 17:10:05,189  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-04 17:10:05,195  middleware.py:48 : INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-04 17:10:05,196  middleware.py:48 : INFO  Enabled item pipelines:
+[]
+2020-02-04 17:10:05,196  engine.py:257 : INFO  Spider opened
+2020-02-04 17:10:05,201  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 17:10:05,206  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-04 17:10:05,238  southern_power_spider.py:83 : ERROR  Get get_crawl_helper failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 81, in init_crawl_helper
+    col_name=_settings.get('MONGDB_COLLECTION'))
+  File "/Users/huike/PycharmProjects/southpower/southpower/common/jy_crawl_helper.py", line 17, in __init__
+    self.mongo_col_obj = self.mongo_client[db_name][col_name]
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1566, in __getitem__
+    return database.Database(self, name)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/database.py", line 108, in __init__
+    "of %s" % (string_type.__name__,))
+TypeError: name must be an instance of str
+2020-02-04 17:10:05,241  southern_power_spider.py:203 : INFO  start crawling...
+2020-02-04 17:10:05,241  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 213, in start_requests
+    self.crawl_helper.init_crawl_info(_k, _v)
+AttributeError: 'NoneType' object has no attribute 'init_crawl_info'
+2020-02-04 17:10:05,242  engine.py:296 : INFO  Closing spider (finished)
+2020-02-04 17:10:05,244  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x1056f28c0>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 263, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+AttributeError: 'NoneType' object has no attribute 'store_crawl_info_2_db'
+2020-02-04 17:10:05,252  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.041339,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 4, 9, 10, 5, 242987),
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 11,
+ 'memusage/max': 60272640,
+ 'memusage/startup': 60272640,
+ 'start_time': datetime.datetime(2020, 2, 4, 9, 10, 5, 201648)}
+2020-02-04 17:10:05,253  engine.py:327 : INFO  Spider closed (finished)
+2020-02-04 17:18:51,728  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-04 17:18:51,734  middleware.py:48 : INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-04 17:18:51,735  middleware.py:48 : INFO  Enabled item pipelines:
+[]
+2020-02-04 17:18:51,736  engine.py:257 : INFO  Spider opened
+2020-02-04 17:18:51,739  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 17:18:51,741  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-04 17:18:51,757  southern_power_spider.py:83 : ERROR  Get get_crawl_helper failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 81, in init_crawl_helper
+    col_name=_settings.get('MONGDB_COLLECTION'))
+  File "/Users/huike/PycharmProjects/southpower/southpower/common/jy_crawl_helper.py", line 17, in __init__
+    self.mongo_col_obj = self.mongo_client[db_name][col_name]
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1566, in __getitem__
+    return database.Database(self, name)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/database.py", line 108, in __init__
+    "of %s" % (string_type.__name__,))
+TypeError: name must be an instance of str
+2020-02-04 17:18:51,767  southern_power_spider.py:167 : INFO  start crawling...
+2020-02-04 17:18:51,768  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 181, in start_requests
+    self.crawl_helper.init_crawl_info(_k, _v)
+AttributeError: 'NoneType' object has no attribute 'init_crawl_info'
+2020-02-04 17:18:51,770  engine.py:296 : INFO  Closing spider (finished)
+2020-02-04 17:18:51,773  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x10e1aab00>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 232, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+AttributeError: 'NoneType' object has no attribute 'store_crawl_info_2_db'
+2020-02-04 17:18:51,777  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.032028,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 4, 9, 18, 51, 771435),
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57626624,
+ 'memusage/startup': 57626624,
+ 'start_time': datetime.datetime(2020, 2, 4, 9, 18, 51, 739407)}
+2020-02-04 17:18:51,778  engine.py:327 : INFO  Spider closed (finished)
+2020-02-04 17:24:15,105  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-04 17:24:15,109  middleware.py:48 : INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-04 17:24:15,109  middleware.py:48 : INFO  Enabled item pipelines:
+[]
+2020-02-04 17:24:15,110  engine.py:257 : INFO  Spider opened
+2020-02-04 17:24:15,112  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 17:24:15,114  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-04 17:24:15,129  southern_power_spider.py:83 : ERROR  Get get_crawl_helper failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 81, in init_crawl_helper
+    col_name=_settings.get('MONGDB_COLLECTION'))
+  File "/Users/huike/PycharmProjects/southpower/southpower/common/jy_crawl_helper.py", line 17, in __init__
+    self.mongo_col_obj = self.mongo_client[db_name][col_name]
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1566, in __getitem__
+    return database.Database(self, name)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/database.py", line 108, in __init__
+    "of %s" % (string_type.__name__,))
+TypeError: name must be an instance of str
+2020-02-04 17:24:15,135  southern_power_spider.py:167 : INFO  start crawling...
+2020-02-04 17:24:15,136  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 181, in start_requests
+    self.crawl_helper.init_crawl_info(_k, _v)
+AttributeError: 'NoneType' object has no attribute 'init_crawl_info'
+2020-02-04 17:24:15,137  engine.py:296 : INFO  Closing spider (finished)
+2020-02-04 17:24:15,139  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x10ed9db00>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 232, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+AttributeError: 'NoneType' object has no attribute 'store_crawl_info_2_db'
+2020-02-04 17:24:15,141  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.026095,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 4, 9, 24, 15, 138443),
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 11,
+ 'memusage/max': 56999936,
+ 'memusage/startup': 56999936,
+ 'start_time': datetime.datetime(2020, 2, 4, 9, 24, 15, 112348)}
+2020-02-04 17:24:15,142  engine.py:327 : INFO  Spider closed (finished)
+2020-02-04 17:34:03,097  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-04 17:34:03,103  middleware.py:48 : INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-04 17:34:03,104  middleware.py:48 : INFO  Enabled item pipelines:
+[]
+2020-02-04 17:34:03,105  engine.py:257 : INFO  Spider opened
+2020-02-04 17:34:03,107  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 17:34:03,109  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-04 17:34:03,116  southern_power_spider.py:84 : ERROR  Get get_crawl_helper failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 70, in init_crawl_helper
+    print("-----------"+self.__dict__+"----")
+TypeError: can only concatenate str (not "dict") to str
+2020-02-04 17:34:03,117  southern_power_spider.py:168 : INFO  start crawling...
+2020-02-04 17:34:03,118  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 182, in start_requests
+    self.crawl_helper.init_crawl_info(_k, _v)
+AttributeError: 'NoneType' object has no attribute 'init_crawl_info'
+2020-02-04 17:34:03,120  engine.py:296 : INFO  Closing spider (finished)
+2020-02-04 17:34:03,122  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x104b79b00>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 233, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+AttributeError: 'NoneType' object has no attribute 'store_crawl_info_2_db'
+2020-02-04 17:34:03,127  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.014425,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 4, 9, 34, 3, 122000),
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 11,
+ 'memusage/max': 58257408,
+ 'memusage/startup': 58257408,
+ 'start_time': datetime.datetime(2020, 2, 4, 9, 34, 3, 107575)}
+2020-02-04 17:34:03,128  engine.py:327 : INFO  Spider closed (finished)
+2020-02-04 17:35:50,052  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-04 17:35:50,060  middleware.py:48 : INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-04 17:35:50,061  middleware.py:48 : INFO  Enabled item pipelines:
+[]
+2020-02-04 17:35:50,062  engine.py:257 : INFO  Spider opened
+2020-02-04 17:35:50,067  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 17:35:50,070  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-04 17:35:50,081  southern_power_spider.py:83 : ERROR  Get get_crawl_helper failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 81, in init_crawl_helper
+    col_name=_settings.get('MONGDB_COLLECTION'))
+  File "/Users/huike/PycharmProjects/southpower/southpower/common/jy_crawl_helper.py", line 17, in __init__
+    self.mongo_col_obj = self.mongo_client[db_name][col_name]
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1566, in __getitem__
+    return database.Database(self, name)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/database.py", line 108, in __init__
+    "of %s" % (string_type.__name__,))
+TypeError: name must be an instance of str
+2020-02-04 17:35:50,093  southern_power_spider.py:167 : INFO  start crawling...
+2020-02-04 17:35:50,094  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 181, in start_requests
+    self.crawl_helper.init_crawl_info(_k, _v)
+AttributeError: 'NoneType' object has no attribute 'init_crawl_info'
+2020-02-04 17:35:50,096  engine.py:296 : INFO  Closing spider (finished)
+2020-02-04 17:35:50,098  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x1117bfb00>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 232, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+AttributeError: 'NoneType' object has no attribute 'store_crawl_info_2_db'
+2020-02-04 17:35:50,102  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.030646,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 4, 9, 35, 50, 97565),
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57782272,
+ 'memusage/startup': 57782272,
+ 'start_time': datetime.datetime(2020, 2, 4, 9, 35, 50, 66919)}
+2020-02-04 17:35:50,103  engine.py:327 : INFO  Spider closed (finished)
+2020-02-04 17:36:14,874  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-04 17:36:14,877  middleware.py:48 : INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-04 17:36:14,878  middleware.py:48 : INFO  Enabled item pipelines:
+[]
+2020-02-04 17:36:14,878  engine.py:257 : INFO  Spider opened
+2020-02-04 17:36:14,884  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 17:36:14,886  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-04 17:36:14,896  southern_power_spider.py:83 : ERROR  Get get_crawl_helper failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 81, in init_crawl_helper
+    col_name=_settings.get('MONGDB_COLLECTION'))
+  File "/Users/huike/PycharmProjects/southpower/southpower/common/jy_crawl_helper.py", line 17, in __init__
+    self.mongo_col_obj = self.mongo_client[db_name][col_name]
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1566, in __getitem__
+    return database.Database(self, name)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/database.py", line 108, in __init__
+    "of %s" % (string_type.__name__,))
+TypeError: name must be an instance of str
+2020-02-04 17:36:14,899  southern_power_spider.py:167 : INFO  start crawling...
+2020-02-04 17:36:14,900  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 181, in start_requests
+    self.crawl_helper.init_crawl_info(_k, _v)
+AttributeError: 'NoneType' object has no attribute 'init_crawl_info'
+2020-02-04 17:36:14,901  engine.py:296 : INFO  Closing spider (finished)
+2020-02-04 17:36:14,903  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x1080d4b00>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 232, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+AttributeError: 'NoneType' object has no attribute 'store_crawl_info_2_db'
+2020-02-04 17:36:14,909  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.017999,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 4, 9, 36, 14, 901897),
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57274368,
+ 'memusage/startup': 57274368,
+ 'start_time': datetime.datetime(2020, 2, 4, 9, 36, 14, 883898)}
+2020-02-04 17:36:14,911  engine.py:327 : INFO  Spider closed (finished)
+2020-02-04 17:38:39,351  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-04 17:38:39,357  middleware.py:48 : INFO  Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-04 17:38:39,359  middleware.py:48 : INFO  Enabled item pipelines:
+[]
+2020-02-04 17:38:39,360  engine.py:257 : INFO  Spider opened
+2020-02-04 17:38:39,364  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-04 17:38:39,367  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-04 17:38:39,377  southern_power_spider.py:84 : ERROR  Get get_crawl_helper failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 82, in init_crawl_helper
+    col_name=_settings.get('MONGDB_COLLECTION'))
+  File "/Users/huike/PycharmProjects/southpower/southpower/common/jy_crawl_helper.py", line 17, in __init__
+    self.mongo_col_obj = self.mongo_client[db_name][col_name]
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1566, in __getitem__
+    return database.Database(self, name)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pymongo/database.py", line 108, in __init__
+    "of %s" % (string_type.__name__,))
+TypeError: name must be an instance of str
+2020-02-04 17:38:39,389  southern_power_spider.py:168 : INFO  start crawling...
+2020-02-04 17:38:39,389  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 182, in start_requests
+    self.crawl_helper.init_crawl_info(_k, _v)
+AttributeError: 'NoneType' object has no attribute 'init_crawl_info'
+2020-02-04 17:38:39,393  engine.py:296 : INFO  Closing spider (finished)
+2020-02-04 17:38:39,398  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x10c598b00>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/southpower/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/southpower/southpower/southpower/spiders/southern_power_spider.py", line 233, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+AttributeError: 'NoneType' object has no attribute 'store_crawl_info_2_db'
+2020-02-04 17:38:39,403  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.032909,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 4, 9, 38, 39, 396970),
+ 'log_count/ERROR': 3,
+ 'log_count/INFO': 11,
+ 'memusage/max': 57688064,
+ 'memusage/startup': 57688064,
+ 'start_time': datetime.datetime(2020, 2, 4, 9, 38, 39, 364061)}
+2020-02-04 17:38:39,403  engine.py:327 : INFO  Spider closed (finished)

@@ -2114,14 +2114,6 @@
       <change afterPath="$PROJECT_DIR$/../jiangxi/venv/lib/python3.7/site-packages/zope/interface/tests/test_verify.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jiangxi/venv/lib/python3.7/site-packages/zope/interface/verify.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jiangxi/venv/pyvenv.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/nfdwdzsw.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nfdwdzsw_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../scrapyDemo/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../scrapyDemo/.idea/libraries/R_User_Library.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../scrapyDemo/.idea/misc.xml" afterDir="false" />
@@ -8860,6 +8852,9 @@
       <change afterPath="$PROJECT_DIR$/../wanzhou/wanzhou/spiders/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wanzhou/wanzhou/spiders/wanzhou_spiders.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../wanzhou/wanzhou/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfdwdzsw_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/nfdwdzsw_spider.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -8921,6 +8916,14 @@
       <workItem from="1580724228303" duration="294000" />
       <workItem from="1580778596619" duration="12584000" />
     </task>
+    <task id="LOCAL-00001" summary="中国南方电网线上采购平台爬虫">
+      <created>1580819105290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580819105291</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -8928,12 +8931,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="中国南方电网线上采购平台爬虫" />
+    <option name="LAST_COMMIT_MESSAGE" value="中国南方电网线上采购平台爬虫" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1580819009493">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1580819081660">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1580819009493" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1580819081660" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -8950,6 +8955,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1580811192066" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1580819118459">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1580819118459" />
     <state x="375" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1580778597212">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
