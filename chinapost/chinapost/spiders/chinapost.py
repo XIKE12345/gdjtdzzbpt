@@ -421,1506 +421,1506 @@ class ChinapostSpider(scrapy.Spider):
                 'bid_sort': '181392/1929',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
-            #
-            # # 省邮政分公司
-            # 'syz_zbgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '招标公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '省邮政分公司采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '招标公告',
-            #     'bid_sort': '181313/7338',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'syz_zgysgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '预审资格公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '省邮政分公司采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '预审资格公告',
-            #     'bid_sort': '181313/7339',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'syz_jzxtpgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性谈判公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '省邮政分公司采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '竞争性谈判公告',
-            #     'bid_sort': '181313/7337',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'syz_jzxcsgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性磋商公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '省邮政分公司采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '竞争性磋商公告',
-            #     'bid_sort': '181313/7336',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'syz_xjgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '询价公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '省邮政分公司采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '询价公告',
-            #     'bid_sort': '181313/7335',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'syz_zbrhxgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '中标人候选公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '省邮政分公司采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '中标人候选公示',
-            #     'bid_sort': '181313/7334',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'syz_dylyccqgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '单一来源采前公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '省邮政分公司采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '单一来源采前公示',
-            #     'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'syz_qt_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '其他',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '省邮政分公司采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '其他',
-            #     'bid_sort': '181392/1929',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # # 邮政银行
-            # 'yzyh_zbgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '招标公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '邮政储蓄银行采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '招标公告',
-            #     'bid_sort': '181313/7338',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'yzyh_zgysgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '预审资格公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '邮政储蓄银行采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '预审资格公告',
-            #     'bid_sort': '181313/7339',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'yzyh_jzxtpgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性谈判公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '邮政储蓄银行采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '竞争性谈判公告',
-            #     'bid_sort': '181313/7337',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'yzyh_jzxcsgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性磋商公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '邮政储蓄银行采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '竞争性磋商公告',
-            #     'bid_sort': '181313/7336',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'yzyh_xjgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '询价公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '邮政储蓄银行采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '询价公告',
-            #     'bid_sort': '181313/7335',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'yzyh_zbrhxgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '中标人候选公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '邮政储蓄银行采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '中标人候选公示',
-            #     'bid_sort': '181313/7334',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'yzyh_dylyccqgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '单一来源采前公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '邮政储蓄银行采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '单一来源采前公示',
-            #     'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'yzyh_qt_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '其他',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '邮政储蓄银行采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '其他',
-            #     'bid_sort': '181392/1929',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # # 中邮保险
-            # 'zybx_zbgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '招标公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮保险采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '招标公告',
-            #     'bid_sort': '181313/7338',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zybx_zgysgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '预审资格公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮保险采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '预审资格公告',
-            #     'bid_sort': '181313/7339',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zybx_jzxtpgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性谈判公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮保险采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '竞争性谈判公告',
-            #     'bid_sort': '181313/7337',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zybx_jzxcsgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性磋商公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮保险采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '竞争性磋商公告',
-            #     'bid_sort': '181313/7336',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zybx_xjgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '询价公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮保险采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '询价公告',
-            #     'bid_sort': '181313/7335',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'zybx_zbrhxgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '中标人候选公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮保险采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '中标人候选公示',
-            #     'bid_sort': '181313/7334',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zybx_dylyccqgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '单一来源采前公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮保险采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '单一来源采前公示',
-            #     'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'zybx_qt_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '其他',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮保险采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '其他',
-            #     'bid_sort': '181392/1929',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # # 中邮证券
-            # 'zyzq_zbgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '招标公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮证券采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '招标公告',
-            #     'bid_sort': '181313/7338',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zyzq_zgysgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '预审资格公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮证券采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '预审资格公告',
-            #     'bid_sort': '181313/7339',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zyzq_jzxtpgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性谈判公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮证券采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '竞争性谈判公告',
-            #     'bid_sort': '181313/7337',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zyzq_jzxcsgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性磋商公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮证券采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '竞争性磋商公告',
-            #     'bid_sort': '181313/7336',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zyzq_xjgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '询价公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮证券采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '询价公告',
-            #     'bid_sort': '181313/7335',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'zyzq_zbrhxgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '中标人候选公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮证券采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '中标人候选公示',
-            #     'bid_sort': '181313/7334',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'zyzq_dylyccqgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '单一来源采前公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #     'notice_type': '单一来源采前公示',
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮证券采购',
-            #     'source': '中国邮政',
-            #
-            #     'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'zyzq_qt_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '其他',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '中邮证券采购',
-            #     'source': '中国邮政',
-            #     'notice_type':'其他',
-            #     'bid_sort': '181392/1929',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # # 集团直属单位
-            # 'jtzsdw_zbgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '招标公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '集团公司直属单位采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '招标公告',
-            #     'bid_sort': '181313/7338',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'jtzsdw_zgysgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '预审资格公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '集团公司直属单位采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '预审资格公告',
-            #     'bid_sort': '181313/7339',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'jtzsdw_jzxtpgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性谈判公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '集团公司直属单位采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '竞争性谈判公告',
-            #     'bid_sort': '181313/7337',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'jtzsdw_jzxcsgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '竞争性磋商公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '集团公司直属单位采购',
-            #     'source': '中国邮政',
-            #     'notice_type':'竞争性磋商公告',
-            #     'bid_sort': '181313/7336',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'jtzsdw_xjgg_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '询价公告',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '集团公司直属单位采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '询价公告',
-            #     'bid_sort': '181313/7335',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'jtzsdw_zbrhxgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '中标人候选公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '集团公司直属单位采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '中标人候选公示',
-            #     'bid_sort': '181313/7334',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            # 'jtzsdw_dylyccqgs_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '单一来源采前公示',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '集团公司直属单位采购',
-            #     'source': '中国邮政',
-            #     'notice_type': '单一来源采前公示',
-            #     'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
-            #
-            # 'jtzsdw_qt_search': {
-            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
-            #     'name': '其他',
-            #
-            #     # list页面的base地址
-            #     'base_url': 'http://www.chinapost.com.cn/html1/category/',
-            #
-            #     # list页面的call_back处理函数
-            #     'callback': self.parse_list_page_common,
-            #
-            #     # 得到下一页url的函数，返回值一定是一个url
-            #     'get_next_page_url': self.get_normal_next_page_url,
-            #
-            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-            #     'stop_page_num': 7000000,
-            #
-            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-            #
-            #     # list页面中，获得条目列表的xpath
-            #     'xpath_of_list': '//div[@class="new_list"]/ul/li',
-            #
-            #     # 获得每一个条目链接地址的xpath
-            #     'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
-            #
-            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-            #     'item_parse_class': BaseItemCommonParser,
-            #
-            #     # 其它信息，可以辅助生成CommonRawItem的字段
-            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-            #     'tos': '集团公司直属单位采购',
-            #     'source': '中国邮政',
-            #     'notice_type':'其他',
-            #     'bid_sort': '181392/1929',
-            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            # },
+
+            # 省邮政分公司
+            'syz_zbgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '招标公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '省邮政分公司采购',
+                'source': '中国邮政',
+                'notice_type': '招标公告',
+                'bid_sort': '181313/7338',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'syz_zgysgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '预审资格公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '省邮政分公司采购',
+                'source': '中国邮政',
+                'notice_type': '预审资格公告',
+                'bid_sort': '181313/7339',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'syz_jzxtpgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性谈判公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '省邮政分公司采购',
+                'source': '中国邮政',
+                'notice_type': '竞争性谈判公告',
+                'bid_sort': '181313/7337',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'syz_jzxcsgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性磋商公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '省邮政分公司采购',
+                'source': '中国邮政',
+                'notice_type': '竞争性磋商公告',
+                'bid_sort': '181313/7336',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'syz_xjgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '询价公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '省邮政分公司采购',
+                'source': '中国邮政',
+                'notice_type': '询价公告',
+                'bid_sort': '181313/7335',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'syz_zbrhxgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '中标人候选公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '省邮政分公司采购',
+                'source': '中国邮政',
+                'notice_type': '中标人候选公示',
+                'bid_sort': '181313/7334',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'syz_dylyccqgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '单一来源采前公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '省邮政分公司采购',
+                'source': '中国邮政',
+                'notice_type': '单一来源采前公示',
+                'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'syz_qt_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '其他',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '省邮政分公司采购',
+                'source': '中国邮政',
+                'notice_type': '其他',
+                'bid_sort': '181392/1929',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            # 邮政银行
+            'yzyh_zbgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '招标公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '邮政储蓄银行采购',
+                'source': '中国邮政',
+                'notice_type': '招标公告',
+                'bid_sort': '181313/7338',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'yzyh_zgysgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '预审资格公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '邮政储蓄银行采购',
+                'source': '中国邮政',
+                'notice_type': '预审资格公告',
+                'bid_sort': '181313/7339',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'yzyh_jzxtpgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性谈判公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '邮政储蓄银行采购',
+                'source': '中国邮政',
+                'notice_type': '竞争性谈判公告',
+                'bid_sort': '181313/7337',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'yzyh_jzxcsgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性磋商公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '邮政储蓄银行采购',
+                'source': '中国邮政',
+                'notice_type': '竞争性磋商公告',
+                'bid_sort': '181313/7336',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'yzyh_xjgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '询价公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '邮政储蓄银行采购',
+                'source': '中国邮政',
+                'notice_type': '询价公告',
+                'bid_sort': '181313/7335',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'yzyh_zbrhxgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '中标人候选公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '邮政储蓄银行采购',
+                'source': '中国邮政',
+                'notice_type': '中标人候选公示',
+                'bid_sort': '181313/7334',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'yzyh_dylyccqgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '单一来源采前公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '邮政储蓄银行采购',
+                'source': '中国邮政',
+                'notice_type': '单一来源采前公示',
+                'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'yzyh_qt_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '其他',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '邮政储蓄银行采购',
+                'source': '中国邮政',
+                'notice_type': '其他',
+                'bid_sort': '181392/1929',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            # 中邮保险
+            'zybx_zbgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '招标公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮保险采购',
+                'source': '中国邮政',
+                'notice_type': '招标公告',
+                'bid_sort': '181313/7338',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zybx_zgysgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '预审资格公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮保险采购',
+                'source': '中国邮政',
+                'notice_type': '预审资格公告',
+                'bid_sort': '181313/7339',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zybx_jzxtpgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性谈判公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮保险采购',
+                'source': '中国邮政',
+                'notice_type': '竞争性谈判公告',
+                'bid_sort': '181313/7337',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zybx_jzxcsgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性磋商公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮保险采购',
+                'source': '中国邮政',
+                'notice_type': '竞争性磋商公告',
+                'bid_sort': '181313/7336',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zybx_xjgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '询价公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮保险采购',
+                'source': '中国邮政',
+                'notice_type': '询价公告',
+                'bid_sort': '181313/7335',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'zybx_zbrhxgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '中标人候选公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮保险采购',
+                'source': '中国邮政',
+                'notice_type': '中标人候选公示',
+                'bid_sort': '181313/7334',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zybx_dylyccqgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '单一来源采前公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮保险采购',
+                'source': '中国邮政',
+                'notice_type': '单一来源采前公示',
+                'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'zybx_qt_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '其他',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮保险采购',
+                'source': '中国邮政',
+                'notice_type': '其他',
+                'bid_sort': '181392/1929',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            # 中邮证券
+            'zyzq_zbgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '招标公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮证券采购',
+                'source': '中国邮政',
+                'notice_type': '招标公告',
+                'bid_sort': '181313/7338',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zyzq_zgysgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '预审资格公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮证券采购',
+                'source': '中国邮政',
+                'notice_type': '预审资格公告',
+                'bid_sort': '181313/7339',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zyzq_jzxtpgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性谈判公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮证券采购',
+                'source': '中国邮政',
+                'notice_type': '竞争性谈判公告',
+                'bid_sort': '181313/7337',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zyzq_jzxcsgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性磋商公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮证券采购',
+                'source': '中国邮政',
+                'notice_type': '竞争性磋商公告',
+                'bid_sort': '181313/7336',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zyzq_xjgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '询价公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮证券采购',
+                'source': '中国邮政',
+                'notice_type': '询价公告',
+                'bid_sort': '181313/7335',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'zyzq_zbrhxgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '中标人候选公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮证券采购',
+                'source': '中国邮政',
+                'notice_type': '中标人候选公示',
+                'bid_sort': '181313/7334',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'zyzq_dylyccqgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '单一来源采前公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+                'notice_type': '单一来源采前公示',
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮证券采购',
+                'source': '中国邮政',
+
+                'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'zyzq_qt_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '其他',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '中邮证券采购',
+                'source': '中国邮政',
+                'notice_type':'其他',
+                'bid_sort': '181392/1929',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            # 集团直属单位
+            'jtzsdw_zbgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '招标公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '集团公司直属单位采购',
+                'source': '中国邮政',
+                'notice_type': '招标公告',
+                'bid_sort': '181313/7338',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'jtzsdw_zgysgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '预审资格公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '集团公司直属单位采购',
+                'source': '中国邮政',
+                'notice_type': '预审资格公告',
+                'bid_sort': '181313/7339',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'jtzsdw_jzxtpgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性谈判公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '集团公司直属单位采购',
+                'source': '中国邮政',
+                'notice_type': '竞争性谈判公告',
+                'bid_sort': '181313/7337',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'jtzsdw_jzxcsgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '竞争性磋商公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '集团公司直属单位采购',
+                'source': '中国邮政',
+                'notice_type':'竞争性磋商公告',
+                'bid_sort': '181313/7336',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'jtzsdw_xjgg_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '询价公告',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '集团公司直属单位采购',
+                'source': '中国邮政',
+                'notice_type': '询价公告',
+                'bid_sort': '181313/7335',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'jtzsdw_zbrhxgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '中标人候选公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '集团公司直属单位采购',
+                'source': '中国邮政',
+                'notice_type': '中标人候选公示',
+                'bid_sort': '181313/7334',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+            'jtzsdw_dylyccqgs_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '单一来源采前公示',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/181313/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '集团公司直属单位采购',
+                'source': '中国邮政',
+                'notice_type': '单一来源采前公示',
+                'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'jtzsdw_qt_search': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '其他',
+
+                # list页面的base地址
+                'base_url': 'http://www.chinapost.com.cn/html1/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//div[@class="new_list"]/ul/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './span[@id="ReportIDname"]/a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '集团公司直属单位采购',
+                'source': '中国邮政',
+                'notice_type':'其他',
+                'bid_sort': '181392/1929',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
 
 
         }
