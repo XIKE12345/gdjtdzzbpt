@@ -1,0 +1,732 @@
+2020-02-13 21:45:11,149  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 21:45:11,157  middleware.py:48 : INFO  Enabled spider middlewares:
+['gdgjzcpt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 21:45:11,160  middleware.py:48 : INFO  Enabled item pipelines:
+['gdgjzcpt.pipelines.CommonPipeline']
+2020-02-13 21:45:11,161  engine.py:257 : INFO  Spider opened
+2020-02-13 21:45:11,166  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 21:45:11,167  middlewares.py:62 : INFO  Spider opened: gdgjzcpt_spider
+2020-02-13 21:45:11,169  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-13 21:45:11,192  gdgjzcpt.py:163 : INFO  start crawling...
+2020-02-13 21:45:11,193  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 196, in start_requests
+    ext_param=_ext_param)
+TypeError: get_normal_next_page_url() got an unexpected keyword argument 'ext_param'
+2020-02-13 21:45:11,198  engine.py:296 : INFO  Closing spider (finished)
+2020-02-13 21:45:41,249  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x10ac73950>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 223, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+  File "/Users/huike/PycharmProjects/gdgjzcpt/common/jy_crawl_helper.py", line 58, in store_crawl_info_2_db
+    }, upsert=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 1003, in update_one
+    session=session),
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 485, in get_server_session
+    None)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-13 21:45:41,272  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.035262,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 13, 13, 45, 11, 201815),
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 12,
+ 'memusage/max': 57618432,
+ 'memusage/startup': 57614336,
+ 'start_time': datetime.datetime(2020, 2, 13, 13, 45, 11, 166553)}
+2020-02-13 21:45:41,275  engine.py:327 : INFO  Spider closed (finished)
+2020-02-13 21:45:50,842  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 21:45:50,849  middleware.py:48 : INFO  Enabled spider middlewares:
+['gdgjzcpt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 21:45:50,851  middleware.py:48 : INFO  Enabled item pipelines:
+['gdgjzcpt.pipelines.CommonPipeline']
+2020-02-13 21:45:50,851  engine.py:257 : INFO  Spider opened
+2020-02-13 21:45:50,856  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 21:45:50,857  middlewares.py:62 : INFO  Spider opened: gdgjzcpt_spider
+2020-02-13 21:45:50,859  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-13 21:45:50,880  gdgjzcpt.py:163 : INFO  start crawling...
+2020-02-13 21:47:06,111  gdgjzcpt.py:202 : INFO  Use proxy[] to generate scrapy request
+2020-02-13 21:47:06,113  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 21:48:21,900  gdgjzcpt.py:202 : INFO  Use proxy[] to generate scrapy request
+2020-02-13 21:48:21,901  gdgjzcpt.py:253 : INFO  Get page list url, page:[1], url:[https://zggdjt.dlzb.com/gongcheng/], status:[200], body md5:[e4ea5181fd8cf5996b989f785c1de620]
+2020-02-13 21:48:21,902  gdgjzcpt.py:255 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-13 21:45:50', 'crawl_end_time': ''}}
+2020-02-13 21:48:21,929  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[1/1]
+2020-02-13 21:48:21,930  gdgjzcpt.py:302 : ERROR  Handle [https://zggdjt.dlzb.com/gongcheng/] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 329, in get_common_raw_item
+    self.item['title'] = self.__get_title__()
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 409, in __get_title__
+    :return:
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 21:48:21,932  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[2/1]
+2020-02-13 21:48:22,287  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zb-6888613.html] content by direct requests
+2020-02-13 21:48:22,289  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zb-6888613.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:22,289  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[3/1]
+2020-02-13 21:48:22,789  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zb-6888601.html] content by direct requests
+2020-02-13 21:48:22,791  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zb-6888601.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:22,791  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[4/1]
+2020-02-13 21:48:23,328  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zb-6884784.html] content by direct requests
+2020-02-13 21:48:23,333  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zb-6884784.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:23,334  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[5/1]
+2020-02-13 21:48:23,754  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zb-6882520.html] content by direct requests
+2020-02-13 21:48:23,756  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zb-6882520.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:23,757  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[6/1]
+2020-02-13 21:48:24,204  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zb-6882518.html] content by direct requests
+2020-02-13 21:48:24,205  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zb-6882518.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:24,206  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[7/1]
+2020-02-13 21:48:24,568  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1737606.html] content by direct requests
+2020-02-13 21:48:24,570  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zhongbiao-1737606.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:24,571  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[8/1]
+2020-02-13 21:48:24,910  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1736159.html] content by direct requests
+2020-02-13 21:48:24,912  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zhongbiao-1736159.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:24,913  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[9/1]
+2020-02-13 21:48:25,235  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1736152.html] content by direct requests
+2020-02-13 21:48:25,236  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zhongbiao-1736152.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:25,237  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[10/1]
+2020-02-13 21:48:25,750  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1736439.html] content by direct requests
+2020-02-13 21:48:25,752  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zhongbiao-1736439.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:25,753  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[11/1]
+2020-02-13 21:48:26,230  gdgjzcpt.py:424 : INFO  Get [https://www.dlzb.com/d-zb-6876757.html] content by direct requests
+2020-02-13 21:48:26,232  gdgjzcpt.py:302 : ERROR  Handle [https://www.dlzb.com/d-zb-6876757.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 289, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 336, in get_common_raw_item
+    self.item['notice_type'] = ext_param['notice_type']
+KeyError: 'notice_type'
+2020-02-13 21:48:26,233  gdgjzcpt.py:274 : INFO  Parse item, [page_1]-[12/1]
+2020-02-13 21:50:34,230  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 21:50:34,239  middleware.py:48 : INFO  Enabled spider middlewares:
+['gdgjzcpt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 21:50:34,242  middleware.py:48 : INFO  Enabled item pipelines:
+['gdgjzcpt.pipelines.CommonPipeline']
+2020-02-13 21:50:34,242  engine.py:257 : INFO  Spider opened
+2020-02-13 21:50:34,247  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 21:50:34,247  middlewares.py:62 : INFO  Spider opened: gdgjzcpt_spider
+2020-02-13 21:50:34,250  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-13 21:50:34,273  gdgjzcpt.py:163 : INFO  start crawling...
+2020-02-13 21:50:34,273  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 192, in start_requests
+    'notice_type': _v['notice_type'],
+KeyError: 'notice_type'
+2020-02-13 21:50:34,279  engine.py:296 : INFO  Closing spider (finished)
+2020-02-13 21:50:44,464  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 21:50:44,471  middleware.py:48 : INFO  Enabled spider middlewares:
+['gdgjzcpt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 21:50:44,472  middleware.py:48 : INFO  Enabled item pipelines:
+['gdgjzcpt.pipelines.CommonPipeline']
+2020-02-13 21:50:44,473  engine.py:257 : INFO  Spider opened
+2020-02-13 21:50:44,477  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 21:50:44,478  middlewares.py:62 : INFO  Spider opened: gdgjzcpt_spider
+2020-02-13 21:50:44,481  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-02-13 21:50:44,490  gdgjzcpt.py:163 : INFO  start crawling...
+2020-02-13 21:50:44,490  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 192, in start_requests
+    'notice_type': _v['notice_type'],
+KeyError: 'notice_type'
+2020-02-13 21:50:44,495  engine.py:296 : INFO  Closing spider (finished)
+2020-02-13 21:51:14,559  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x1053cc950>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 225, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+  File "/Users/huike/PycharmProjects/gdgjzcpt/common/jy_crawl_helper.py", line 58, in store_crawl_info_2_db
+    }, upsert=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 1003, in update_one
+    session=session),
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 485, in get_server_session
+    None)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-13 21:51:14,576  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.01818,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 13, 13, 50, 44, 495763),
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 12,
+ 'memusage/max': 57163776,
+ 'memusage/startup': 57163776,
+ 'start_time': datetime.datetime(2020, 2, 13, 13, 50, 44, 477583)}
+2020-02-13 21:51:14,577  engine.py:327 : INFO  Spider closed (finished)
+2020-02-13 21:54:57,561  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 21:54:57,570  middleware.py:48 : INFO  Enabled spider middlewares:
+['gdgjzcpt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 21:54:57,572  middleware.py:48 : INFO  Enabled item pipelines:
+['gdgjzcpt.pipelines.CommonPipeline']
+2020-02-13 21:54:57,572  engine.py:257 : INFO  Spider opened
+2020-02-13 21:54:57,580  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 21:54:57,581  middlewares.py:62 : INFO  Spider opened: gdgjzcpt_spider
+2020-02-13 21:54:57,585  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-02-13 21:54:57,606  gdgjzcpt.py:166 : INFO  start crawling...
+2020-02-13 21:56:12,983  gdgjzcpt.py:208 : INFO  Use proxy[] to generate scrapy request
+2020-02-13 21:56:12,985  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 21:57:28,926  gdgjzcpt.py:208 : INFO  Use proxy[] to generate scrapy request
+2020-02-13 21:57:28,927  gdgjzcpt.py:259 : INFO  Get page list url, page:[1], url:[https://zggdjt.dlzb.com/gongcheng/], status:[200], body md5:[3b91c1b4cf4a4f57ec3ef61cf04412a0]
+2020-02-13 21:57:28,928  gdgjzcpt.py:261 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-13 21:54:57', 'crawl_end_time': ''}}
+2020-02-13 21:57:28,935  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[1/1]
+2020-02-13 21:57:28,935  gdgjzcpt.py:308 : ERROR  Handle [https://zggdjt.dlzb.com/gongcheng/] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 335, in get_common_raw_item
+    self.item['title'] = self.__get_title__()
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 417, in __get_title__
+    _ret = self.selector.xpath('./a/text()').extract_first().replace('\\n', '').rstrip().lstrip()
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 21:57:28,939  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[2/1]
+2020-02-13 21:57:29,351  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6888613.html] content by direct requests
+2020-02-13 21:57:29,353  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zb-6888613.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:29,357  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[3/1]
+2020-02-13 21:57:29,784  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6888601.html] content by direct requests
+2020-02-13 21:57:29,785  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zb-6888601.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:29,786  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[4/1]
+2020-02-13 21:57:30,021  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6884784.html] content by direct requests
+2020-02-13 21:57:30,022  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zb-6884784.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:30,022  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[5/1]
+2020-02-13 21:57:30,274  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6882520.html] content by direct requests
+2020-02-13 21:57:30,275  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zb-6882520.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:30,276  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[6/1]
+2020-02-13 21:57:30,521  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6882518.html] content by direct requests
+2020-02-13 21:57:30,522  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zb-6882518.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:30,523  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[7/1]
+2020-02-13 21:57:30,813  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1737606.html] content by direct requests
+2020-02-13 21:57:30,814  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zhongbiao-1737606.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:30,815  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[8/1]
+2020-02-13 21:57:31,083  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1736159.html] content by direct requests
+2020-02-13 21:57:31,084  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zhongbiao-1736159.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:31,085  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[9/1]
+2020-02-13 21:57:31,655  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1736152.html] content by direct requests
+2020-02-13 21:57:31,657  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zhongbiao-1736152.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:31,658  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[10/1]
+2020-02-13 21:57:31,907  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1736439.html] content by direct requests
+2020-02-13 21:57:31,908  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zhongbiao-1736439.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:31,909  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[11/1]
+2020-02-13 21:57:32,228  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6876757.html] content by direct requests
+2020-02-13 21:57:32,229  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zb-6876757.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:32,230  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[12/1]
+2020-02-13 21:57:32,516  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6873433.html] content by direct requests
+2020-02-13 21:57:32,518  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zb-6873433.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:32,519  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[13/1]
+2020-02-13 21:57:32,751  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1733656.html] content by direct requests
+2020-02-13 21:57:32,752  gdgjzcpt.py:308 : ERROR  Handle [https://www.dlzb.com/d-zhongbiao-1733656.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 343, in get_common_raw_item
+    self.item['notice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: notice_type_code'
+2020-02-13 21:57:32,752  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[14/1]
+2020-02-13 21:59:10,431  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 21:59:10,439  middleware.py:48 : INFO  Enabled spider middlewares:
+['gdgjzcpt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 21:59:10,441  middleware.py:48 : INFO  Enabled item pipelines:
+['gdgjzcpt.pipelines.CommonPipeline']
+2020-02-13 21:59:10,442  engine.py:257 : INFO  Spider opened
+2020-02-13 21:59:10,447  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 21:59:10,448  middlewares.py:62 : INFO  Spider opened: gdgjzcpt_spider
+2020-02-13 21:59:10,457  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6026
+2020-02-13 21:59:10,471  gdgjzcpt.py:166 : INFO  start crawling...
+2020-02-13 22:00:25,805  gdgjzcpt.py:208 : INFO  Use proxy[] to generate scrapy request
+2020-02-13 22:00:25,806  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 22:01:41,704  gdgjzcpt.py:208 : INFO  Use proxy[] to generate scrapy request
+2020-02-13 22:01:41,705  gdgjzcpt.py:259 : INFO  Get page list url, page:[1], url:[https://zggdjt.dlzb.com/gongcheng/], status:[200], body md5:[3b91c1b4cf4a4f57ec3ef61cf04412a0]
+2020-02-13 22:01:41,706  gdgjzcpt.py:261 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-13 21:59:10', 'crawl_end_time': ''}}
+2020-02-13 22:01:41,710  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[1/1]
+2020-02-13 22:01:41,711  gdgjzcpt.py:308 : ERROR  Handle [https://zggdjt.dlzb.com/gongcheng/] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 295, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 335, in get_common_raw_item
+    self.item['title'] = self.__get_title__()
+  File "/Users/huike/PycharmProjects/gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py", line 417, in __get_title__
+    _ret = self.selector.xpath('./a/text()').extract_first().replace('\\n', '').rstrip().lstrip()
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 22:01:41,714  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[2/1]
+2020-02-13 22:01:41,992  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6888613.html] content by direct requests
+2020-02-13 22:01:42,071  gdgjzcpt.py:304 : INFO  item is: {'_id': '8946219a826bcf618ed4ff76517a84f0',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'gdgjzcpt.gov.cn',
+ 'source': '中国光大集团股份公司',
+ 'time_stamp': 1581602501993,
+ 'title': '中国光大银行上地机房搬迁配套数据中心基础网络路由交换及防火墙设备采购项目招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'https://www.dlzb.com/d-zb-6888613.html'}
+2020-02-13 22:01:42,076  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[3/1]
+2020-02-13 22:01:42,445  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6888601.html] content by direct requests
+2020-02-13 22:01:42,539  gdgjzcpt.py:304 : INFO  item is: {'_id': '47eb841e3ecf7ffdb1ebe36e034eb659',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJy9XOtz01iW/54q/geNmcVONbYsJwRIbHdtM9M7Pbs727XFl62uLpcsXVtKZMnRI45DU0VgAiSQAEsaaBKmG5pHegcStgNNSAj8MRPJzif+hT1XV7Il+ZH4waYoy5bu/Z3HPefcc8+9Ivm7P/zHmbP/9fUfKUEvSOmBpHtBLA+XAtJZihNYVUN6KmToueipkHtbZgsoFZoSUamoqHqI4hRZRzI0K4m8LqSYoXi81lbQ9WIUTRriVCp0huUEFD0DrVVF8nRT5KiusrKWU9RCiIaeuqhLKP2NKOeUyNDJkfjQiZPDicFvrYX/tV7Mf3x3vbrxpvLDjrn7vXX1TvXCnLW5Zl6+bt5cquw8q+y8sF7fqD67+vHdbGZv64W5sltZfm0urFjXVqyfrlR2byVpAu8TJsuKvBHVRB1Fp5Aq5kSO1UVF9jD51Z8LZ/5V+pNymglRmEdJlCcoFUmpkCaAFjhDp0QO99DLRQAUC2we0dNRck9QUS4VwrrQRmlaLORjvDSTjXFKgc6xU7hNDD5CftysokwUWHWij5CaXpaQJiCku6A6mtZpTtPaAmoTokzzKMcakk7bGDG7Sw28Yyz4xZzCbWmZnSJgDQx2j+5wCo0T9IxgcKg5hf4Q0EQeqZ+IgC7KByD3bVhZVRc5Z2DpdFLjVLGoe9HG2SmW3A2lS6LMK6WYIiNVVdRUzpA57C6RwXMq0g1VpnTVQGPnkzTpcAAcpalcCxYlVs7DEEY52f4aG9dC6RrqQNewOVFCDgoNnpITMfLnU6lEnBlhmHiiL0S8lj6u0eOTBlLLUSZ2KsbECjCwn0SWQkH5JMhFiD2fApdoJSaxM2VJYXk/CRKhi6pSRKpehokiP4qJeaKyY7W2PwQaO49Gi0ZWEsE5+IwuFrx9E/FEPBpPRJmhs4nEaJwZHU6QoNMCiDV0iPQegKbTC4agDtBNemCKVSkNsSoniDyVosYGPGqlnSk4q/BluPwuGtWVImU+frV/aS0ahTu8OEVxEqtpqZCUwc+EzFCcyuYzgiECNgV/3jYFu02Bgd9AMSdOO238rXIZiYKfGQn0zwaiRqlUqo8eJ+plOpQ259Yc4ZcuJmk2TbXvxYusLIm43+pL685borRD9GNlWYHoguhEPIYzFCcUykpOkSSlFErv7dyrvnprXb9ibrw7BF7eQJqOZ1a6AclcXatsf6i8WK7cuXUYzrKKodOnm3Nlzj0BW6gsb0KqcmgspoWIkNNgEV/PVtau2WDUAa4X6M/y/JfsVCRsLf9WvXvDWn2+//B1eHCsZnKNzBXqrIXS1vw1a3W7Mn8V007CSE41tx/Vth9wEJFPhXhQs6LImQIqZJF6kE2RVrSk5CEuFoViowr+fs1c3CRJ3yH06eCpKC9qOszOzSDNuUWsVTt3DEjmfq1dwQeBNyXofeBT4HX4CdPE77BGNMXQDMV1uCTOcG31YBfHszNrz5stpJjJ0iRG2PzXlM7aCJoWD7mUAAWDKTInidwEQc9oWiQcDw/C+Nmhaf/KleqrF67uCALTrA+D+0Bogz7m3PPK421/n0SzPgnS5/7e1s7+hfvV9Q3PMJFuQ826DRH2fgTPM3e29x++rays20ORVXEgduQV5SIk1yRPnyh5M5wQVZRYDgmKBClYKgS+Vn1/G1zPnNvcX16vbiyGqClWMqB1TVVaxoZjIGYOx3GiQ9AJpmZkC6Je62TdXK28ehTsSiYJhzcaj6jPaGpm5BoNRdtmA79kVAIxpoJWBLdCAbtiRdkbrZOGVHvkuy+JNRBB0Q/yslB6/+kd8H1i7ZLoA8ixWYOqoeismscLv0wW0q6JYBbpQ8UdcVy/ccvcugQWY95aaEogzwOy1z2y0ZlsyHG7htb2o0Y+6gYvTqG2bIHzuKbvYUorsjLOL8jFodmhwHlFzsNCFhJTkPrNEycod4smGEoJ66/66lll/pdekHKGDWStLpoLD3sBmhFAwqzIKrQnEASHtUPMaUMeF1kAhGlxb2uhuvFob+dNL4C4NqFrdQ5vXKxeuFQbY9dQiD33Nt42ke1n5u3Zvfcr5vZyL1yX6aZxsmtTpJvHz25tUdHxCF16sX93jQQ/DxoEsM4RdTz/YSYXvq9uzO9tvbcWntQw7UBIG1ItaHrDA8TiViEw1JVR81g2krICN3XBqM6xeFZnifs/fmYu3+wJSzBY2Ykli0vVS7u9guFEm4CBoD2B5Q3FBbO11hvYOF9ykHZv9YQk5wjS4t0A0mENlFOL3jkRNGX99tRnlF1wBdPNRCkK+lcNmWTxQeDuUWEgwI9c1JXdgPkeVu6iUoJU2CM5RM7927P9kdyeM3QROVwGoA/JJUAjrhjj8nKRCzBqvv1g/bTVR17z4Hd5wcNvgEIHis2Oy2Ufu9vPvY7cE6/jopzH8cHl0w89QHXApsaVfVqt/PrY69U9sVk2EI4VDpcB5M64hMwK3Cgr8jyI7uP3yd/ApfrDr0PF5deP3AG3MwWA9VtqZe5xH820gMS6iXqhu8cFyLJr94AI6UgfQHUYfZWVJ11uzce/VP76m/VyuRutIryvxEpBxf64af36to+61QSxXIurjQQ6M1tRVoooGLUA0bx+p78s1822kUAnlpvX9WCMXdmFoG0+XO5rmFVgVtA9LDdS6YhrfrqRawg2ex8e9pdrHM6mRdnHd4BOIHl1LvWFvr3y9+a0QoaJuytekux6S2WwSOFQ/XH7CvIRu4QsUilqKD52pF4+PuIvJIQCN0qsKrv38EVget9mTdKAksyqNAAek7NacYx8koWYXf5BnCLzIU9hDPFULoOX+O2l5BXOKCBZj5VUUUcR0VO0dBZ1VOXZfwNL5svL1Sv/Yy6sVd9sVnefm1dfdlpwdHgDnvbe3Tdv3SOS7z98vf/gkVOToptJyfzjwiwoikpmO65x1knWC5tJOpumQN+HxvPXOOuQ3sJmNv2PCxeb8J4gvFs/X7B+fEJKZ5X7f4W02nxwwbq3Yd58ar34ufJwHXpTTboPQXfz6UXrb6t7W4uQlkDL6vrjAA6xI2IsB5SnvArZvVX5+w/1cpX14AmwWFm9Zs1fqD6dra5/2L+7XqPRgr9hwt/+6gVza91c+AXzcW3Nmr9trj+yVhfBm6sbDz6+ux9n4tGRodMjQ6dOnCDed2Sg4Xood5RhIKZYKeXsj2pI/8q5FTkyUN8lpc4dGRBzEfDeFBW3f/2LEgkfymrCg+Dt9rq4huxSxU/OU0jSEEb8Ax8JE78LD8ZEWUbqn87++79BvBChmRiN4sbw7zh1ZICJx+ODgSBibykHN5PTA7GJXNRe058TkJgX9NHheHF6TBJlFPXewD2irCTm5VEOYfbGsiw3kVcVQ+ZHjw4lRka+/HLsfB2NYs9xiqSooyUB/HyMF7WixJZHs5LCTYzZp0pGgcl/GnNo2N993UcFZQqp5zxUCBJBPZoYPsmcYaBLkhxfCJQa8A5+dCJHdi5qv5yyLg7xlPuXtKer2i/Xno+GqOD2Qr0V5a9IAbxWL+aLhXybnVL7yIdGgyQwPYnThpzRkRQryvk6AAmDA00oaYJS0iisIyTV2jfvBh7m7FDQroA1SX1Oi82zyMYmJ4lxanmV/3wqNXTMEOXUUGJ4KH7iJBMfOoYP0qQmJ49B7DZSZZC3lXraqKYr9QBjXu00itpaS5OTTrf2KqprqMEeDmcO7UTuWN5xHssLQ8B4QPwCN5d2nK/VRev92Lq0HjOwvQK64G28lsNGeZ52onUvqKdLw36A6+ohynZg56wZiTa4Hth2ZvFXIW05fcNI8jj3hycyIDUDA0DigvO9m7EqIRGnkuNFb/fG7UbqwI3dw52pcCNY4LwGkcynPopJxLEGC5Ali/IoFadYQ1fGcoqsRzVxBkGDYXhcZO3FeDSr6LpSGKVsrVM44ubAuEcpsAAeyWO2cGSYHSpeoFPFabxLdM26NLd/+7219ARm3kYrcZRTr/bmFAXmD6Y27oRVfCRilDpFBj/Y23XM9kaBN4iCy4N0ixODbJr6LuD5BxLjBF73FhobaJESLab14qb5/WVz4aH5dtO88bJLcnmeayyaNBIlBXAQbeH7XqQLZG5N9OiQ+elKT1IJoszahUuQ7QCCvoHrXjq7CBnjhAP0aBfr+zZ4vB71FQ8a6dk7Df2iFywFN1MnLNL3f52t3HjRD6JOZVfLc+2lXNk113/DXoEPz/RH1pYFxQbqpAzYo9sHKoJNPWPucY9EGgtkrRzCLmkRaj16fKD00toD9z483L+3ac7NkyMnhyDYNT27ZN+5oTT3wSKCZYx+2CBTXX9vPr4CslqzG92LKOTLBxAEAfdXLpsrj5qL2XoQPbRp3xqmdtdzkstz21uv4jKJeCjtlHNqB1v8LZhAC6otZDafidfmcs9yjToaH2HODCWazecHs+T767V/oIfnxI3Lt7MMpYbi8TYZCO/LYTK81KIhaaynzbnNve0l4Elv144/YC4mRwlDDpp19dbeznPneBvfOy4++8pyulMVrc4uVzZ3+kcDLxsLbNEt/5irL82V9/1jns2rCNnlRKeou/uhsrxmLt6orq/3jwqeb/IFsbZlZy1dtR5cMn9+ad1bak8FnjTxU0K7U1uyC179sSUm4epr5571/H39qG1/9OWeem045tof+NPuMNj10P6hC0gq0tPl6RlXOXbV2Hv4qjd895j10kUc8m9e3dtd7RXS3vLOswotyjyadjfq3n4wby24BP6fzNNaWqsu3uzVPHlx0mhyorwLNQXXas7ajORNe1tLvkymG/ymi7MWi7Gu+G++TGq7LOqKjuzf7ybLIF82250Bec6FYgtS8QTbxoigi85mJdQsk3Aqzm17EwQ1ndRByvaFnOALa/CQJkWJjFPXsSuOSRpD9QSnFVhJYotFLyANTH56Oab7JsM0N90B+/Acj2LbJh7TwIXsQB1IQjlIxBJDrfMwB8Z7pLy7BkWXtLOpkMvlgGbbvaTip6BIait4aXBt5eO7q+b1u3vbzz++m3dWeavz+z/cxAd2b2x5N8N8O7MNYbWbmn4PVuKW6Um8aK+lVjl6m0cd5vWUHXJIcbPdxNViOLaff3Xma1gLMiPxEyeYRMK88SbKtFJ9q8+mhUdv6kgBkerGLJgYEPwiEU3EmZPM8KmRturrfOXTVlQybZPkHFdvDzxp2bik9sFSdYtut672mW5ba+lipddiFey7Xdv1cN6Xwnu9GaGgUyly+e476ptvx6iId4cX2uNmQgEa1Y4xcCpidfRHyV6FREJOWX9wDBoLhRi4EjSuaQ/u2K+lk3SzgN9Q5U7HT3PMCSaeHWZRNpfgsyPw/RTPnGa4LDrNhMYcspqXKoyQQ1L7onyWzf+FLaA68W/i3+JelBYrsiq0+YvCo5goa0jVv0A5RUURoXCc0oDJ84MR+Ky/NoYPSJFz4S1f1BAMhVfA0wNbiL7zvKhUBj+kSTQYOBCLaQdWe12QGWGcBNeuzBwM2w5VMriJssOgfWj9gLc7C+wE+k80iV81jISdV7yMIs8fy80YxRQTPk7985+/ZnVhcKx104lSsCkeV/eskAHDY785ig//BB/gV6XgUTgceFZAmsbmUZNenMDqzW6zKr6tGVlNVzMcaFaPgArhmzIhokgYPw8PHqfCx+1jCX5a+NyCy0Xg7mdw23r+qPph6eO76759QftokD2p7m1vu0d8vqMOjDQ8rLklw5uZ1g4vuZW5js6CHeYFQmfFVztn0y0RDcl88zcUP9yrrr80Ny5Xfpr9HFPAqvx9JHzUr87woG3pEf/dwUBbvJ50W4bJy7vhhjb2ePrRbBv4nAonwQTATdLhz7xPPgvjExXkATVKxQmi5/8D+H0khHdNB2tveEMIOT84hqninD2hK0WgaL8Y6AufdsiFzpiX4xR+FRowWFksQPyMnANPAx2dVYqj8fPHqQQ+vjIAqAO+2JSk7TeokzT5n03+D0fp97A=',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'gdgjzcpt.gov.cn',
+ 'source': '中国光大集团股份公司',
+ 'time_stamp': 1581602502447,
+ 'title': '中国光大银行上地机房搬迁配套数据中心防火墙设备采购项目招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'https://www.dlzb.com/d-zb-6888601.html'}
+2020-02-13 22:01:42,544  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[4/1]
+2020-02-13 22:01:42,815  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6884784.html] content by direct requests
+2020-02-13 22:01:42,893  gdgjzcpt.py:304 : INFO  item is: {'_id': '38548c0ea10cf726ccdb0dc703890be7',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'gdgjzcpt.gov.cn',
+ 'source': '中国光大集团股份公司',
+ 'time_stamp': 1581602502817,
+ 'title': '中国光大银行驻马店分行中央空调采购及安装项目招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'https://www.dlzb.com/d-zb-6884784.html'}
+2020-02-13 22:01:42,897  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[5/1]
+2020-02-13 22:01:43,403  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6882520.html] content by direct requests
+2020-02-13 22:01:43,506  gdgjzcpt.py:304 : INFO  item is: {'_id': 'e96b0501d28a0496a71fcf06a12b4618',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'gdgjzcpt.gov.cn',
+ 'source': '中国光大集团股份公司',
+ 'time_stamp': 1581602503405,
+ 'title': '中国光大银行个贷流程系统2019升级项目二次招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'https://www.dlzb.com/d-zb-6882520.html'}
+2020-02-13 22:01:43,510  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[6/1]
+2020-02-13 22:01:43,857  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zb-6882518.html] content by direct requests
+2020-02-13 22:01:43,953  gdgjzcpt.py:304 : INFO  item is: {'_id': '466d3757862fe0e6a61032b123aabdf6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'gdgjzcpt.gov.cn',
+ 'source': '中国光大集团股份公司',
+ 'time_stamp': 1581602503859,
+ 'title': '中国光大银行建设企业手机银行咨询服务采购项目招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'https://www.dlzb.com/d-zb-6882518.html'}
+2020-02-13 22:01:43,958  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[7/1]
+2020-02-13 22:01:44,348  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1737606.html] content by direct requests
+2020-02-13 22:01:44,434  gdgjzcpt.py:304 : INFO  item is: {'_id': '86b3133286a0e1f96a5ae1357c759150',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'gdgjzcpt.gov.cn',
+ 'source': '中国光大集团股份公司',
+ 'time_stamp': 1581602504350,
+ 'title': '中国光大银行国密算法加密机选型项目中标候选人公示',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'https://www.dlzb.com/d-zhongbiao-1737606.html'}
+2020-02-13 22:01:44,441  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[8/1]
+2020-02-13 22:01:44,801  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1736159.html] content by direct requests
+2020-02-13 22:01:44,881  gdgjzcpt.py:304 : INFO  item is: {'_id': '1008d59e6a3a66858ecbf1edce1106e6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'gdgjzcpt.gov.cn',
+ 'source': '中国光大集团股份公司',
+ 'time_stamp': 1581602504803,
+ 'title': '中国光大银行国密算法加密机选型项目公开招标中标候选人公示',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'https://www.dlzb.com/d-zhongbiao-1736159.html'}
+2020-02-13 22:01:44,886  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[9/1]
+2020-02-13 22:01:45,466  gdgjzcpt.py:432 : INFO  Get [https://www.dlzb.com/d-zhongbiao-1736152.html] content by direct requests
+2020-02-13 22:01:45,553  gdgjzcpt.py:304 : INFO  item is: {'_id': 'd472043ba85151927fb21e8ed095522a',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'gdgjzcpt.gov.cn',
+ 'source': '中国光大集团股份公司',
+ 'time_stamp': 1581602505468,
+ 'title': '中国光大银行零售客户电子权益服务供应商选型入围采购项目公开招标中标候选人公示',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'https://www.dlzb.com/d-zhongbiao-1736152.html'}
+2020-02-13 22:01:45,557  gdgjzcpt.py:280 : INFO  Parse item, [page_1]-[10/1]
+2020-02-13 22:04:48,198  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 22:04:48,208  middleware.py:48 : INFO  Enabled spider middlewares:
+['gdgjzcpt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 22:04:48,210  middleware.py:48 : INFO  Enabled item pipelines:
+['gdgjzcpt.pipelines.CommonPipeline']
+2020-02-13 22:04:48,210  engine.py:257 : INFO  Spider opened
+2020-02-13 22:04:48,215  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 22:04:48,216  middlewares.py:62 : INFO  Spider opened: gdgjzcpt_spider
+2020-02-13 22:04:48,225  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6027
+2020-02-13 22:04:48,252  gdgjzcpt.py:244 : INFO  start crawling...
+2020-02-13 22:06:03,608  gdgjzcpt.py:286 : INFO  Use proxy[] to generate scrapy request
+2020-02-13 22:06:03,611  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
