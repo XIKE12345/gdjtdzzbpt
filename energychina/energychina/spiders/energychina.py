@@ -124,7 +124,7 @@ class EnergychinaSpider(scrapy.Spider):
             # 页面的key，保证唯一
             'page_1': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '中国能建',
+                'name': '中国能建电子采购平台',
 
                 # list页面的base地址
                 'base_url': 'http://ec.ceec.net.cn/HomeInfo/ProjectList.aspx?InfoLevel=',
@@ -159,9 +159,12 @@ class EnergychinaSpider(scrapy.Spider):
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
                 'tos_code': '01',
-                'source': '中国能建',
+                'source': '中国能建电子采购平台',
                 'notice_type': '招标公告',
                 'notice_type_code': '0101',
+                'site_name': '中国能建电子采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'InfoLevel': 'MgA=',
                 'bigType': 'WgBCAEcAUwA=',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -206,7 +209,10 @@ class EnergychinaSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国能建',
                 'notice_type': '中标公示',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '中国能建电子采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'InfoLevel': 'MgA=',
                 'bigType': 'WgBCAEcAUwA=',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -248,9 +254,12 @@ class EnergychinaSpider(scrapy.Spider):
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
                 'tos_code': '01',
-                'source': '中国能建',
+                'source': '中国能建电子采购平台',
                 'notice_type': '中选公示',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '中国能建电子采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'InfoLevel': 'MgA=',
                 'bigType': 'WgBYAEcAUwA=',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -476,6 +485,9 @@ class BaseItemCommonParser:
         self.item['tos'] = ext_param['tos']
         self.item['tos_code'] = ext_param['tos_code']
         self.item['source'] = ext_param['source']
+        self.item['content_code'] = ext_param['content_code']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['site_name'] = ext_param['site_name']
 
         return self.item
 
@@ -525,7 +537,7 @@ class BaseItemCommonParser:
         :param url:
         :return:
         """
-        _ret = self.selector.xpath('./span[2]/a/text()').extract_first()
+        _ret = self.selector.xpath('./span[2]/a/text()').extract_first().split(']')[1]
 
         return _ret
 
