@@ -154,7 +154,14 @@ class TjhcptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
+                'tos_code': '01',
                 'source': '铁建汇采工程物资设备电商平台',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'site_name': '铁建汇采工程物资设备电商平台',
+                'area_code': '670000',
+                'content_code': '1',
+
                 'bid_sort': '004001',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -190,8 +197,14 @@ class TjhcptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '招标公告',
-                'source': '国电集团电子招投标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '铁建汇采工程物资设备电商平台',
+                'notice_type': '竞争性谈判',
+                'notice_type_code': '0101',
+                'site_name': '铁建汇采工程物资设备电商平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '004002',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
 
@@ -228,8 +241,14 @@ class TjhcptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '资格预审公告',
-                'source': '国电集团电子招投标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '铁建汇采工程物资设备电商平台',
+                'notice_type': '资格预审公告',
+                'notice_type_code': '0106',
+                'site_name': '铁建汇采工程物资设备电商平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '004003',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -264,8 +283,14 @@ class TjhcptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '评标结果公示',
-                'source': '国电集团电子招投标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '铁建汇采工程物资设备电商平台',
+                'notice_type': '评标结果公示',
+                'notice_type_code': '0104',
+                'site_name': '铁建汇采工程物资设备电商平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '004004',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -301,8 +326,14 @@ class TjhcptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '流标公告',
-                'source': '国电集团电子招投标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '铁建汇采工程物资设备电商平台',
+                'notice_type': '流标公告',
+                'notice_type_code': '0104',
+                'site_name': '铁建汇采工程物资设备电商平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '004005',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -338,8 +369,14 @@ class TjhcptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '流标公告',
-                'source': '国电集团电子招投标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '铁建汇采工程物资设备电商平台',
+                'notice_type': '劳务招标公告',
+                'notice_type_code': '0101',
+                'site_name': '铁建汇采工程物资设备电商平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '004006/004006001',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -374,8 +411,14 @@ class TjhcptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '流标公告',
-                'source': '国电集团电子招投标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '铁建汇采工程物资设备电商平台',
+                'notice_type': '劳务招标澄清补遗',
+                'notice_type_code': '0101',
+                'site_name': '铁建汇采工程物资设备电商平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '004006/004006004',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -410,8 +453,14 @@ class TjhcptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '流标公告',
-                'source': '国电集团电子招投标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '铁建汇采工程物资设备电商平台',
+                'notice_type': '劳务中标',
+                'notice_type_code': '0104',
+                'site_name': '铁建汇采工程物资设备电商平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'lbgg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -446,8 +495,14 @@ class TjhcptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '流标公告',
-                'source': '国电集团电子招投标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '铁建汇采工程物资设备电商平台',
+                'notice_type': '询价公示',
+                'notice_type_code': '0104',
+                'site_name': '铁建汇采工程物资设备电商平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'lbgg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -621,14 +676,20 @@ class BaseItemCommonParser:
         self.item['area_detail'] = self.__get_area_detail__()
         self.item['notice_time'] = self.__get_notice_time__()
         self.item['buyer'] = self.__get_buyer__()
-        self.item['notice_type'] = self.__get_notice_type__(detail_url)
+        # self.item['notice_type'] = self.__get_notice_type__(detail_url)
         self.item['title'] = self.__get_title__()
         self.item['content'] = self.__get_content__(detail_url)
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 
@@ -674,7 +735,6 @@ class BaseItemCommonParser:
         return _ret
 
     def __get_notice_type__(self, detail_url):
-        print("detail_url is : " + detail_url)
         try:
             _notice_type = {
                 '004001': '招标公告',
@@ -687,7 +747,6 @@ class BaseItemCommonParser:
                 '004007': '劳务中标',
                 '004008': '询价公示'
             }
-            # detail_url =  http://www.crcchc.com/zthcw/infodetail/?infoid=74f1b498-1e29-4a71-a506-5023e6c8ea29&categoryNum=004001
             _url_list = detail_url.lstrip('http://').split('/')
             # 截取_url_list的第二个单词的末尾两位
             _notice_code = _url_list[3][-6:]
