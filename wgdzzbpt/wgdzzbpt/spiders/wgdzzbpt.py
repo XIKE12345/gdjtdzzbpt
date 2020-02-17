@@ -166,7 +166,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'zbgg_hw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告-hw',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -209,7 +209,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'zbgg_fw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告-工程',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -252,7 +252,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'pjjg_gc_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '评标结果-工程',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -295,7 +295,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'pbjg_hw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告-货物',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -338,7 +338,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'pbjg_fw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告-工程',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -381,7 +381,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'xjgg_gc_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '询价公告-工程',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -424,7 +424,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'xjgg_hw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '询价公告-货物',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -467,7 +467,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'xjgg_fw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告-服务/技改',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -510,7 +510,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'jjgg_gc_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '竞价公告-工程',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -553,7 +553,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'jjgg_hw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '竞价公告-货物',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -595,7 +595,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'jjgg_fw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '竞价公告-服务/技改',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -638,7 +638,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'dyly_gc_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '单一来源采购公告-工程',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -681,7 +681,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'dyly_hw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '单一来源采购公告-货物',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -724,7 +724,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'dyly_fw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '单一来源采购公告-服务/技改',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -767,7 +767,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'jzxtp_gc_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '竞争性谈判公告-工程',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -810,7 +810,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'jzxtp_hw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '竞争性谈判公告-货物',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
@@ -853,7 +853,7 @@ class WgdzzbptSpider(scrapy.Spider):
 
             'jzxtp_fw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '竞争性谈判公告-服务/技改',
+                'name': '武钢电子招标平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
