@@ -162,6 +162,9 @@ class ZgbqdzztbjyptSpider(scrapy.Spider):
                 'source': '中国兵器电子招标投标平台',
                 'notice_type': '招标公告',
                 'notice_type_code': '0101',
+                'site_name': '中国兵器电子招标投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'es': '1',
                 'typflag': '1',
                 'orderby': '1',
@@ -208,6 +211,9 @@ class ZgbqdzztbjyptSpider(scrapy.Spider):
                 'source': '中国兵器电子招标投标平台',
                 'notice_type': '资格预审公告',
                 'notice_type_code': '0106',
+                'site_name': '中国兵器电子招标投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'es': '1',
                 'typflag': '2',
                 'orderby': '1',
@@ -254,7 +260,10 @@ class ZgbqdzztbjyptSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国兵器电子招标投标平台',
                 'notice_type': '变更公告',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '中国兵器电子招标投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'es': '1',
                 'typflag': '3',
                 'orderby': '1',
@@ -301,7 +310,10 @@ class ZgbqdzztbjyptSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国兵器电子招标投标平台',
                 'notice_type': '终止公告',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '中国兵器电子招标投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'es': '1',
                 'typflag': '4',
                 'orderby': '1',
@@ -348,7 +360,10 @@ class ZgbqdzztbjyptSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国兵器电子招标投标平台',
                 'notice_type': '中标结果公告',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '中国兵器电子招标投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'es': '1',
                 'typflag': '6',
                 'orderby': '1',
@@ -581,7 +596,11 @@ class BaseItemCommonParser:
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['notice_type'] = ext_param['notice_type']
         self.item['tos'] = ext_param['tos']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 

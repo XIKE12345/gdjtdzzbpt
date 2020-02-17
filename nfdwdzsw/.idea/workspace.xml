@@ -2,14 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../energychina/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energychina/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energychina/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../energychina/common/jy_common_items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energychina/energychina/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../energychina/energychina/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energychina/energychina/spiders/energychina.py" beforeDir="false" afterPath="$PROJECT_DIR$/../energychina/energychina/spiders/energychina.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energychina/energychina_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../energychina/energychina_spider.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energychina/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../energychina/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nfdwdzsw_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/nfdwdzsw_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../anqijiaomu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../anqijiaomu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dfjyzx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dfjyzx/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gdgjzcpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdgjzcpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hljggzyjyw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hljggzyjyw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hljggzyjyw/hljggzyjyw_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../hljggzyjyw/hljggzyjyw_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbqdzztbjypt/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgbqdzztbjypt/common/jy_common_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbqdzztbjypt/zgbqdzztbjypt/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgbqdzztbjypt/zgbqdzztbjypt/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbqdzztbjypt/zgbqdzztbjypt/spiders/zgbqdzztbjypt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgbqdzztbjypt/zgbqdzztbjypt/spiders/zgbqdzztbjypt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ztlbsww/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ztlbsww/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ztlbsww/ztlbsww_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww_spider.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
