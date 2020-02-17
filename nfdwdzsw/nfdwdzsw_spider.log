@@ -406,3 +406,23 @@ pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
  'tos_code': '01',
  'url': 'http://www.bidding.csg.cn/zbgg/1200244795.jhtml'}
 2020-02-17 13:29:54,412  nfdwdzsw.py:363 : INFO  Parse item, [zbgg_search]-[2/1]
+2020-02-17 13:36:28,522  jy_utils.py:55 : WARNING  Get html by proxy failed, please double check proxy srv [http://192.168.100.120:5010]
+2020-02-17 13:36:28,674  nfdwdzsw.py:387 : INFO  item is: {'_id': '541f5ade0664c032a8633a298b6dba73',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'content_code': '1',
+ 'notice_time': '2019.10.31 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'bidding.csg.cn',
+ 'site_name': '中国南方电网电子商务采购网',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1581917788606,
+ 'title': '关于试点增加投标保证保险作为投标保证金缴纳方式的公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200238252.jhtml'}
+2020-02-17 13:36:28,675  nfdwdzsw.py:363 : INFO  Parse item, [zbgg_search]-[3/1]

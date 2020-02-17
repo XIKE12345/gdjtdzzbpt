@@ -124,7 +124,7 @@ class AnqijiaomuSpider(scrapy.Spider):
             # 页面的key，保证唯一
             'page_1': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '安琪酵母集团',
+                'name': '安琪酵母招标平台',
 
                 # list页面的base地址
                 'base_url': 'https://angel.going-link.com/autocrud/blt.fnd_bulletin_login/query?business_group=3FA4526C5B37E30707F07885B8E83926&v_lang=ZHS&pagesize=10&pagenum=1&_fetchall=true&_autocount=false',
@@ -159,10 +159,10 @@ class AnqijiaomuSpider(scrapy.Spider):
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
                 'tos_code': '01',
-                'source': '安琪酵母集团',
-                'site_name': '安琪酵母集团',
+                'source': '安琪酵母招标平台',
+                'site_name': '安琪酵母招标平台',
                 'notice_type': "中标公告",
-                'notice_type_code': "",
+                'notice_type_code': "0104",
                 'area_code': '670000',
                 'content_code': '1',
                 '_request_data': '{"parameter":{"business_group":"3FA4526C5B37E30707F07885B8E83926","release_date":"2020-01-16","blt_place_category":"BIDDING_SOURCE"}}',
@@ -207,18 +207,16 @@ class AnqijiaomuSpider(scrapy.Spider):
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
                 'tos_code': '01',
-                'source': '安琪酵母集团',
-                'site_name': '安琪酵母集团',
+                'source': '安琪酵母招标平台',
+                'site_name': '安琪酵母招标平台',
                 'notice_type': "寻源公告",
-                'notice_type_code': "",
+                'notice_type_code': "0102",
                 'area_code': '670000',
                 'content_code': '1',
                 '_request_data': '{"parameter":{"business_group":"3FA4526C5B37E30707F07885B8E83926","release_date":"2020-01-16","blt_place_category":"RFX"}}',
                 'type': '10',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
-
-
         }
 
         logging.info('start crawling...')
