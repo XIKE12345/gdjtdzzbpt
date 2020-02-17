@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e06d60d0-0ed8-4af9-8ba5-551d9197632a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/anqijiaomu.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anqijiaomu/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anqijiaomu/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anqijiaomu/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anqijiaomu/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anqijiaomu/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anqijiaomu/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anqijiaomu/spiders/anqijiaomu.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/anqijiaomu_spider.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/.idea/bjnyztbw.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw/spiders/bjnyztbw.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw_spider.log" afterDir="false" />
@@ -80,6 +58,7 @@
       <change afterPath="$PROJECT_DIR$/../ztwzgjzb/ztwzgjzb/spiders/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztwzgjzb/ztwzgjzb_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chinapost/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/bdhzb_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/ccgp_new_spider.log" beforeDir="false" />
@@ -157,15 +136,33 @@
       <option name="presentableId" value="Default" />
       <updated>1581760055701</updated>
     </task>
+    <task id="LOCAL-00001" summary="安琪酵母集团招标爬虫数据。">
+      <created>1581770947367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581770947367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="安琪酵母集团招标爬虫数据。" />
+    <option name="LAST_COMMIT_MESSAGE" value="安琪酵母集团招标爬虫数据。" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="443" y="53" key="CommitChangelistDialog2" timestamp="1581770946229">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="443" y="53" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581770946229" />
     <state x="222" y="74" key="SettingsEditor" timestamp="1581760114214">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="222" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581760114214" />
+    <state x="419" y="196" key="Vcs.Push.Dialog.v2" timestamp="1581770956591">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="419" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581770956591" />
   </component>
 </project>

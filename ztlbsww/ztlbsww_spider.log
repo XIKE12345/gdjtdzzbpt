@@ -1,0 +1,673 @@
+2020-02-06 13:14:39,246  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 13:14:39,254  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 13:14:39,256  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 13:14:39,256  engine.py:257 : INFO  Spider opened
+2020-02-06 13:14:39,261  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:14:39,262  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 13:14:39,264  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 13:14:39,272  ztlbsww.py:386 : INFO  start crawling...
+2020-02-06 13:15:54,475  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:15:54,477  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:17:42,888  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:17:42,890  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/%EF%BC%9Fmod=forumdisplay&fid=2&sortid=12&filter=sortid&page=0>: HTTP status code is not handled or not allowed
+2020-02-06 13:17:42,894  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:19:30,835  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:19:30,836  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/%EF%BC%9Fmod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1>: HTTP status code is not handled or not allowed
+2020-02-06 13:19:30,839  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:19:39,261  logstats.py:48 : INFO  Crawled 3 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:21:20,765  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:21:20,767  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/%EF%BC%9Fmod=forumdisplay&fid=2&sortid=12&filter=sortid&page=2>: HTTP status code is not handled or not allowed
+2020-02-06 13:21:20,769  logstats.py:48 : INFO  Crawled 4 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:21:39,264  logstats.py:48 : INFO  Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:23:04,622  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:23:04,624  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/%EF%BC%9Fmod=forumdisplay&fid=2&sortid=12&filter=sortid&page=3>: HTTP status code is not handled or not allowed
+2020-02-06 13:23:04,629  logstats.py:48 : INFO  Crawled 5 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:24:50,024  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:24:50,025  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/%EF%BC%9Fmod=forumdisplay&fid=2&sortid=12&filter=sortid&page=4>: HTTP status code is not handled or not allowed
+2020-02-06 13:24:50,026  logstats.py:48 : INFO  Crawled 6 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:25:07,680  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 13:25:07,688  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 13:25:07,690  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 13:25:07,690  engine.py:257 : INFO  Spider opened
+2020-02-06 13:25:07,696  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:25:07,696  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 13:25:07,699  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-06 13:25:07,712  ztlbsww.py:386 : INFO  start crawling...
+2020-02-06 13:26:23,035  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:26:23,036  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:28:12,443  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:28:12,446  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=0>: HTTP status code is not handled or not allowed
+2020-02-06 13:28:12,448  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:29:56,326  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:29:56,327  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1>: HTTP status code is not handled or not allowed
+2020-02-06 13:29:56,330  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:30:07,697  logstats.py:48 : INFO  Crawled 3 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:31:43,525  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:31:43,526  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=2>: HTTP status code is not handled or not allowed
+2020-02-06 13:31:43,529  logstats.py:48 : INFO  Crawled 4 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:32:07,698  logstats.py:48 : INFO  Crawled 4 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:33:31,642  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:33:31,645  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=3>: HTTP status code is not handled or not allowed
+2020-02-06 13:33:31,647  logstats.py:48 : INFO  Crawled 5 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:35:15,710  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:35:15,712  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=4>: HTTP status code is not handled or not allowed
+2020-02-06 13:35:15,714  logstats.py:48 : INFO  Crawled 6 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:36:59,767  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:36:59,769  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=5>: HTTP status code is not handled or not allowed
+2020-02-06 13:36:59,772  logstats.py:48 : INFO  Crawled 7 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:37:07,698  logstats.py:48 : INFO  Crawled 7 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:40:27,423  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 13:40:27,436  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 13:40:27,439  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 13:40:27,439  engine.py:257 : INFO  Spider opened
+2020-02-06 13:40:27,445  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:40:27,446  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 13:40:27,453  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-02-06 13:40:27,467  ztlbsww.py:386 : INFO  start crawling...
+2020-02-06 13:41:42,702  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:41:42,705  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:43:29,563  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:43:29,565  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/?mod=forumdisplay&fid=2&filter=sortid&sortid=12>: HTTP status code is not handled or not allowed
+2020-02-06 13:43:29,569  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:45:12,087  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:45:12,088  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1>: HTTP status code is not handled or not allowed
+2020-02-06 13:45:12,091  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:45:27,449  logstats.py:48 : INFO  Crawled 3 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:46:54,398  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:46:54,401  httperror.py:55 : INFO  Ignoring response <404 http://www.crecgec.com/forum.php/?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=2>: HTTP status code is not handled or not allowed
+2020-02-06 13:46:54,403  logstats.py:48 : INFO  Crawled 4 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:47:18,969  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 13:47:18,977  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 13:47:18,980  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 13:47:18,980  engine.py:257 : INFO  Spider opened
+2020-02-06 13:47:18,985  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:47:18,987  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 13:47:18,994  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6026
+2020-02-06 13:47:19,006  ztlbsww.py:386 : INFO  start crawling...
+2020-02-06 13:48:34,166  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:48:34,167  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:49:50,400  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:49:50,403  ztlbsww.py:494 : INFO  Get page list url, page:[1], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12], status:[200], body md5:[093203b98971a5eff60324e58012200a]
+2020-02-06 13:49:50,403  ztlbsww.py:496 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:47:19', 'crawl_end_time': ''}}
+2020-02-06 13:49:50,424  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:51:06,680  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:51:06,683  ztlbsww.py:494 : INFO  Get page list url, page:[2], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1], status:[200], body md5:[ef98768638005588d14a0450e5180a70]
+2020-02-06 13:51:06,684  ztlbsww.py:496 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '093203b98971a5eff60324e58012200a', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:47:19', 'crawl_end_time': ''}}
+2020-02-06 13:51:06,697  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:52:23,014  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:52:23,017  ztlbsww.py:494 : INFO  Get page list url, page:[3], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=2], status:[200], body md5:[c117183716f77038a7258d0e55338e1a]
+2020-02-06 13:52:23,017  ztlbsww.py:496 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'ef98768638005588d14a0450e5180a70', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:47:19', 'crawl_end_time': ''}}
+2020-02-06 13:52:23,029  logstats.py:48 : INFO  Crawled 4 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:53:38,960  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:53:38,962  ztlbsww.py:494 : INFO  Get page list url, page:[4], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=3], status:[200], body md5:[796e996256018dd2e1df653e27a640bc]
+2020-02-06 13:53:38,963  ztlbsww.py:496 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'c117183716f77038a7258d0e55338e1a', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:47:19', 'crawl_end_time': ''}}
+2020-02-06 13:53:38,977  logstats.py:48 : INFO  Crawled 5 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:54:55,308  ztlbsww.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:54:55,310  ztlbsww.py:494 : INFO  Get page list url, page:[5], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=4], status:[200], body md5:[3289f27193d43ca1a14f2fbdeb3a6fac]
+2020-02-06 13:54:55,310  ztlbsww.py:496 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '796e996256018dd2e1df653e27a640bc', 'total_page_num': 4, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:47:19', 'crawl_end_time': ''}}
+2020-02-06 13:54:55,324  logstats.py:48 : INFO  Crawled 6 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:55:37,158  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 13:55:37,168  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 13:55:37,170  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 13:55:37,170  engine.py:257 : INFO  Spider opened
+2020-02-06 13:55:37,176  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:55:37,177  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 13:55:37,181  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6027
+2020-02-06 13:55:37,196  ztlbsww.py:393 : INFO  start crawling...
+2020-02-06 13:56:52,470  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:56:52,472  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:58:08,806  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:58:08,808  ztlbsww.py:501 : INFO  Get page list url, page:[1], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12], status:[200], body md5:[f5ffca20df4814f213f20a13be24cdd2]
+2020-02-06 13:58:08,809  ztlbsww.py:503 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:55:37', 'crawl_end_time': ''}}
+2020-02-06 13:58:08,822  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:59:25,224  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 13:59:25,226  ztlbsww.py:501 : INFO  Get page list url, page:[2], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1], status:[200], body md5:[0011167d6ba978a4609d2794ad32c255]
+2020-02-06 13:59:25,227  ztlbsww.py:503 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'f5ffca20df4814f213f20a13be24cdd2', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:55:37', 'crawl_end_time': ''}}
+2020-02-06 13:59:25,240  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:59:40,412  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 13:59:40,417  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 13:59:40,419  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 13:59:40,419  engine.py:257 : INFO  Spider opened
+2020-02-06 13:59:40,423  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 13:59:40,425  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 13:59:40,437  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6028
+2020-02-06 13:59:40,450  ztlbsww.py:393 : INFO  start crawling...
+2020-02-06 14:00:55,710  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:00:55,712  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:02:12,514  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:02:12,516  ztlbsww.py:501 : INFO  Get page list url, page:[1], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12], status:[200], body md5:[b0200b42e4d3ff1c305381820dd81f99]
+2020-02-06 14:02:12,518  ztlbsww.py:503 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:59:40', 'crawl_end_time': ''}}
+2020-02-06 14:02:12,534  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:03:28,947  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:03:28,950  ztlbsww.py:501 : INFO  Get page list url, page:[2], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1], status:[200], body md5:[09c08794c8accec687eaab7dd4c4845e]
+2020-02-06 14:03:28,950  ztlbsww.py:503 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'b0200b42e4d3ff1c305381820dd81f99', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:59:40', 'crawl_end_time': ''}}
+2020-02-06 14:03:28,965  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:04:45,478  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:04:45,480  ztlbsww.py:501 : INFO  Get page list url, page:[3], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=2], status:[200], body md5:[cce69e2670aa49cc245a1c576cc1f99f]
+2020-02-06 14:04:45,481  ztlbsww.py:503 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '09c08794c8accec687eaab7dd4c4845e', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:59:40', 'crawl_end_time': ''}}
+2020-02-06 14:04:45,494  logstats.py:48 : INFO  Crawled 4 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:06:02,024  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:06:02,027  ztlbsww.py:501 : INFO  Get page list url, page:[4], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=3], status:[200], body md5:[6e2b4eeb67d5312403833c79779565ed]
+2020-02-06 14:06:02,027  ztlbsww.py:503 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'cce69e2670aa49cc245a1c576cc1f99f', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:59:40', 'crawl_end_time': ''}}
+2020-02-06 14:06:02,039  logstats.py:48 : INFO  Crawled 5 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:07:18,564  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:07:18,567  ztlbsww.py:501 : INFO  Get page list url, page:[5], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=4], status:[200], body md5:[b81eb67fe4fccc01b795e4d7f04b5db5]
+2020-02-06 14:07:18,568  ztlbsww.py:503 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '6e2b4eeb67d5312403833c79779565ed', 'total_page_num': 4, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:59:40', 'crawl_end_time': ''}}
+2020-02-06 14:07:18,584  logstats.py:48 : INFO  Crawled 6 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:08:34,829  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:08:34,832  ztlbsww.py:501 : INFO  Get page list url, page:[6], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=5], status:[200], body md5:[39cbd30473943791888a0e0016e966dd]
+2020-02-06 14:08:34,832  ztlbsww.py:503 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'b81eb67fe4fccc01b795e4d7f04b5db5', 'total_page_num': 5, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 13:59:40', 'crawl_end_time': ''}}
+2020-02-06 14:08:34,853  logstats.py:48 : INFO  Crawled 7 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:09:48,173  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:09:48,180  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:09:48,183  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 14:09:48,183  engine.py:257 : INFO  Spider opened
+2020-02-06 14:09:48,189  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:09:48,189  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 14:09:48,192  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6029
+2020-02-06 14:09:48,204  ztlbsww.py:393 : INFO  start crawling...
+2020-02-06 14:11:03,551  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:11:03,553  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:12:19,993  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:12:20,002  middlewares.py:46 : ERROR  process_spider_exception: can only concatenate str (not "bytes") to str
+2020-02-06 14:12:20,002  middlewares.py:47 : INFO  try to sleep a while
+2020-02-06 14:15:42,854  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:15:42,873  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:15:42,879  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 14:15:42,880  engine.py:257 : INFO  Spider opened
+2020-02-06 14:15:42,893  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:15:42,893  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 14:15:42,909  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6030
+2020-02-06 14:15:42,962  ztlbsww.py:393 : INFO  start crawling...
+2020-02-06 14:16:01,063  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:16:01,071  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:16:01,073  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 14:16:01,073  engine.py:257 : INFO  Spider opened
+2020-02-06 14:16:01,077  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:16:01,078  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 14:16:01,083  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6031
+2020-02-06 14:16:01,090  ztlbsww.py:393 : INFO  start crawling...
+2020-02-06 14:17:16,500  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:17:16,503  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:18:33,107  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:18:33,112  ztlbsww.py:502 : INFO  Get page list url, page:[1], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12], status:[200], body md5:[968ee18f58443733c32807c97391b08e]
+2020-02-06 14:18:33,113  ztlbsww.py:504 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:16:01', 'crawl_end_time': ''}}
+2020-02-06 14:18:33,147  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:19:49,551  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:19:49,554  ztlbsww.py:502 : INFO  Get page list url, page:[2], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1], status:[200], body md5:[9cddf1cf491750877a3bc62a4972e32b]
+2020-02-06 14:19:49,554  ztlbsww.py:504 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '968ee18f58443733c32807c97391b08e', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:16:01', 'crawl_end_time': ''}}
+2020-02-06 14:19:49,570  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:20:04,327  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:20:04,334  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:20:04,336  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-06 14:20:04,337  engine.py:257 : INFO  Spider opened
+2020-02-06 14:20:04,343  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:20:04,344  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-06 14:20:04,348  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6032
+2020-02-06 14:20:04,365  ztlbsww.py:393 : INFO  start crawling...
+2020-02-06 14:21:19,664  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:21:19,667  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:22:36,167  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:22:36,171  middlewares.py:46 : ERROR  process_spider_exception: can only concatenate str (not "bytes") to str
+2020-02-06 14:22:36,172  middlewares.py:47 : INFO  try to sleep a while
+2020-02-06 14:32:36,155  scraper.py:159 : ERROR  Spider error processing <GET http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12> (referer: None)
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/Users/huike/PycharmProjects/ztlbsww/ztlbsww/spiders/ztlbsww.py", line 488, in parse_list_page_common
+    print("=============response——body is" + response.body)
+TypeError: can only concatenate str (not "bytes") to str
+2020-02-06 14:32:36,168  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:33:52,651  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-06 14:33:52,654  middlewares.py:46 : ERROR  process_spider_exception: can only concatenate str (not "bytes") to str
+2020-02-06 14:33:52,655  middlewares.py:47 : INFO  try to sleep a while
+2020-02-12 15:46:05,763  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-12 15:46:05,769  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-12 15:46:05,771  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-12 15:46:05,771  engine.py:257 : INFO  Spider opened
+2020-02-12 15:46:05,776  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-12 15:46:05,777  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-12 15:46:05,781  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6034
+2020-02-12 15:46:05,796  ztlbsww.py:393 : INFO  start crawling...
+2020-02-12 15:47:21,042  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-12 15:47:21,044  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-12 15:48:38,038  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-12 15:48:38,042  middlewares.py:46 : ERROR  process_spider_exception: can only concatenate str (not "bytes") to str
+2020-02-12 15:48:38,043  middlewares.py:47 : INFO  try to sleep a while
+2020-02-12 15:51:19,527  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-12 15:51:19,536  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-12 15:51:19,539  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-12 15:51:19,539  engine.py:257 : INFO  Spider opened
+2020-02-12 15:51:19,544  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-12 15:51:19,545  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-12 15:51:19,552  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6035
+2020-02-12 15:51:19,565  ztlbsww.py:393 : INFO  start crawling...
+2020-02-12 15:52:34,971  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-12 15:52:34,974  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-12 15:53:51,357  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-12 15:53:51,359  middlewares.py:46 : ERROR  process_spider_exception: can only concatenate str (not "bytes") to str
+2020-02-12 15:53:51,360  middlewares.py:47 : INFO  try to sleep a while
+2020-02-14 11:43:33,456  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 11:43:33,464  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 11:43:33,466  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-14 11:43:33,466  engine.py:257 : INFO  Spider opened
+2020-02-14 11:43:33,474  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 11:43:33,475  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-14 11:43:33,478  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-14 11:43:33,499  ztlbsww.py:393 : INFO  start crawling...
+2020-02-14 11:44:49,234  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 11:44:49,238  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 11:46:05,689  ztlbsww.py:434 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 11:46:05,865  ztlbsww.py:504 : INFO  Get page list url, page:[1], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12], status:[200], body md5:[44e788b4ce7f2cdc00e863cd70e4bcc8]
+2020-02-14 11:46:05,866  ztlbsww.py:506 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-14 11:43:33', 'crawl_end_time': ''}}
+2020-02-14 11:46:05,918  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 12:55:48,813  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 12:55:48,826  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 12:55:48,832  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-14 12:55:48,834  engine.py:257 : INFO  Spider opened
+2020-02-14 12:55:48,844  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 12:55:48,845  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-14 12:55:48,850  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-14 12:55:48,872  ztlbsww.py:392 : INFO  start crawling...
+2020-02-14 12:57:09,825  ztlbsww.py:433 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 12:57:09,826  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 12:58:28,718  ztlbsww.py:433 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 12:58:28,826  ztlbsww.py:503 : INFO  Get page list url, page:[1], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12], status:[200], body md5:[518132645fecfc8b3767a85d47c76805]
+2020-02-14 12:58:28,828  ztlbsww.py:505 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-14 12:55:48', 'crawl_end_time': ''}}
+2020-02-14 12:58:28,854  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 12:59:26,720  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 12:59:26,730  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 12:59:26,733  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-14 12:59:26,733  engine.py:257 : INFO  Spider opened
+2020-02-14 12:59:26,742  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 12:59:26,743  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-14 12:59:26,747  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-02-14 12:59:26,769  ztlbsww.py:392 : INFO  start crawling...
+2020-02-14 13:00:42,014  ztlbsww.py:433 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 13:00:42,016  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 13:01:58,559  ztlbsww.py:433 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 13:01:58,563  ztlbsww.py:502 : INFO  Get page list url, page:[1], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12], status:[200], body md5:[2781034bda30d7b2eba88a9be69d49fe]
+2020-02-14 13:01:58,563  ztlbsww.py:504 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-14 12:59:26', 'crawl_end_time': ''}}
+2020-02-14 13:01:58,577  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 13:03:15,366  ztlbsww.py:433 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 13:03:15,372  ztlbsww.py:502 : INFO  Get page list url, page:[2], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1], status:[200], body md5:[4a9f6d71486764b42dcc3a17f50310d2]
+2020-02-14 13:03:15,373  ztlbsww.py:504 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '2781034bda30d7b2eba88a9be69d49fe', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-14 12:59:26', 'crawl_end_time': ''}}
+2020-02-14 13:03:15,391  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 13:04:31,051  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 13:04:31,061  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 13:04:31,065  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-14 13:04:31,066  engine.py:257 : INFO  Spider opened
+2020-02-14 13:04:31,071  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 13:04:31,072  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-14 13:04:31,078  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6026
+2020-02-14 13:04:31,094  ztlbsww.py:390 : INFO  start crawling...
+2020-02-14 13:05:46,354  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 13:05:46,356  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 13:07:02,734  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 13:07:02,749  ztlbsww.py:500 : INFO  Get page list url, page:[1], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12], status:[200], body md5:[628f270a03bd519fd3c7afb4cbadb6c3]
+2020-02-14 13:07:02,751  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-14 13:04:31', 'crawl_end_time': ''}}
+2020-02-14 13:07:02,810  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 13:08:19,593  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 13:08:19,594  ztlbsww.py:500 : INFO  Get page list url, page:[2], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1], status:[200], body md5:[e9ede0c99d6b67a0581dc82c5ea44779]
+2020-02-14 13:08:19,594  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '628f270a03bd519fd3c7afb4cbadb6c3', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-14 13:04:31', 'crawl_end_time': ''}}
+2020-02-14 13:08:19,606  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 13:09:36,544  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 13:09:36,545  ztlbsww.py:500 : INFO  Get page list url, page:[3], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=2], status:[200], body md5:[9845dedc39a92bf065cfd6dcee82f1fa]
+2020-02-14 13:09:36,545  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'e9ede0c99d6b67a0581dc82c5ea44779', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-14 13:04:31', 'crawl_end_time': ''}}
+2020-02-14 13:09:36,557  logstats.py:48 : INFO  Crawled 4 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 13:10:53,913  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-14 13:10:53,915  ztlbsww.py:500 : INFO  Get page list url, page:[4], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=3], status:[200], body md5:[e48fa24f620746dca72befc6401539b8]
+2020-02-14 13:10:53,916  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '9845dedc39a92bf065cfd6dcee82f1fa', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-14 13:04:31', 'crawl_end_time': ''}}
+2020-02-14 13:10:53,930  logstats.py:48 : INFO  Crawled 5 pages (at 1 pages/min), scraped 0 items (at 0 items/min)

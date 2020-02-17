@@ -5,28 +5,6 @@
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/.idea/bjnyztbw.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw/spiders/bjnyztbw.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw_spider.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gtjtdzcgpt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtjtdzcgpt/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtjtdzcgpt/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtjtdzcgpt/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtjtdzcgpt/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtjtdzcgpt/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtjtdzcgpt/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtjtdzcgpt/spiders/gtjtdzcgpt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gtjtdzcgpt_spider.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/libraries/R_User_Library.xml" afterDir="false" />
@@ -57,6 +35,8 @@
       <change beforePath="$PROJECT_DIR$/../chinapost/nfdwdzsw_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gtjtdzcgpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/gtjtdzcgpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbggzyfwpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hbggzyfwpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hljggzyjyw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hljggzyjyw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hljggzyjyw/hljggzyjyw_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../hljggzyjyw/hljggzyjyw_spider.log" afterDir="false" />
@@ -143,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581324148267</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="国家开发投资公司电子采购平台 爬虫代码">
+      <created>1581498373912</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581498373912</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,13 +140,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="中国南方电网线上采购平台爬虫" />
     <MESSAGE value="黑龙江公共资源交易平台爬虫" />
-    <option name="LAST_COMMIT_MESSAGE" value="黑龙江公共资源交易平台爬虫" />
+    <MESSAGE value="国家开发投资公司电子采购平台 爬虫代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="国家开发投资公司电子采购平台 爬虫代码" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581324147488">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581498371705">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581324147488" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581498371705" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -176,10 +164,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1580811192066" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581324167322">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581498395890">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581324167322" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581498395890" />
     <state x="395" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1581494380622">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

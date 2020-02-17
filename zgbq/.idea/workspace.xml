@@ -2,27 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db9046a0-1b69-417d-8b04-0217ea98b062" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tjhcpt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zgbq/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zgbq/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zgbq/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zgbq/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zgbq/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zgbq/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zgbq/spiders/zgbq.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/libraries/R_User_Library.xml" afterDir="false" />
@@ -53,6 +32,7 @@
       <change beforePath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,20 +95,28 @@
       <option name="project" value="LOCAL" />
       <updated>1580895542538</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="中国兵器集团爬虫&#10;代码可以运行，但是没有获取到所需的相关数据。">
+      <created>1580985397063</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580985397063</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="国电集团电子招标平台 爬虫数据代码" />
     <MESSAGE value="中国铁建采汇物资设备爬虫代码。" />
-    <option name="LAST_COMMIT_MESSAGE" value="中国铁建采汇物资设备爬虫代码。" />
+    <MESSAGE value="中国兵器集团爬虫&#10;代码可以运行，但是没有获取到所需的相关数据。" />
+    <option name="LAST_COMMIT_MESSAGE" value="中国兵器集团爬虫&#10;代码可以运行，但是没有获取到所需的相关数据。" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="38" key="CommitChangelistDialog2" timestamp="1580895541795">
+    <state x="321" y="38" key="CommitChangelistDialog2" timestamp="1580985396576">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="321" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1580895541795" />
+    <state x="321" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1580985396576" />
     <state x="585" y="240" width="424" height="295" key="Github.ShareDialog" timestamp="1580985320300">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -141,14 +129,14 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="201" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1580894759458" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1580895563000">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1580985405308">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1580895563000" />
-    <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1580866109174">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1580985405308" />
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1581054639825">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1580866109173" />
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1581054639825" />
     <state x="394" y="172" key="search.everywhere.popup" timestamp="1580827565257">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

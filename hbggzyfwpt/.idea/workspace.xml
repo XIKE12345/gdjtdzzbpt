@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f24447b-ed39-4f1a-8313-f30a25ec2d99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hbggzyfwpt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hbggzyfwpt_spider.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bjnyztbw/.idea/bjnyztbw.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw/spiders/bjnyztbw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zgwkjt/zgwkjt_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/libraries/R_User_Library.xml" afterDir="false" />
@@ -40,15 +36,22 @@
       <change beforePath="$PROJECT_DIR$/../chinapost/gdjtdzzbpt_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/nfdwdzsw_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gdsggzyjypt/gdsggzyjypt/spiders/hbggzyfwpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gdsggzyjypt/gdsggzyjypt/spiders/hbggzyfwpt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtjtdzcgpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gtjtdzcgpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtjtdzcgpt/gtjtdzcgpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../gtjtdzcgpt/gtjtdzcgpt_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hljggzyjyw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hljggzyjyw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hljggzyjyw/hljggzyjyw_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../hljggzyjyw/hljggzyjyw_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hnsggzyjy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hnsggzyjy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zgbq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zgbq/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zghfwssc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zghfwssc/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,13 +99,25 @@
       <option name="presentableId" value="Default" />
       <updated>1581389682776</updated>
     </task>
+    <task id="LOCAL-00001" summary="湖北省公共资源交易平台 爬虫代码。">
+      <created>1581412271404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581412271405</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="湖北省公共资源交易平台 爬虫代码。" />
+    <option name="LAST_COMMIT_MESSAGE" value="湖北省公共资源交易平台 爬虫代码。" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581412237385">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581412270518">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581412237385" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581412270518" />
     <state x="221" y="74" key="SettingsEditor" timestamp="1581389872590">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

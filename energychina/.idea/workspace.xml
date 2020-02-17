@@ -7,8 +7,6 @@
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chinamobile/.idea/chinamobile.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../cqggzy/.idea/hbggzyfwpt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/energychina.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/energychina_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jznyjtdzzb/.idea/jznyjtdzzb.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../zgjjzbcgglxxxt/.idea/zgjjzbcgglxxxt.iml" afterDir="false" />
@@ -66,6 +64,7 @@
       <change beforePath="$PROJECT_DIR$/../chinapost/gdjtdzzbpt_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/nfdwdzsw_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dfjyzx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dfjyzx/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdgjzcpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdgjzcpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdgjzcpt/gdgjzcpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../gdgjzcpt/gdgjzcpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" afterDir="false" />
@@ -158,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581567726361</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="中国能建电子采购平台">
+      <created>1581774536004</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581774536004</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,25 +172,26 @@
     <MESSAGE value="湖北省公共资源交易平台 爬虫代码。" />
     <MESSAGE value="广东省公共资源爬虫代码。" />
     <MESSAGE value="中国航发电子招投标平台爬虫" />
-    <option name="LAST_COMMIT_MESSAGE" value="中国航发电子招投标平台爬虫" />
+    <MESSAGE value="中国能建电子采购平台" />
+    <option name="LAST_COMMIT_MESSAGE" value="中国能建电子采购平台" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581567725064">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581774534208">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581567725064" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581774534208" />
     <state x="221" y="74" key="SettingsEditor" timestamp="1581412955673">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581412955673" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581567734760">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581774543510">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581567734760" />
-    <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1581560129453">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581774543510" />
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1581840261022">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1581560129453" />
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1581840261022" />
     <state x="385" y="172" key="search.everywhere.popup" timestamp="1581487167518">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

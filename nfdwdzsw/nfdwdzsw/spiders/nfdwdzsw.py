@@ -153,49 +153,55 @@ class BdhzbSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '招标公告',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'source': '中国南方电网电子商务采购网',
+                'site_name': '中国南方电网电子商务采购网',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'zbgg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
-            'fzbgg_search': {
-                # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '非招标公告',
-
-                # list页面的base地址
-                'base_url': 'http://www.bidding.csg.cn/',
-
-                # list页面的call_back处理函数
-                'callback': self.parse_list_page_common,
-
-                # 得到下一页url的函数，返回值一定是一个url
-                'get_next_page_url': self.get_normal_next_page_url,
-
-                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
-
-                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-
-                # list页面中，获得条目列表的xpath
-                'xpath_of_list': '//div[@class="BorderEEE NoBorderTop List1 Black14 Padding5"]/ul/li',
-
-                # 获得每一个条目链接地址的xpath
-                'xpath_of_detail_url': './a/@href',
-
-                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-                'item_parse_class': BaseItemCommonParser,
-
-                # 其它信息，可以辅助生成CommonRawItem的字段
-                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '非招标公告',
-                'source': '中国南方电网电子商务采购网',
-                'bid_sort': 'fzbgg',
-                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-
-            },
+            # 'fzbgg_search': {
+            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
+            #     'name': '非招标公告',
+            #
+            #     # list页面的base地址
+            #     'base_url': 'http://www.bidding.csg.cn/',
+            #
+            #     # list页面的call_back处理函数
+            #     'callback': self.parse_list_page_common,
+            #
+            #     # 得到下一页url的函数，返回值一定是一个url
+            #     'get_next_page_url': self.get_normal_next_page_url,
+            #
+            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+            #     'stop_page_num': 7000000,
+            #
+            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+            #
+            #     # list页面中，获得条目列表的xpath
+            #     'xpath_of_list': '//div[@class="BorderEEE NoBorderTop List1 Black14 Padding5"]/ul/li',
+            #
+            #     # 获得每一个条目链接地址的xpath
+            #     'xpath_of_detail_url': './a/@href',
+            #
+            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+            #     'item_parse_class': BaseItemCommonParser,
+            #
+            #     # 其它信息，可以辅助生成CommonRawItem的字段
+            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+            #     'tos': '非招标公告',
+            #     'source': '中国南方电网电子商务采购网',
+            #     'bid_sort': 'fzbgg',
+            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            #
+            # },
 
             'zbhxrgs_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
@@ -229,7 +235,13 @@ class BdhzbSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '公示公告',
+                'tos_code': '01',
+                'notice_type': '公示公告',
+                'notice_type_code': '0104',
                 'source': '中国南方电网电子商务采购网',
+                'site_name': '中国南方电网电子商务采购网',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'zbhxrgs',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -402,14 +414,20 @@ class BaseItemCommonParser:
         self.item['area_detail'] = self.__get_area_detail__()
         self.item['notice_time'] = self.__get_notice_time__()
         self.item['buyer'] = self.__get_buyer__()
-        self.item['notice_type'] = self.__get_notice_type__(detail_url)
+        # self.item['notice_type'] = self.__get_notice_type__(detail_url)
         self.item['title'] = self.__get_title__()
         self.item['content'] = self.__get_content__(detail_url)
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
+        self.item['site_name'] = ext_param['site_name']
 
         return self.item
 

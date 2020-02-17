@@ -6,28 +6,6 @@
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw/spiders/bjnyztbw.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb_spider.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/zghfwssc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zghfwssc/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zghfwssc/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zghfwssc/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zghfwssc/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zghfwssc/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zghfwssc/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zghfwssc/spiders/zghfwssc.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zghfwssc_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/libraries/R_User_Library.xml" afterDir="false" />
@@ -72,6 +50,7 @@
       <change beforePath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zgbq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zgbq/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,27 +112,35 @@
       <option name="project" value="LOCAL" />
       <updated>1581487239233</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="中国航发电子招投标平台爬虫">
+      <created>1581567726361</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581567726361</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="湖北省公共资源交易平台 爬虫代码。" />
     <MESSAGE value="广东省公共资源爬虫代码。" />
-    <option name="LAST_COMMIT_MESSAGE" value="广东省公共资源爬虫代码。" />
+    <MESSAGE value="中国航发电子招投标平台爬虫" />
+    <option name="LAST_COMMIT_MESSAGE" value="中国航发电子招投标平台爬虫" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581487237920">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581567725064">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581487237920" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581567725064" />
     <state x="221" y="74" key="SettingsEditor" timestamp="1581412955673">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581412955673" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581487257026">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581567734760">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581487257026" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581567734760" />
     <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1581560129453">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

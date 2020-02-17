@@ -299,3 +299,110 @@ pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
  'url': 'http://www.bidding.csg.cn/zbgg/1200244795.jhtml'}
 2020-02-04 20:29:20,705  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[2/1]
 2020-02-04 20:32:52,796  crawler.py:276 : INFO  Received SIGINT, shutting down gracefully. Send again to force 
+2020-02-17 11:07:50,923  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-17 11:07:50,947  middleware.py:48 : INFO  Enabled spider middlewares:
+['nfdwdzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-17 11:07:50,960  middleware.py:48 : INFO  Enabled item pipelines:
+['nfdwdzsw.pipelines.CommonPipeline']
+2020-02-17 11:07:50,961  engine.py:257 : INFO  Spider opened
+2020-02-17 11:07:50,989  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 11:07:50,990  middlewares.py:62 : INFO  Spider opened: nfdwdzsw_spider
+2020-02-17 11:07:50,994  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-17 11:07:51,046  nfdwdzsw.py:239 : INFO  start crawling...
+2020-02-17 11:09:06,399  nfdwdzsw.py:279 : INFO  Use proxy[] to generate scrapy request
+2020-02-17 11:09:06,402  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 11:10:58,365  nfdwdzsw.py:279 : INFO  Use proxy[] to generate scrapy request
+2020-02-17 11:10:58,368  nfdwdzsw.py:330 : INFO  Get page list url, page:[1], url:[http://www.bidding.csg.cn/zbgg/index.jhtml], status:[200], body md5:[ba7a287903f6e860aab6ce7fb5c4f86b]
+2020-02-17 11:10:58,368  nfdwdzsw.py:332 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-17 11:07:51', 'crawl_end_time': ''}}
+2020-02-17 11:10:58,428  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-17 11:10:58,517  nfdwdzsw.py:496 : INFO  Get [http://www.bidding.csg.cn/zbgg/1200244795.jhtml] content by direct requests
+2020-02-17 11:10:58,575  nfdwdzsw.py:375 : INFO  item is: {'_id': '236aa819733817549130a6a69e3c1add',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'notice_time': '2019.12.10 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'bidding.csg.cn',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1581909058518,
+ 'title': '关于扩大投标保证保险试点范围的公告',
+ 'tos': '招标公告',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200244795.jhtml'}
+2020-02-17 11:10:58,577  nfdwdzsw.py:351 : INFO  Parse item, [zbgg_search]-[2/1]
+2020-02-17 13:26:54,303  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-17 13:26:54,313  middleware.py:48 : INFO  Enabled spider middlewares:
+['nfdwdzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-17 13:26:54,316  middleware.py:48 : INFO  Enabled item pipelines:
+['nfdwdzsw.pipelines.CommonPipeline']
+2020-02-17 13:26:54,316  engine.py:257 : INFO  Spider opened
+2020-02-17 13:26:54,322  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 13:26:54,323  middlewares.py:62 : INFO  Spider opened: nfdwdzsw_spider
+2020-02-17 13:26:54,325  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-17 13:26:54,345  nfdwdzsw.py:251 : INFO  start crawling...
+2020-02-17 13:28:09,562  nfdwdzsw.py:291 : INFO  Use proxy[] to generate scrapy request
+2020-02-17 13:28:09,565  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 13:29:54,187  nfdwdzsw.py:291 : INFO  Use proxy[] to generate scrapy request
+2020-02-17 13:29:54,190  nfdwdzsw.py:342 : INFO  Get page list url, page:[1], url:[http://www.bidding.csg.cn/zbgg/index.jhtml], status:[200], body md5:[ba7a287903f6e860aab6ce7fb5c4f86b]
+2020-02-17 13:29:54,191  nfdwdzsw.py:344 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-17 13:26:54', 'crawl_end_time': ''}}
+2020-02-17 13:29:54,250  nfdwdzsw.py:363 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-17 13:29:54,329  nfdwdzsw.py:514 : INFO  Get [http://www.bidding.csg.cn/zbgg/1200244795.jhtml] content by direct requests
+2020-02-17 13:29:54,411  nfdwdzsw.py:387 : INFO  item is: {'_id': '236aa819733817549130a6a69e3c1add',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyzySjJzbHj5bLJSE1MsbMpySzJSbUzMTBWcMsvSspMSUnNs9GHCNrog5UAlSblp1QqJKUn5+fkF9kqlWdklqQqgcSTU/NKUovsbDIM0U0AitjoQ6WBCvVBJoAZUNsBZeAp8Q==',
+ 'content_code': '1',
+ 'notice_time': '2019.12.10 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'bidding.csg.cn',
+ 'site_name': '中国南方电网电子商务采购网',
+ 'source': '中国南方电网电子商务采购网',
+ 'time_stamp': 1581917394331,
+ 'title': '关于扩大投标保证保险试点范围的公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.bidding.csg.cn/zbgg/1200244795.jhtml'}
+2020-02-17 13:29:54,412  nfdwdzsw.py:363 : INFO  Parse item, [zbgg_search]-[2/1]

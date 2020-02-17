@@ -377,7 +377,7 @@ class GdsggzyjyptSpider(scrapy.Spider):
                 'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
-                'xpath_of_list': './/table[@class="table"]//tr',
+                'xpath_of_list': '//table[@class="table"]//tr',
 
                 # 获得每一个条目链接地址的xpath
                 'xpath_of_detail_url': './td[2]/a//@href',

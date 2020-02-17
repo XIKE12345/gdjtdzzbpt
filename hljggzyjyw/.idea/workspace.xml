@@ -2,28 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hljggzyjyw.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hljggzyjyw/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hljggzyjyw/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hljggzyjyw/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hljggzyjyw/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hljggzyjyw/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hljggzyjyw/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hljggzyjyw/spiders/hljggzyjyw.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hljggzyjyw_spider.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bjnyztbw/.idea/bjnyztbw.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw/spiders/bjnyztbw.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dfjyzx/.idea/dfjyzx.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dfjyzx/dfjyzx/spiders/dfjyzx.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dfjyzx/dfjyzx_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../energychina/energychina_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gdgjzcpt/.idea/gdgjzcpt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gdgjzcpt/gdgjzcpt/spiders/gdgjzcpt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gdgjzcpt/gdgjzcpt_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zgjjzbcgglxxxt/.idea/zgjjzbcgglxxxt.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zgjjzbcgglxxxt/zgjjzbcgglxxxt_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../zgwkjt/zgwkjt_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/libraries/R_User_Library.xml" afterDir="false" />
@@ -47,15 +40,28 @@
       <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww/spiders/ztlbsww.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chinapost/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chinapost/bdhzb_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chinapost/ccgp_new_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chinapost/gdjtdzzbpt_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chinapost/nfdwdzsw_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gdsggzyjypt/gdsggzyjypt/spiders/hbggzyfwpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gdsggzyjypt/gdsggzyjypt/spiders/hbggzyfwpt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtjtdzcgpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gtjtdzcgpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gtjtdzcgpt/gtjtdzcgpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../gtjtdzcgpt/gtjtdzcgpt_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbggzyfwpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hbggzyfwpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hljggzyjyw_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/hljggzyjyw_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hnsggzyjy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hnsggzyjy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zgbq/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zgbq/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zghfwssc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zghfwssc/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580819105291</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="黑龙江公共资源交易平台爬虫">
+      <created>1581324148267</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581324148267</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,13 +146,14 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="中国南方电网线上采购平台爬虫" />
-    <option name="LAST_COMMIT_MESSAGE" value="中国南方电网线上采购平台爬虫" />
+    <MESSAGE value="黑龙江公共资源交易平台爬虫" />
+    <option name="LAST_COMMIT_MESSAGE" value="黑龙江公共资源交易平台爬虫" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1580819081660">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581324147488">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1580819081660" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581324147488" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -156,14 +170,15 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1580811192066" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1580819118459">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581324167322">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1580819118459" />
-    <state x="375" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1580778597212">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581324167322" />
+    <state x="395" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1581412919133">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="375" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580778597212" />
+    <state x="395" y="241" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1581412919133" />
     <state x="365" y="79" width="709" height="769" key="search.everywhere.popup" timestamp="1581321272831">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

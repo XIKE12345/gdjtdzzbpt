@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="">
+    <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="黑龙江公共资源交易平台爬虫">
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/.idea/bjnyztbw.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw/spiders/bjnyztbw.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../bjnyztbw/bjnyztbw_spider.log" afterDir="false" />
@@ -9,9 +9,6 @@
       <change afterPath="$PROJECT_DIR$/../dfjyzx/dfjyzx/spiders/dfjyzx.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../dfjyzx/dfjyzx_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../energychina/energychina_spider.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gdgjzcpt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gdgjzcpt/spiders/gdgjzcpt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gdgjzcpt_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../zgjjzbcgglxxxt/.idea/zgjjzbcgglxxxt.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py" afterDir="false" />
@@ -45,6 +42,8 @@
       <change beforePath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/gdjtdzzbpt_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/nfdwdzsw_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gdgjzcpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/gdgjzcpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdsggzyjypt/gdsggzyjypt/spiders/hbggzyfwpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gdsggzyjypt/gdsggzyjypt/spiders/hbggzyfwpt.py" afterDir="false" />
@@ -137,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581324148267</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="光大国家招采平台 爬虫">
+      <created>1581602809972</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581602809972</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,13 +153,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="中国南方电网线上采购平台爬虫" />
     <MESSAGE value="黑龙江公共资源交易平台爬虫" />
-    <option name="LAST_COMMIT_MESSAGE" value="黑龙江公共资源交易平台爬虫" />
+    <MESSAGE value="光大国家招采平台 爬虫" />
+    <option name="LAST_COMMIT_MESSAGE" value="光大国家招采平台 爬虫" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581602759451">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581602820772">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581602759451" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581602820772" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -170,10 +177,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1580811192066" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581602775987">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581602828454">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581602775987" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581602828454" />
     <state x="395" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1581412919133">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

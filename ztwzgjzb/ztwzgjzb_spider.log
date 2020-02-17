@@ -1,0 +1,1351 @@
+2020-02-14 21:35:50,115  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 21:35:50,123  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 21:35:50,125  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-14 21:35:50,125  engine.py:257 : INFO  Spider opened
+2020-02-14 21:35:50,129  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:35:50,130  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-14 21:35:50,132  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6027
+2020-02-14 21:35:50,141  ztwzgjzb.py:228 : INFO  start crawling...
+2020-02-14 21:35:50,142  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py", line 248, in start_requests
+    "purchaseMode": _v['purchaseMode'],
+KeyError: 'purchaseMode'
+2020-02-14 21:35:50,145  engine.py:296 : INFO  Closing spider (finished)
+2020-02-14 21:37:50,950  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 21:37:50,958  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 21:37:50,959  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-14 21:37:50,959  engine.py:257 : INFO  Spider opened
+2020-02-14 21:37:50,966  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:37:50,966  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-14 21:37:50,971  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6028
+2020-02-14 21:37:50,979  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-14 21:37:54,400  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:38:01,329  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:38:08,669  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:39:58,310  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 21:39:58,319  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 21:39:58,321  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-14 21:39:58,321  engine.py:257 : INFO  Spider opened
+2020-02-14 21:39:58,332  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:39:58,333  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-14 21:39:58,337  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6029
+2020-02-14 21:39:58,354  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-14 21:39:58,713  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin>: HTTP status code is not handled or not allowed
+2020-02-14 21:40:05,708  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin>: HTTP status code is not handled or not allowed
+2020-02-14 21:40:12,542  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin>: HTTP status code is not handled or not allowed
+2020-02-14 21:40:18,405  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin>: HTTP status code is not handled or not allowed
+2020-02-14 21:45:04,324  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 21:45:04,332  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 21:45:04,334  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-14 21:45:04,334  engine.py:257 : INFO  Spider opened
+2020-02-14 21:45:04,341  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:45:04,342  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-14 21:45:04,345  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6030
+2020-02-14 21:45:04,363  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-14 21:45:04,715  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:45:11,482  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:46:52,425  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 21:46:52,431  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 21:46:52,433  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-14 21:46:52,433  engine.py:257 : INFO  Spider opened
+2020-02-14 21:46:52,438  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:46:52,439  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-14 21:46:52,442  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6031
+2020-02-14 21:46:52,456  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-14 21:46:52,457  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py", line 247, in start_requests
+    _request = scrapy.FormRequest(url=_request_url, body=payload, callback=_v['callback'])
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/form.py", line 28, in __init__
+    super(FormRequest, self).__init__(*args, **kwargs)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/__init__.py", line 27, in __init__
+    self._set_body(body)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/__init__.py", line 81, in _set_body
+    self._body = to_bytes(body, self.encoding)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/utils/python.py", line 107, in to_bytes
+    'object, got %s' % type(text).__name__)
+TypeError: to_bytes must receive a unicode, str or bytes object, got dict
+2020-02-14 21:46:52,465  engine.py:296 : INFO  Closing spider (finished)
+2020-02-14 21:47:08,881  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 21:47:08,887  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 21:47:08,888  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-14 21:47:08,889  engine.py:257 : INFO  Spider opened
+2020-02-14 21:47:08,893  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:47:08,894  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-14 21:47:08,900  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6032
+2020-02-14 21:47:08,910  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-14 21:47:10,413  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:47:16,385  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:47:23,256  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:47:26,143  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:47:30,882  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:47:37,337  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:47:44,398  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:47:50,169  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:47:55,581  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:01,714  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:08,893  logstats.py:48 : INFO  Crawled 12 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:48:08,941  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:15,459  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:18,850  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:25,440  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:31,938  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:38,340  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:44,746  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:51,377  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:48:58,702  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:49:04,118  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:49:08,894  logstats.py:48 : INFO  Crawled 21 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:50:37,204  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 21:50:37,210  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 21:50:37,212  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-14 21:50:37,212  engine.py:257 : INFO  Spider opened
+2020-02-14 21:50:37,216  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:50:37,217  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-14 21:50:37,220  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6033
+2020-02-14 21:50:37,233  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-14 21:50:37,692  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:50:44,051  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:50:49,742  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:50:56,788  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:51:03,075  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:51:08,718  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:51:13,583  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 21:51:13,590  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 21:51:13,593  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-14 21:51:13,593  engine.py:257 : INFO  Spider opened
+2020-02-14 21:51:13,598  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:51:13,600  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-14 21:51:13,605  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6034
+2020-02-14 21:51:13,619  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-14 21:51:13,620  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py", line 247, in start_requests
+    _request = scrapy.FormRequest(url=_request_url, formdata=json.dumps(payload), callback=_v['callback'])
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/form.py", line 32, in __init__
+    querystr = _urlencode(items, self.encoding)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/form.py", line 73, in _urlencode
+    for k, vs in seq
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/form.py", line 73, in <listcomp>
+    for k, vs in seq
+ValueError: not enough values to unpack (expected 2, got 1)
+2020-02-14 21:51:13,629  engine.py:296 : INFO  Closing spider (finished)
+2020-02-14 21:51:25,998  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-14 21:51:26,002  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-14 21:51:26,003  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-14 21:51:26,003  engine.py:257 : INFO  Spider opened
+2020-02-14 21:51:26,008  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:51:26,008  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-14 21:51:26,011  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6035
+2020-02-14 21:51:26,018  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-14 21:51:26,445  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:51:33,286  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:51:39,606  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:51:45,707  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:51:52,910  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:51:57,618  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:04,068  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:09,787  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:15,179  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:18,904  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:24,707  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:26,009  logstats.py:48 : INFO  Crawled 12 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:52:30,958  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:36,910  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:42,865  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:49,417  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:53,771  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:52:58,986  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:53:05,639  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:53:10,188  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:53:17,046  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:53:21,676  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:53:26,008  logstats.py:48 : INFO  Crawled 22 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:53:28,871  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:53:35,744  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:53:42,863  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:53:48,161  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:53:55,588  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:02,640  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:09,480  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:16,354  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:20,963  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:24,718  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:26,008  logstats.py:48 : INFO  Crawled 32 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:54:31,226  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:36,746  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:40,148  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:47,387  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:54,746  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:54:59,429  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:05,969  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:12,213  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:16,863  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:23,098  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:26,008  logstats.py:48 : INFO  Crawled 42 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:55:29,005  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:32,140  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:36,910  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:42,931  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:47,548  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:54,791  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:55:59,273  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:56:06,581  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:56:12,975  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:56:18,601  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:56:25,663  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:56:26,008  logstats.py:48 : INFO  Crawled 53 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:56:30,740  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:56:36,538  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:56:43,044  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:56:46,684  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:56:53,690  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:00,777  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:06,943  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:12,201  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:19,530  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:23,803  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:26,009  logstats.py:48 : INFO  Crawled 63 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:57:29,983  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:34,308  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:39,090  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:46,151  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:57:53,556  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:00,069  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:05,867  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:11,924  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:17,884  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:24,797  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:26,008  logstats.py:48 : INFO  Crawled 73 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:58:29,478  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:34,718  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:40,921  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:45,838  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:52,223  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:58:57,572  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:04,044  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:10,874  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:16,418  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:23,836  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:26,010  logstats.py:48 : INFO  Crawled 83 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 21:59:30,472  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:34,833  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:39,667  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:47,085  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:51,092  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 21:59:57,313  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:00:02,928  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:00:10,237  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:00:17,487  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:00:23,214  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:00:26,009  logstats.py:48 : INFO  Crawled 93 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:00:29,300  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:00:34,632  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:00:41,283  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:00:47,937  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:00:55,428  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:02,836  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:07,484  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:12,773  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:18,924  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:25,354  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:26,008  logstats.py:48 : INFO  Crawled 103 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:01:29,232  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:33,691  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:40,109  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:45,288  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:52,419  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:01:58,088  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:02:04,192  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:02:11,539  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:02:18,937  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:02:26,008  logstats.py:48 : INFO  Crawled 112 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:02:26,215  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:02:33,673  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:02:39,953  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:02:46,187  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:02:52,519  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:02:58,088  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:03:02,565  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:03:09,144  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:03:16,533  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:03:23,647  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:03:26,008  logstats.py:48 : INFO  Crawled 122 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:03:30,532  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:03:37,724  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:03:44,759  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:03:51,976  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:03:59,188  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:04:05,896  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:04:12,919  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:04:18,814  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:04:24,414  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:04:26,011  logstats.py:48 : INFO  Crawled 131 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:04:31,754  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:04:37,369  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:04:44,777  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:04:50,699  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:04:56,271  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:05:02,861  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:05:09,374  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:05:15,669  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:05:22,527  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:05:26,010  logstats.py:48 : INFO  Crawled 140 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:05:27,887  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:05:34,655  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:05:41,632  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:05:48,488  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:05:55,644  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:01,219  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:06,588  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:13,471  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:20,595  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:25,189  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:26,010  logstats.py:48 : INFO  Crawled 150 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:06:32,662  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:39,038  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:44,627  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:51,467  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:06:57,048  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:01,502  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:05,689  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:10,218  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:17,123  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:24,605  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:26,010  logstats.py:48 : INFO  Crawled 160 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:07:30,290  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:37,494  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:42,823  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:50,190  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:07:56,913  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:03,270  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:10,024  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:14,234  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:20,592  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:26,008  logstats.py:48 : INFO  Crawled 169 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:08:27,572  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:34,974  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:41,620  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:48,242  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:53,325  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:08:59,559  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:09:06,908  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:09:13,644  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:09:19,696  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:09:26,008  logstats.py:48 : INFO  Crawled 178 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:09:26,975  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:09:33,316  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:09:39,290  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:09:44,002  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:09:48,657  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:09:56,088  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:02,321  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:09,699  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:16,339  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:21,924  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:26,011  logstats.py:48 : INFO  Crawled 188 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:10:26,892  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:34,407  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:39,210  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:45,984  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:50,983  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:10:57,899  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:03,632  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:10,469  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:14,854  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:21,837  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:26,009  logstats.py:48 : INFO  Crawled 198 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:11:29,191  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:35,391  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:40,121  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:46,585  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:50,145  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:11:55,958  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:01,384  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:07,951  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:14,522  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:21,889  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:26,009  logstats.py:48 : INFO  Crawled 208 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:12:26,744  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:33,553  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:40,866  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:44,324  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:50,685  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:12:57,934  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:02,280  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:08,152  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:13,914  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:20,250  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:24,468  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:26,009  logstats.py:48 : INFO  Crawled 219 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:13:30,223  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:37,534  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:42,885  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:49,150  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:13:55,878  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:01,730  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:08,387  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:14,884  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:21,296  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:25,969  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:26,010  logstats.py:48 : INFO  Crawled 229 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:14:32,644  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:39,901  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:45,148  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:51,941  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:14:58,149  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:04,782  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:08,123  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:13,892  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:20,389  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:24,963  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:26,009  logstats.py:48 : INFO  Crawled 239 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:15:31,451  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:38,079  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:42,566  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:48,309  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:15:54,718  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:01,017  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:05,645  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:12,066  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:18,608  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:25,737  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:26,009  logstats.py:48 : INFO  Crawled 249 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:16:32,800  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:40,112  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:47,200  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:51,070  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:16:57,928  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:17:04,726  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:17:11,088  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:17:18,037  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:17:25,204  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:17:26,008  logstats.py:48 : INFO  Crawled 258 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:17:32,023  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:17:38,815  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:17:44,138  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:17:48,182  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:17:55,538  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:02,387  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:08,859  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:13,675  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:17,950  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:24,896  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:26,008  logstats.py:48 : INFO  Crawled 268 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:18:32,040  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:37,208  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:44,654  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:51,847  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:18:56,917  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:04,139  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:08,624  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:13,901  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:21,486  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:25,873  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:26,010  logstats.py:48 : INFO  Crawled 278 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:19:32,632  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:36,858  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:42,789  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:50,242  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:19:57,386  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:04,329  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:08,453  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:14,450  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:18,220  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:25,508  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:26,009  logstats.py:48 : INFO  Crawled 288 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:20:32,921  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:40,370  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:43,529  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:50,209  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:20:56,722  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:21:02,061  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:21:07,448  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:21:13,041  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:21:20,491  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:21:25,798  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:21:26,008  logstats.py:48 : INFO  Crawled 298 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:21:32,706  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:21:39,989  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:21:46,416  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:21:53,674  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:00,232  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:06,873  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:12,985  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:17,342  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:22,354  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:26,008  logstats.py:48 : INFO  Crawled 307 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:22:27,932  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:33,129  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:39,578  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:47,088  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:22:54,015  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:01,199  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:07,909  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:14,861  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:21,503  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:26,009  logstats.py:48 : INFO  Crawled 316 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:23:28,362  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:33,443  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:37,644  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:44,252  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:51,260  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:23:56,202  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:00,326  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:06,479  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:10,559  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:15,135  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:19,377  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:25,860  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:26,008  logstats.py:48 : INFO  Crawled 328 pages (at 12 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:24:30,674  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:36,053  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:43,298  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:49,457  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:54,441  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:24:59,498  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:02,944  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:08,235  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:12,960  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:20,245  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:25,759  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:26,008  logstats.py:48 : INFO  Crawled 339 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:25:32,792  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:38,830  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:46,161  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:53,126  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:25:56,363  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:03,188  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:09,149  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:15,315  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:22,104  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:26,008  logstats.py:48 : INFO  Crawled 348 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:26:28,835  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:35,060  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:38,766  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:45,224  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:49,261  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:26:56,027  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:02,743  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:09,298  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:14,861  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:19,435  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:24,100  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:26,009  logstats.py:48 : INFO  Crawled 359 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:27:30,996  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:37,996  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:43,948  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:50,171  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:27:56,596  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:03,450  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:10,262  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:17,250  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:23,475  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:26,011  logstats.py:48 : INFO  Crawled 368 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:28:26,563  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:32,773  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:38,666  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:44,918  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:49,230  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:28:54,797  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:29:01,864  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:29:09,299  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:29:16,269  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:29:23,052  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:29:26,009  logstats.py:48 : INFO  Crawled 378 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:29:28,722  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:29:35,573  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:29:42,990  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:29:48,058  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:29:54,460  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:00,914  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:05,179  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:12,138  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:20,056  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:25,443  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:26,008  logstats.py:48 : INFO  Crawled 388 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:30:32,634  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:39,634  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:46,937  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:51,583  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:30:57,015  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:03,744  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:09,216  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:16,084  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:22,219  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:25,929  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:26,008  logstats.py:48 : INFO  Crawled 398 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:31:32,852  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:38,411  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:44,730  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:51,353  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:31:57,936  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:03,149  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:09,865  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:15,674  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:19,708  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:22,924  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:26,008  logstats.py:48 : INFO  Crawled 408 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:32:29,808  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:35,692  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:42,133  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:47,008  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:32:54,127  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:01,018  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:08,136  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:15,258  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:20,633  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:24,831  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:26,008  logstats.py:48 : INFO  Crawled 418 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:33:31,307  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:38,719  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:42,952  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:49,909  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:33:57,088  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:34:04,057  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:34:10,337  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:34:17,313  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:34:22,951  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:34:26,011  logstats.py:48 : INFO  Crawled 427 pages (at 9 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:34:30,226  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:34:37,686  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:34:42,912  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:34:49,782  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:34:56,547  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:02,868  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:10,006  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:16,915  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:21,402  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:25,324  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:26,008  logstats.py:48 : INFO  Crawled 437 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:35:29,643  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:33,583  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:38,711  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:45,036  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:50,663  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:35:58,071  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:03,969  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:10,204  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:15,877  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:21,581  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:26,008  logstats.py:48 : INFO  Crawled 447 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:36:27,987  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:32,977  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:35,960  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:43,212  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:48,111  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:36:53,673  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:01,092  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:06,982  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:14,002  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:20,807  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:26,008  logstats.py:48 : INFO  Crawled 457 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:37:27,459  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:34,864  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:40,055  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:43,570  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:47,565  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:53,379  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:37:59,445  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:04,509  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:11,137  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:18,340  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:25,787  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:26,008  logstats.py:48 : INFO  Crawled 468 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:38:32,212  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:38,316  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:41,428  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:45,695  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:50,714  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:38:55,092  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:00,295  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:06,341  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:09,914  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:15,877  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:23,250  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:26,008  logstats.py:48 : INFO  Crawled 479 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:39:29,578  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:37,894  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:43,433  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:49,814  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:39:55,538  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:03,073  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:09,141  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:13,286  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:17,708  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:23,820  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:26,010  logstats.py:48 : INFO  Crawled 489 pages (at 10 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:40:28,472  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:34,330  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:41,009  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:46,291  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:53,037  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:40:56,660  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:01,439  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:06,385  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:12,894  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:20,137  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:24,832  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:26,009  logstats.py:48 : INFO  Crawled 500 pages (at 11 pages/min), scraped 0 items (at 0 items/min)
+2020-02-14 22:41:30,740  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:37,766  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:43,181  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:49,394  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:41:56,258  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:42:03,300  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:42:09,166  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-14 22:42:15,288  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-15 15:00:45,018  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-15 15:00:45,026  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-15 15:00:45,028  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-15 15:00:45,029  engine.py:257 : INFO  Spider opened
+2020-02-15 15:00:45,038  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-15 15:00:45,039  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-15 15:00:45,046  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-15 15:00:45,069  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-15 15:00:48,563  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-15 15:00:55,540  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-15 15:01:00,355  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-15 15:01:06,701  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-15 15:04:10,200  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-15 15:04:10,212  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-15 15:04:10,214  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-15 15:04:10,214  engine.py:257 : INFO  Spider opened
+2020-02-15 15:04:10,225  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-15 15:04:10,225  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-15 15:04:10,228  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-15 15:04:10,247  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-15 15:04:20,510  scraper.py:209 : ERROR  Error downloading <POST https://bidding.crmsc.com.cn/bulletin/list>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    defer.returnValue((yield download_func(request=request, spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-02-15 15:04:41,604  scraper.py:209 : ERROR  Error downloading <POST https://bidding.crmsc.com.cn/bulletin/list>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    defer.returnValue((yield download_func(request=request, spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-02-15 15:04:59,272  scraper.py:209 : ERROR  Error downloading <POST https://bidding.crmsc.com.cn/bulletin/list>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    defer.returnValue((yield download_func(request=request, spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2020-02-15 15:05:06,806  crawler.py:276 : INFO  Received SIGINT, shutting down gracefully. Send again to force 
+2020-02-15 15:05:06,807  engine.py:296 : INFO  Closing spider (shutdown)
+2020-02-15 15:05:10,225  logstats.py:48 : INFO  Crawled 1 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-15 15:05:43,979  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x109f98950>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 1416, in _inlineCallbacks
+    result = result.throwExceptionIntoGenerator(g)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/python/failure.py", line 512, in throwExceptionIntoGenerator
+    return g.throw(self.type, self.value, self.tb)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    defer.returnValue((yield download_func(request=request, spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py", line 277, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/common/jy_crawl_helper.py", line 58, in store_crawl_info_2_db
+    }, upsert=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 1003, in update_one
+    session=session),
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 485, in get_server_session
+    None)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-15 15:05:44,011  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'downloader/exception_count': 11,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 11,
+ 'downloader/request_bytes': 7406,
+ 'downloader/request_count': 12,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/request_method_count/POST': 11,
+ 'downloader/response_bytes': 503,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/404': 1,
+ 'elapsed_time_seconds': 63.458128,
+ 'finish_reason': 'shutdown',
+ 'finish_time': datetime.datetime(2020, 2, 15, 7, 5, 13, 683040),
+ 'log_count/ERROR': 4,
+ 'log_count/INFO': 14,
+ 'memusage/max': 59273216,
+ 'memusage/startup': 57454592,
+ 'response_received_count': 1,
+ 'retry/count': 8,
+ 'retry/max_reached': 3,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 8,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 11,
+ 'scheduler/dequeued/memory': 11,
+ 'scheduler/enqueued': 12,
+ 'scheduler/enqueued/memory': 12,
+ 'start_time': datetime.datetime(2020, 2, 15, 7, 4, 10, 224912)}
+2020-02-15 15:05:44,012  engine.py:327 : INFO  Spider closed (shutdown)
+2020-02-15 15:19:05,440  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-15 15:19:05,448  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-15 15:19:05,451  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-15 15:19:05,451  engine.py:257 : INFO  Spider opened
+2020-02-15 15:19:05,457  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-15 15:19:05,457  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-15 15:19:05,461  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-15 15:19:05,474  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-15 15:19:05,475  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py", line 249, in start_requests
+    _request = scrapy.FormRequest(url=_request_url, formdata=payload, callback=_v['callback'])
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/form.py", line 32, in __init__
+    querystr = _urlencode(items, self.encoding)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/form.py", line 73, in _urlencode
+    for k, vs in seq
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/form.py", line 74, in <listcomp>
+    for v in (vs if is_listlike(vs) else [vs])]
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/utils/python.py", line 107, in to_bytes
+    'object, got %s' % type(text).__name__)
+TypeError: to_bytes must receive a unicode, str or bytes object, got int
+2020-02-15 15:19:05,480  engine.py:296 : INFO  Closing spider (finished)
+2020-02-15 15:19:35,526  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x1050eb950>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py", line 272, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/common/jy_crawl_helper.py", line 58, in store_crawl_info_2_db
+    }, upsert=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 1003, in update_one
+    session=session),
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 485, in get_server_session
+    None)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-15 15:19:35,549  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.024327,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 15, 7, 19, 5, 481288),
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 12,
+ 'memusage/max': 57556992,
+ 'memusage/startup': 57552896,
+ 'start_time': datetime.datetime(2020, 2, 15, 7, 19, 5, 456961)}
+2020-02-15 15:19:35,550  engine.py:327 : INFO  Spider closed (finished)
+2020-02-15 15:20:30,241  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-15 15:20:30,249  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-15 15:20:30,251  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-15 15:20:30,252  engine.py:257 : INFO  Spider opened
+2020-02-15 15:20:30,257  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-15 15:20:30,257  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-15 15:20:30,260  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-15 15:20:30,276  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-15 15:20:31,328  httperror.py:55 : INFO  Ignoring response <415 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-15 15:20:54,161  ztwzgjzb.py:266 : INFO  stop crawling...
+2020-02-15 15:20:54,162  engine.py:296 : INFO  Closing spider (finished)
+2020-02-15 15:21:24,405  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x105894950>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py", line 272, in closed
+  File "/Users/huike/PycharmProjects/ztwzgjzb/common/jy_crawl_helper.py", line 58, in store_crawl_info_2_db
+    }, upsert=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 1003, in update_one
+    session=session),
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 485, in get_server_session
+    None)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-15 15:21:24,433  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'downloader/request_bytes': 759,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/request_method_count/POST': 1,
+ 'downloader/response_bytes': 1023,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/404': 1,
+ 'downloader/response_status_count/415': 1,
+ 'dupefilter/filtered': 99999,
+ 'elapsed_time_seconds': 23.906277,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 15, 7, 20, 54, 163329),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/415': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 14,
+ 'memusage/max': 58281984,
+ 'memusage/startup': 58281984,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 15, 7, 20, 30, 257052)}
+2020-02-15 15:21:24,434  engine.py:327 : INFO  Spider closed (finished)
+2020-02-15 15:27:18,239  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-15 15:27:18,250  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-15 15:27:18,260  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-15 15:27:18,261  engine.py:257 : INFO  Spider opened
+2020-02-15 15:27:18,267  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-15 15:27:18,270  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-15 15:27:18,283  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-15 15:27:18,312  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-15 15:27:18,821  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-15 15:27:37,310  ztwzgjzb.py:266 : INFO  stop crawling...
+2020-02-15 15:27:37,311  engine.py:296 : INFO  Closing spider (finished)
+2020-02-15 15:28:07,383  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x105d97950>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py", line 272, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/common/jy_crawl_helper.py", line 58, in store_crawl_info_2_db
+    }, upsert=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 1003, in update_one
+    session=session),
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 485, in get_server_session
+    None)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-15 15:28:07,412  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'downloader/request_bytes': 737,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 986,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/404': 1,
+ 'downloader/response_status_count/405': 1,
+ 'dupefilter/filtered': 99999,
+ 'elapsed_time_seconds': 19.045293,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 15, 7, 27, 37, 312741),
+ 'httperror/response_ignored_count': 1,
+ 'httperror/response_ignored_status_count/405': 1,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 14,
+ 'memusage/max': 57245696,
+ 'memusage/startup': 57241600,
+ 'response_received_count': 2,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/404': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 2, 15, 7, 27, 18, 267448)}
+2020-02-15 15:28:07,413  engine.py:327 : INFO  Spider closed (finished)

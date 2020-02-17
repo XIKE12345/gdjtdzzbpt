@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hnsggzyjy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnsggzyjy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnsggzyjy/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnsggzyjy/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnsggzyjy/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnsggzyjy/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnsggzyjy/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnsggzyjy/spiders/hnsggzyjy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hnsggzyjy_spider.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
+    <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="湖南省公共资源交易平台 爬虫数据。">
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/libraries/R_User_Library.xml" afterDir="false" />
@@ -50,6 +28,7 @@
       <change beforePath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" afterDir="false" />
@@ -123,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580819105291</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="湖南省公共资源交易平台 爬虫代码。">
+      <created>1581316597965</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581316597965</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,13 +118,14 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="中国南方电网线上采购平台爬虫" />
-    <option name="LAST_COMMIT_MESSAGE" value="中国南方电网线上采购平台爬虫" />
+    <MESSAGE value="湖南省公共资源交易平台 爬虫代码。" />
+    <option name="LAST_COMMIT_MESSAGE" value="湖南省公共资源交易平台 爬虫代码。" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581316562500">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581316597120">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581316562500" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581316597120" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

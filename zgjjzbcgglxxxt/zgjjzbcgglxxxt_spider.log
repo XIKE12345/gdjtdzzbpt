@@ -1,0 +1,789 @@
+2020-02-13 18:47:01,243  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 18:47:01,249  middleware.py:48 : INFO  Enabled spider middlewares:
+['zgjjzbcgglxxxt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 18:47:01,250  middleware.py:48 : INFO  Enabled item pipelines:
+['zgjjzbcgglxxxt.pipelines.CommonPipeline']
+2020-02-13 18:47:01,251  engine.py:257 : INFO  Spider opened
+2020-02-13 18:47:01,255  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 18:47:01,256  middlewares.py:62 : INFO  Spider opened: zgjjzbcgglxxxt_spider
+2020-02-13 18:47:01,258  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-13 18:47:01,271  zgjjzbcgglxxxt.py:172 : INFO  start crawling...
+2020-02-13 18:47:01,614  zgjjzbcgglxxxt.py:252 : INFO  Get page list url, page:[1], url:[http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce], status:[200], body md5:[e0f39c8d6069b86794f6a7838fdd7dd6]
+2020-02-13 18:47:01,614  zgjjzbcgglxxxt.py:254 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-13 18:47:01', 'crawl_end_time': ''}}
+2020-02-13 18:47:01,621  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[1/1]
+2020-02-13 18:47:01,622  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:01,767  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVk1v4zYQPa9/BVfBxjZ2JZH6sizZXizSFOih6ALtpVgsAoqiLCaSKEi0nTTIf++Qkh07zaXOYcTh8PFx5s0gq4+//HHz19/fb1Gp6mozWR0NpzmYmiuKWEm7nqu1tVOFHVvIhY1ePVV8M8lk/vSMMsoetp3cNXlyxYuCFDhFhWyUXdBaVE8JqgXrZC8LhZ5oyUWKmKxkl1wtI/03BvfiH54Qr31MXyaObCrRcDvnPbOZbNAzUvxR2bQS2yZhvFG8SxHEdbYSLSawP0CidzARiQAU5aJvKwpsskqyh/QcEB0RDyJXZYJCjPWJlua5aLYJwogYh9zzrqjkIUGlyHPejCCvbl5Vou1Fn6KadlvR6KN0pyQioT5/IuydEc5IhjN8Sdh7j/AAaSvZJsgzfEZPJpWS9dF5dglN9qIXiufH/OWcyY4qIYEZlIt3OsvpiQrGcXxz8wYCQh7+93lRb+FMJjuIgSRo18odRbPqWSdatZnspchnxa5hGhAVO/YgeDSbP4tiBi821zgl7Ut0fY3c3//87RZFrqN4r2YN3YstVbJzdj3vvm2hfHMd9dG976u7nrMx7hWm48V8/nyxRmt0sXYg3ULNplfT+Q/8E31G0+sRbQqLC0YvL/PZPJ3saYd418nuLsA+wE2n6QTIn7m0b46eJx8uwq6vvAA+U7AER0uwfrhYhNrGfuxpi/FyofexFwdgAxyFZu0HYaxtuCSh2V/G2h+F3lKf8wIcYn0+GPyAT5bDOZ8Y3CAycaFPBhzi63jieUucAn1Tp7E+K3ccA7rNweRij1hF+35tvelPC5narq2hgcJQK3FsHyNYo/+xJ/ygfTRdkVqbyYcVRSIHwKIQTFBIN+jVQroea6tUqk1c93A4OH4UsqfcYbK2kAIcPY/usoo2D9ZmpdVGK/CceLxtv8XpStR3bG25LG9sthWuqOmWuwda2JXcSqdttnrArVyqqfUtbY4vHicN3DamJ5dsV4PwnEMHlF+LPk9PGYQPQHgfybM2kH5vSXR5PaifscEiGNYkNLKAOmuZ+CQIzJpExnrLBTZlhDAvhRRe5KvkVXuWMBesbejZZkeP+K9M5nwNbP+bTUCN40Fso7j8KPaMOBc+sNS5MYyNQEFQg3DDmIwvWPjp68PLztVmGLAbVgn4gAEXY4cQ4oRggugLgibe60FB44B7lH5BStRcDzQP29iziQ8nkmCRwKT/EWOMyc+VO0IC+Hn53ynueWFB06DiUcujVo5ztpEwy0CSCH6nGYXGn271uywv6++dVBIGHvTxbGYy3ieWbvSTHk6Toh1D5+grAkmbUNe1UDKu9AKmyPGKN4LaNdBctOUz65N/M9Axz5taMI0uqXxGVlk7GRX5zhS8dO77T/6v+QIKR7PAj5eERTHFOOdBxJeMh9kionSK1FPL11M92t17uqfDLdNP/i1cOYoYFtZ8ZHk+GoY0uuNocIf/G/4FjZyFlw==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590821702,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:01,768  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[2/1]
+2020-02-13 18:47:01,769  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:01,919  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwC+GhMbqvqh5+8d3j88IGqQoQ7ZDhjWwU35Hg7vyBtEHMn6U4y685dMuiOoEwEz6broe4RzeM4SrLiqGacQQuFch4MZOCbQBH1vpHFpvdUnesQ3UegbOmq6woKupEYQF9aH3FNV4sSagxXZKDcsQ9aOvJ6fQX62y6Vu0jJCi3CNFnIvGfao+aO/W4ygvzhyLH9sRl7PjaMhDgeGcfEjUYexn3ETysy7YuPhf4IL3F7Sv+OfQhHdlqGgTLsWG53iDaMetch9PafyL+o9LGL',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590821834,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:01,921  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[3/1]
+2020-02-13 18:47:01,921  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:02,070  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwC+GhMbqvqh5+8d3j88IGqQoQ7ZDhjWwU35Hg7vyBtEHMn6U4y685dMuiOoEwEz6broe4RzeM4SrLiqGacQQuFch4MZOCbQBH1vpHFpvdUnesQ3UegbOmq6woKupEYQF9aH3FNV4sSagxXZKDcsQ9aOvJ6fQX62y6Vu0jJCi3CNFnIvGfao+aO/W4ygvzhyLH9sRl7PjaMhDgeGcfEjUYexn3ETysy7YuPhf4IL3F7Sv+OfQhHdlqGgTLsWG53iDaMetch9PafyL+o9LGL',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590821990,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:02,072  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[4/1]
+2020-02-13 18:47:02,073  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:02,211  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVstu20YUXUdfMaERS0LC90MUKSkoHBcI0KJGH4uiKIwhORQnJjkEOZLiGgGKokBQIGkboO2iyKa77Lxs0RTozzSOu+ov9M6QkiXXm8qLqxneOXN477lHntx+8MHBx58eHaKMF/msN1kHghMIBeEYxRmuG8KnyoKnqq8gHR40/DQns17EktMzFOH4ZF6zRZkEeyRNzdQIUcpKrqa4oPlpgAoa16xhKUenOCM0RDHLWR3sjT3x1yU39AsSmFb1OHzS01iZ05KoCWliNWYlOkOcPOYqzum8DGJSclKHCPJqldPKMOF5C4luwESmB6AooU2VY2AT5Sw+CbcB0RpxRROeBcg1DHGiwklCy3mADGTKDbYkdZqzVYAymiSk7ECutkme06qhTYgKXM9pKY7iBWfIdMX5DWFri3BkRkZk7BK2biLcQqqcVQGyJJ9uJ2Kcs2K9uXUJDpa0oZwk6/olJGY15pQBM2gXqUWVww0Vw/D9g4NrEJBy8r/P02IOZyJWQw4UQWxN9E40kyauacVnvSWjySBdlLEAROkiPqHEGwzPaDqAN5bXaBluMrS/j/T3P3p4iDxd46ThgxIv6RxzVmuLhtTvzKF9Q5F1W3/U5McNibu8K5iapMPh2c4aTdHOWoNyUz7o7/WHnxmfo7uov9+h9WGxw+jJk+FgGPaWuEakrll97Bg2wPUvvnr19uevHx4NkOkbmmmamgvB8dDw4uWXl3++uHj5zZvvzt/+9AKyLn54/ebp68tfnv312+///PHs8vzXt6+ev/n+27+fPr88/1Hrhz2owxY6wPeH6Kx3a+fG/T3Lga8hRNPwxhBtdzRyRfRt3xLRMMYj8dywfAeiY3iuXNuO64vojk1XPh/7Yt9zrbE4ZzmGa4jzTrsP+Oa4PWebEtfxZJ5rmy2OaYt807LGRgj0Zcu7Vk/0zlGEY0BI6BLFOW6aqXJt1BUkZTJV2ll0XSHqbhKl9uUodeNlO9VjOWChMuvdmmBEEwBMUxpTDJ0D6StItHaqZJxXga6vVivN9tz4NNFiViiIA46wtuMox+WJMpsI4eIcdjY8rk/yaHMlaup4quhxUqrxnOq0wHOir3Cq5mzOtKqcC6+c6FhQaypcrt+4My24rStPwuJFARrWVjVQvmr6MNxUEL4Aws1IljKD8ltjU7TXgv7J6Iycdm26UhbQZyET23QcuTY9Ga3xyJBthDQrhBLu1CsjebVVMB2iKump8on4tbgfs4RMge1/qwmovt+KrROX7fmWFOfIBpaiNpKxFCgIqhWu65vdG4zs8OrFs1oXofXqWZxT+BJcG7R7CPxgKTwH+w6xML6HOC2I8EbLUA1LNW04ETijALxtcltVP/zkvcPjhw9UFSrcIcMd2yq4ocfb/QVpg5g7SXeSWTt3ycAdQZkIPhvXQ91HmMdxlGTFUc04AwuFcR4MZOGbQBHzvpHFxnuqLnWI7iNQtkzVdQUF3UoswJfWV1zT1aKEGcMVGSh37IOWjny9vgL+tkvlLlKyQoswTRay75n2qLljv5uMoH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++LHQn+El7i9pX/HPoQrOy3DQhl2LLcdoi2j3jmE3v4n8i+qmrGM',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590822139,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:02,213  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[5/1]
+2020-02-13 18:47:02,213  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:02,377  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVstu20YUXUdfMaERS0LC90MUKSkoHBcI0KJGH4uiKIwhORQnJjkEOZLiGgGKokBQIGkboO2iyKa77Lxs0RTozzSOu+ov9M6QkiXXm8qLqxneOXN477lHntx+8MHBx58eHaKMF/msN1kHghMIBeEYxRmuG8KnyoKnqq8gHR40/DQns17EktMzFOH4ZF6zRZkEeyRNzdQIUcpKrqa4oPlpgAoa16xhKUenOCM0RDHLWR3sjT3x1yU39AsSmFb1OHzS01iZ05KoCWliNWYlOkOcPOYqzum8DGJSclKHCPJqldPKMOF5C4luwESmB6AooU2VY2AT5Sw+CbcB0RpxRROeBcg1DHGiwklCy3mADGTKDbYkdZqzVYAymiSk7ECutkme06qhTYgKXM9pKY7iBWfIdMX5DWFri3BkRkZk7BK2biLcQqqcVQGyJJ9uJ2Kcs2K9uXUJDpa0oZwk6/olJGY15pQBM2gXqUWVww0Vw/D9g4NrEJBy8r/P02IOZyJWQw4UQWxN9E40kyauacVnvSWjySBdlLEAROkiPqHEGwzPaDqAN5bXaBluMrS/j/T3P3p4iDxd46ThgxIv6RxzVmuLhtTvzKF9Q5F1W3/U5McNibu8K5iapMPh2c4aTdHOWoNyUz7o7/WHnxmfo7uov9+h9WGxw+jJk+FgGPaWuEakrll97Bg2wPUvvnr19uevHx4NkOkbmmmamgvB8dDw4uWXl3++uHj5zZvvzt/+9AKyLn54/ebp68tfnv312+///PHs8vzXt6+ev/n+27+fPr88/1Hrhz2owxY6wPeH6Kx3a+fG/T3Lga8hRNPwxhBtdzRyRfRt3xLRMMYj8dywfAeiY3iuXNuO64vojk1XPh/7Yt9zrbE4ZzmGa4jzTrsP+Oa4PWebEtfxZJ5rmy2OaYt807LGRgj0Zcu7Vk/0zlGEY0BI6BLFOW6aqXJt1BUkZTJV2ll0XSHqbhKl9uUodeNlO9VjOWChMuvdmmBEEwBMUxpTDJ0D6StItHaqZJxXga6vVivN9tz4NNFiViiIA46wtuMox+WJMpsI4eIcdjY8rk/yaHMlaup4quhxUqrxnOq0wHOir3Cq5mzOtKqcC6+c6FhQaypcrt+4My24rStPwuJFARrWVjVQvmr6MNxUEL4Aws1IljKD8ltjU7TXgv7J6Iycdm26UhbQZyET23QcuTY9Ga3xyJBthDQrhBLu1CsjebVVMB2iKump8on4tbgfs4RMge1/qwmovt+KrROX7fmWFOfIBpaiNpKxFCgIqhWu65vdG4zs8OrFs1oXofXqWZxT+BJcG7R7CPxgKTwH+w6xML6HOC2I8EbLUA1LNW04ETijALxtcltVP/zkvcPjhw9UFSrcIcMd2yq4ocfb/QVpg5g7SXeSWTt3ycAdQZkIPhvXQ91HmMdxlGTFUc04AwuFcR4MZOGbQBHzvpHFxnuqLnWI7iNQtkzVdQUF3UoswJfWV1zT1aKEGcMVGSh37IOWjny9vgL+tkvlLlKyQoswTRay75n2qLljv5uMoH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++LHQn+El7i9pX/HPoQrOy3DQhl2LLcdoi2j3jmE3v4n8i+qmrGM',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590822296,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:02,379  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[6/1]
+2020-02-13 18:47:02,380  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:02,520  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVk2P2zYQPce/gtEiaxuJJFJf1oftINimQA9FA7SXIggWFEVZzEqiINF2tov89w4p2Wtv91LvYcTh8PFx5s1g129/+ePur7+/fEaVaurtbH0ynBZgGq4oYhXtB6421l6VdmwhFzYG9Vjz7SyXxeMTyil72PVy3xbpDS9LUuIMlbJVdkkbUT+mqBGsl4MsFXqkFRcZYrKWfXqTRPpvCh7EPzwlXvcj+zlzZFuLltsFH5jNZIuekOI/lE1rsWtTxlvF+wxBXG8r0WEC+yMkegUTkQhAUSGGrqbAJq8le8guAdEJ8SgKVaUoxFif6GhRiHaXIoyIccgD78taHlNUiaLg7QTy7OZ1LbpBDBlqaL8TrT5K90oiEurzZ8LeBeGc5DjH14S91wiPkLaSXYo8w2fy5FIp2ZycF5fQ9CAGoXhxyl/BmeypEhKYQbl4r7OcnalgHMd3dy8gIOThf58XzQ7O5LKHGEiCdq3dSTTrgfWiU9vZQYpiUe5bpgFRuWcPgkeL5ZMoF/Bic41T0aFCt7fI/f3P3z6jyHUUH9SipQexo0r2zn7g/acdlG+po96634f6fuBsinuG6Xm5XD5drdEGXa0dSLdQi/nNfPkVf0Pv0fx2QpvD4orRz5/LxTKbHWiPeN/L/j7APsDN59kMyF+4tG+JnmZvrsJub7wAPjOwBEcJWD9crUJtYz/2tMU4Wel97MUB2ABHoVn7QRhrGyYkNPtJrP1R6CX6nBfgEOvzwegHfJKM53xicIPIxIU+GXGIr+OJ5yU4A/qmTlN91u40BnSbgynEAbGaDsPGetGfFjK13VhjA4WhVuLUPkawRv9TT/hB98N0RWZtZ2/WFIkCAMtSMEEh3aBXC+l6bKxKqS513ePx6PhRyB4Lh8nGQgpw9Dy6z2vaPljbtVYbrcFz5vGy/VbnK9HQs43lsqK12U64oqE77h5paddyJ52u3ekBt3appjZ0tD29eJo0cNuUnkKyfQPCc449UH4u+jI7ZxA+AOF1JM/aQvq9hOjyelA/Y4NVMK5JaGQBddYy8UkQmDWJjPWSFTZlhDAvgxRe5avidXeRMBesbejZZkeP+I9MFnwDbP+bTUCN41Fsk7j8KPaMOFc+sNS5MYyNQEFQo3DDmEwvWPnZ88Or3tVmHLBbVgv4gAEXY4cQ4oRggugDgiY+6EHB/YQRwj4gJRquB5qHbezZxIcTabBKYSB9jTHG5NvanSAB/LL8rxT3srCgaVDxpOVJK6c520qYZSBJBL/zjELTT7f6fV5UzZdeKgkDD/p4sTAZH1JLN/pZD+dJ0U2hS/QRgaRNqOtaKJ1WegFT5HTFC0HtW2gu2vGF9c6/G+mY580tmEbXVN4jq2qcnIpibwpeOd+Hd/6vxQoKR/PAjxPCophiXPAg4gnjYb6KKJ0j9djxzVyPdvc7PdDxlvk7/zNcOYkYFtZyYnk5GsY0utNocMf/G/4FQWSFaw==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590822443,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:02,521  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[7/1]
+2020-02-13 18:47:02,521  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:02,682  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVstu20YUXUdfMaERS0LCx/AlipQUFI4LBGhRo49FURTGcDiUJqY4BDmS4hoBiqJAUCBpG6Dtosimu+y8bNEU6M80jrvqL/QOScmS603lxdUM75w5vPfcI49uP/jg4ONPjw7RTM6zSWe0DowkEOZMEkRnpKyYHGsLmeqBhkx4UMnTjE06sUhOz1BM6Mm0FIs8CfdYmuLUilAqcqmnZM6z0xDNOS1FJVKJTsmM8QhRkYky3Bv66q9NrvgXLMR28Th60jFEnvGc6QmrqE5Fjs6QZI+lTjI+zUPKcsnKCEFeqUteWBieN5DoBkyEfQBFCa+KjACbOBP0JNoGRGvEFU/kLESeZakTBUkSnk9DZCFcb4glK9NMrEI040nC8hbkaptlGS8qXkVoTsopz9VRspACYU+d3xC2twjHOLZia5ewfRPhBlKXogiRXfNpd2IhpZivN7cuIeGSV1yyZF2/hFFREskFMIN2sVJVOdpQsawgODi4BgEpJ//7PJ9P4UwsSsiBIqitkdmKZlTRkhdy0lkKnvTSRU4VIEoX9IQzv9c/42kP3ri+xpiRaob295H5/kcPD5FvGpJVspeTJZ8SKUpjUbHynSm0r6+ybpuPquy4YrTNu4IpWdrvn+2s0RjtrA0oN5e97l63/5n1ObqLuvstWhcWO4yePOn3+lFnSUrEylKUx67lAFz34qtXb3/++uFRD+HAMjDGhgfB9VH/4uWXl3++uHj5zZvvzt/+9AKyLn54/ebp68tfnv312+///PHs8vzXt6+ev/n+27+fPr88/9HoRh2owxY6wHf76Kxza+fG/T3bha8RRGz5Q4iONxh4KgZOYKtoWcOBem7ZgQvRtXyvXjuuF6joDbFXPx8Gat/37KE6Z7uWZ6nzbrMP+HjYnHNwjev6dZ7n4AYHOyof2/bQioB+3fK21SOzdRTlGBASvkQ0I1U11q6NuoZqmYy1ZhY9T4m6ncRa+/UotePluMXjesAibdK5NSKIJwCYppxyAp0D6WtItXaszaQsQtNcrVaG43v0NDGomGtIAo6ytuM4I/mJNhkp4ZIMdjY8rk/yYHMlqko61kya5DqdcpPPyZSZK5LqmZgKo8inyitHJlHUqoLk6zduTQtua8uTCLqYg4aNVQmUr5rejzYVhC+AcDOSrU2g/PYQq/ba0L86ugO3WWOvlgX0WcnEwa5br7FfR3s4sOo2QpodQQl36jVjWbFVMBOiXtPT6yfq1+I+FQkbA9v/VhNQg6ARWysuxw/sWpwDB1iq2tSMa4GCoBrhegFu32DgRFcvPitNFRqvntCMw5fw2qDdQ+AHS+U5zBlSjOk9JPmcKW+0Ld2ydezAidAdhOBto9u6/uEn7x0eP3yg61DhFhnu2FbBDT3e7i9IG8TcSrqVzNq5cwHuCMpE8Nm4Hmo/yjyO42Q2PyqFFGChMM69Xl34KtTUvG9ksfGeok3to/sIlF2nmqaGwnalFuBL6yuu6WqRw4yRgvW0O85BQ6d+va4G/rZL5S7SZnMjJjxZ1H2fGY+qO867yQD6R2LXCYaY+gGxrIS5PhtS5sUDn5AukqcFG3fVj4X5iCxJc0v3jnMIV7ZahoXWb1luO0RTRrN1CLP5T+RfW4ixXw==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590822596,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:02,683  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[8/1]
+2020-02-13 18:47:02,684  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:02,819  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVstu20YUXUdfMaERS0LCx/AlipQUFI4LBGhRo49FURTGcDiUJqY4BDmS4hoBiqJAUCBpG6Dtosimu+y8bNEU6M80jrvqL/QOScmS603lxdUM75w5vPfcI49uP/jg4ONPjw7RTM6zSWe0DowkEOZMEkRnpKyYHGsLmeqBhkx4UMnTjE06sUhOz1BM6Mm0FIs8CfdYmuLUilAqcqmnZM6z0xDNOS1FJVKJTsmM8QhRkYky3Bv66q9NrvgXLMR28Th60jFEnvGc6QmrqE5Fjs6QZI+lTjI+zUPKcsnKCEFeqUteWBieN5DoBkyEfQBFCa+KjACbOBP0JNoGRGvEFU/kLESeZakTBUkSnk9DZCFcb4glK9NMrEI040nC8hbkaptlGS8qXkVoTsopz9VRspACYU+d3xC2twjHOLZia5ewfRPhBlKXogiRXfNpd2IhpZivN7cuIeGSV1yyZF2/hFFREskFMIN2sVJVOdpQsawgODi4BgEpJ//7PJ9P4UwsSsiBIqitkdmKZlTRkhdy0lkKnvTSRU4VIEoX9IQzv9c/42kP3ri+xpiRaob295H5/kcPD5FvGpJVspeTJZ8SKUpjUbHynSm0r6+ybpuPquy4YrTNu4IpWdrvn+2s0RjtrA0oN5e97l63/5n1ObqLuvstWhcWO4yePOn3+lFnSUrEylKUx67lAFz34qtXb3/++uFRD+HAMjDGhgfB9VH/4uWXl3++uHj5zZvvzt/+9AKyLn54/ebp68tfnv312+///PHs8vzXt6+ev/n+27+fPr88/9HoRh2owxY6wHf76Kxza+fG/T3bha8RRGz5Q4iONxh4KgZOYKtoWcOBem7ZgQvRtXyvXjuuF6joDbFXPx8Gat/37KE6Z7uWZ6nzbrMP+HjYnHNwjev6dZ7n4AYHOyof2/bQioB+3fK21SOzdRTlGBASvkQ0I1U11q6NuoZqmYy1ZhY9T4m6ncRa+/UotePluMXjesAibdK5NSKIJwCYppxyAp0D6WtItXaszaQsQtNcrVaG43v0NDGomGtIAo6ytuM4I/mJNhkp4ZIMdjY8rk/yYHMlqko61kya5DqdcpPPyZSZK5LqmZgKo8inyitHJlHUqoLk6zduTQtua8uTCLqYg4aNVQmUr5rejzYVhC+AcDOSrU2g/PYQq/ba0L86ugO3WWOvlgX0WcnEwa5br7FfR3s4sOo2QpodQQl36jVjWbFVMBOiXtPT6yfq1+I+FQkbA9v/VhNQg6ARWysuxw/sWpwDB1iq2tSMa4GCoBrhegFu32DgRFcvPitNFRqvntCMw5fw2qDdQ+AHS+U5zBlSjOk9JPmcKW+0Ld2ydezAidAdhOBto9u6/uEn7x0eP3yg61DhFhnu2FbBDT3e7i9IG8TcSrqVzNq5cwHuCMpE8Nm4Hmo/yjyO42Q2PyqFFGChMM69Xl34KtTUvG9ksfGeok3to/sIlF2nmqaGwnalFuBL6yuu6WqRw4yRgvW0O85BQ6d+va4G/rZL5S7SZnMjJjxZ1H2fGY+qO867yQD6R2LXCYaY+gGxrIS5PhtS5sUDn5AukqcFG3fVj4X5iCxJc0v3jnMIV7ZahoXWb1luO0RTRrN1CLP5T+RfW4ixXw==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590822739,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:02,821  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[9/1]
+2020-02-13 18:47:02,821  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:02,970  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVstu20YUXUdfMaERS0LCx/AlipQUFI4LBGhRo49FURTGcDiUJqY4BDmS4hoBiqJAUCBpG6Dtosimu+y8bNEU6M80jrvqL/QOScmS603lxdUM75w5vPfcI49uP/jg4ONPjw7RTM6zSWe0DowkEOZMEkRnpKyYHGsLmeqBhkx4UMnTjE06sUhOz1BM6Mm0FIs8CfdYmuLUilAqcqmnZM6z0xDNOS1FJVKJTsmM8QhRkYky3Bv66q9NrvgXLMR28Th60jFEnvGc6QmrqE5Fjs6QZI+lTjI+zUPKcsnKCEFeqUteWBieN5DoBkyEfQBFCa+KjACbOBP0JNoGRGvEFU/kLESeZakTBUkSnk9DZCFcb4glK9NMrEI040nC8hbkaptlGS8qXkVoTsopz9VRspACYU+d3xC2twjHOLZia5ewfRPhBlKXogiRXfNpd2IhpZivN7cuIeGSV1yyZF2/hFFREskFMIN2sVJVOdpQsawgODi4BgEpJ//7PJ9P4UwsSsiBIqitkdmKZlTRkhdy0lkKnvTSRU4VIEoX9IQzv9c/42kP3ri+xpiRaob295H5/kcPD5FvGpJVspeTJZ8SKUpjUbHynSm0r6+ybpuPquy4YrTNu4IpWdrvn+2s0RjtrA0oN5e97l63/5n1ObqLuvstWhcWO4yePOn3+lFnSUrEylKUx67lAFz34qtXb3/++uFRD+HAMjDGhgfB9VH/4uWXl3++uHj5zZvvzt/+9AKyLn54/ebp68tfnv312+///PHs8vzXt6+ev/n+27+fPr88/9HoRh2owxY6wHf76Kxza+fG/T3bha8RRGz5Q4iONxh4KgZOYKtoWcOBem7ZgQvRtXyvXjuuF6joDbFXPx8Gat/37KE6Z7uWZ6nzbrMP+HjYnHNwjev6dZ7n4AYHOyof2/bQioB+3fK21SOzdRTlGBASvkQ0I1U11q6NuoZqmYy1ZhY9T4m6ncRa+/UotePluMXjesAibdK5NSKIJwCYppxyAp0D6WtItXaszaQsQtNcrVaG43v0NDGomGtIAo6ytuM4I/mJNhkp4ZIMdjY8rk/yYHMlqko61kya5DqdcpPPyZSZK5LqmZgKo8inyitHJlHUqoLk6zduTQtua8uTCLqYg4aNVQmUr5rejzYVhC+AcDOSrU2g/PYQq/ba0L86ugO3WWOvlgX0WcnEwa5br7FfR3s4sOo2QpodQQl36jVjWbFVMBOiXtPT6yfq1+I+FQkbA9v/VhNQg6ARWysuxw/sWpwDB1iq2tSMa4GCoBrhegFu32DgRFcvPitNFRqvntCMw5fw2qDdQ+AHS+U5zBlSjOk9JPmcKW+0Ld2ydezAidAdhOBto9u6/uEn7x0eP3yg61DhFhnu2FbBDT3e7i9IG8TcSrqVzNq5cwHuCMpE8Nm4Hmo/yjyO42Q2PyqFFGChMM69Xl34KtTUvG9ksfGeok3to/sIlF2nmqaGwnalFuBL6yuu6WqRw4yRgvW0O85BQ6d+va4G/rZL5S7SZnMjJjxZ1H2fGY+qO867yQD6R2LXCYaY+gGxrIS5PhtS5sUDn5AukqcFG3fVj4X5iCxJc0v3jnMIV7ZahoXWb1luO0RTRrN1CLP5T+RfW4ixXw==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590822877,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:02,972  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[10/1]
+2020-02-13 18:47:02,972  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:03,095  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVstu20YUXUdfMaERS0LCx/AlipQUFI4LBGhRo49FURTGcDiUJqY4BDmS4hoBiqJAUCBpG6Dtosimu+y8bNEU6M80jrvqL/QOScmS603lxdUM75w5vPfcI49uP/jg4ONPjw7RTM6zSWe0DowkEOZMEkRnpKyYHGsLmeqBhkx4UMnTjE06sUhOz1BM6Mm0FIs8CfdYmuLUilAqcqmnZM6z0xDNOS1FJVKJTsmM8QhRkYky3Bv66q9NrvgXLMR28Th60jFEnvGc6QmrqE5Fjs6QZI+lTjI+zUPKcsnKCEFeqUteWBieN5DoBkyEfQBFCa+KjACbOBP0JNoGRGvEFU/kLESeZakTBUkSnk9DZCFcb4glK9NMrEI040nC8hbkaptlGS8qXkVoTsopz9VRspACYU+d3xC2twjHOLZia5ewfRPhBlKXogiRXfNpd2IhpZivN7cuIeGSV1yyZF2/hFFREskFMIN2sVJVOdpQsawgODi4BgEpJ//7PJ9P4UwsSsiBIqitkdmKZlTRkhdy0lkKnvTSRU4VIEoX9IQzv9c/42kP3ri+xpiRaob295H5/kcPD5FvGpJVspeTJZ8SKUpjUbHynSm0r6+ybpuPquy4YrTNu4IpWdrvn+2s0RjtrA0oN5e97l63/5n1ObqLuvstWhcWO4yePOn3+lFnSUrEylKUx67lAFz34qtXb3/++uFRD+HAMjDGhgfB9VH/4uWXl3++uHj5zZvvzt/+9AKyLn54/ebp68tfnv312+///PHs8vzXt6+ev/n+27+fPr88/9HoRh2owxY6wHf76Kxza+fG/T3bha8RRGz5Q4iONxh4KgZOYKtoWcOBem7ZgQvRtXyvXjuuF6joDbFXPx8Gat/37KE6Z7uWZ6nzbrMP+HjYnHNwjev6dZ7n4AYHOyof2/bQioB+3fK21SOzdRTlGBASvkQ0I1U11q6NuoZqmYy1ZhY9T4m6ncRa+/UotePluMXjesAibdK5NSKIJwCYppxyAp0D6WtItXaszaQsQtNcrVaG43v0NDGomGtIAo6ytuM4I/mJNhkp4ZIMdjY8rk/yYHMlqko61kya5DqdcpPPyZSZK5LqmZgKo8inyitHJlHUqoLk6zduTQtua8uTCLqYg4aNVQmUr5rejzYVhC+AcDOSrU2g/PYQq/ba0L86ugO3WWOvlgX0WcnEwa5br7FfR3s4sOo2QpodQQl36jVjWbFVMBOiXtPT6yfq1+I+FQkbA9v/VhNQg6ARWysuxw/sWpwDB1iq2tSMa4GCoBrhegFu32DgRFcvPitNFRqvntCMw5fw2qDdQ+AHS+U5zBlSjOk9JPmcKW+0Ld2ydezAidAdhOBto9u6/uEn7x0eP3yg61DhFhnu2FbBDT3e7i9IG8TcSrqVzNq5cwHuCMpE8Nm4Hmo/yjyO42Q2PyqFFGChMM69Xl34KtTUvG9ksfGeok3to/sIlF2nmqaGwnalFuBL6yuu6WqRw4yRgvW0O85BQ6d+va4G/rZL5S7SZnMjJjxZ1H2fGY+qO867yQD6R2LXCYaY+gGxrIS5PhtS5sUDn5AukqcFG3fVj4X5iCxJc0v3jnMIV7ZahoXWb1luO0RTRrN1CLP5T+RfW4ixXw==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590823018,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:03,096  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[11/1]
+2020-02-13 18:47:03,097  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:03,227  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/hh/xbGTVGi7SJVArPg4IIRW4/E4ma7jsexJ0mVVCSGkCqkFKgEH1Au33vYIokj8M3S7nPgXeGM72WTZC87heWbe/OY37/3ec0a3H3xw8PGnR4doJufZpDNaG0YSMHMmCaIzUlZMjrWFTPVAQyYsVPI0Y5NOLJLTMxQTejItxSJPwj2Wpji1IpSKXOopmfPsNERzTktRiVSiUzJjPEJUZKIM94a++rXOFf+ChdguHkdPOobIM54zPWEV1anI0RmS7LHUScaneUhZLlkZIfArdckLC8N6A4luwETYB1CU8KrICLCJM0FPom1AtEZc8UTOQuRZltpRkCTh+TREFsL1hFiyMs3EKkQzniQsb0GuplmW8aLiVYTmpJzyXG0lCykQ9tT+DWF7i3CMYyu2dgnbNxFuIHUpihDZNZ92JhZSivl6cusQEi55xSVL1vFLGBUlkVwAM0gXK1WUow0VywqCg4NrEOBy8r/38/kU9sSiBB8Igpoama1oRhUteSEnnaXgSS9d5FQBonRBTzjze/0znvbgxvUxxoxUM7S/j8z3P3p4iHzTkKySvZws+ZRIURqLipXvTCF9feV123xUZccVo63fFUzJ0n7/bGeMxmhnbEC4uex197r9z6zP0V3U3W/RujDYYfTkSb/XjzpLUiJWlqI8di0H4LoXX716+/PXD496CAeWgTE2PDCuj/oXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j0Y36kActtABvttHZ51bOyfu79kuvEZgseUPwTreYOApGziBraxlDQdq3bIDF6xr+V49dlwvUNYbYq9eHwZq3vfsodpnu5Znqf1uMw/4eNjsc3CN6/q1n+fgBgc7yh/b9tCKgH6d8jbVI7PtKKpjgEn4EtGMVNVYu1bqGqplMtaaWvQ8Jeq2Emvt16XUlpfjFo/rAou0SefWiCCeAGCacsoJZA6kryGV2rE2k7IITXO1WhmO79HTxKBiriEJOKq1HccZyU+0yUgJl2Qws+FxvZIHmyNRVdKxZtIk1+mUm3xOpsxckVTPxFQYRT5VvXJkEkWtKki+vnHbtOC0NjyJoIs5aNhYlUD5Kun9aBNBeAGEm5FsbQLht4dYpdeG/NXWHbjNGHu1LCDPSiYOdt16jP3a2sOBVacR3OwIQrgTrxnLiq2AmWD1mp5er6ivxX0qEjYGtv+NJqAGQSO2VlyOH9i1OAcOsFSxqRnXAgVBNcL1AtzeYOBEVxeflaYyTa+e0IzDS3it0O4h6AdL1XOYM6QY03tI8jlTvdG2dMvWsQM7QncQQvmMbuv6h5+8d3j88IGuQ4RbZDhjWwU35Hg7vyBtEHMr6VYy686dC+iOoEwEz6brofZRzeM4Tmbzo1JIAS0UyrnXqwNfhZqq940sNr2naF376D4CZdeupqmhsB2pAfSl9RHXdLXIocZIwXraHeegoVNfr6tBf9ulchdps7kRE54s6rzPjEfVHefdZAD5I7HrBENM/YBYVsJcnw0p8+KBT0gXydOCjbvqY2E+IkvSnNK94xzCka2WYaD1W5bbHaIJo9l2CLP5J/IvXS6xYA==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590823155,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:03,228  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[12/1]
+2020-02-13 18:47:03,229  zgjjzbcgglxxxt.py:412 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 409, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:47:03,371  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/hh/xbGTVGi7SJVArPg4IIRW4/E4ma7jsexJ0mVVCSGkCqkFKgEH1Au33vYIokj8M3S7nPgXeGM72WTZC87heWbe/OY37/3ec0a3H3xw8PGnR4doJufZpDNaG0YSMHMmCaIzUlZMjrWFTPVAQyYsVPI0Y5NOLJLTMxQTejItxSJPwj2Wpji1IpSKXOopmfPsNERzTktRiVSiUzJjPEJUZKIM94a++rXOFf+ChdguHkdPOobIM54zPWEV1anI0RmS7LHUScaneUhZLlkZIfArdckLC8N6A4luwETYB1CU8KrICLCJM0FPom1AtEZc8UTOQuRZltpRkCTh+TREFsL1hFiyMs3EKkQzniQsb0GuplmW8aLiVYTmpJzyXG0lCykQ9tT+DWF7i3CMYyu2dgnbNxFuIHUpihDZNZ92JhZSivl6cusQEi55xSVL1vFLGBUlkVwAM0gXK1WUow0VywqCg4NrEOBy8r/38/kU9sSiBB8Igpoama1oRhUteSEnnaXgSS9d5FQBonRBTzjze/0znvbgxvUxxoxUM7S/j8z3P3p4iHzTkKySvZws+ZRIURqLipXvTCF9feV123xUZccVo63fFUzJ0n7/bGeMxmhnbEC4uex197r9z6zP0V3U3W/RujDYYfTkSb/XjzpLUiJWlqI8di0H4LoXX716+/PXD496CAeWgTE2PDCuj/oXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j0Y36kActtABvttHZ51bOyfu79kuvEZgseUPwTreYOApGziBraxlDQdq3bIDF6xr+V49dlwvUNYbYq9eHwZq3vfsodpnu5Znqf1uMw/4eNjsc3CN6/q1n+fgBgc7yh/b9tCKgH6d8jbVI7PtKKpjgEn4EtGMVNVYu1bqGqplMtaaWvQ8Jeq2Emvt16XUlpfjFo/rAou0SefWiCCeAGCacsoJZA6kryGV2rE2k7IITXO1WhmO79HTxKBiriEJOKq1HccZyU+0yUgJl2Qws+FxvZIHmyNRVdKxZtIk1+mUm3xOpsxckVTPxFQYRT5VvXJkEkWtKki+vnHbtOC0NjyJoIs5aNhYlUD5Kun9aBNBeAGEm5FsbQLht4dYpdeG/NXWHbjNGHu1LCDPSiYOdt16jP3a2sOBVacR3OwIQrgTrxnLiq2AmWD1mp5er6ivxX0qEjYGtv+NJqAGQSO2VlyOH9i1OAcOsFSxqRnXAgVBNcL1AtzeYOBEVxeflaYyTa+e0IzDS3it0O4h6AdL1XOYM6QY03tI8jlTvdG2dMvWsQM7QncQQvmMbuv6h5+8d3j88IGuQ4RbZDhjWwU35Hg7vyBtEHMr6VYy686dC+iOoEwEz6brofZRzeM4Tmbzo1JIAS0UyrnXqwNfhZqq940sNr2naF376D4CZdeupqmhsB2pAfSl9RHXdLXIocZIwXraHeegoVNfr6tBf9ulchdps7kRE54s6rzPjEfVHefdZAD5I7HrBENM/YBYVsJcnw0p8+KBT0gXydOCjbvqY2E+IkvSnNK94xzCka2WYaD1W5bbHaIJo9l2CLP5J/IvXS6xYA==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590823278,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:03,374  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[13/1]
+2020-02-13 18:47:03,501  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/hh/xbGTVGi7SJVArPg4IIRW4/E4ma7jsexJ0mVVCSGkCqkFKgEH1Au33vYIokj8M3S7nPgXeGM72WTZC87heWbe/OY37/3ec0a3H3xw8PGnR4doJufZpDNaG0YSMHMmCaIzUlZMjrWFTPVAQyYsVPI0Y5NOLJLTMxQTejItxSJPwj2Wpji1IpSKXOopmfPsNERzTktRiVSiUzJjPEJUZKIM94a++rXOFf+ChdguHkdPOobIM54zPWEV1anI0RmS7LHUScaneUhZLlkZIfArdckLC8N6A4luwETYB1CU8KrICLCJM0FPom1AtEZc8UTOQuRZltpRkCTh+TREFsL1hFiyMs3EKkQzniQsb0GuplmW8aLiVYTmpJzyXG0lCykQ9tT+DWF7i3CMYyu2dgnbNxFuIHUpihDZNZ92JhZSivl6cusQEi55xSVL1vFLGBUlkVwAM0gXK1WUow0VywqCg4NrEOBy8r/38/kU9sSiBB8Igpoama1oRhUteSEnnaXgSS9d5FQBonRBTzjze/0znvbgxvUxxoxUM7S/j8z3P3p4iHzTkKySvZws+ZRIURqLipXvTCF9feV123xUZccVo63fFUzJ0n7/bGeMxmhnbEC4uex197r9z6zP0V3U3W/RujDYYfTkSb/XjzpLUiJWlqI8di0H4LoXX716+/PXD496CAeWgTE2PDCuj/oXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j0Y36kActtABvttHZ51bOyfu79kuvEZgseUPwTreYOApGziBraxlDQdq3bIDF6xr+V49dlwvUNYbYq9eHwZq3vfsodpnu5Znqf1uMw/4eNjsc3CN6/q1n+fgBgc7yh/b9tCKgH6d8jbVI7PtKKpjgEn4EtGMVNVYu1bqGqplMtaaWvQ8Jeq2Emvt16XUlpfjFo/rAou0SefWiCCeAGCacsoJZA6kryGV2rE2k7IITXO1WhmO79HTxKBiriEJOKq1HccZyU+0yUgJl2Qws+FxvZIHmyNRVdKxZtIk1+mUm3xOpsxckVTPxFQYRT5VvXJkEkWtKki+vnHbtOC0NjyJoIs5aNhYlUD5Kun9aBNBeAGEm5FsbQLht4dYpdeG/NXWHbjNGHu1LCDPSiYOdt16jP3a2sOBVacR3OwIQrgTrxnLiq2AmWD1mp5er6ivxX0qEjYGtv+NJqAGQSO2VlyOH9i1OAcOsFSxqRnXAgVBNcL1AtzeYOBEVxeflaYyTa+e0IzDS3it0O4h6AdL1XOYM6QY03tI8jlTvdG2dMvWsQM7QncQQvmMbuv6h5+8d3j88IGuQ4RbZDhjWwU35Hg7vyBtEHMr6VYy686dC+iOoEwEz6brofZRzeM4Tmbzo1JIAS0UyrnXqwNfhZqq940sNr2naF376D4CZdeupqmhsB2pAfSl9RHXdLXIocZIwXraHeegoVNfr6tBf9ulchdps7kRE54s6rzPjEfVHefdZAD5I7HrBENM/YBYVsJcnw0p8+KBT0gXydOCjbvqY2E+IkvSnNK94xzCka2WYaD1W5bbHaIJo9l2CLP5J/IvXS6xYA==',
+ 'notice_time': '(2020.02.11) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590823435,
+ 'title': '【流标公告】中交二公局四公司广东开春高速公路LM03标项目混凝土搅拌运输车及装载机租赁招标采购流标的公告',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:03,503  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[14/1]
+2020-02-13 18:47:03,637  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCKJ/JbVX98JP3Do8fPlBViHCHDGdsq+CGHG/nF6QNYu4k3Ulm3blLBt0RlIng2XQ91D2ieRxHSVYc1YwzaKFQzoOBDHwTKKLeN7LY9J6qcx2i+wiULV11XUFBNxID6EvrI67palFCjeGKDJQ79kFLR16vr0B/26VyFylZoUWYJguZ90x71Nyx301GkD8cObY/NmPPx4aREMcj45i40cjDuI/4aUWmffGx0B/hJW5P6d+xD+HITsswUIYdy+0O0YZR7zqE3v4T+ResQLGN',
+ 'notice_time': '(2020.02.11) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590823575,
+ 'title': '【补遗公告】补遗1号',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:03,639  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[15/1]
+2020-02-13 18:47:03,770  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCKJ/JbVX98JP3Do8fPlBViHCHDGdsq+CGHG/nF6QNYu4k3Ulm3blLBt0RlIng2XQ91D2ieRxHSVYc1YwzaKFQzoOBDHwTKKLeN7LY9J6qcx2i+wiULV11XUFBNxID6EvrI67palFCjeGKDJQ79kFLR16vr0B/26VyFylZoUWYJguZ90x71Nyx301GkD8cObY/NmPPx4aREMcj45i40cjDuI/4aUWmffGx0B/hJW5P6d+xD+HITsswUIYdy+0O0YZR7zqE3v4T+ResQLGN',
+ 'notice_time': '(2020.02.07) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590823708,
+ 'title': '【补遗公告】齐鲁项目200T汽车式起重机超标文件内容变更',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:03,771  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[16/1]
+2020-02-13 18:47:03,909  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCKJ/JbVX98JP3Do8fPlBViHCHDGdsq+CGHG/nF6QNYu4k3Ulm3blLBt0RlIng2XQ91D2ieRxHSVYc1YwzaKFQzoOBDHwTKKLeN7LY9J6qcx2i+wiULV11XUFBNxID6EvrI67palFCjeGKDJQ79kFLR16vr0B/26VyFylZoUWYJguZ90x71Nyx301GkD8cObY/NmPPx4aREMcj45i40cjDuI/4aUWmffGx0B/hJW5P6d+xD+HITsswUIYdy+0O0YZR7zqE3v4T+ResQLGN',
+ 'notice_time': '(2020.02.06) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590823846,
+ 'title': '【补遗公告】三公司测量仪器框架协议采购投标截止时间调整通知',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:03,910  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[17/1]
+2020-02-13 18:47:04,072  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCKJ/JbVX98JP3Do8fPlBViHCHDGdsq+CGHG/nF6QNYu4k3Ulm3blLBt0RlIng2XQ91D2ieRxHSVYc1YwzaKFQzoOBDHwTKKLeN7LY9J6qcx2i+wiULV11XUFBNxID6EvrI67palFCjeGKDJQ79kFLR16vr0B/26VyFylZoUWYJguZ90x71Nyx301GkD8cObY/NmPPx4aREMcj45i40cjDuI/4aUWmffGx0B/hJW5P6d+xD+HITsswUIYdy+0O0YZR7zqE3v4T+ResQLGN',
+ 'notice_time': '(2020.02.06) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590823994,
+ 'title': '【补遗公告】关于桩基、箱梁机械租赁招标发售标书时间延长的通知',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:04,074  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[18/1]
+2020-02-13 18:47:04,237  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0GT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+t5rGO',
+ 'notice_time': '(2020.02.05) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590824167,
+ 'title': '【补遗公告】一航局掘进机招投标采购工作时间顺延',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:04,239  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[19/1]
+2020-02-13 18:47:04,422  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0GT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+t5rGO',
+ 'notice_time': '(2020.02.01) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590824345,
+ 'title': '【补遗公告】成都项目轨道车采购投标截止时间调整通知',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:04,423  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[20/1]
+2020-02-13 18:47:04,595  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0GT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+t5rGO',
+ 'notice_time': '(2020.01.31) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590824521,
+ 'title': '【补遗公告】关于开标时间延后的通知',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:04,597  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[21/1]
+2020-02-13 18:47:04,743  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0GT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+t5rGO',
+ 'notice_time': '(2020.01.28) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590824675,
+ 'title': '【补遗公告】关于售标时间延后的通知',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:04,745  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[22/1]
+2020-02-13 18:47:04,919  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0GT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+t5rGO',
+ 'notice_time': '(2020.01.28) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590824828,
+ 'title': '【补遗公告】关于售表时间延后的通知',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:04,921  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[23/1]
+2020-02-13 18:47:05,083  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0GT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+t5rGO',
+ 'notice_time': '(2020.01.22) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590824988,
+ 'title': '【招标公告】中交四航三公司液压冲击锤采购招标公告',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:05,085  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[24/1]
+2020-02-13 18:47:05,230  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0WT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+vjLGP',
+ 'notice_time': '(2020.01.21) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590825163,
+ 'title': '【招标公告】大连光明路隧道硬岩工程购置2台悬臂式掘进机招标',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:05,231  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[25/1]
+2020-02-13 18:47:05,396  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0WT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+vjLGP',
+ 'notice_time': '(2020.01.19) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590825295,
+ 'title': '【补遗公告】发售标书时间延长通知',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:05,397  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[26/1]
+2020-02-13 18:47:05,564  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0WT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+vjLGP',
+ 'notice_time': '(2020.01.17) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590825466,
+ 'title': '【补遗公告】发售标书截止时间调整',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:47:05,565  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[27/1]
+2020-02-13 18:47:05,720  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4IwCw0WT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+vjLGP',
+ 'notice_time': '(2020.01.17) 00:00:00',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581590825648,
+ 'title': '【招标公告】中交二公局测量仪器招标采购招标公告',
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:11,511  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 18:54:11,518  middleware.py:48 : INFO  Enabled spider middlewares:
+['zgjjzbcgglxxxt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 18:54:11,520  middleware.py:48 : INFO  Enabled item pipelines:
+['zgjjzbcgglxxxt.pipelines.CommonPipeline']
+2020-02-13 18:54:11,520  engine.py:257 : INFO  Spider opened
+2020-02-13 18:54:11,526  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 18:54:11,526  middlewares.py:62 : INFO  Spider opened: zgjjzbcgglxxxt_spider
+2020-02-13 18:54:11,531  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-02-13 18:54:11,543  zgjjzbcgglxxxt.py:172 : INFO  start crawling...
+2020-02-13 18:54:12,062  zgjjzbcgglxxxt.py:252 : INFO  Get page list url, page:[1], url:[http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce], status:[200], body md5:[e0f39c8d6069b86794f6a7838fdd7dd6]
+2020-02-13 18:54:12,062  zgjjzbcgglxxxt.py:254 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-13 18:54:11', 'crawl_end_time': ''}}
+2020-02-13 18:54:12,068  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[1/1]
+2020-02-13 18:54:12,069  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,135  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,229  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVk2P2zYQPce/gtEiaxuJJFJf1oftINimQA9FA7SXIggWFEVZzEqiINF2tov89w4p2Wtv91L7MOJo+Pg482bs9dtf/rj76+8vn1Glmno7W58MpwWYhiuKWEX7gauNtVelHVvIhReDeqz5dpbL4vEJ5ZQ97Hq5b4v0hpclKXGGStkqu6SNqB9T1AjWy0GWCj3SiosMMVnLPr1JIv2dggfxD0+J1/3Ifs4c2dai5XbBB2Yz2aInpPgPZdNa7NqU8VbxPkMQ19tKdJjA+xESvYKJSASgqBBDV1Ngk9eSPWSXgOiEeBSFqlIUYqx3dLQoRLtLEUbEOOSB92UtjymqRFHwdgJ5dvO6Ft0ghgw1tN+JVm+leyURCfX+M2HvgnBOcpzja8Lea4RHSFvJLkWe4TN5cqmUbE7Oi0NoehCDULw45a/gTPZUCQnMoFy811nOzlQwjuO7uxcQEPLwv/eLZgd7ctlDDCRBu9buJJr1wHrRqe3sIEWxKPct04Co3LMHwaPF8kmUC7ixOcap6FCh21vk/v7nb59R5DqKD2rR0oPYUSV7Zz/w/tMOyrfUUW/d70N9P3A2xT3D9LxcLp+u1miDrtYOpFuoxfxmvvyKv6H3aH47oc1hccXo58/lYpnNDrRHvO9lfx9gH+Dm82wG5C9c2rdET7M3V2G3N14AjxlYgqMErB+uVqG2sR972mKcrPR77MUB2ABHoVn7QRhrGyYkNO+TWPuj0Ev0Pi/AIdb7g9EP+CQZ9/nE4AaRiQt9MuIQX8cTz0twBvRNnab6rN1pDOg2B1OIA2I1HYaN9aI/LWRqu7HGBgpDrcSpfYxgjf6nnvCD7ofpiszazt6sKRIFAJalYIJCukGvFtL12FiVUl3qusfj0fGjkD0WDpONhRTg6Hl0n9e0fbC2a602WoPnzONl+63OR6KhZxvLZUVrs51wRUN33D3S0q7lTjpdu9MDbu1STW3oaHu68TRp4LQpPYVk+waE5xx7oPxc9GV2ziA8AMLrSJ61hfR7CdHl9aB+xgarYFyT0MgC6qxl4pMgMGsSGeslK2zKCGFeBim8ylfF6+4iYS5Y29CzzRs94j8yWfANsP1vNgE1jkexTeLyo9gz4lz5wFLnxjA2AgVBjcINYzLdYOVnzxevelebccBuWS3gAQZcjB1CiBOCCaIPCJr4oAcF9xNGCPuAlGi4HmgetrFnEx92pGEAPw/oa4wxJt/W7gQJ4Jflf6W4l4UFTYOKJy1PWjnN2VbCLANJIvicZxSaPrrV7/Oiar70UkkYeNDHi4XJ+JBautHPejhPim4KXaKPCCRtQl3XQum00guYIqcjXghq30Jz0Y4vrHf+3UjHXG9uwTS6pvIeWVXj5FQUe1Pwyvk+vPN/LVZQOJoHfpwQFsUU44IHEU8YD/NVROkcqceOb+Z6tLvf6YGOp8zf+Z/hyEnEsLCWE8vL0TCm0Z1Ggzv+b/gXP8GFag==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591252136,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:12,230  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[2/1]
+2020-02-13 18:54:12,230  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,286  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,373  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/hh/xbGTVGi7SJVArPg4IIRW4/E4ma7jsexJ0mVVCSGkCqkFKgEH1Au33vYIokj8M3S7nPgXeGM72WTZC87heWbe/OY37/3ec0a3H3xw8PGnR4doJufZpDNaG0YSMHMmCaIzUlZMjrWFTPVAQyYsVPI0Y5NOLJLTMxQTejItxSJPwj2Wpji1IpSKXOopmfPsNERzTktRiVSiUzJjPEJUZKIM94a++rXOFf+ChdguHkdPOobIM54zPWEV1anI0RmS7LHUScaneUhZLlkZIfArdckLC8N6A4luwETYB1CU8KrICLCJM0FPom1AtEZc8UTOQuRZltpRkCTh+TREFsL1hFiyMs3EKkQzniQsb0GuplmW8aLiVYTmpJzyXG0lCykQ9tT+DWF7i3CMYyu2dgnbNxFuIHUpihDZNZ92JhZSivl6cusQEi55xSVL1vFLGBUlkVwAM0gXK1WUow0VywqCg4NrEOBy8r/38/kU9sSiBB8Igpoama1oRhUteSEnnaXgSS9d5FQBonRBTzjze/0znvbgxvUxxoxUM7S/j8z3P3p4iHzTkKySvZws+ZRIURqLipXvTCF9feV123xUZccVo63fFUzJ0n7/bGeMxmhnbEC4uex197r9z6zP0V3U3W/RujDYYfTkSb/XjzpLUiJWlqI8di0H4LoXX716+/PXD496CAeWgTE2PDCuj/oXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j0Y36kActtABvttHZ51bOyfu79kuvEZgseUPwTreYOApGziBraxlDQdq3bIDF6xr+V49dlwvUNYbYq9eHwZq3vfsodpnu5Znqf1uMw/4eNjsc3CN6/q1n+fgBgc7yh/b9tCKgH6d8jbVI7PtKKpjgEn4EtGMVNVYu1bqGqplMtaaWvQ8Jeq2Emvt16XUlpfjFo/rAou0SefWiCCeAGCacsoJZA6kryGV2rE2k7IITXO1WhmO79HTxKBiriEJOKq1HccZyU+0yUgJl2Qws+FxvZIHmyNRVdKxZtIk1+mUm3xOpsxckVTPxFQYRT5VvXJkEkWtKki+vnHbtOC0NjyJoIs5aNhYlUD5Kun9aBNBeAGEm5FsbQLht4dYpdeG/NXWHbjNGHu1LCDPSiYOdt16jP3a2sOBVacR3OwIQrgTrxnLiq2AmWD1mp5er6ivxX0qEjYGtv+NJqAGQSO2VlyOH9i1OAcOsFSxqRnXAgVBNcL1AtzeYOBEVxeflaYyTa+e0IzDS3it0O4h6AdL1XOYM6QY03tI8jlTvdG2dMvWsQM7Qs+FLw0a3db1Dz957/D44QNdhwi3yHDGtgpuyPF2fkHaIOZW0q1k1p07F9AdQZkInk3XQ+2jmsdxnMzmR6WQAloolHOvVwe+CjVV7xtZbHpP0br20X0Eyq5dTVNDYTtSA+hL6yOu6WqRQ42RgvW0O85BQ6e+XleD/rZL5S7SZnMjJjxZ1HmfGY+qO867yQDyR2LXCYaY+gGxrIS5PhtS5sUDn5AukqcFG3fVx8J8RJakOaV7xzmEI1stw0Drtyy3O0QTRrPtEGbzT+RfWd6xXg==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591252287,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:12,374  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[3/1]
+2020-02-13 18:54:12,375  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,509  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,607  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/hh/xbGTVGi7SJVArPg4IIRW4/E4ma7jsexJ0mVVCSGkCqkFKgEH1Au33vYIokj8M3S7nPgXeGM72WTZC87heWbe/OY37/3ec0a3H3xw8PGnR4doJufZpDNaG0YSMHMmCaIzUlZMjrWFTPVAQyYsVPI0Y5NOLJLTMxQTejItxSJPwj2Wpji1IpSKXOopmfPsNERzTktRiVSiUzJjPEJUZKIM94a++rXOFf+ChdguHkdPOobIM54zPWEV1anI0RmS7LHUScaneUhZLlkZIfArdckLC8N6A4luwETYB1CU8KrICLCJM0FPom1AtEZc8UTOQuRZltpRkCTh+TREFsL1hFiyMs3EKkQzniQsb0GuplmW8aLiVYTmpJzyXG0lCykQ9tT+DWF7i3CMYyu2dgnbNxFuIHUpihDZNZ92JhZSivl6cusQEi55xSVL1vFLGBUlkVwAM0gXK1WUow0VywqCg4NrEOBy8r/38/kU9sSiBB8Igpoama1oRhUteSEnnaXgSS9d5FQBonRBTzjze/0znvbgxvUxxoxUM7S/j8z3P3p4iHzTkKySvZws+ZRIURqLipXvTCF9feV123xUZccVo63fFUzJ0n7/bGeMxmhnbEC4uex197r9z6zP0V3U3W/RujDYYfTkSb/XjzpLUiJWlqI8di0H4LoXX716+/PXD496CAeWgTE2PDCuj/oXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j0Y36kActtABvttHZ51bOyfu79kuvEZgseUPwTreYOApGziBraxlDQdq3bIDF6xr+V49dlwvUNYbYq9eHwZq3vfsodpnu5Znqf1uMw/4eNjsc3CN6/q1n+fgBgc7yh/b9tCKgH6d8jbVI7PtKKpjgEn4EtGMVNVYu1bqGqplMtaaWvQ8Jeq2Emvt16XUlpfjFo/rAou0SefWiCCeAGCacsoJZA6kryGV2rE2k7IITXO1WhmO79HTxKBiriEJOKq1HccZyU+0yUgJl2Qws+FxvZIHmyNRVdKxZtIk1+mUm3xOpsxckVTPxFQYRT5VvXJkEkWtKki+vnHbtOC0NjyJoIs5aNhYlUD5Kun9aBNBeAGEm5FsbQLht4dYpdeG/NXWHbjNGHu1LCDPSiYOdt16jP3a2sOBVacR3OwIQrgTrxnLiq2AmWD1mp5er6ivxX0qEjYGtv+NJqAGQSO2VlyOH9i1OAcOsFSxqRnXAgVBNcL1AtzeYOBEVxeflaYyTa+e0IzDS3it0O4h6AdL1XOYM6QY03tI8jlTvdG2dMvWsQM7Qs+FLw0a3db1Dz957/D44QNdhwi3yHDGtgpuyPF2fkHaIOZW0q1k1p07F9AdQZkInk3XQ+2jmsdxnMzmR6WQAloolHOvVwe+CjVV7xtZbHpP0br20X0Eyq5dTVNDYTtSA+hL6yOu6WqRQ42RgvW0O85BQ6e+XleD/rZL5S7SZnMjJjxZ1HmfGY+qO867yQDyR2LXCYaY+gGxrIS5PhtS5sUDn5AukqcFG3fVx8J8RJakOaV7xzmEI1stw0Drtyy3O0QTRrPtEGbzT+RfWd6xXg==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591252510,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:12,609  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[4/1]
+2020-02-13 18:54:12,609  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,703  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,800  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVk1v4zYQPa9/BVfBxjZ2JZH6sizZXizSFOih6ALtpVgsAoqiLCaSKEi0nTTIf++Qkh07zaX2YcTR8PFx5s3Yq4+//HHz19/fb1Gp6mozWR0NpzmYmiuKWEm7nqu1tVOFHVvIhRe9eqr4ZpLJ/OkZZZQ9bDu5a/LkihcFKXCKCtkou6C1qJ4SVAvWyV4WCj3RkosUMVnJLrlaRvo7BvfiH54Qr31MXyaObCrRcDvnPbOZbNAzUvxR2bQS2yZhvFG8SxHEdbYSLSbwfoBE72AiEgEoykXfVhTYZJVkD+k5IDoiHkSuygSFGOsdLc1z0WwThBExDrnnXVHJQ4JKkee8GUFe3byqRNuLPkU17bai0VvpTklEQr3/RNg7I5yRDGf4krD3HuEB0layTZBn+IyeTCol66Pz7BCa7EUvFM+P+cs5kx1VQgIzKBfvdJbTExWM4/jm5g0EhDz87/2i3sKeTHYQA0nQrpU7imbVs060ajPZS5HPil3DNCAqduxB8Gg2fxbFDG5sjnFK2pfo+hq5v//52y2KXEfxXs0auhdbqmTn7HrefdtC+eY66qN731d3PWdj3CtMx4v5/PlijdboYu1AuoWaTa+m8x/4J/qMptcj2hQWF4xeXuazeTrZ0w7xrpPdXYB9gJtO0wmQP3Np3xw9Tz5chF1feQE8pmAJjpZg/XCxCLWN/djTFuPlQr/HXhyADXAUmrUfhLG24ZKE5v0y1v4o9JZ6nxfgEOv9weAHfLIc9vnE4AaRiQt9MuAQX8cTz1viFOibOo31WbnjGNBtDiYXe8Qq2vdr601/WsjUdm0NDRSGWolj+xjBGv2PPeEH7aPpitTaTD6sKBI5ABaFYIJCukGvFtL1WFulUm3iuofDwfGjkD3lDpO1hRTg6Hl0l1W0ebA2K602WoHnxONt+y1OR6K+Y2vLZXljs61wRU233D3Qwq7kVjpts9UDbuVSTa1vaXO88Thp4LQxPblkuxqE5xw6oPxa9Hl6yiA8AML7SJ61gfR7S6LL60H9jA0WwbAmoZEF1FnLxCdBYNYkMtZbLrApI4R5KaTwIl8lr9qzhLlgbUPPNm/0iP/KZM7XwPa/2QTUOB7ENorLj2LPiHPhA0udG8PYCBQENQg3jMl4g4Wfvl687FxthgG7YZWABxhwMXYIIU4IJoi+IGjivR4UNA64R+kXpETN9UDzsI09m/iwIwkD+HlAP2KMMfm5ckdIAD8v/zvFPS8saBpUPGp51MpxzjYSZhlIEsHnNKPQ+NGtfpflZf29k0rCwIM+ns1MxvvE0o1+0sNpUrRj6Bx9RSBpE+q6FkrGlV7AFDke8UZQuwaai7Z8Zn3ybwY65npTC6bRJZXPyCprJ6Mi35mCl859/8n/NV9A4WgW+PGSsCimGOc8iPiS8TBbRJROkXpq+XqqR7t7T/d0OGX6yb+FI0cRw8KajyzPR8OQRnccDe7wv+FfjZiFlw==',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591252704,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:12,801  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[5/1]
+2020-02-13 18:54:12,802  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,873  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:12,950  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4DrwpUGT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+o8LGL',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591252874,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:12,952  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[6/1]
+2020-02-13 18:54:12,952  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,025  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,084  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4DrwpUGT26r64SfvHR4/fKCqEOEOGc7YVsENOd7OL0gbxNxJupPMunOXDLojKBPBs+l6qHtE8ziOkqw4qhln0EKhnAcDGfgmUES9b2Sx6T1V5zpE9xEoW7rquoKCbiQG0JfWR1zT1aKEGsMVGSh37IOWjrxeX4H+tkvlLlKyQoswTRYy75n2qLljv5uMIH84cmx/bMaejw0jIY5HxjFxo5GHcR/x04pM++JjoT/CS9ye0r9jH8KRnZZhoAw7ltsdog2j3nUIvf0n8i+o8LGL',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591253026,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:13,086  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[7/1]
+2020-02-13 18:54:13,086  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,159  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,256  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4DoBvExuq+qHn7x3ePzwgapChDtkOGNbBTfkeDu/IG0QcyfpTjLrzl0y6I6gTATPpuuh7hHN4zhKsuKoZpxBC4VyHgxk4JtAEfW+kcWm91Sd6xDdR6Bs6arrCgq6kRhAX1ofcU1XixJqDFdkoNyxD1o68np9BfrbLpW7SMkKLcI0Wci8Z9qj5o79bjKC/OHIsf2xGXs+NoyEOB4Zx8SNRh7GfcRPKzLti4+F/ggvcXtK/459CEd2WoaBMuxYbneINox61yH09p/Iv6qWsYw=',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591253160,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:13,258  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[8/1]
+2020-02-13 18:54:13,258  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,334  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,420  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4DoBvExuq+qHn7x3ePzwgapChDtkOGNbBTfkeDu/IG0QcyfpTjLrzl0y6I6gTATPpuuh7hHN4zhKsuKoZpxBC4VyHgxk4JtAEfW+kcWm91Sd6xDdR6Bs6arrCgq6kRhAX1ofcU1XixJqDFdkoNyxD1o68np9BfrbLpW7SMkKLcI0Wci8Z9qj5o79bjKC/OHIsf2xGXs+NoyEOB4Zx8SNRh7GfcRPKzLti4+F/ggvcXtK/459CEd2WoaBMuxYbneINox61yH09p/Iv6qWsYw=',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591253335,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:13,421  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[9/1]
+2020-02-13 18:54:13,422  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,531  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,595  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4DoBvExuq+qHn7x3ePzwgapChDtkOGNbBTfkeDu/IG0QcyfpTjLrzl0y6I6gTATPpuuh7hHN4zhKsuKoZpxBC4VyHgxk4JtAEfW+kcWm91Sd6xDdR6Bs6arrCgq6kRhAX1ofcU1XixJqDFdkoNyxD1o68np9BfrbLpW7SMkKLcI0Wci8Z9qj5o79bjKC/OHIsf2xGXs+NoyEOB4Zx8SNRh7GfcRPKzLti4+F/ggvcXtK/459CEd2WoaBMuxYbneINox61yH09p/Iv6qWsYw=',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591253532,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:13,619  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[10/1]
+2020-02-13 18:54:13,619  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,707  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,773  zgjjzbcgglxxxt.py:345 : INFO  item is: {'_id': '532212a370659f09cc86fa9b80fedfe6',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJyVVs2P20QUPzd/xdSrbhK1/v6IYyep0HaRKoFY8XFACK3G9jieru2x7EnSZVUJIaQKqQUqAQfUC7fe9giiSPwzdLuc+Bd4M3ayybIXnMPzzLz5zW/e+73nTG4/+ODg40+PDlHGi3zWm6wNwQmYgnCM4gzXDeFTZcFT1VeQDgsNP83JrBex5PQMRTg+mddsUSbBHklTMzVClLKSqykuaH4aoILGNWtYytEpzggNUcxyVgd7Y0/8OueGfkEC06oeh096GitzWhI1IU2sxqxEZ4iTx1zFOZ2XQUxKTuoQgV+tcloZJqy3kOgGTGR6AIoS2lQ5BjZRzuKTcBsQrRFXNOFZgFzDEDsqnCS0nAfIQKacYEtSpzlbBSijSULKDuRqmuQ5rRrahKjA9ZyWYitecIZMV+zfELa2CEdmZETGLmHrJsItpMpZFSBL8ulmIsY5K9aTW4fgYEkbykmyjl9CYlZjThkwg3SRWkQ53FAxDN8/OLgGAS4n/3s/LeawJ2I1+EAQxNRE70QzaeKaVnzWWzKaDNJFGQtAlC7iE0q8wfCMpgO4sTxGy3CTof19pL//0cND5OkaJw0flHhJ55izWls0pH5nDukbCq/b+qMmP25I3PldwdQkHQ7PdsZoinbGGoSb8kF/rz/8zPgc3UX9/Q6tD4MdRk+eDAfDsLfENSJ1zepjx7ABrn/x1au3P3/98GiATN/QTNPUXDCOh4YXL7+8/PPFxctv3nx3/vanF+B18cPrN09fX/7y7K/ffv/nj2eX57++ffX8zfff/v30+eX5j1o/7EEcttABvj9EZ71bOyfu71kOvIZgTcMbg7Xd0cgV1rd9S1jDGI/EumH5DljH8Fw5th3XF9Ydm65cH/ti3nOtsdhnOYZriP1OOw/45rjdZ5sS1/Gkn2ubLY5pC3/TssZGCPRlyrtUT/Suo4iOASahSxTnuGmmyrVSV5CUyVRpa9F1hai7SpTal6XUlZftVI9lgYXKrHdrghFNADBNaUwxZA6kryCR2qmScV4Fur5arTTbc+PTRItZoSAOOKK1HUc5Lk+U2UQIF+cws+FxvZJHmyNRU8dTRY+TUo3nVKcFnhN9hVM1Z3OmVeVc9MqJjgW1psLl+sZd04LTuvAkLF4UoGFtVQPlq6QPw00E4QUQbkaylBmE3xqbIr0W5E9aZ+S0Y9OVsoA8C5nYpuPIselJa41HhkwjuFkhhHAnXhnJq62A6WBVSU+VK+JrcT9mCZkC2/9GE1B9vxVbJy7b8y0pzpENLEVsJGMpUBBUK1zXN7sbjOzw6uJZrQvT9upZnFN4Ca4V2j0E/WApeg72HWJhfA9xWhDRGy1DNSzVtGFH4DoBvExuq+qHn7x3ePzwgapChDtkOGNbBTfkeDu/IG0QcyfpTjLrzl0y6I6gTATPpuuh7hHN4zhKsuKoZpxBC4VyHgxk4JtAEfW+kcWm91Sd6xDdR6Bs6arrCgq6kRhAX1ofcU1XixJqDFdkoNyxD1o68np9BfrbLpW7SMkKLcI0Wci8Z9qj5o79bjKC/OHIsf2xGXs+NoyEOB4Zx8SNRh7GfcRPKzLti4+F/ggvcXtK/459CEd2WoaBMuxYbneINox61yH09p/Iv6qWsYw=',
+ 'notice_time': '',
+ 'notice_type': '采购公告',
+ 'site': 'sup.ccccltd.cn',
+ 'source': '中国交建装备采购管理信息系统',
+ 'time_stamp': 1581591253708,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce'}
+2020-02-13 18:54:13,775  zgjjzbcgglxxxt.py:321 : INFO  Parse item, [page_1]-[11/1]
+2020-02-13 18:54:13,775  zgjjzbcgglxxxt.py:413 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 410, in __get_notice_time__
+    _ret = _notice_time.replace('-', '.') + ' 00:00:00'
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:54:13,881  zgjjzbcgglxxxt.py:444 : ERROR  [532212a370659f09cc86fa9b80fedfe6] get_notice_type failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/zgjjzbcgglxxxt/zgjjzbcgglxxxt/spiders/zgjjzbcgglxxxt.py", line 439, in __get_notice_type__
+    _ret = self.selector.xpath('./span[@class="dotspan"]/a/font/text()').extract_first().replace('\\n',
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-13 18:55:30,700  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-13 18:55:30,705  middleware.py:48 : INFO  Enabled spider middlewares:
+['zgjjzbcgglxxxt.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-13 18:55:30,707  middleware.py:48 : INFO  Enabled item pipelines:
+['zgjjzbcgglxxxt.pipelines.CommonPipeline']
+2020-02-13 18:55:30,707  engine.py:257 : INFO  Spider opened
+2020-02-13 18:55:30,710  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-13 18:55:30,711  middlewares.py:62 : INFO  Spider opened: zgjjzbcgglxxxt_spider
+2020-02-13 18:55:30,716  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-02-13 18:55:30,727  zgjjzbcgglxxxt.py:172 : INFO  start crawling...
+2020-02-13 18:55:31,017  httperror.py:55 : INFO  Ignoring response <403 http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce>: HTTP status code is not handled or not allowed
+2020-02-13 18:55:37,033  httperror.py:55 : INFO  Ignoring response <403 http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce>: HTTP status code is not handled or not allowed
+2020-02-13 18:55:44,216  httperror.py:55 : INFO  Ignoring response <403 http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce>: HTTP status code is not handled or not allowed
+2020-02-13 18:55:51,316  httperror.py:55 : INFO  Ignoring response <403 http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce>: HTTP status code is not handled or not allowed
+2020-02-13 18:55:56,977  httperror.py:55 : INFO  Ignoring response <403 http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce>: HTTP status code is not handled or not allowed
+2020-02-13 18:56:03,793  httperror.py:55 : INFO  Ignoring response <403 http://sup.ccccltd.cn/ecp/web/AnnounceAction.do?cmd=goListAnnounce>: HTTP status code is not handled or not allowed
