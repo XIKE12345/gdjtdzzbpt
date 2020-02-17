@@ -1349,3 +1349,241 @@ pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
  'scheduler/enqueued/memory': 1,
  'start_time': datetime.datetime(2020, 2, 15, 7, 27, 18, 267448)}
 2020-02-15 15:28:07,413  engine.py:327 : INFO  Spider closed (finished)
+2020-02-17 14:53:25,501  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-17 14:53:25,511  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-17 14:53:25,513  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-17 14:53:25,513  engine.py:257 : INFO  Spider opened
+2020-02-17 14:53:25,525  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 14:53:25,526  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-17 14:53:25,535  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-02-17 14:53:25,557  ztwzgjzb.py:223 : INFO  start crawling...
+2020-02-17 14:53:25,928  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-17 14:53:32,947  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-17 14:53:48,790  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-17 14:53:48,797  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-17 14:53:48,798  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-17 14:53:48,799  engine.py:257 : INFO  Spider opened
+2020-02-17 14:53:48,803  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 14:53:48,804  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-17 14:53:48,807  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6026
+2020-02-17 14:53:48,821  ztwzgjzb.py:223 : INFO  start crawling...
+2020-02-17 14:53:48,821  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/ztwzgjzb/ztwzgjzb/spiders/ztwzgjzb.py", line 253, in start_requests
+    _request = scrapy.FormRequest(url=_request_url, body=payload, callback=_v['callback'])
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/form.py", line 28, in __init__
+    super(FormRequest, self).__init__(*args, **kwargs)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/__init__.py", line 27, in __init__
+    self._set_body(body)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/http/request/__init__.py", line 81, in _set_body
+    self._body = to_bytes(body, self.encoding)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/utils/python.py", line 107, in to_bytes
+    'object, got %s' % type(text).__name__)
+TypeError: to_bytes must receive a unicode, str or bytes object, got dict
+2020-02-17 14:53:48,830  engine.py:296 : INFO  Closing spider (finished)
+2020-02-17 14:54:08,100  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-17 14:54:08,109  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-17 14:54:08,111  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-17 14:54:08,112  engine.py:257 : INFO  Spider opened
+2020-02-17 14:54:08,122  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 14:54:08,122  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-17 14:54:08,131  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6027
+2020-02-17 14:54:08,156  ztwzgjzb.py:223 : INFO  start crawling...
+2020-02-17 14:54:08,522  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-17 14:54:35,606  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bid/list>: HTTP status code is not handled or not allowed
+2020-02-17 14:54:48,868  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-17 14:54:48,876  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-17 14:54:48,878  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-17 14:54:48,878  engine.py:257 : INFO  Spider opened
+2020-02-17 14:54:48,884  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 14:54:48,884  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-17 14:54:48,887  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6028
+2020-02-17 14:54:48,901  ztwzgjzb.py:223 : INFO  start crawling...
+2020-02-17 14:54:49,358  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-17 14:55:11,035  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-17 14:55:11,041  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-17 14:55:11,043  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-17 14:55:11,044  engine.py:257 : INFO  Spider opened
+2020-02-17 14:55:11,066  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 14:55:11,067  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-17 14:55:11,070  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6029
+2020-02-17 14:55:11,106  ztwzgjzb.py:175 : INFO  start crawling...
+2020-02-17 14:55:11,524  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-17 14:55:30,957  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-17 14:55:30,965  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-17 14:55:30,969  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-17 14:55:30,970  engine.py:257 : INFO  Spider opened
+2020-02-17 14:55:30,979  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 14:55:30,980  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-17 14:55:30,987  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6030
+2020-02-17 14:55:31,008  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-17 14:55:31,365  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed
+2020-02-17 14:56:02,889  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-17 14:56:02,900  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztwzgjzb.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-17 14:56:02,902  middleware.py:48 : INFO  Enabled item pipelines:
+['ztwzgjzb.pipelines.CommonPipeline']
+2020-02-17 14:56:02,903  engine.py:257 : INFO  Spider opened
+2020-02-17 14:56:02,911  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-17 14:56:02,912  middlewares.py:62 : INFO  Spider opened: ztwzgjzb_spider
+2020-02-17 14:56:02,919  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6031
+2020-02-17 14:56:02,935  ztwzgjzb.py:219 : INFO  start crawling...
+2020-02-17 14:56:03,342  httperror.py:55 : INFO  Ignoring response <405 https://bidding.crmsc.com.cn/bulletin/list>: HTTP status code is not handled or not allowed

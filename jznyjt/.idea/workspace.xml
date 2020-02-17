@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../anqijiaomu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../anqijiaomu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../anqijiaomu/anqijiaomu_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../anqijiaomu/anqijiaomu_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../energychina/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energychina/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jznyjt/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/jznyjt/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jznyjt/spiders/jznyjt.py" beforeDir="false" afterPath="$PROJECT_DIR$/jznyjt/spiders/jznyjt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/common/jy_common_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/zgwkjt/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/zgwkjt/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/zgwkjt/spiders/zgwkjt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/zgwkjt/spiders/zgwkjt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ztlbsww/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ztlbsww/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ztwzgjzb/ztwzgjzb_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ztwzgjzb/ztwzgjzb_spider.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581749509849</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="翼中能源集团招标投标电子交易平台 字段添加">
+      <created>1581921317329</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581921317329</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,13 +111,14 @@
     <MESSAGE value="中国南方电网线上采购平台爬虫" />
     <MESSAGE value="黑龙江公共资源交易平台爬虫" />
     <MESSAGE value="翼中能源集团招标投标电子交易平台" />
-    <option name="LAST_COMMIT_MESSAGE" value="翼中能源集团招标投标电子交易平台" />
+    <MESSAGE value="翼中能源集团招标投标电子交易平台 字段添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="翼中能源集团招标投标电子交易平台 字段添加" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581749507807">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581921315577">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581749507807" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581921315577" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -124,10 +135,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1580811192066" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581749521193">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581921326838">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581749521193" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581921326838" />
     <state x="395" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1581412919133">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

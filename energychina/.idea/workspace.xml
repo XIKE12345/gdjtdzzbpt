@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f24447b-ed39-4f1a-8313-f30a25ec2d99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nfdwdzsw/nfdwdzsw_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../nfdwdzsw/nfdwdzsw_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../anqijiaomu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../anqijiaomu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/zgwkjt/spiders/zgwkjt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/zgwkjt/spiders/zgwkjt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/zgwkjt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/zgwkjt_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ztwzgjzb/ztwzgjzb_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ztwzgjzb/ztwzgjzb_spider.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

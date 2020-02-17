@@ -161,9 +161,14 @@ class ZgwkjtSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国五矿集团有限公司采购电子商务平台',
                 'notice_type': '采购信息',
-                'notice_type_code': '',
+                'notice_type_code': '0101',
+                'site_name': '中国五矿集团有限公司采购电子商务平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'actionType': 'showMoreCgxx',
                 'xxposition': 'cgxx',
+                'actionType_detail': 'showZhongbggDetail&xxbh=',
+
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -206,8 +211,12 @@ class ZgwkjtSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国五矿集团有限公司采购电子商务平台',
                 'notice_type': '采购公告',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '中国五矿集团有限公司采购电子商务平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'actionType': 'showMoreZbs',
+                'actionType_detail': 'showCgxjDetail&xjbm=',
                 'xxposition': 'zbgg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -251,8 +260,12 @@ class ZgwkjtSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国五矿集团有限公司采购电子商务平台',
                 'notice_type': '变更公告',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '中国五矿集团有限公司采购电子商务平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'actionType': 'showMoreClarifypub',
+                'actionType_detail': 'showCqggDetail&xxbh=',
                 'xxposition': 'cqgg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -296,8 +309,12 @@ class ZgwkjtSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国五矿集团有限公司采购电子商务平台',
                 'notice_type': '结果公告',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '中国五矿集团有限公司采购电子商务平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'actionType': 'showMorePub',
+                'actionType_detail': 'showPxjgDetail&xxbh=',
                 'xxposition': 'zhongbgg',
                 'content_type_id': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -407,7 +424,6 @@ class ZgwkjtSpider(scrapy.Spider):
                     _item_idx += 1
                     # _detail_url = response.urljoin(
                     #     selector.xpath(response.meta['param']['xpath_of_detail_url']).extract_first())
-                    print(response.meta['param']['xpath_of_detail_url'] + '===============')
                     _detail_url = response.urljoin(
                         'inviteid=' + selector[response.meta['param']['xpath_of_detail_url'].split("'")[1]]
                     )
@@ -448,9 +464,14 @@ class ZgwkjtSpider(scrapy.Spider):
                 try:
                     _item_idx += 1
                     # showCgxjMessage('960529FB69229010E4043295DEBCBF9F')
-                    # http://ec.mcc.com.cn/b2b/web/two/indexinfoAction.do?actionType=showCgxjDetail&xjbm=FE67BEB5B267BF0D72ECDBF022E0EEE4
-                    _detail_url = response.urljoin(
-                        selector.xpath(response.meta['param']['xpath_of_detail_url']).extract_first())
+
+                    # http://ec.mcc.com.cn/b2b/web/two/indexinfoAction.do?actionType=showZgysDetailCAEE865F8FDB6ECB8E35EB233B578FFE
+                    # http://ec.mcc.com.cn/b2b/web/two/indexinfoAction.do?actionType=showZgysDetail&zgyswjbm=CAEE865F8FDB6ECB8E35EB233B578FFE
+
+
+                    detail =  str(selector.xpath(response.meta['param']['xpath_of_detail_url']).extract_first())
+                    _detail_url = 'http://ec.mcc.com.cn/b2b/web/two/indexinfoAction.do?actionType=' + detail.split("(")[0]+detail.split("'")[1]
+
                     _unq_id = JyScrapyUtil.get_unique_id(_detail_url)
 
                     logging.info('Parse item, [{}]-[{}/{}]'.format(crawl_key, _item_idx, response.meta['page_index']))
@@ -513,8 +534,13 @@ class BaseItemCommonParser:
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['tos'] = ext_param['tos']
-        self.item['source'] = ext_param['source']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 

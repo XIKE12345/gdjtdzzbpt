@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e06d60d0-0ed8-4af9-8ba5-551d9197632a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anqijiaomu_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/anqijiaomu_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../energychina/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energychina/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jznyjt/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/common/jy_common_items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jznyjt/jznyjt/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/jznyjt/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jznyjt/jznyjt/spiders/jznyjt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/jznyjt/spiders/jznyjt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/common/jy_common_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/zgwkjt/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/zgwkjt/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgwkjt/zgwkjt/spiders/zgwkjt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/zgwkjt/spiders/zgwkjt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ztlbsww/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ztlbsww/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ztwzgjzb/ztwzgjzb_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ztwzgjzb/ztwzgjzb_spider.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
