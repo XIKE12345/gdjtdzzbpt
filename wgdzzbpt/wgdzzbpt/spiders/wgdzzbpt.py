@@ -124,7 +124,7 @@ class WgdzzbptSpider(scrapy.Spider):
             # 页面的key，保证唯一
             'zbgg_gc_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告-工程',
+                'name': '武钢电子招标平台',
                 # list页面的base地址
                 'base_url': 'http://www.wiscobidding.com.cn/',
 
@@ -152,8 +152,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'gggc',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -189,8 +195,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '货物',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'gghw',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -226,8 +238,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '服务',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'ggff',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -263,8 +281,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '评标结果',
+                'notice_type_code': '0104',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'pbgc',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -300,8 +324,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '货物',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'pbhw',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -337,8 +367,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '技改/服务',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'pbjg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -374,8 +410,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'zbgc',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -411,8 +453,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '货物',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'zbhw',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -448,8 +496,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '技改/服务',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'zbjg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -485,8 +539,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'bggggc',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -522,9 +582,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '货物',
-                'source': '武钢招标平台',
-                'bid_sort': 'bggghw',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -559,8 +624,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '技改/服务',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'bgggfw',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -596,8 +667,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '单一来源采购公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'dylygc',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -633,8 +710,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '货物',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '单一来源采购公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'dylyhw',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -670,8 +753,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '技改/服务',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '单一来源采购公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'dylyfw',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -707,8 +796,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '竞争性谈判公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'jtgggc',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -744,8 +839,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '货物',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '竞争性谈判公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'jtgghw',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -781,8 +882,14 @@ class WgdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '技改/服务',
-                'source': '武钢招标平台',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '竞争性谈判公告',
+                'notice_type_code': '0101',
+                'source': '武钢电子招标平台',
+                'site_name': '武钢电子招标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'jtggfw',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -956,14 +1063,20 @@ class BaseItemCommonParser:
         self.item['area_detail'] = self.__get_area_detail__()
         self.item['notice_time'] = self.__get_notice_time__()
         self.item['buyer'] = self.__get_buyer__()
-        self.item['notice_type'] = self.__get_notice_type__(detail_url)
+        # self.item['notice_type'] = self.__get_notice_type__(detail_url)
         self.item['title'] = self.__get_title__()
         self.item['content'] = self.__get_content__(detail_url)
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 
