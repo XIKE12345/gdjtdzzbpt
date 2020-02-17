@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e06d60d0-0ed8-4af9-8ba5-551d9197632a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anqijiaomu/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/anqijiaomu/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anqijiaomu/spiders/anqijiaomu.py" beforeDir="false" afterPath="$PROJECT_DIR$/anqijiaomu/spiders/anqijiaomu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../energychina/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../energychina/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../nfdwdzsw/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nfdwdzsw/nfdwdzsw_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../nfdwdzsw/nfdwdzsw_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anqijiaomu_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/anqijiaomu_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjt/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/common/jy_common_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjt/jznyjt/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/jznyjt/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjt/jznyjt/spiders/jznyjt.py" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/jznyjt/spiders/jznyjt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,26 +64,34 @@
       <option name="project" value="LOCAL" />
       <updated>1581770947367</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="安琪酵母集团招标爬虫数据。字段添加">
+      <created>1581919818033</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581919818033</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="安琪酵母集团招标爬虫数据。" />
-    <option name="LAST_COMMIT_MESSAGE" value="安琪酵母集团招标爬虫数据。" />
+    <MESSAGE value="安琪酵母集团招标爬虫数据。字段添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="安琪酵母集团招标爬虫数据。字段添加" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="443" y="53" key="CommitChangelistDialog2" timestamp="1581770946229">
+    <state x="443" y="53" key="CommitChangelistDialog2" timestamp="1581919816792">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="443" y="53" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581770946229" />
+    <state x="443" y="53" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581919816792" />
     <state x="222" y="74" key="SettingsEditor" timestamp="1581760114214">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="222" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581760114214" />
-    <state x="419" y="196" key="Vcs.Push.Dialog.v2" timestamp="1581770956591">
+    <state x="419" y="196" key="Vcs.Push.Dialog.v2" timestamp="1581919826018">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="419" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581770956591" />
+    <state x="419" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581919826018" />
   </component>
 </project>

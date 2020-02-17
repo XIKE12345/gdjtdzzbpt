@@ -124,7 +124,7 @@ class JznyjtSpider(scrapy.Spider):
             # 页面的key，保证唯一
             'page_1': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '冀中能源集团',
+                'name': '翼中能源集团招标投标电子交易平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.jzbidding.com/jznycms/category/',
@@ -155,8 +155,12 @@ class JznyjtSpider(scrapy.Spider):
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
                 'tos_code': '01',
-                'source': '冀中能源集团',
+                'source': '翼中能源集团招标投标电子交易平台',
                 'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'site_name': '翼中能源集团招标投标电子交易平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_type': 'belletinList',
                 'tabName': '招标公告',
                 'categoryId': '88',
@@ -164,7 +168,7 @@ class JznyjtSpider(scrapy.Spider):
             },
             'page_2': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '冀中能源集团',
+                'name': '翼中能源集团招标投标电子交易平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.jzbidding.com/jznycms/category/',
@@ -195,9 +199,12 @@ class JznyjtSpider(scrapy.Spider):
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
                 'tos_code': '01',
-                'source': '冀中能源集团',
+                'source': '翼中能源集团招标投标电子交易平台',
                 'notice_type': '变更公告',
-                'notice_type_code': '',
+                'notice_type_code': '0102',
+                'site_name': '翼中能源集团招标投标电子交易平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_type': 'resultBulletinList',
                 'tabName': '变更公告',
                 'categoryId': '89',
@@ -205,7 +212,7 @@ class JznyjtSpider(scrapy.Spider):
             },
             'page_3': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '冀中能源集团',
+                'name': '翼中能源集团招标投标电子交易平台',
 
                 # list页面的base地址
                 'base_url': 'http://www.jzbidding.com/jznycms/category/',
@@ -236,9 +243,12 @@ class JznyjtSpider(scrapy.Spider):
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
                 'tos_code': '01',
-                'source': '冀中能源集团',
+                'source': '翼中能源集团招标投标电子交易平台',
                 'notice_type': '结果公示',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '翼中能源集团招标投标电子交易平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_type': 'resultBulletinList',
                 'tabName': '中标公示',
                 'categoryId': '90',
@@ -433,15 +443,19 @@ class BaseItemCommonParser:
         self.item['area_detail'] = self.__get_area_detail__()
         self.item['notice_time'] = self.__get_notice_time__()
         self.item['buyer'] = self.__get_buyer__()
-        # self.item['notice_type'] = self.__get_notice_type__(detail_url)
         self.item['title'] = self.__get_title__()
         self.item['content'] = self.__get_content__(detail_url)
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
         self.item['source'] = ext_param['source']
         self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 
