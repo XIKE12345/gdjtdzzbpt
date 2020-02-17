@@ -158,6 +158,9 @@ class GdgjzcptSpider(scrapy.Spider):
                 'notice_type': '招标公告',
                 'notice_type_code': '0101',
                 'source': '中国光大集团股份公司',
+                'site_name': '中国光大集团股份公司',
+                'area_code': '670000',
+                'content_code': '1',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -197,6 +200,9 @@ class GdgjzcptSpider(scrapy.Spider):
                 'notice_type': '招标公告',
                 'notice_type_code': '0101',
                 'source': '中国光大集团股份公司',
+                'site_name': '中国光大集团股份公司',
+                'area_code': '670000',
+                'content_code': '1',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -236,6 +242,9 @@ class GdgjzcptSpider(scrapy.Spider):
                 'notice_type': '招标公告',
                 'notice_type_code': '0101',
                 'source': '中国光大集团股份公司',
+                'site_name': '中国光大集团股份公司',
+                'area_code': '670000',
+                'content_code': '1',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -420,6 +429,9 @@ class BaseItemCommonParser:
         self.item['notice_type'] = ext_param['notice_type']
         self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['tos_code'] = ext_param['tos_code']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 

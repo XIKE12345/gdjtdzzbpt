@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db9046a0-1b69-417d-8b04-0217ea98b062" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../anqijiaomu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../anqijiaomu/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dfjyzx/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dfjyzx/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dfjyzx/dfjyzx_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../dfjyzx/dfjyzx_spider.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jznyjt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tjhcpt/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/tjhcpt/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tjhcpt/spiders/gdjtdzzbpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/tjhcpt/spiders/gdjtdzzbpt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zgwkjt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ztlbsww/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ztlbsww/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ztlbsww/ztlbsww_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww_spider.log" afterDir="false" />
-    </list>
+    <list default="true" id="db9046a0-1b69-417d-8b04-0217ea98b062" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,20 +63,35 @@
       <option name="project" value="LOCAL" />
       <updated>1580895542538</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="中国铁建采汇物资设备爬虫代码。添加字段">
+      <created>1581931931678</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581931931678</updated>
+    </task>
+    <task id="LOCAL-00004" summary="中国铁建采汇物资设备爬虫代码。添加字段">
+      <created>1581932027196</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581932027196</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="国电集团电子招标平台 爬虫数据代码" />
     <MESSAGE value="中国铁建采汇物资设备爬虫代码。" />
-    <option name="LAST_COMMIT_MESSAGE" value="中国铁建采汇物资设备爬虫代码。" />
+    <MESSAGE value="中国铁建采汇物资设备爬虫代码。添加字段" />
+    <option name="LAST_COMMIT_MESSAGE" value="中国铁建采汇物资设备爬虫代码。添加字段" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="38" key="CommitChangelistDialog2" timestamp="1581931930460">
+    <state x="321" y="38" key="CommitChangelistDialog2" timestamp="1581932025144">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="321" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581931930460" />
+    <state x="321" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581932025144" />
     <state x="585" y="240" width="424" height="295" key="Github.ShareDialog" timestamp="1580895703081">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
@@ -101,10 +104,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="201" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1580894759458" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581931963531">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581932044375">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581931963531" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581932044375" />
     <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1580866109174">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
