@@ -2,26 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jznyjtdzzb/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jznyjtdzzb/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jznyjtdzzb/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jznyjtdzzb/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jznyjtdzzb/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jznyjtdzzb/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jznyjtdzzb/spiders/jznyjtdzzb.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/.idea/chinapost.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../chinapost/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
@@ -58,6 +38,10 @@
       <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jznyjtdzzb/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/jznyjtdzzb/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jznyjtdzzb/spiders/jznyjtdzzb.py" beforeDir="false" afterPath="$PROJECT_DIR$/jznyjtdzzb/spiders/jznyjtdzzb.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jznyjtdzzb_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/jznyjtdzzb_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zghfwssc/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../zghfwssc/.idea/libraries/R_User_Library.xml" beforeDir="false" />
@@ -148,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581498373912</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="翼中能源集团招标投标电子交易平台">
+      <created>1582021751660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582021751660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,13 +150,14 @@
     <MESSAGE value="中国南方电网线上采购平台爬虫" />
     <MESSAGE value="黑龙江公共资源交易平台爬虫" />
     <MESSAGE value="国家开发投资公司电子采购平台 爬虫代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="国家开发投资公司电子采购平台 爬虫代码" />
+    <MESSAGE value="翼中能源集团招标投标电子交易平台" />
+    <option name="LAST_COMMIT_MESSAGE" value="翼中能源集团招标投标电子交易平台" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1581498371705">
+    <state x="215" y="53" key="CommitChangelistDialog2" timestamp="1582021750863">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581498371705" />
+    <state x="215" y="53" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1582021750863" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -182,10 +174,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1580811192066" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1581498395890">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1582021763661">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581498395890" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1582021763661" />
     <state x="395" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1581494380622">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

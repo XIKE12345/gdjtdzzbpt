@@ -7,6 +7,7 @@
 
 import scrapy
 
+
 # tos_code         业务类型编码=====================
 # 01	工程建设
 # 02	政府采购
@@ -141,3 +142,5 @@ class CommonRawItem(scrapy.Item):
     # 时间戳
     time_stamp = scrapy.Field()
 
+    # 行业类型
+    industry = scrapy.Field()

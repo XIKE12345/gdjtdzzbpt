@@ -156,10 +156,377 @@ class JznyjtdzzbSpider(scrapy.Spider):
                 'tos': '工程建设',
                 'tos_code': '01',
                 'source': '冀中能源集团电子招标投标交易平台',
-                'notice_type': '招标公告',
+                'site_name': '冀中能源集团电子招标投标交易平台',
+                'notice_type': '招标信息',
                 'notice_type_code': '0101',
                 'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'belletinList',
+                'industryName': '工程',
+                'categoryId': '88',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'page_2': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '冀中能源集团电子招标投标交易平台',
+
+                # list页面的base地址
+                'base_url': 'http://www.jzbidding.com/jznycms/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//ul[@class="newslist"]/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '冀中能源集团电子招标投标交易平台',
+                'site_name': '冀中能源集团电子招标投标交易平台',
+                'notice_type': '招标信息',
+                'notice_type_code': '0101',
+                'area_code': '670000',
+                'content_code': '1',
+                'bid_sort': 'belletinList',
+                'industryName': '货物',
+                'categoryId': '88',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'page_3': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '冀中能源集团电子招标投标交易平台',
+
+                # list页面的base地址
+                'base_url': 'http://www.jzbidding.com/jznycms/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//ul[@class="newslist"]/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '冀中能源集团电子招标投标交易平台',
+                'site_name': '冀中能源集团电子招标投标交易平台',
+                'notice_type': '招标信息',
+                'notice_type_code': '0101',
+                'area_code': '670000',
+                'content_code': '1',
+                'bid_sort': 'belletinList',
+                'industryName': '服务',
+                'categoryId': '88',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+
+            'page_4': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '冀中能源集团电子招标投标交易平台',
+
+                # list页面的base地址
+                'base_url': 'http://www.jzbidding.com/jznycms/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//ul[@class="newslist"]/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '冀中能源集团电子招标投标交易平台',
+                'site_name': '冀中能源集团电子招标投标交易平台',
+                'notice_type': '变更公告',
+                'notice_type_code': '0101',
+                'area_code': '670000',
+                'content_code': '1',
+                'bid_sort': 'resultBulletinList',
+                'industryName': '工程',
+                'categoryId': '89',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'page_5': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '冀中能源集团电子招标投标交易平台',
+
+                # list页面的base地址
+                'base_url': 'http://www.jzbidding.com/jznycms/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//ul[@class="newslist"]/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '冀中能源集团电子招标投标交易平台',
+                'site_name': '冀中能源集团电子招标投标交易平台',
+                'notice_type': '变更公告',
+                'notice_type_code': '0101',
+                'area_code': '670000',
+                'content_code': '1',
+                'bid_sort': 'resultBulletinList',
+                'industryName': '货物',
+                'categoryId': '89',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'page_6': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '冀中能源集团电子招标投标交易平台',
+
+                # list页面的base地址
+                'base_url': 'http://www.jzbidding.com/jznycms/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//ul[@class="newslist"]/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '冀中能源集团电子招标投标交易平台',
+                'site_name': '冀中能源集团电子招标投标交易平台',
+                'notice_type': '变更公告',
+                'notice_type_code': '0101',
+                'area_code': '670000',
+                'content_code': '1',
+                'bid_sort': 'resultBulletinList',
+                'industryName': '服务',
+                'categoryId': '89',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+            'page_7': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '冀中能源集团电子招标投标交易平台',
+
+                # list页面的base地址
+                'base_url': 'http://www.jzbidding.com/jznycms/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//ul[@class="newslist"]/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '冀中能源集团电子招标投标交易平台',
+                'site_name': '冀中能源集团电子招标投标交易平台',
+                'notice_type': '结果公示',
+                'notice_type_code': '0104',
+                'area_code': '670000',
+                'content_code': '1',
+                'bid_sort': 'resultBulletinList',
+                'industryName': '工程',
+                'categoryId': '90',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+
+            'page_8': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '冀中能源集团电子招标投标交易平台',
+
+                # list页面的base地址
+                'base_url': 'http://www.jzbidding.com/jznycms/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//ul[@class="newslist"]/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '冀中能源集团电子招标投标交易平台',
+                'site_name': '冀中能源集团电子招标投标交易平台',
+                'notice_type': '结果公示',
+                'notice_type_code': '0104',
+                'area_code': '670000',
+                'content_code': '1',
+                'bid_sort': 'resultBulletinList',
+                'industryName': '货物',
+                'categoryId': '90',
+                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            },
+
+
+            'page_9': {
+                # 通常会被填充在'source'字段里，有时也可以放在'tos'
+                'name': '冀中能源集团电子招标投标交易平台',
+
+                # list页面的base地址
+                'base_url': 'http://www.jzbidding.com/jznycms/category/',
+
+                # list页面的call_back处理函数
+                'callback': self.parse_list_page_common,
+
+                # 得到下一页url的函数，返回值一定是一个url
+                'get_next_page_url': self.get_normal_next_page_url,
+
+                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+                'stop_page_num': 7000000,
+
+                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+
+                # list页面中，获得条目列表的xpath
+                'xpath_of_list': '//ul[@class="newslist"]/li',
+
+                # 获得每一个条目链接地址的xpath
+                'xpath_of_detail_url': './a/@href',
+
+                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+                'item_parse_class': BaseItemCommonParser,
+
+                # 其它信息，可以辅助生成CommonRawItem的字段
+                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+                'tos': '工程建设',
+                'tos_code': '01',
+                'source': '冀中能源集团电子招标投标交易平台',
+                'site_name': '冀中能源集团电子招标投标交易平台',
+                'notice_type': '结果公示',
+                'notice_type_code': '0104',
+                'area_code': '670000',
+                'content_code': '1',
+                'bid_sort': 'resultBulletinList',
+                'industryName': '服务',
+                'categoryId': '90',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -195,6 +562,7 @@ class JznyjtdzzbSpider(scrapy.Spider):
                 _ext_param = {
                     'time_type': _v['time_type'],
                     'bid_sort': _v['bid_sort'],
+                    'industryName': _v['industryName'],
                     'start_time': self.start_time,
                     'end_time': self.end_time,
                 }
@@ -236,6 +604,7 @@ class JznyjtdzzbSpider(scrapy.Spider):
             _param = {
                 'dates': '300',
                 'categoryId': '88',
+                'industryName': ext_param['industryName'],
                 'page': 1,
             }
             return '{}{}.html?{}'.format(base_url, ext_param['bid_sort'], urlencode(_param, quote_via=quote_plus))
@@ -246,6 +615,7 @@ class JznyjtdzzbSpider(scrapy.Spider):
                 'word': '',
                 'categoryId': '88',
                 'industryName': '',
+                'industryName': ext_param['industryName'],
                 'status': '',
                 'page': page_index,
             }
@@ -352,8 +722,15 @@ class BaseItemCommonParser:
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['tos'] = ext_param['tos']
-        self.item['source'] = ext_param['source']
+        self.item['tos_code'] = ext_param['tos_code']
         self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
+        self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['industry'] = ext_param['industryName']
+        self.item['content_code'] = ext_param['content_code']
+
 
         return self.item
 
