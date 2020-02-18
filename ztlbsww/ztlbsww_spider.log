@@ -1679,3 +1679,98 @@ TypeError: can only concatenate str (not "bytes") to str
 2020-02-17 20:40:15,028  ztlbsww.py:500 : INFO  Get page list url, page:[7], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=6], status:[200], body md5:[7e2954c65d8dced9a83171d89d149826]
 2020-02-17 20:40:15,028  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'fce86c7715350a7e8f0d4bfec4e3f535', 'total_page_num': 6, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-17 20:30:02', 'crawl_end_time': ''}}
 2020-02-17 20:40:15,041  logstats.py:48 : INFO  Crawled 8 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:39:39,200  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-18 10:39:39,207  middleware.py:48 : INFO  Enabled spider middlewares:
+['ztlbsww.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-18 10:39:39,209  middleware.py:48 : INFO  Enabled item pipelines:
+['ztlbsww.pipelines.CommonPipeline']
+2020-02-18 10:39:39,210  engine.py:257 : INFO  Spider opened
+2020-02-18 10:39:39,215  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:39:39,216  middlewares.py:62 : INFO  Spider opened: ztlbsww_spider
+2020-02-18 10:39:39,218  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-18 10:39:39,229  ztlbsww.py:390 : INFO  start crawling...
+2020-02-18 10:40:54,559  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:40:54,562  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:42:28,717  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:42:28,720  ztlbsww.py:500 : INFO  Get page list url, page:[1], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&filter=sortid&sortid=12], status:[200], body md5:[aa89bbc8c22ef06862c02591bc7bbb4e]
+2020-02-18 10:42:28,721  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:42:28,736  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:42:39,216  logstats.py:48 : INFO  Crawled 2 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:43:39,218  logstats.py:48 : INFO  Crawled 2 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:44:39,218  logstats.py:48 : INFO  Crawled 2 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:46:46,151  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:46:46,155  ztlbsww.py:500 : INFO  Get page list url, page:[2], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=1], status:[200], body md5:[43ccf957a6c31dcae0af0728da2213f2]
+2020-02-18 10:46:46,156  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'aa89bbc8c22ef06862c02591bc7bbb4e', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:46:46,168  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:48:13,248  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:48:13,250  ztlbsww.py:500 : INFO  Get page list url, page:[3], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=2], status:[200], body md5:[d270876a1ac56d235d7e7d5f0e5f4d20]
+2020-02-18 10:48:13,250  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '43ccf957a6c31dcae0af0728da2213f2', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:48:13,263  logstats.py:48 : INFO  Crawled 4 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:49:48,802  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:49:48,804  ztlbsww.py:500 : INFO  Get page list url, page:[4], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=3], status:[200], body md5:[df85919096d2dc2ba62871abb8b35a88]
+2020-02-18 10:49:48,804  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'd270876a1ac56d235d7e7d5f0e5f4d20', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:49:48,817  logstats.py:48 : INFO  Crawled 5 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:51:05,094  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:51:05,096  ztlbsww.py:500 : INFO  Get page list url, page:[5], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=4], status:[200], body md5:[de6f22a1ef9721e75e317bf491fc17ef]
+2020-02-18 10:51:05,096  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'df85919096d2dc2ba62871abb8b35a88', 'total_page_num': 4, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:51:05,117  logstats.py:48 : INFO  Crawled 6 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:52:23,296  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:52:23,299  ztlbsww.py:500 : INFO  Get page list url, page:[6], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=5], status:[200], body md5:[72916a5d1db914878e57f6c53160c0eb]
+2020-02-18 10:52:23,299  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'de6f22a1ef9721e75e317bf491fc17ef', 'total_page_num': 5, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:52:23,315  logstats.py:48 : INFO  Crawled 7 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:53:41,814  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:53:41,816  ztlbsww.py:500 : INFO  Get page list url, page:[7], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=6], status:[200], body md5:[3f38446ba443bac17621ef2b731c3cd0]
+2020-02-18 10:53:41,816  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '72916a5d1db914878e57f6c53160c0eb', 'total_page_num': 6, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:53:41,831  logstats.py:48 : INFO  Crawled 8 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:54:58,288  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:54:58,291  ztlbsww.py:500 : INFO  Get page list url, page:[8], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=7], status:[200], body md5:[4d534b387ecf162b6cc197a23b32c922]
+2020-02-18 10:54:58,292  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '3f38446ba443bac17621ef2b731c3cd0', 'total_page_num': 7, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:54:58,304  logstats.py:48 : INFO  Crawled 9 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:56:14,701  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:56:14,703  ztlbsww.py:500 : INFO  Get page list url, page:[9], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=8], status:[200], body md5:[86d280a534df4e6519498834354533fe]
+2020-02-18 10:56:14,704  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '4d534b387ecf162b6cc197a23b32c922', 'total_page_num': 8, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:56:14,716  logstats.py:48 : INFO  Crawled 10 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:57:32,670  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:57:32,673  ztlbsww.py:500 : INFO  Get page list url, page:[10], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=9], status:[200], body md5:[40d4419e6f6f011a975a77a8e64d762b]
+2020-02-18 10:57:32,674  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '86d280a534df4e6519498834354533fe', 'total_page_num': 9, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:57:32,687  logstats.py:48 : INFO  Crawled 11 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:58:49,174  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:58:49,177  ztlbsww.py:500 : INFO  Get page list url, page:[11], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=10], status:[200], body md5:[d99b808212ccacfc1794e64a8678bbf6]
+2020-02-18 10:58:49,177  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '40d4419e6f6f011a975a77a8e64d762b', 'total_page_num': 10, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 10:58:49,190  logstats.py:48 : INFO  Crawled 12 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 11:00:07,080  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 11:00:07,082  ztlbsww.py:500 : INFO  Get page list url, page:[12], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=11], status:[200], body md5:[faed75cf9f4da9bbde6a1723f938ea73]
+2020-02-18 11:00:07,082  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'd99b808212ccacfc1794e64a8678bbf6', 'total_page_num': 11, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 11:00:07,095  logstats.py:48 : INFO  Crawled 13 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 11:01:24,568  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 11:01:24,570  ztlbsww.py:500 : INFO  Get page list url, page:[13], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=12], status:[200], body md5:[d32ec693d002f162cbbd0d0900884d01]
+2020-02-18 11:01:24,571  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'faed75cf9f4da9bbde6a1723f938ea73', 'total_page_num': 12, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 11:01:24,586  logstats.py:48 : INFO  Crawled 14 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 11:02:42,134  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 11:02:42,136  ztlbsww.py:500 : INFO  Get page list url, page:[14], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=13], status:[200], body md5:[0e1505a313078092bba23b61bcf1267f]
+2020-02-18 11:02:42,137  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'd32ec693d002f162cbbd0d0900884d01', 'total_page_num': 13, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 11:02:42,148  logstats.py:48 : INFO  Crawled 15 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 11:03:59,960  ztlbsww.py:431 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 11:03:59,961  ztlbsww.py:500 : INFO  Get page list url, page:[15], url:[http://www.crecgec.com/forum.php?mod=forumdisplay&fid=2&sortid=12&filter=sortid&page=14], status:[200], body md5:[3caefaee144d937ba06148d7401e88a8]
+2020-02-18 11:03:59,961  ztlbsww.py:502 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '0e1505a313078092bba23b61bcf1267f', 'total_page_num': 14, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 10:39:39', 'crawl_end_time': ''}}
+2020-02-18 11:03:59,979  logstats.py:48 : INFO  Crawled 16 pages (at 1 pages/min), scraped 0 items (at 0 items/min)

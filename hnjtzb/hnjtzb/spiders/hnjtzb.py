@@ -124,7 +124,7 @@ class HnjtzbSpider(scrapy.Spider):
             # 页面的key，保证唯一
             'zbgg_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告',
+                'name': '华能招标有限公司',
 
                 # list页面的base地址
                 'base_url': 'http://www.chnzb.cn/hnzb/',
@@ -154,8 +154,14 @@ class HnjtzbSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
+                'tos_code': '01',
                 'source': '华能招标有限公司',
                 'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '华能招标有限公司',
+                'site_name': '华能招标有限公司',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'zbgg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -192,8 +198,13 @@ class HnjtzbSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
-                'source': '华能招标有限公司',
+                'tos_code': '01',
                 'notice_type': '中标公示',
+                'notice_type_code': '0104',
+                'source': '华能招标有限公司',
+                'site_name': '华能招标有限公司',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'zbgs',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
 
@@ -368,14 +379,20 @@ class BaseItemCommonParser:
         self.item['area_detail'] = self.__get_area_detail__()
         self.item['notice_time'] = self.__get_notice_time__()
         self.item['buyer'] = self.__get_buyer__()
-        self.item['notice_type'] = self.__get_notice_type__(detail_url)
+        # self.item['notice_type'] = self.__get_notice_type__(detail_url)
         self.item['title'] = self.__get_title__()
         self.item['content'] = self.__get_content__(detail_url)
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 
