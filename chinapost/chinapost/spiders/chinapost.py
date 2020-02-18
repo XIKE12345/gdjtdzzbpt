@@ -154,9 +154,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7338',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -191,9 +196,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'notice_type': '预审资格公告',
+                'notice_type_code': '0106',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7339',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -228,9 +238,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'notice_type': '竞争性谈判公告',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7337',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -265,9 +280,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司采购',
-                'source': '中国邮政',
-                'notice_type':'竞争性磋商公告',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '竞争性磋商公告',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7336',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -302,9 +322,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'notice_type': '询价公告',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7335',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -340,9 +365,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'notice_type': '中标人候选公示',
+                'notice_type_code': '0104',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7334',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -377,9 +407,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'notice_type': '单一来源采前公示',
+                'notice_type_code': '0104',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7333', # 根据bid_sort 区分招标公告是什么类型的
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -415,9 +450,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'notice_type': '其他',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181392/1929',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -454,9 +494,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '省邮政分公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7338',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -491,8 +536,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '省邮政分公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0106',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '预审资格公告',
                 'bid_sort': '181313/7339',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -528,8 +578,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '省邮政分公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '竞争性谈判公告',
                 'bid_sort': '181313/7337',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -565,8 +620,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '省邮政分公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '竞争性磋商公告',
                 'bid_sort': '181313/7336',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -602,8 +662,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '省邮政分公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '询价公告',
                 'bid_sort': '181313/7335',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -640,8 +705,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '省邮政分公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '中标人候选公示',
                 'bid_sort': '181313/7334',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -677,8 +747,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '省邮政分公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '单一来源采前公示',
                 'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -715,8 +790,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '省邮政分公司采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '其他',
                 'bid_sort': '181392/1929',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -754,9 +834,14 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '邮政储蓄银行采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7338',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -791,8 +876,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '邮政储蓄银行采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '预审资格公告',
                 'bid_sort': '181313/7339',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -828,8 +918,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '邮政储蓄银行采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '竞争性谈判公告',
                 'bid_sort': '181313/7337',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -865,8 +960,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '邮政储蓄银行采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '竞争性磋商公告',
                 'bid_sort': '181313/7336',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -902,8 +1002,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '邮政储蓄银行采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '询价公告',
                 'bid_sort': '181313/7335',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -940,8 +1045,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '邮政储蓄银行采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '中标人候选公示',
                 'bid_sort': '181313/7334',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -977,8 +1087,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '邮政储蓄银行采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '单一来源采前公示',
                 'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1015,8 +1130,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '邮政储蓄银行采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '其他',
                 'bid_sort': '181392/1929',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1054,8 +1174,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮保险采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '招标公告',
                 'bid_sort': '181313/7338',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1091,8 +1216,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮保险采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '预审资格公告',
                 'bid_sort': '181313/7339',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1128,8 +1258,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮保险采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '竞争性谈判公告',
                 'bid_sort': '181313/7337',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1165,8 +1300,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮保险采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '竞争性磋商公告',
                 'bid_sort': '181313/7336',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1202,8 +1342,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮保险采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '询价公告',
                 'bid_sort': '181313/7335',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1240,8 +1385,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮保险采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '中标人候选公示',
                 'bid_sort': '181313/7334',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1277,8 +1427,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮保险采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '单一来源采前公示',
                 'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1315,8 +1470,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮保险采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '其他',
                 'bid_sort': '181392/1929',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1354,8 +1514,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮证券采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '招标公告',
                 'bid_sort': '181313/7338',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1391,8 +1556,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮证券采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '预审资格公告',
                 'bid_sort': '181313/7339',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1428,8 +1598,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮证券采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '竞争性谈判公告',
                 'bid_sort': '181313/7337',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1465,8 +1640,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮证券采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '竞争性磋商公告',
                 'bid_sort': '181313/7336',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1502,8 +1682,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮证券采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '询价公告',
                 'bid_sort': '181313/7335',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1540,8 +1725,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮证券采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '中标人候选公示',
                 'bid_sort': '181313/7334',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1577,9 +1767,13 @@ class ChinapostSpider(scrapy.Spider):
                 'notice_type': '单一来源采前公示',
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮证券采购',
-                'source': '中国邮政',
-
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -1615,8 +1809,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '中邮证券采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type':'其他',
                 'bid_sort': '181392/1929',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1654,8 +1853,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司直属单位采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '招标公告',
                 'bid_sort': '181313/7338',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1691,8 +1895,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司直属单位采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '预审资格公告',
                 'bid_sort': '181313/7339',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1728,8 +1937,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司直属单位采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '竞争性谈判公告',
                 'bid_sort': '181313/7337',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1765,8 +1979,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司直属单位采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type':'竞争性磋商公告',
                 'bid_sort': '181313/7336',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1802,8 +2021,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司直属单位采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '询价公告',
                 'bid_sort': '181313/7335',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1840,8 +2064,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司直属单位采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '中标人候选公示',
                 'bid_sort': '181313/7334',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1877,8 +2106,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司直属单位采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type': '单一来源采前公示',
                 'bid_sort': '181313/7333',  # 根据bid_sort 区分招标公告是什么类型的
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -1915,8 +2149,13 @@ class ChinapostSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '集团公司直属单位采购',
-                'source': '中国邮政',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type_code': '0101',
+                'source': '中国邮政采购平台',
+                'site_name': '中国邮政采购平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'notice_type':'其他',
                 'bid_sort': '181392/1929',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
@@ -2101,7 +2340,13 @@ class BaseItemCommonParser:
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 

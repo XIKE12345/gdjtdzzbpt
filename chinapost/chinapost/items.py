@@ -25,8 +25,11 @@ class CommonRawItem(scrapy.Item):
     # 唯一标识, 用来数据排重，一般取url全路径的md5
     _id = scrapy.Field()
 
-    # 网站, 例如：hljggzyjyw.gov.cn
+    # 网站地址, 例如：ccgp.gov.cn
     site = scrapy.Field()
+
+    # 网站中文名, 例如：中国政府采购网
+    site_name = scrapy.Field()
 
     # 公告来源，如：中央公告
     source = scrapy.Field()
@@ -43,11 +46,20 @@ class CommonRawItem(scrapy.Item):
     # 地区，如：南通
     area_detail = scrapy.Field()
 
-    # 公告类型，如：成交公告
+    # 地区编码，符合表:t_sys_area定义，如："北京": "11"、"江苏": "32"
+    area_code = scrapy.Field()
+
+    # 公告类型中文，如：成交公告
     notice_type = scrapy.Field()
 
-    # 业务类型，如：政府采购
+    # 公告类型编码，如：0101
+    notice_type_code = scrapy.Field()
+
+    # 业务类型中文，如：政府采购
     tos = scrapy.Field()
+
+    # 业务类型编码，如：01
+    tos_code = scrapy.Field()
 
     # 公告时间
     notice_time = scrapy.Field()
@@ -57,6 +69,9 @@ class CommonRawItem(scrapy.Item):
 
     # 正文内容
     content = scrapy.Field()
+
+    # 正文内容生成方式：1 - 原文; 2 - 拼接生成
+    content_code = scrapy.Field()
 
     # 时间戳
     time_stamp = scrapy.Field()
