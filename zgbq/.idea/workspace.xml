@@ -2,37 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db9046a0-1b69-417d-8b04-0217ea98b062" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/tjhcpt.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/common/jy_common_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/common/jy_crawl_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/scrapy.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww/spiders/ztlbsww.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ztlbsww/ztlbsww_spider.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chinapost/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chinapost/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdjtdzzbpt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../tjhcpt/tjhcpt_spider.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../wgdzzbpt/wgdzzbpt_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zgbq_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/.idea/jznyjtdzzb.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/common/jy_common_items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/common/jy_crawl_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/common/jy_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb/spiders/jznyjtdzzb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/jznyjtdzzb_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jznyjtdzzb/scrapy.cfg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgbq/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/zgbq/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zgbq/spiders/zgbq.py" beforeDir="false" afterPath="$PROJECT_DIR$/zgbq/spiders/zgbq.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,10 +130,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1580985405308" />
-    <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1581054639825">
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1582025026258">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1581054639825" />
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1582025026258" />
     <state x="394" y="172" key="search.everywhere.popup" timestamp="1580827565257">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

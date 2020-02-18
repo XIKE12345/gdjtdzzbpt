@@ -124,7 +124,7 @@ class ZgbqSpider(scrapy.Spider):
             # 页面的key，保证唯一
             'zbgg_gc_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告-工程',
+                'name': '中国兵器装备集团有限公司',
 
                 # list页面的base地址
                 'base_url': 'http://www.cse-bidding.com/zgbqcms/category/',
@@ -153,8 +153,16 @@ class ZgbqSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程',
+
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '公示公告',
+                'notice_type_code': '0101',
                 'source': '中国兵器装备集团有限公司',
+                'site_name': '中国兵器装备集团有限公司',
+                'area_code': '670000',
+                'content_code': '1',
+                'industryName': '工程',
                 'bid_sort': 'belletinList',
                 'categoryId': 88,
                 'tabName': '招标公告',
@@ -163,7 +171,7 @@ class ZgbqSpider(scrapy.Spider):
 
             'zbgg_hw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告-货物',
+                'name': '中国兵器装备集团有限公司',
 
                 # list页面的base地址
                 'base_url': 'http://www.cse-bidding.com/zgbqcms/category/',
@@ -192,8 +200,15 @@ class ZgbqSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程',
+                 'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '公示公告',
+                'notice_type_code': '0101',
                 'source': '中国兵器装备集团有限公司',
+                'site_name': '中国兵器装备集团有限公司',
+                'area_code': '670000',
+                'content_code': '1',
+                'industryName': '货物',
                 'bid_sort': 'belletinList',
                 'categoryId': 88,
                 'tabName': '招标公告',
@@ -202,7 +217,7 @@ class ZgbqSpider(scrapy.Spider):
 
             'zbgg_fw_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '招标公告-服务',
+                'name': '中国兵器装备集团有限公司',
 
                 # list页面的base地址
                 'base_url': 'http://www.cse-bidding.com/zgbqcms/category/',
@@ -231,8 +246,15 @@ class ZgbqSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程',
+                 'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '公示公告',
+                'notice_type_code': '0101',
                 'source': '中国兵器装备集团有限公司',
+                'site_name': '中国兵器装备集团有限公司',
+                'area_code': '670000',
+                'content_code': '1',
+                'industryName': '服务',
                 'bid_sort': 'belletinList',
                 'categoryId': 88,
                 'tabName': '招标公告',
@@ -241,7 +263,7 @@ class ZgbqSpider(scrapy.Spider):
 
             'bggg_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '变更公告',
+                'name': '中国兵器装备集团有限公司',
 
                 # list页面的base地址
                 'base_url': 'http://www.cse-bidding.com/zgbqcms/category/',
@@ -270,8 +292,15 @@ class ZgbqSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '企业采购',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '公示公告',
+                'notice_type_code': '0101',
                 'source': '中国兵器装备集团有限公司',
+                'site_name': '中国兵器装备集团有限公司',
+                'area_code': '670000',
+                'content_code': '1',
+                'industryName': '',
                 'bid_sort': 'resultBulletinLis',
                 'tabName': '变更公告',
                 'categoryId': 89,
@@ -281,7 +310,7 @@ class ZgbqSpider(scrapy.Spider):
 
             'jggs_search': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '结果公示',
+                'name': '中国兵器装备集团有限公司',
 
                 # list页面的base地址
                 'base_url': 'http://www.cse-bidding.com/zgbqcms/category/',
@@ -310,8 +339,15 @@ class ZgbqSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '企业采购',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '公示公告',
+                'notice_type_code': '0104',
                 'source': '中国兵器装备集团有限公司',
+                'site_name': '中国兵器装备集团有限公司',
+                'area_code': '670000',
+                'content_code': '1',
+                'industryName': '',
                 'bid_sort': 'resultBulletinList',
                 'tabName': '中标公示',
                 'categoryId': 90,
@@ -350,6 +386,8 @@ class ZgbqSpider(scrapy.Spider):
                 _ext_param = {
                     'time_type': _v['time_type'],
                     'bid_sort': _v['bid_sort'],
+                    'categoryId': _v['categoryId'],
+                    'industryName': _v['industryName'],
                     'start_time': self.start_time,
                     'end_time': self.end_time,
                 }
@@ -393,7 +431,7 @@ class ZgbqSpider(scrapy.Spider):
                     'dates': 300,
                     'word': '',
                     'categoryId': ext_param['categoryId'],
-                    'industryName': '工程',
+                    'industryName': ext_param['industryName'],
                     'status': '',
                 }
                 return '{}{}.html?{}'.format(base_url, ext_param['bid_sort'], urlencode(_param, quote_via=quote_plus))
@@ -403,7 +441,7 @@ class ZgbqSpider(scrapy.Spider):
                     'dates': 300,
                     'word': '',
                     'categoryId': ext_param['categoryId'],
-                    'industryName': '工程',
+                    'industryName': ext_param['industryName'],
                     'status': '',
                     'page': page_index + 1
                 }
@@ -413,6 +451,7 @@ class ZgbqSpider(scrapy.Spider):
                 _param = {
                     'categoryId': ext_param['categoryId'],
                     'tabName': ext_param['tabName'],
+                    'industryName': ext_param['industryName'],
                     'dates': 300,
                     'page': 1
                 }
@@ -423,6 +462,7 @@ class ZgbqSpider(scrapy.Spider):
                     'dates': 300,
                     'word': '',
                     'categoryId': ext_param['categoryId'],
+                    'industryName': ext_param['industryName'],
                     'tabName': ext_param['tabName'],
                     'page': page_index + 1
                 }
@@ -523,14 +563,21 @@ class BaseItemCommonParser:
         self.item['area_detail'] = self.__get_area_detail__()
         self.item['notice_time'] = self.__get_notice_time__()
         self.item['buyer'] = self.__get_buyer__()
-        self.item['notice_type'] = self.__get_notice_type__(detail_url)
+        # self.item['notice_type'] = self.__get_notice_type__(detail_url)
         self.item['title'] = self.__get_title__()
         self.item['content'] = self.__get_content__(detail_url)
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
+        self.item['industry'] = ext_param['industryName']
 
         return self.item
 
@@ -557,7 +604,7 @@ class BaseItemCommonParser:
         try:
             # 网页格式: 2020.01.21 10:00:00
             # 必须是以下格式: '2020.01.21 10:00:00'
-            _notice_time = self.selector.xpath('./span[@class="date"]/text()').extract_first()
+            _notice_time = self.selector.xpath('string(./a/div[@class="newsDate"])').extract_first().replace('\r\n          ','').replace('\r\n         ','.').replace('/','.')
             _ret = _notice_time.replace('-', '.') + ' 00:00:00'
 
         except:
@@ -600,7 +647,7 @@ class BaseItemCommonParser:
         :param url:
         :return:
         """
-        _ret = self.selector.xpath('./a/@title').extract_first().replace('\\n', '').rstrip().lstrip()
+        _ret = self.selector.xpath('./a/h1/text()').extract_first().split('【')[1].split('】')[0]
 
         return _ret
 
