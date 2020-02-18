@@ -6250,3 +6250,39 @@ KeyError: 'sl'
  'url': 'http://changde.hnsggzy.com:80/jygksz/1014592.jhtml'}
 2020-02-10 14:32:10,098  logstats.py:48 : INFO  Crawled 18 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
 2020-02-10 14:32:10,508  logstats.py:48 : INFO  Crawled 18 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 09:57:22,702  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-18 09:57:22,709  middleware.py:48 : INFO  Enabled spider middlewares:
+['hnsggzyjy.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-18 09:57:22,711  middleware.py:48 : INFO  Enabled item pipelines:
+['hnsggzyjy.pipelines.CommonPipeline']
+2020-02-18 09:57:22,712  engine.py:257 : INFO  Spider opened
+2020-02-18 09:57:22,717  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 09:57:22,718  middlewares.py:62 : INFO  Spider opened: hnsggzyjy_spider
+2020-02-18 09:57:22,720  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-18 09:57:22,731  hnsggzyjy.py:386 : INFO  start crawling...
+2020-02-18 09:58:37,943  hnsggzyjy.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 09:58:37,945  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-18 10:00:36,399  hnsggzyjy.py:427 : INFO  Use proxy[] to generate scrapy request
+2020-02-18 10:00:36,402  hnsggzyjy.py:478 : INFO  Get page list url, page:[1], url:[https://www.hnsggzy.com/gczb/index.jhtml], status:[200], body md5:[d3d0ba23d35dc8709b142474a9df18d2]
+2020-02-18 10:00:36,403  hnsggzyjy.py:480 : INFO  Crawl info: {'gcjs_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-18 09:57:22', 'crawl_end_time': ''}}
+2020-02-18 10:00:36,473  hnsggzyjy.py:499 : INFO  Parse item, [gcjs_search]-[1/1]

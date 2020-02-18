@@ -163,6 +163,9 @@ class ZghfwsscSpider(scrapy.Spider):
                 'source': '中国航发网上商城',
                 'notice_type': '招标公告',
                 'notice_type_code': '0101',
+                'site_name': '中国航发网上商城',
+                'area_code': '670000',
+                'content_code': '1',
                 'classId': '152',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -205,7 +208,10 @@ class ZghfwsscSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国航发网上商城',
                 'notice_type': '变更公告',
-                'notice_type_code': '',
+                'notice_type_code': '0101',
+                'site_name': '中国航发网上商城',
+                'area_code': '670000',
+                'content_code': '1',
                 'classId': '152',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -248,7 +254,10 @@ class ZghfwsscSpider(scrapy.Spider):
                 'tos_code': '01',
                 'source': '中国航发网上商城',
                 'notice_type': '中标结果',
-                'notice_type_code': '',
+                'notice_type_code': '0104',
+                'site_name': '中国航发网上商城',
+                'area_code': '670000',
+                'content_code': '1',
                 'classId': '153',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -457,9 +466,14 @@ class BaseItemCommonParser:
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
-        self.item['notice_type'] = ext_param['notice_type']
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 
