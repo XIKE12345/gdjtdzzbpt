@@ -153,8 +153,14 @@ class GdjtdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '招标信息',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'source': '国电集团电子招投标平台',
+                'notice_type': '招标信息',
+                'notice_type_code': '0101',
+                'site_name': '国电集团电子招投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'bids',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -190,8 +196,14 @@ class GdjtdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '招标公告',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'source': '国电集团电子招投标平台',
+                'notice_type': '招标公告',
+                'notice_type_code': '0101',
+                'site_name': '国电集团电子招投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'zbgg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
 
@@ -228,8 +240,14 @@ class GdjtdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '资格预审公告',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'source': '国电集团电子招投标平台',
+                'notice_type': '资格预审公告',
+                'notice_type_code': '0106',
+                'site_name': '国电集团电子招投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'zgysgg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -264,8 +282,14 @@ class GdjtdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '评标结果公示',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'source': '国电集团电子招投标平台',
+                'notice_type': '评标结果公示',
+                'notice_type_code': '0104',
+                'site_name': '国电集团电子招投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'pbgs',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -301,8 +325,14 @@ class GdjtdzzbptSpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '流标公告',
+                'tos': '工程建设',
+                'tos_code': '01',
                 'source': '国电集团电子招投标平台',
+                'notice_type': '流标公告',
+                'notice_type_code': '0104',
+                'site_name': '国电集团电子招投标平台',
+                'area_code': '670000',
+                'content_code': '1',
                 'bid_sort': 'lbgg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -476,14 +506,19 @@ class BaseItemCommonParser:
         self.item['area_detail'] = self.__get_area_detail__()
         self.item['notice_time'] = self.__get_notice_time__()
         self.item['buyer'] = self.__get_buyer__()
-        self.item['notice_type'] = self.__get_notice_type__(detail_url)
+        # self.item['notice_type'] = self.__get_notice_type__(detail_url)
         self.item['title'] = self.__get_title__()
         self.item['content'] = self.__get_content__(detail_url)
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
-        self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
 
         return self.item
 

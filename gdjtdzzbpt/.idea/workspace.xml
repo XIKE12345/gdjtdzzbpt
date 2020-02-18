@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db9046a0-1b69-417d-8b04-0217ea98b062" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../chinapost/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chinapost/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../chinapost/chinapost_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bdhzb_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ccgp_new_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gdjtdzzbpt/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/gdjtdzzbpt/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gdjtdzzbpt/spiders/gdjtdzzbpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/gdjtdzzbpt/spiders/gdjtdzzbpt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gdjtdzzbpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/gdjtdzzbpt_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nfdwdzsw_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gdsggzyjypt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zghfwssc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zghfwssc/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zghfwssc/zghfwssc_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../zghfwssc/zghfwssc_spider.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
