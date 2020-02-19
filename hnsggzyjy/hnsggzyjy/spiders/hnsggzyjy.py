@@ -153,8 +153,15 @@ class HnsggzyjySpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '工程建设类',
+                'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '公示公告',
+                'notice_type_code': '0101',
                 'source': '湖南省公共资源交易服务平台',
+                'site_name': '湖南省公共资源交易服务平台',
+                'area_code': '43',
+                'content_code': '1',
+                'industryName': '',
                 'bid_sort': 'gczb',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -190,8 +197,15 @@ class HnsggzyjySpider(scrapy.Spider):
 
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '政府采购类',
+                'tos': '政府采购',
+                'tos_code': '02',
+                'notice_type': '公示公告',
+                'notice_type_code': '0201',
                 'source': '湖南省公共资源交易服务平台',
+                'site_name': '湖南省公共资源交易服务平台',
+                'area_code': '43',
+                'content_code': '1',
+                'industryName': '',
                 'bid_sort': 'jygkzfcg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -228,7 +242,14 @@ class HnsggzyjySpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '土地使用权',
+                'tos_code': '03',
+                'notice_type': '公示公告',
+                'notice_type_code': '0301',
                 'source': '湖南省公共资源交易服务平台',
+                'site_name': '湖南省公共资源交易服务平台',
+                'area_code': '43',
+                'content_code': '1',
+                'industryName': '',
                 'bid_sort': 'jygktd',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -265,7 +286,14 @@ class HnsggzyjySpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '矿业权出让',
+                'tos_code': '05',
+                'notice_type': '公示公告',
+                'notice_type_code': '0501',
                 'source': '湖南省公共资源交易服务平台',
+                'site_name': '湖南省公共资源交易服务平台',
+                'area_code': '43',
+                'content_code': '1',
+                'industryName': '',
                 'bid_sort': 'jygkkyq',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -302,7 +330,14 @@ class HnsggzyjySpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '产权交易',
+                'tos_code': '05',
+                'notice_type': '公示公告',
+                'notice_type_code': '0501',
                 'source': '湖南省公共资源交易服务平台',
+                'site_name': '湖南省公共资源交易服务平台',
+                'area_code': '43',
+                'content_code': '1',
+                'industryName': '',
                 'bid_sort': 'cqjy',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -339,7 +374,14 @@ class HnsggzyjySpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '医药采购',
+                'tos_code': '01',
+                'notice_type': '公示公告',
+                'notice_type_code': '0101',
                 'source': '湖南省公共资源交易服务平台',
+                'site_name': '湖南省公共资源交易服务平台',
+                'area_code': '43',
+                'content_code': '1',
+                'industryName': '',
                 'bid_sort': 'yycg',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -376,7 +418,14 @@ class HnsggzyjySpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '其他交易类',
+                'tos_code': '01',
+                'notice_type': '公示公告',
+                'notice_type_code': '0101',
                 'source': '湖南省公共资源交易服务平台',
+                'site_name': '湖南省公共资源交易服务平台',
+                'area_code': '43',
+                'content_code': '1',
+                'industryName': '',
                 'bid_sort': 'jygkqt',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
@@ -557,7 +606,14 @@ class BaseItemCommonParser:
 
         # 以下是随参数传递进来的项，根据具体情况修改
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
+        self.item['industry'] = ext_param['industryName']
 
         return self.item
 
@@ -604,11 +660,10 @@ class BaseItemCommonParser:
         return _ret
 
     def __get_notice_type__(self, detail_url):
-        print("detail_url is : " + detail_url)
         try:
             _notice_type = {
                 'sz': '市政',
-                'sl':'水利',
+                'sl': '水利',
                 'jt': '交通'
 
             }
@@ -627,7 +682,8 @@ class BaseItemCommonParser:
         :param url:
         :return:
         """
-        _ret = self.selector.xpath('string(./div["article-list3-t"]/a)').extract_first().replace('\\n', '').rstrip().lstrip()
+        _ret = self.selector.xpath('string(./div["article-list3-t"]/a)').extract_first().replace('\\n',
+                                                                                                 '').rstrip().lstrip()
 
         return _ret
 
