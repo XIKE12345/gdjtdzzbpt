@@ -158,8 +158,15 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': '项目注册',
+                'notice_type_code': '0101',
                 'source': '湖北省公共资源交易平台',
-                'notice_type': "项目注册",
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
+
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -199,8 +206,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '01',
                 'notice_type': "招标公告/预审公告",
+                'notice_type_code': '0101',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -240,8 +253,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '01',
                 'notice_type': "开标记录",
+                'notice_type_code': '0102',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -281,8 +300,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '01',
                 'notice_type': "中标候选人",
+                'notice_type_code': '0104',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -322,8 +347,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '01',
                 'notice_type': "中标结果",
+                'notice_type_code': '0104',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
             'page_6': {
@@ -355,8 +386,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '工程建设',
+                'tos_code': '01',
+                'notice_type': "主体信息",
+                'notice_type_code': '0101',
                 'source': '湖北省公共资源交易平台',
-                'notice_type': "主题信息",
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -396,8 +433,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '政府采购',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '02',
                 'notice_type': "采购公告",
+                'notice_type_code': '0201',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -437,8 +480,15 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '政府采购',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '02',
                 'notice_type': "更正事项",
+                'notice_type_code': '0204',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
+
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -478,8 +528,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '政府采购',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '02',
                 'notice_type': "采购结果",
+                'notice_type_code': '0202',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -519,8 +575,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '政府采购',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '02',
                 'notice_type': "采购合同",
+                'notice_type_code': '0203',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
             'page_11': {
@@ -559,8 +621,15 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '政府采购',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '02',
                 'notice_type': "监管处罚",
+                'notice_type_code': '0201',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
+                'notice_type': "",
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -600,8 +669,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '国有土地出让',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '03',
                 'notice_type': "出让公告",
+                'notice_type_code': '0301',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -641,214 +716,220 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '国有土地出让',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '03',
                 'notice_type': "成交公示",
-                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            },
-
-            'page_14': {
-                # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '湖北省公共资源交易平台',
-
-                # list页面的base地址
-                'base_url': 'https://www.hbggzyfwpt.cn/jyxx/tdsyq/cjqr',
-
-                # list页面的call_back处理函数
-                'callback': self.parse_list_page_common,
-
-                'method': "post",
-
-                'requests_type': "html",
-
-                # 得到下一页url的函数，返回值一定是一个url
-                'get_next_page_url': self.get_normal_next_page_url,
-
-                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 700,
-
-                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-
-                # list页面中，获得条目列表的xpath
-                'xpath_of_list': './/div[@class="newListwenzi"]//tr',
-
-                # 获得每一个条目链接地址的xpath
-                'xpath_of_detail_url': './td[1]/a//@href',
-
-                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-                'item_parse_class': BaseItemCommonParser,
-
-                # 其它信息，可以辅助生成CommonRawItem的字段
-                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '国有土地出让',
+                'notice_type_code': '0302',
                 'source': '湖北省公共资源交易平台',
-                'notice_type': "成交公示",
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
+            #
+            # 'page_14': {
+            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
+            #     'name': '湖北省公共资源交易平台',
+            #
+            #     # list页面的base地址
+            #     'base_url': 'https://www.hbggzyfwpt.cn/jyxx/tdsyq/cjqr',
+            #
+            #     # list页面的call_back处理函数
+            #     'callback': self.parse_list_page_common,
+            #
+            #     'method': "post",
+            #
+            #     'requests_type': "html",
+            #
+            #     # 得到下一页url的函数，返回值一定是一个url
+            #     'get_next_page_url': self.get_normal_next_page_url,
+            #
+            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+            #     'stop_page_num': 700,
+            #
+            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+            #
+            #     # list页面中，获得条目列表的xpath
+            #     'xpath_of_list': './/div[@class="newListwenzi"]//tr',
+            #
+            #     # 获得每一个条目链接地址的xpath
+            #     'xpath_of_detail_url': './td[1]/a//@href',
+            #
+            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+            #     'item_parse_class': BaseItemCommonParser,
+            #
+            #     # 其它信息，可以辅助生成CommonRawItem的字段
+            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+            #     'tos': '国有土地出让',
+            #     'source': '湖北省公共资源交易平台',
+            #     'notice_type': "成交公示",
+            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            # },
 
-            'page_15': {
-                # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '湖北省公共资源交易平台',
+            # 'page_15': {
+            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
+            #     'name': '湖北省公共资源交易平台',
+            #
+            #     # list页面的base地址
+            #     'base_url': 'https://www.hbggzyfwpt.cn/jyxx/tdsyq/cjqr',
+            #
+            #     # list页面的call_back处理函数
+            #     'callback': self.parse_list_page_common,
+            #
+            #     'method': "post",
+            #
+            #     'requests_type': "html",
+            #
+            #     # 得到下一页url的函数，返回值一定是一个url
+            #     'get_next_page_url': self.get_normal_next_page_url,
+            #
+            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+            #     'stop_page_num': 700,
+            #
+            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+            #
+            #     # list页面中，获得条目列表的xpath
+            #     'xpath_of_list': './/div[@class="newListwenzi"]//tr',
+            #
+            #     # 获得每一个条目链接地址的xpath
+            #     'xpath_of_detail_url': './td[1]/a//@href',
+            #
+            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+            #     'item_parse_class': BaseItemCommonParser,
+            #
+            #     # 其它信息，可以辅助生成CommonRawItem的字段
+            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+            #     'tos': '国有土地出让',
+            #     'source': '湖北省公共资源交易平台',
+            #     'notice_type': "土地供应计划",
+            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            # },
+            # 'page_16': {
+            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
+            #     'name': '湖北省公共资源交易平台',
+            #
+            #     # list页面的base地址
+            #     'base_url': 'https://www.hbggzyfwpt.cn/jyxx/ypyx/cggg',
+            #
+            #     # list页面的call_back处理函数
+            #     'callback': self.parse_list_page_common,
+            #
+            #     'method': "post",
+            #
+            #     'requests_type': "html",
+            #
+            #     # 得到下一页url的函数，返回值一定是一个url
+            #     'get_next_page_url': self.get_normal_next_page_url,
+            #
+            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+            #     'stop_page_num': 700,
+            #
+            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+            #
+            #     # list页面中，获得条目列表的xpath
+            #     'xpath_of_list': './/div[@class="newListwenzi"]//tr',
+            #
+            #     # 获得每一个条目链接地址的xpath
+            #     'xpath_of_detail_url': './td[1]/a//@href',
+            #
+            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+            #     'item_parse_class': BaseItemCommonParser,
+            #
+            #     # 其它信息，可以辅助生成CommonRawItem的字段
+            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+            #     'tos': '药品药械采购',
+            #     'source': '湖北省公共资源交易平台',
+            #     'notice_type': "采购公告",
+            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            # },
 
-                # list页面的base地址
-                'base_url': 'https://www.hbggzyfwpt.cn/jyxx/tdsyq/cjqr',
+            # 'page_17': {
+            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
+            #     'name': '湖北省公共资源交易平台',
+            #
+            #     # list页面的base地址
+            #     'base_url': 'https://www.hbggzyfwpt.cn/jyxx/ypyx/cggg',
+            #
+            #     # list页面的call_back处理函数
+            #     'callback': self.parse_list_page_common,
+            #
+            #     'method': "post",
+            #
+            #     'requests_type': "html",
+            #
+            #     # 得到下一页url的函数，返回值一定是一个url
+            #     'get_next_page_url': self.get_normal_next_page_url,
+            #
+            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+            #     'stop_page_num': 700,
+            #
+            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+            #
+            #     # list页面中，获得条目列表的xpath
+            #     'xpath_of_list': './/div[@class="newListwenzi"]//tr',
+            #
+            #     # 获得每一个条目链接地址的xpath
+            #     'xpath_of_detail_url': './td[1]/a//@href',
+            #
+            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+            #     'item_parse_class': BaseItemCommonParser,
+            #
+            #     # 其它信息，可以辅助生成CommonRawItem的字段
+            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+            #     'tos': '药品药械采购',
+            #     'source': '湖北省公共资源交易平台',
+            #     'notice_type': "采购结果",
+            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            # },
 
-                # list页面的call_back处理函数
-                'callback': self.parse_list_page_common,
-
-                'method': "post",
-
-                'requests_type': "html",
-
-                # 得到下一页url的函数，返回值一定是一个url
-                'get_next_page_url': self.get_normal_next_page_url,
-
-                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 700,
-
-                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-
-                # list页面中，获得条目列表的xpath
-                'xpath_of_list': './/div[@class="newListwenzi"]//tr',
-
-                # 获得每一个条目链接地址的xpath
-                'xpath_of_detail_url': './td[1]/a//@href',
-
-                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-                'item_parse_class': BaseItemCommonParser,
-
-                # 其它信息，可以辅助生成CommonRawItem的字段
-                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '国有土地出让',
-                'source': '湖北省公共资源交易平台',
-                'notice_type': "土地供应计划",
-                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            },
-            'page_16': {
-                # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '湖北省公共资源交易平台',
-
-                # list页面的base地址
-                'base_url': 'https://www.hbggzyfwpt.cn/jyxx/ypyx/cggg',
-
-                # list页面的call_back处理函数
-                'callback': self.parse_list_page_common,
-
-                'method': "post",
-
-                'requests_type': "html",
-
-                # 得到下一页url的函数，返回值一定是一个url
-                'get_next_page_url': self.get_normal_next_page_url,
-
-                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 700,
-
-                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-
-                # list页面中，获得条目列表的xpath
-                'xpath_of_list': './/div[@class="newListwenzi"]//tr',
-
-                # 获得每一个条目链接地址的xpath
-                'xpath_of_detail_url': './td[1]/a//@href',
-
-                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-                'item_parse_class': BaseItemCommonParser,
-
-                # 其它信息，可以辅助生成CommonRawItem的字段
-                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '药品药械采购',
-                'source': '湖北省公共资源交易平台',
-                'notice_type': "采购公告",
-                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            },
-
-            'page_17': {
-                # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '湖北省公共资源交易平台',
-
-                # list页面的base地址
-                'base_url': 'https://www.hbggzyfwpt.cn/jyxx/ypyx/cggg',
-
-                # list页面的call_back处理函数
-                'callback': self.parse_list_page_common,
-
-                'method': "post",
-
-                'requests_type': "html",
-
-                # 得到下一页url的函数，返回值一定是一个url
-                'get_next_page_url': self.get_normal_next_page_url,
-
-                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 700,
-
-                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-
-                # list页面中，获得条目列表的xpath
-                'xpath_of_list': './/div[@class="newListwenzi"]//tr',
-
-                # 获得每一个条目链接地址的xpath
-                'xpath_of_detail_url': './td[1]/a//@href',
-
-                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-                'item_parse_class': BaseItemCommonParser,
-
-                # 其它信息，可以辅助生成CommonRawItem的字段
-                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '药品药械采购',
-                'source': '湖北省公共资源交易平台',
-                'notice_type': "采购结果",
-                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            },
-
-            'page_18': {
-                # 通常会被填充在'source'字段里，有时也可以放在'tos'
-                'name': '湖北省公共资源交易平台',
-
-                # list页面的base地址
-                'base_url': 'https://www.hbggzyfwpt.cn/jyxx/ypyx/cggg',
-
-                # list页面的call_back处理函数
-                'callback': self.parse_list_page_common,
-
-                'method': "post",
-
-                'requests_type': "html",
-
-                # 得到下一页url的函数，返回值一定是一个url
-                'get_next_page_url': self.get_normal_next_page_url,
-
-                # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 700,
-
-                # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
-                # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
-
-                # list页面中，获得条目列表的xpath
-                'xpath_of_list': './/div[@class="newListwenzi"]//tr',
-
-                # 获得每一个条目链接地址的xpath
-                'xpath_of_detail_url': './td[1]/a//@href',
-
-                # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
-                'item_parse_class': BaseItemCommonParser,
-
-                # 其它信息，可以辅助生成CommonRawItem的字段
-                # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
-                'tos': '药品药械采购',
-                'source': '湖北省公共资源交易平台',
-                'notice_type': "采购目录",
-                'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
-            },
+            # 'page_18': {
+            #     # 通常会被填充在'source'字段里，有时也可以放在'tos'
+            #     'name': '湖北省公共资源交易平台',
+            #
+            #     # list页面的base地址
+            #     'base_url': 'https://www.hbggzyfwpt.cn/jyxx/ypyx/cggg',
+            #
+            #     # list页面的call_back处理函数
+            #     'callback': self.parse_list_page_common,
+            #
+            #     'method': "post",
+            #
+            #     'requests_type': "html",
+            #
+            #     # 得到下一页url的函数，返回值一定是一个url
+            #     'get_next_page_url': self.get_normal_next_page_url,
+            #
+            #     # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
+            #     'stop_page_num': 700,
+            #
+            #     # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
+            #     # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
+            #     'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+            #
+            #     # list页面中，获得条目列表的xpath
+            #     'xpath_of_list': './/div[@class="newListwenzi"]//tr',
+            #
+            #     # 获得每一个条目链接地址的xpath
+            #     'xpath_of_detail_url': './td[1]/a//@href',
+            #
+            #     # 对每一个条目进行解析，返回CommonRawItem的类，需要实现
+            #     'item_parse_class': BaseItemCommonParser,
+            #
+            #     # 其它信息，可以辅助生成CommonRawItem的字段
+            #     # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
+            #     'tos': '药品药械采购',
+            #     'source': '湖北省公共资源交易平台',
+            #     'notice_type': "采购目录",
+            #     'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
+            # },
 
             'page_19': {
                 # 通常会被填充在'source'字段里，有时也可以放在'tos'
@@ -886,8 +967,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '国有产权',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '05',
                 'notice_type': "交易公告",
+                'notice_type_code': '0501',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -927,8 +1014,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '国有产权',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '05',
                 'notice_type': "交易结果",
+                'notice_type_code': '0502',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
             'page_21': {
@@ -967,8 +1060,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '矿业权出让',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '05',
                 'notice_type': "出让公告公示",
+                'notice_type_code': '0501',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -1008,8 +1107,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '矿业权出让',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '05',
                 'notice_type': "成交结果公示",
+                'notice_type_code': '0502',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -1049,8 +1154,14 @@ class HbggzyfwptSpider(scrapy.Spider):
                 # 其它信息，可以辅助生成CommonRawItem的字段
                 # 参考函数parse_list_page_common() 中 item_parser.get_common_raw_item()代码
                 'tos': '矿业权出让',
-                'source': '湖北省公共资源交易平台',
+                'tos_code': '05',
                 'notice_type': "审批结果",
+                'notice_type_code': '0502',
+                'source': '湖北省公共资源交易平台',
+                'site_name': '湖北省公共资源交易平台',
+                'area_code': '42',
+                'content_code': '1',
+                'industryName': '',
                 'time_type': 6 if self.crawl_mode == CrawlMode.HISTORY else 0,
             },
 
@@ -1263,9 +1374,15 @@ class BaseItemCommonParser:
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
-        self.item['notice_type'] = ext_param['notice_type']
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
+        self.item['industry'] = ext_param['industryName']
 
         return self.item
 
