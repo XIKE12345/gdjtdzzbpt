@@ -1,0 +1,214 @@
+2020-02-19 15:09:23,116  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-19 15:09:23,125  middleware.py:48 : INFO  Enabled spider middlewares:
+['bjggzyjy.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-19 15:09:23,128  middleware.py:48 : INFO  Enabled item pipelines:
+['bjggzyjy.pipelines.CommonPipeline']
+2020-02-19 15:09:23,129  engine.py:257 : INFO  Spider opened
+2020-02-19 15:09:23,136  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-19 15:09:23,137  middlewares.py:62 : INFO  Spider opened: bjggzyjy_spider
+2020-02-19 15:09:23,140  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-19 15:09:23,158  bjggzyjy.py:215 : INFO  start crawling...
+2020-02-19 15:09:23,160  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/bjggzyjy/bjggzyjy/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/bjggzyjy/bjggzyjy/spiders/bjggzyjy.py", line 245, in start_requests
+    'type': _v['type'],
+KeyError: 'type'
+2020-02-19 15:09:23,165  engine.py:296 : INFO  Closing spider (finished)
+2020-02-19 15:09:53,234  signal.py:57 : ERROR  Error caught on signal handler: <function Spider.close at 0x110057950>
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 151, in maybeDeferred
+    result = f(*args, **kw)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spiders/__init__.py", line 94, in close
+    return closed(reason)
+  File "/Users/huike/PycharmProjects/bjggzyjy/bjggzyjy/spiders/bjggzyjy.py", line 277, in closed
+    self.crawl_helper.store_crawl_info_2_db(key=None, status='stopped', comment=reason)
+  File "/Users/huike/PycharmProjects/bjggzyjy/common/jy_crawl_helper.py", line 58, in store_crawl_info_2_db
+    }, upsert=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 1003, in update_one
+    session=session),
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 485, in get_server_session
+    None)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/pymongo/topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-19 15:09:53,253  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.030644,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 19, 7, 9, 23, 166341),
+ 'log_count/ERROR': 2,
+ 'log_count/INFO': 12,
+ 'memusage/max': 58179584,
+ 'memusage/startup': 58175488,
+ 'start_time': datetime.datetime(2020, 2, 19, 7, 9, 23, 135697)}
+2020-02-19 15:09:53,254  engine.py:327 : INFO  Spider closed (finished)
+2020-02-19 15:10:00,966  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-19 15:10:00,970  middleware.py:48 : INFO  Enabled spider middlewares:
+['bjggzyjy.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-19 15:10:00,971  middleware.py:48 : INFO  Enabled item pipelines:
+['bjggzyjy.pipelines.CommonPipeline']
+2020-02-19 15:10:00,971  engine.py:257 : INFO  Spider opened
+2020-02-19 15:10:00,977  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-19 15:10:00,979  middlewares.py:62 : INFO  Spider opened: bjggzyjy_spider
+2020-02-19 15:10:00,983  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-19 15:10:00,994  bjggzyjy.py:215 : INFO  start crawling...
+2020-02-19 15:11:16,245  bjggzyjy.py:256 : INFO  Use proxy[] to generate scrapy request
+2020-02-19 15:11:16,247  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-19 15:11:50,012  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/bjggzyjy/bjggzyjy/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/bjggzyjy/bjggzyjy/spiders/bjggzyjy.py", line 249, in start_requests
+    ext_param=_ext_param)
+  File "/Users/huike/PycharmProjects/bjggzyjy/bjggzyjy/spiders/bjggzyjy.py", line 285, in get_normal_next_page_url
+    return '{}{}/index_{}.html'.format(base_url, ext_param['bid_sort'])
+IndexError: tuple index out of range
+2020-02-19 15:11:50,114  bjggzyjy.py:307 : INFO  Get page list url, page:[1], url:[https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/index.html], status:[200], body md5:[c1db1b887ffc0336def26006cc05f923]
+2020-02-19 15:11:50,115  bjggzyjy.py:309 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 60, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-19 15:10:00', 'crawl_end_time': ''}}
+2020-02-19 15:11:50,141  bjggzyjy.py:328 : INFO  Parse item, [page_1]-[1/1]
+2020-02-19 15:11:50,364  bjggzyjy.py:463 : INFO  Get [https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/20200217/1066076.html] content by direct requests
+2020-02-19 15:11:50,441  bjggzyjy.py:352 : INFO  item is: {'_id': '89743e9f8a5d0e872c2919b70abfaaa0',
+ 'area': '',
+ 'area_code': '11',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.17 00:00:00',
+ 'notice_type': '招标计划',
+ 'notice_type_code': '0101',
+ 'site': 'ggzyfw.beijing.gov.cn',
+ 'site_name': '北京公共资源交易网',
+ 'source': '北京公共资源交易网',
+ 'time_stamp': 1582096310365,
+ 'title': '2020年延庆区松闫路大修工程',
+ 'tos_code': '01',
+ 'url': 'https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/20200217/1066076.html'}
+2020-02-19 15:11:50,452  bjggzyjy.py:328 : INFO  Parse item, [page_1]-[2/1]
+2020-02-19 15:11:50,909  bjggzyjy.py:463 : INFO  Get [https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/20200217/1066075.html] content by direct requests
+2020-02-19 15:11:50,976  bjggzyjy.py:352 : INFO  item is: {'_id': 'b35a277e8e14d3fa40aa422dbc5647a6',
+ 'area': '',
+ 'area_code': '11',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.17 00:00:00',
+ 'notice_type': '招标计划',
+ 'notice_type_code': '0101',
+ 'site': 'ggzyfw.beijing.gov.cn',
+ 'site_name': '北京公共资源交易网',
+ 'source': '北京公共资源交易网',
+ 'time_stamp': 1582096310911,
+ 'title': '2020年门头沟区G109大修工程',
+ 'tos_code': '01',
+ 'url': 'https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/20200217/1066075.html'}
+2020-02-19 15:11:50,980  bjggzyjy.py:328 : INFO  Parse item, [page_1]-[3/1]
+2020-02-19 15:11:51,170  bjggzyjy.py:463 : INFO  Get [https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/20200217/1066074.html] content by direct requests
+2020-02-19 15:11:51,240  bjggzyjy.py:352 : INFO  item is: {'_id': '3a65879cb58adc1cab456ff592bd64c9',
+ 'area': '',
+ 'area_code': '11',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.17 00:00:00',
+ 'notice_type': '招标计划',
+ 'notice_type_code': '0101',
+ 'site': 'ggzyfw.beijing.gov.cn',
+ 'site_name': '北京公共资源交易网',
+ 'source': '北京公共资源交易网',
+ 'time_stamp': 1582096311172,
+ 'title': '2020年大兴区104国道大修工程',
+ 'tos_code': '01',
+ 'url': 'https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/20200217/1066074.html'}
+2020-02-19 15:11:51,245  bjggzyjy.py:328 : INFO  Parse item, [page_1]-[4/1]
+2020-02-19 15:11:51,437  bjggzyjy.py:463 : INFO  Get [https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/20200217/1066073.html] content by direct requests
+2020-02-19 15:11:51,542  bjggzyjy.py:352 : INFO  item is: {'_id': '8661d0eb62aaa527194e54cc403c510a',
+ 'area': '',
+ 'area_code': '11',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.17 00:00:00',
+ 'notice_type': '招标计划',
+ 'notice_type_code': '0101',
+ 'site': 'ggzyfw.beijing.gov.cn',
+ 'site_name': '北京公共资源交易网',
+ 'source': '北京公共资源交易网',
+ 'time_stamp': 1582096311438,
+ 'title': '2020年密云区松曹路（K23+000-K34+100）大修工程',
+ 'tos_code': '01',
+ 'url': 'https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/20200217/1066073.html'}
+2020-02-19 15:11:51,549  bjggzyjy.py:328 : INFO  Parse item, [page_1]-[5/1]
+2020-02-19 15:11:51,751  bjggzyjy.py:463 : INFO  Get [https://ggzyfw.beijing.gov.cn/jyxxgcjszbjh/20200212/1044866.html] content by direct requests
