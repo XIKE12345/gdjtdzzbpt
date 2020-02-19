@@ -162,6 +162,10 @@ class GdsggzyjyptSpider(scrapy.Spider):
                 'source': '广东省公共资源交易平台',
                 'notice_type': '采购公告',
                 'notice_type_code': '0201',
+                'site_name': '广东省公共资源交易平台',
+                'area_code': '44',
+                'content_code': '1',
+                'industryName': '',
                 'queryType': '1',
                 'tradeTypeId': 'GovernmentProcurement',
                 'tradeItemId': 'zf_res_bulletin',
@@ -208,6 +212,12 @@ class GdsggzyjyptSpider(scrapy.Spider):
                 'source': '广东省公共资源交易平台',
                 'notice_type': '结果公示',
                 'notice_type_code': '0202',
+
+                'site_name': '广东省公共资源交易平台',
+                'area_code': '44',
+                'content_code': '1',
+                'industryName': '',
+
                 'queryType': '3',
                 'tradeTypeId': 'GovernmentProcurement',
                 'tradeItemId': 'zf_res_result',
@@ -254,6 +264,12 @@ class GdsggzyjyptSpider(scrapy.Spider):
                 'source': '广东省公共资源交易平台',
                 'notice_type': '招标公告',
                 'notice_type_code': '0101',
+
+                'site_name': '广东省公共资源交易平台',
+                'area_code': '44',
+                'content_code': '1',
+                'industryName': '',
+
                 'queryType': '1',
                 'tradeTypeId': 'Construction',
                 'tradeItemId': 'gc_res_bulletin',
@@ -300,6 +316,12 @@ class GdsggzyjyptSpider(scrapy.Spider):
                 'source': '广东省公共资源交易平台',
                 'notice_type': '出让公告',
                 'notice_type_code': '0301',
+
+                'site_name': '广东省公共资源交易平台',
+                'area_code': '44',
+                'content_code': '1',
+                'industryName': '',
+
                 'queryType': '1',
                 'tradeTypeId': 'Construction',
                 'tradeItemId': 'LandMine',
@@ -346,6 +368,12 @@ class GdsggzyjyptSpider(scrapy.Spider):
                 'source': '广东省公共资源交易平台',
                 'notice_type': '挂牌披露',
                 'notice_type_code': '0501',
+
+                'site_name': '广东省公共资源交易平台',
+                'area_code': '44',
+                'content_code': '1',
+                'industryName': '',
+
                 'queryType': '1',
                 'tradeTypeId': 'GovernmentProperty',
                 'tradeItemId': 'gp_res_bulletin',
@@ -392,6 +420,12 @@ class GdsggzyjyptSpider(scrapy.Spider):
                 'source': '广东省公共资源交易平台',
                 'notice_type': '交易结果',
                 'notice_type_code': '0502',
+
+                'site_name': '广东省公共资源交易平台',
+                'area_code': '44',
+                'content_code': '1',
+                'industryName': '',
+
                 'queryType': '3',
                 'tradeTypeId': 'GovernmentProperty',
                 'tradeItemId': 'gp_res_result',
@@ -606,9 +640,15 @@ class BaseItemCommonParser:
         self.item['time_stamp'] = self.__get_time_stamp__()
 
         # 以下是随参数传递进来的项，根据具体情况修改
-        self.item['notice_type'] = ext_param['notice_type']
         self.item['tos'] = ext_param['tos']
+        self.item['tos_code'] = ext_param['tos_code']
+        self.item['notice_type'] = ext_param['notice_type']
+        self.item['notice_type_code'] = ext_param['notice_type_code']
         self.item['source'] = ext_param['source']
+        self.item['site_name'] = ext_param['site_name']
+        self.item['area_code'] = ext_param['area_code']
+        self.item['content_code'] = ext_param['content_code']
+        self.item['industry'] = ext_param['industryName']
 
         return self.item
 

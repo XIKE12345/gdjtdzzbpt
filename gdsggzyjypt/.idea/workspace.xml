@@ -3,24 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="8f24447b-ed39-4f1a-8313-f30a25ec2d99" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/hnjtzb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../hnjtzb/.idea/hnjtzb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hnjtzb/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hnjtzb/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/common/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/common/jy_common_items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/common/jy_crawl_helper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/common/jy_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/hnjtzb/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/hnjtzb/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/hnjtzb/middlewares.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/hnjtzb/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/hnjtzb/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/hnjtzb/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/hnjtzb/spiders/hnjtzb.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/hnjtzb_spider.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hnjtzb/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gdsggzyjypt/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/gdsggzyjypt/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gdsggzyjypt/spiders/hbggzyfwpt.py" beforeDir="false" afterPath="$PROJECT_DIR$/gdsggzyjypt/spiders/hbggzyfwpt.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/.idea/tjhcpt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/common/jy_common_items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/common/jy_crawl_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/common/jy_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/zgbq/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/zgbq/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/zgbq/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/zgbq/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/zgbq/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/zgbq/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/zgbq/spiders/zgbq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgbq/zgbq_spider.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,10 +110,10 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581487257026" />
-    <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1581996705243">
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1582078884295">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1581996705243" />
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1582078884295" />
     <state x="385" y="172" key="search.everywhere.popup" timestamp="1581487167518">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
