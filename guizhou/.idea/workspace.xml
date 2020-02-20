@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="97e12c1b-2698-4035-9d0d-968089f239f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/chongqin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/guizhou.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guizhou/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guizhou/items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guizhou/middlewares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guizhou/pipelines.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guizhou/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guizhou/spiders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guizhou/spiders/guizhou.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/guizhou_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shanxi/.idea/shanxi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shanxi/shanxi_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bjggzyjy/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bjggzyjy/bjggzyjy_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bjggzyjy/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cqggzy/.idea/hbggzyfwpt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/hbsggzyjypt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/jy_common_items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/jy_crawl_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/jy_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/spiders/hbsggzyjypt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sichuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sichuan/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Y4CXCqIV91Rn2y1YFQssfRH2Ef" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97e12c1b-2698-4035-9d0d-968089f239f2" name="Default Changelist" comment="" />
+      <created>1582192516796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582192516796</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="221" y="74" key="SettingsEditor" timestamp="1582192561716">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1582192561716" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/guizhou/spiders/guizhou.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
