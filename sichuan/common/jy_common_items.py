@@ -81,7 +81,7 @@ class CommonRawItem(scrapy.Item):
     # buyer:  采购人，中文，例如：中央电视台
     # notice_type: 公告类型，中文，如：更正公告、中标候选人公示
     # tos: 业务类型，中文，如：工程建设，政府采购，土地使用权, 矿业权, 药品采购等
-    # site:   网站的domain, 例如：bjggzyjy.gov.cn
+    # site:   网站的domain, 例如：hljggzyjyw.gov.cn
     # source：信息来源细分，比如：http://www.ccgp.gov.cn/ 分为中央公告和地方公告
     # title：公告标题，中文
     # url：公告正文连接，如：http://www.ccgp.gov.cn/cggg/zygg/gzgg/201902/t20190202_11610905.htm

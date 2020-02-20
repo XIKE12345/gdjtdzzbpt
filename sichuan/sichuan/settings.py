@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for bjggzyjy project
+# Scrapy settings for sichuan project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,10 +9,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'bjggzyjy'
+BOT_NAME = 'sichuan'
 
-SPIDER_MODULES = ['bjggzyjy.spiders']
-NEWSPIDER_MODULE = 'bjggzyjy.spiders'
+SPIDER_MODULES = ['sichuan.spiders']
+NEWSPIDER_MODULE = 'sichuan.spiders'
 
 SPLASH_URL = 'http://192.168.100.114:8050'
 DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
@@ -43,11 +43,6 @@ CONCURRENT_REQUESTS_PER_IP = 1
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
 
-# RetryMiddleware Settings
-RETRY_ENABLED = True
-RETRY_TIMES = 5
-RETRY_HTTP_CODES = [500, 502, 503, 504, 522, 524, 408, 429, 404, 403]
-
 # Override the default request headers:
 #DEFAULT_REQUEST_HEADERS = {
 #   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -61,20 +56,18 @@ RETRY_HTTP_CODES = [500, 502, 503, 504, 522, 524, 408, 429, 404, 403]
 # }
 SPIDER_MIDDLEWARES = {
     'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-    'bjggzyjy.middlewares.CommonSpiderMiddleware': 49,
+    'sichuan.middlewares.CommonSpiderMiddleware': 49,
 }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'bjggzyjy.middlewares.NxDownloaderMiddleware': 543,
+#    'sichuan.middlewares.NxDownloaderMiddleware': 543,
 #}
 DOWNLOADER_MIDDLEWARES = {
     'scrapy_splash.SplashCookiesMiddleware': 723,
     'scrapy_splash.SplashMiddleware': 725,
-
     'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
-    'scrapy.downloadermiddlewares.retry.RetryMiddleware': 543,
 }
 
 # Enable or disable extensions
@@ -86,7 +79,7 @@ DOWNLOADER_MIDDLEWARES = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'bjggzyjy.pipelines.CommonPipeline': 300,
+   'sichuan.pipelines.CommonPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -120,3 +113,4 @@ MONGDB_URI = 'mongodb://admin:123321@192.168.100.176:27017/'
 
 MONGDB_DB_NAME = 'db_trade_test'  # test only
 MONGDB_COLLECTION = 't_trade_raw_test'
+
