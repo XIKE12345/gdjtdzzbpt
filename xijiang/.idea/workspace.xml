@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e06d60d0-0ed8-4af9-8ba5-551d9197632a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/chongqin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shanxi/.idea/shanxi.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../shanxi/shanxi_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xinjiang_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bjggzyjy/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bjggzyjy/bjggzyjy_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bjggzyjy/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cqggzy/.idea/hbggzyfwpt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../guizhou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../guizhou/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/hbsggzyjypt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/jy_common_items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/jy_crawl_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/jy_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/spiders/hbsggzyjypt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sichuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sichuan/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Xq3z2un7RT4fkq0U5BIlA5tK3x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="xinjiang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="xinjiang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="xinjiang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Twisted Trial">
+      <module name="xinjiang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e06d60d0-0ed8-4af9-8ba5-551d9197632a" name="Default Changelist" comment="" />
+      <created>1581760055701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581760055701</updated>
+    </task>
+    <task id="LOCAL-00001" summary="安琪酵母集团招标爬虫数据。">
+      <created>1581770947367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581770947367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="安琪酵母集团招标爬虫数据。" />
+    <option name="LAST_COMMIT_MESSAGE" value="安琪酵母集团招标爬虫数据。" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="220" y="53" key="CommitChangelistDialog2" timestamp="1582178805791">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="220" y="53" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1582178805791" />
+    <state x="222" y="74" key="SettingsEditor" timestamp="1581760114214">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="222" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581760114214" />
+    <state x="419" y="196" key="Vcs.Push.Dialog.v2" timestamp="1582178814214">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="419" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1582178814214" />
+    <state x="409" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1582255980863">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="409" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1582255980863" />
+  </component>
+</project>
