@@ -8,8 +8,6 @@
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shanxi.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shanxi_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bjggzyjy/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../bjggzyjy/bjggzyjy_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../bjggzyjy/readme.txt" beforeDir="false" />
@@ -37,6 +35,7 @@
       <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/scrapy.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sichuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sichuan/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xijiang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xijiang/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xijiang/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../xijiang/readme.txt" afterDir="false" />
@@ -96,27 +95,35 @@
       <option name="project" value="LOCAL" />
       <updated>1581770947367</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="山西公共资源交易，爬虫数据。">
+      <created>1582271457080</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582271457080</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="安琪酵母集团招标爬虫数据。" />
-    <option name="LAST_COMMIT_MESSAGE" value="安琪酵母集团招标爬虫数据。" />
+    <MESSAGE value="山西公共资源交易，爬虫数据。" />
+    <option name="LAST_COMMIT_MESSAGE" value="山西公共资源交易，爬虫数据。" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="220" y="53" key="CommitChangelistDialog2" timestamp="1582178805791">
+    <state x="220" y="53" key="CommitChangelistDialog2" timestamp="1582271456532">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="220" y="53" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1582178805791" />
+    <state x="220" y="53" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1582271456532" />
     <state x="222" y="74" key="SettingsEditor" timestamp="1581760114214">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="222" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581760114214" />
-    <state x="419" y="196" key="Vcs.Push.Dialog.v2" timestamp="1582178814214">
+    <state x="419" y="196" key="Vcs.Push.Dialog.v2" timestamp="1582271465263">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="419" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1582178814214" />
+    <state x="419" y="196" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1582271465263" />
     <state x="409" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1582178959258">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

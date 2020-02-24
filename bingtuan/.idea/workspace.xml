@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bingtuan/spiders/bingtuan.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingtuan_spider.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/chongqin.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/libraries/R_User_Library.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bjggzyjy/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingtuan_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/bingtuan_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bjggzyjy/bjggzyjy_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../bjggzyjy/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cqggzy/.idea/hbggzyfwpt.iml" beforeDir="false" />
@@ -123,7 +122,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581941244181</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新疆建设兵团公共资源交易网站爬虫。">
+      <created>1582280760374</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582280760374</updated>
+    </task>
+    <task id="LOCAL-00005" summary="新疆建设兵团公共资源交易网站爬虫。">
+      <created>1582280946971</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582280946971</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,13 +147,14 @@
     <MESSAGE value="中国南方电网线上采购平台爬虫" />
     <MESSAGE value="黑龙江公共资源交易平台爬虫" />
     <MESSAGE value="黑龙江公共资源交易平台爬虫，添加字段" />
-    <option name="LAST_COMMIT_MESSAGE" value="黑龙江公共资源交易平台爬虫，添加字段" />
+    <MESSAGE value="新疆建设兵团公共资源交易网站爬虫。" />
+    <option name="LAST_COMMIT_MESSAGE" value="新疆建设兵团公共资源交易网站爬虫。" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1582280759422">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1582280946342">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1582280759422" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1582280946342" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -157,10 +171,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1580811192066" />
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1582280925322">
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1582280954373">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1582280925322" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1582280954373" />
     <state x="395" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1581412919133">
       <screen x="0" y="23" width="1440" height="825" />
     </state>

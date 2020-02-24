@@ -8,33 +8,13 @@
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../chongqin/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/guizhou.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guizhou/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guizhou/items.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guizhou/middlewares.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guizhou/pipelines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guizhou/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guizhou/spiders/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guizhou/spiders/guizhou.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guizhou_spider.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../shanxi/.idea/shanxi.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../shanxi/shanxi_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../bjggzyjy/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../bjggzyjy/bjggzyjy_spider.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../bjggzyjy/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../cqggzy/.idea/hbggzyfwpt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/hbsggzyjypt.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
@@ -108,16 +88,34 @@
       <option name="presentableId" value="Default" />
       <updated>1582192516796</updated>
     </task>
+    <task id="LOCAL-00001" summary="贵州省公共资源交易">
+      <created>1582200515814</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582200515814</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="贵州省公共资源交易" />
+    <option name="LAST_COMMIT_MESSAGE" value="贵州省公共资源交易" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="344" y="38" key="CommitChangelistDialog2" timestamp="1582200515288">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1582200515288" />
     <state x="221" y="74" key="SettingsEditor" timestamp="1582192561716">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1582192561716" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2" timestamp="1582200521486">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1582200521486" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
