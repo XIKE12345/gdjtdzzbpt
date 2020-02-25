@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ccgp_sichuan_spider.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/spiders/ccgp_chongqing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/spiders/ccgp_chongqing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing_spider.log" afterDir="false" />
@@ -138,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582536050167</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="四川省政府采购网爬虫">
+      <created>1582600811196</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582600811196</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,13 +156,14 @@
     <MESSAGE value="黑龙江公共资源交易平台爬虫" />
     <MESSAGE value="黑龙江公共资源交易平台爬虫，添加字段" />
     <MESSAGE value="海南省政府采购网爬虫" />
-    <option name="LAST_COMMIT_MESSAGE" value="海南省政府采购网爬虫" />
+    <MESSAGE value="四川省政府采购网爬虫" />
+    <option name="LAST_COMMIT_MESSAGE" value="四川省政府采购网爬虫" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1899" y="44" key="CommitChangelistDialog2" timestamp="1582536049658">
+    <state x="1899" y="44" key="CommitChangelistDialog2" timestamp="1582600810442">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
-    <state x="1899" y="44" key="CommitChangelistDialog2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582536049658" />
+    <state x="1899" y="44" key="CommitChangelistDialog2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600810442" />
     <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581941242804" />
     <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
       <screen x="0" y="0" width="1366" height="728" />
@@ -170,30 +177,30 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="448" y="149" key="Github.UntrackedFilesDialog/0.23.1440.825@0.23.1440.825" timestamp="1580818878637" />
-    <state width="1878" height="322" key="GridCell.Tab.0.bottom" timestamp="1582597742561">
+    <state width="1878" height="322" key="GridCell.Tab.0.bottom" timestamp="1582600866922">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="322" key="GridCell.Tab.0.bottom/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582597742561" />
-    <state width="1878" height="322" key="GridCell.Tab.0.center" timestamp="1582597742559">
+    <state width="1878" height="322" key="GridCell.Tab.0.bottom/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600866922" />
+    <state width="1878" height="322" key="GridCell.Tab.0.center" timestamp="1582600866920">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="322" key="GridCell.Tab.0.center/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582597742559" />
-    <state width="1878" height="322" key="GridCell.Tab.0.left" timestamp="1582597742558">
+    <state width="1878" height="322" key="GridCell.Tab.0.center/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600866920" />
+    <state width="1878" height="322" key="GridCell.Tab.0.left" timestamp="1582600866919">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="322" key="GridCell.Tab.0.left/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582597742558" />
-    <state width="1878" height="322" key="GridCell.Tab.0.right" timestamp="1582597742560">
+    <state width="1878" height="322" key="GridCell.Tab.0.left/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600866919" />
+    <state width="1878" height="322" key="GridCell.Tab.0.right" timestamp="1582600866921">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
-    <state width="1878" height="322" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582597742560" />
+    <state width="1878" height="322" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600866921" />
     <state x="221" y="75" key="SettingsEditor" timestamp="1580811192066">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="221" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1580811192066" />
-    <state x="1867" y="240" key="Vcs.Push.Dialog.v2" timestamp="1582536055768">
+    <state x="1867" y="240" key="Vcs.Push.Dialog.v2" timestamp="1582600865270">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
-    <state x="1867" y="240" key="Vcs.Push.Dialog.v2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582536055768" />
+    <state x="1867" y="240" key="Vcs.Push.Dialog.v2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600865270" />
     <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581941257115" />
     <state x="1967" y="334" key="com.intellij.ide.util.TipDialog" timestamp="1582535322413">
       <screen x="1440" y="23" width="1920" height="1177" />

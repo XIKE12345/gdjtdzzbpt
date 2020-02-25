@@ -96,7 +96,7 @@ class Ccgp_guizhou_Spider(scrapy.Spider):
         # stop_item: 连续遇到[stop_item]个重复条目后，退出本次爬取
         # spider_name: 指定的spider_name，如果不指定，使用self.name
         # command example:
-        # python3 -m scrapy crawl ccgp_guizhou_spider -a start_time="2020:01:01" -a end_time="2020:02:25"
+        # nohup python3 -m scrapy crawl ccgp_guizhou_spider -a start_time="2019:01:01" -a end_time="2020:02:25" > /dev/null&
         # py -3 -m scrapy crawl base_spider -a start_time="now" -a end_time="now"
         # py -3 -m scrapy crawl base_spider -a start_time="now" -a end_time="now" -a start_page="700" -a end_page="1000" -a stop_item="10000"
         assert self.start_time is not None

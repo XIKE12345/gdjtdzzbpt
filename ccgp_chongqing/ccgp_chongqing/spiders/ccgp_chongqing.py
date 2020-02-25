@@ -310,7 +310,7 @@ class ShanghaiSpider(scrapy.Spider):
         crawl_key = response.meta['crawl_key']
 
         # 更新状态表记录
-        # self.crawl_helper.store_crawl_info_2_db(crawl_key, 'active')
+        self.crawl_helper.store_crawl_info_2_db(crawl_key, 'active')
 
         if not self.crawl_helper.should_continue_page_parse(response, crawl_key, list_page_content_md5):
             return
@@ -337,11 +337,11 @@ class ShanghaiSpider(scrapy.Spider):
                     logging.info('Parse item, [{}]-[{}/{}]'.format(crawl_key, _item_idx, response.meta['page_index']))
 
                     # 检查记录是否已在库中，并做相应的跳出动作
-                    # loop_break, item_break = self.crawl_helper.should_continue_item_parse(crawl_key, _unq_id)
-                    # if loop_break:
-                    #     return
-                    # if item_break:
-                    #     continue
+                    loop_break, item_break = self.crawl_helper.should_continue_item_parse(crawl_key, _unq_id)
+                    if loop_break:
+                        return
+                    if item_break:
+                        continue
 
                     # 生成并返回爬取item
                     item_parser = response.meta['param']['item_parse_class'](selector)
@@ -356,10 +356,10 @@ class ShanghaiSpider(scrapy.Spider):
                     time.sleep(random.randint(50, 100) / 1000.0)
 
                     # 更新数据库中爬取数量
-                    # self.crawl_helper.increase_total_item_num(crawl_key)
+                    self.crawl_helper.increase_total_item_num(crawl_key)
 
                     logging.info('item is: {}'.format(item))
-                    # yield item
+                    yield item
 
                 except Exception as e:
                     logging.exception('Handle [{}] failed'.format(_detail_url))
@@ -375,11 +375,11 @@ class ShanghaiSpider(scrapy.Spider):
                     logging.info('Parse item, [{}]-[{}/{}]'.format(crawl_key, _item_idx, response.meta['page_index']))
 
                     # 检查记录是否已在库中，并做相应的跳出动作
-                    # loop_break, item_break = self.crawl_helper.should_continue_item_parse(crawl_key, _unq_id)
-                    # if loop_break:
-                    #     return
-                    # if item_break:
-                    #     continue
+                    loop_break, item_break = self.crawl_helper.should_continue_item_parse(crawl_key, _unq_id)
+                    if loop_break:
+                        return
+                    if item_break:
+                        continue
 
                     # 生成并返回爬取item
                     item_parser = response.meta['param']['item_parse_class'](selector)
@@ -394,10 +394,10 @@ class ShanghaiSpider(scrapy.Spider):
                     time.sleep(random.randint(50, 100) / 1000.0)
 
                     # 更新数据库中爬取数量
-                    # self.crawl_helper.increase_total_item_num(crawl_key)
+                    self.crawl_helper.increase_total_item_num(crawl_key)
 
                     logging.info('item is: {}'.format(item))
-                    # yield item
+                    yield item
 
                 except Exception as e:
                     logging.exception('Handle [{}] failed'.format(_detail_url))
