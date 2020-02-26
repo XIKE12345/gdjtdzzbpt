@@ -1,2 +1,2 @@
-海南政府采购网
-http://www.ccgp-hainan.gov.cn/zhuzhan/
+四川政府采购网
+http://www.ccgp-sichuan.gov.cn

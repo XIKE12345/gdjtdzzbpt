@@ -137,7 +137,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -181,7 +181,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -225,7 +225,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -269,7 +269,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -313,7 +313,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -357,7 +357,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -401,7 +401,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -445,7 +445,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -489,7 +489,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -533,7 +533,7 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 2000,
+                'stop_page_num': 1000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
@@ -679,11 +679,11 @@ class Ccgp_bingtuanSpider(scrapy.Spider):
                 logging.info('Parse item, [{}]-[{}/{}]'.format(crawl_key, _item_idx, response.meta['page_index']))
 
                 # 检查记录是否已在库中，并做相应的跳出动作
-                # loop_break, item_break = self.crawl_helper.should_continue_item_parse(crawl_key, _unq_id)
-                # if loop_break:
-                #     return
-                # if item_break:
-                #     continue
+                loop_break, item_break = self.crawl_helper.should_continue_item_parse(crawl_key, _unq_id)
+                if loop_break:
+                    return
+                if item_break:
+                    continue
 
                 # 生成并返回爬取item
                 item_parser = response.meta['param']['item_parse_class'](selector)

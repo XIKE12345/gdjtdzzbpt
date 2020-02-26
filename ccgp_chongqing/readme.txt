@@ -1,2 +1,2 @@
-上海公共资源交易
-http://ggzy.sheic.org.cn/#/main/home
+重庆政府采购网
+https://www.ccgp-chongqing.gov.cn/

@@ -108,9 +108,9 @@ LOG_LEVEL= 'INFO'
 
 # MONGDB_URI = 'mongodb://192.168.100.113:27017/'
 MONGDB_URI = 'mongodb://admin:123321@192.168.100.176:27017/'
-MONGDB_DB_NAME = 'db_trade'
-MONGDB_COLLECTION = 't_trade_raw'
+# MONGDB_DB_NAME = 'db_trade'
+# MONGDB_COLLECTION = 't_trade_raw'
 
-# MONGDB_DB_NAME = 'db_trade_test'  # test only
-# MONGDB_COLLECTION = 't_trade_raw_test'
+MONGDB_DB_NAME = 'db_trade_test'  # test only
+MONGDB_COLLECTION = 't_trade_raw_test'
 

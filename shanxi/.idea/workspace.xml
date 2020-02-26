@@ -2,43 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e06d60d0-0ed8-4af9-8ba5-551d9197632a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/chongqin.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chongqin/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bjggzyjy/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bjggzyjy/bjggzyjy_spider.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bjggzyjy/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cqggzy/.idea/hbggzyfwpt.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../guizhou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../guizhou/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/hbsggzyjypt.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/libraries/R_User_Library.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/jy_common_items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/jy_crawl_helper.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/common/jy_utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/middlewares.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt/spiders/hbsggzyjypt.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/hbsggzyjypt_spider.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hbsggzyjypt/scrapy.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../sichuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../sichuan/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xijiang/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../xijiang/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xijiang/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../xijiang/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/spiders/ccgp_chongqing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/spiders/ccgp_chongqing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_hainan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/spiders/ccgp_hainan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/spiders/ccgp_hainan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_shanxi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

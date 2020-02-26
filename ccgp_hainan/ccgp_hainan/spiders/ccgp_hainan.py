@@ -96,7 +96,7 @@ class Ccgp_hainanSpider(scrapy.Spider):
         # stop_item: 连续遇到[stop_item]个重复条目后，退出本次爬取
         # spider_name: 指定的spider_name，如果不指定，使用self.name
         # command example:
-        # py -3 -m scrapy crawl base_spider -a start_time="2019:01:01" -a end_time="2019:01:02"
+        # python3  -m scrapy crawl ccgp_hainan_spider -a start_time="2019:01:01" -a end_time="2020:02:25"
         # python3  -m scrapy crawl ccgp_hainan_spider -a start_time="now" -a end_time="now"
         # py -3 -m scrapy crawl base_spider -a start_time="now" -a end_time="now" -a start_page="700" -a end_page="1000" -a stop_item="10000"
         assert self.start_time is not None
@@ -136,11 +136,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -179,11 +179,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -222,11 +222,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -265,11 +265,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -309,11 +309,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -353,11 +353,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -396,11 +396,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -439,11 +439,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -482,11 +482,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -526,11 +526,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -569,11 +569,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -612,11 +612,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -655,11 +655,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -698,11 +698,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -742,11 +742,11 @@ class Ccgp_hainanSpider(scrapy.Spider):
                 'get_next_page_url': self.get_normal_next_page_url,
 
                 # 网站中该页面的最大页数，（可选配置，仅为优化程序执行效率，可不填）
-                'stop_page_num': 7000000,
+                'stop_page_num': 5000,
 
                 # 连续遇到[stop_dup_item_num]个重复条目后，停止本次抓取
                 # 提示：在程序运行初始阶段，此值可以设的较大，以便爬取所有的历史记录
-                'stop_dup_item_num': 500000 if self.crawl_mode == CrawlMode.HISTORY else 60,
+                'stop_dup_item_num': 5000 if self.crawl_mode == CrawlMode.HISTORY else 60,
 
                 # list页面中，获得条目列表的xpath
                 'xpath_of_list': '//div[@class="nei02_04_01"]/ul/li',
@@ -974,7 +974,7 @@ class BaseItemCommonParser:
 
     def __get_area__(self):
         try:
-            _ret = ''
+            _ret = '海南省'
         except:
             _ret = ''
             logging.exception('[{}] get_area failed'.format(self.item['_id']))

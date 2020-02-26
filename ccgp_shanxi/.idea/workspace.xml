@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f24447b-ed39-4f1a-8313-f30a25ec2d99" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ccgp_shanxi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ccgp_shanxi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="986ba6ae-d545-4b84-b271-e9e7b30fd331" name="Default Changelist" comment="重庆政府采购网 爬虫">
+    <list default="true" id="986ba6ae-d545-4b84-b271-e9e7b30fd331" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccgp_chongqing/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ccgp_chongqing/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccgp_chongqing/spiders/ccgp_chongqing.py" beforeDir="false" afterPath="$PROJECT_DIR$/ccgp_chongqing/spiders/ccgp_chongqing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ccgp_chongqing_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/ccgp_chongqing_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_hainan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/spiders/ccgp_hainan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/spiders/ccgp_hainan.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_shanxi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,26 +71,42 @@
       <option name="project" value="LOCAL" />
       <updated>1582540505509</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="重庆政府采购网 爬虫,修改入库。">
+      <created>1582627704169</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582627704169</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="重庆政府采购网 爬虫" />
-    <option name="LAST_COMMIT_MESSAGE" value="重庆政府采购网 爬虫" />
+    <MESSAGE value="重庆政府采购网 爬虫,修改入库。" />
+    <option name="LAST_COMMIT_MESSAGE" value="重庆政府采购网 爬虫,修改入库。" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2045" y="214" key="CommitChangelistDialog2" timestamp="1582540553652">
+    <state x="2045" y="214" key="CommitChangelistDialog2" timestamp="1582627702444">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
-    <state x="2045" y="214" key="CommitChangelistDialog2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582540553652" />
+    <state x="2045" y="214" key="CommitChangelistDialog2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582627702444" />
+    <state x="1824" y="270" key="DiffContextDialog" timestamp="1582684086483">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state x="1824" y="270" key="DiffContextDialog/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582684086483" />
+    <state x="2237" y="329" key="RollbackChangesDialog" timestamp="1582684094302">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state x="2237" y="329" key="RollbackChangesDialog/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582684094302" />
     <state x="1909" y="250" key="SettingsEditor" timestamp="1582539623355">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
     <state x="1909" y="250" key="SettingsEditor/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582539623355" />
-    <state x="2000" y="351" key="Vcs.Push.Dialog.v2" timestamp="1582540559104">
+    <state x="2000" y="351" key="Vcs.Push.Dialog.v2" timestamp="1582627708586">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>
-    <state x="2000" y="351" key="Vcs.Push.Dialog.v2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582540559104" />
+    <state x="2000" y="351" key="Vcs.Push.Dialog.v2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582627708586" />
     <state x="2093" y="444" key="com.intellij.ide.util.TipDialog" timestamp="1582595949604">
       <screen x="1440" y="23" width="1920" height="1177" />
     </state>

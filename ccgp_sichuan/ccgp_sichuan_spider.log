@@ -4725,3 +4725,533 @@ twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure t
 2020-02-25 11:12:58,912  jy_crawl_helper.py:200 : INFO  Duplicate item:[aa208d4a8e3061f3c634d607f392ca46] total:[page_1-6]
 2020-02-25 11:12:58,913  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[25/2]
 2020-02-25 11:12:58,918  jy_crawl_helper.py:200 : INFO  Duplicate item:[e3f01b6d6cb4ceda1b6adbfdffb755ec] total:[page_1-7]
+2020-02-25 18:51:06,700  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-25 18:51:06,708  middleware.py:48 : INFO  Enabled spider middlewares:
+['ccgp_sichuan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-25 18:51:06,709  middleware.py:48 : INFO  Enabled item pipelines:
+['ccgp_sichuan.pipelines.CommonPipeline']
+2020-02-25 18:51:06,711  engine.py:257 : INFO  Spider opened
+2020-02-25 18:51:06,719  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-25 18:51:06,719  middlewares.py:62 : INFO  Spider opened: ccgp_sichuan_spider
+2020-02-25 18:51:06,721  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-25 18:51:06,732  ccgp_sichuan.py:218 : INFO  start crawling...
+2020-02-25 18:51:37,978  robotstxt.py:95 : ERROR  Error downloading <GET http://www.ccgp-sichuan.gov.cn/robots.txt>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    defer.returnValue((yield download_func(request=request, spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2020-02-25 18:51:38,721  ccgp_sichuan.py:313 : INFO  Get page list url, page:[1], url:[http://www.ccgp-sichuan.gov.cn/CmsNewsController.do?channelCode=sjcg1&method=recommendBulletinList&rp=25&title=&moreType=provincebuyBulletinMore&page=0], status:[200], body md5:[521eac12b855c12548045ab5e61514a7]
+2020-02-25 18:51:38,721  ccgp_sichuan.py:315 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-25 18:51:06', 'crawl_end_time': ''}}
+2020-02-25 18:51:44,848  ccgp_sichuan.py:313 : INFO  Get page list url, page:[2], url:[http://www.ccgp-sichuan.gov.cn/CmsNewsController.do?channelCode=sjcg1&method=recommendBulletinList&rp=25&title=&moreType=provincebuyBulletinMore&page=1], status:[200], body md5:[88f4bd16e18cf5fc861ee8dfca90106c]
+2020-02-25 18:51:44,848  ccgp_sichuan.py:315 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '521eac12b855c12548045ab5e61514a7', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-25 18:51:06', 'crawl_end_time': ''}}
+2020-02-25 18:51:44,867  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[1/2]
+2020-02-25 18:51:44,977  ccgp_sichuan.py:474 : INFO  Get [http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/a50ef095f86042d8ab5242fe4070e612.html] content by direct requests
+2020-02-25 18:51:45,059  ccgp_sichuan.py:358 : INFO  item is: {'_id': 'c532c914626fc7435471996eb6da8568',
+ 'area': '四川省',
+ 'area_code': '51',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.25 00:00:00',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.ccgp-sichuan.gov.cn',
+ 'site_name': '四川政府采购网',
+ 'source': '四川政府采购网',
+ 'time_stamp': 1582627904980,
+ 'tos_code': '02',
+ 'url': 'http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/a50ef095f86042d8ab5242fe4070e612.html'}
+2020-02-25 18:51:45,095  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[2/2]
+2020-02-25 18:51:45,222  ccgp_sichuan.py:474 : INFO  Get [http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/f52f609589c64ec0a3a14d6bdbd65d31.html] content by direct requests
+2020-02-25 18:51:45,323  ccgp_sichuan.py:358 : INFO  item is: {'_id': 'c4c86b39d7fa0c7c54ec285af292e9e7',
+ 'area': '四川省',
+ 'area_code': '51',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.25 00:00:00',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.ccgp-sichuan.gov.cn',
+ 'site_name': '四川政府采购网',
+ 'source': '四川政府采购网',
+ 'time_stamp': 1582627905224,
+ 'tos_code': '02',
+ 'url': 'http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/f52f609589c64ec0a3a14d6bdbd65d31.html'}
+2020-02-25 18:51:45,333  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[3/2]
+2020-02-25 18:51:45,471  ccgp_sichuan.py:474 : INFO  Get [http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/0b23584309da4b47831126af368bfbc7.html] content by direct requests
+2020-02-25 18:51:45,555  ccgp_sichuan.py:358 : INFO  item is: {'_id': '6b2063654cedb9796614e38993ebe76d',
+ 'area': '四川省',
+ 'area_code': '51',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.25 00:00:00',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.ccgp-sichuan.gov.cn',
+ 'site_name': '四川政府采购网',
+ 'source': '四川政府采购网',
+ 'time_stamp': 1582627905473,
+ 'tos_code': '02',
+ 'url': 'http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/0b23584309da4b47831126af368bfbc7.html'}
+2020-02-25 18:51:45,566  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[4/2]
+2020-02-25 18:51:45,667  ccgp_sichuan.py:474 : INFO  Get [http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/0e9395ce44044393830386490501d190.html] content by direct requests
+2020-02-25 18:51:45,758  ccgp_sichuan.py:358 : INFO  item is: {'_id': '84657a1506428ffd33415c0f685d2ee7',
+ 'area': '四川省',
+ 'area_code': '51',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.25 00:00:00',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.ccgp-sichuan.gov.cn',
+ 'site_name': '四川政府采购网',
+ 'source': '四川政府采购网',
+ 'time_stamp': 1582627905669,
+ 'tos_code': '02',
+ 'url': 'http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/0e9395ce44044393830386490501d190.html'}
+2020-02-25 18:51:45,770  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[5/2]
+2020-02-25 18:51:45,893  ccgp_sichuan.py:474 : INFO  Get [http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/5b5c8a139c204d798e570473374ae4aa.html] content by direct requests
+2020-02-25 18:51:45,966  ccgp_sichuan.py:358 : INFO  item is: {'_id': '87d99808b33b787b50a506827654324e',
+ 'area': '四川省',
+ 'area_code': '51',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJzVWv9T21YS/5nM5H9Q1bTATPTNxgYC5iahuWtu0jRzTe56P2WE9GyLyJIqyRhoMwNNCV9CvhVImgOSkF6aTC+BdCAJMaT8MUGy+Sn/wu3Tkx0ZWwYaes0xgy29t9r97L59u/vWerO20fnBJ593n/nn6eNU2s6o1Omzx06e6KZohuP+Ee3muE/OfEJ9+emZz05SAstTZ0xRsxRb0TVR5bjjp2iKTtu2cYTjcrkcm4uyupnizvyN68e8BPywf8nYgSdZ2ZbproMHDh7o9GT2Z1TNStTgJLS3txMGmLwzjUQZf2eQLVKYmkFfZZW+BN2tazbSbObMgIFoSiJ3CdpG/TaHn+6gpLRoWshOZO0k00ZTHGZjK7aKupzZWefFvDu94eTntkZHiytPOjkyAyQfMMzm6pp774Wzfq248Ihh8KAlmYphUzYI82X0in0iGaUpy5QSNCdlLM5EVo9oIU5GSTGr2hyh4Hq/yiJzgO216K5Of4zYokqtL5mzR5luPWOIttKjBjU7cTyB5BQ6LKVNPYMSAjZPQ8MeOfh2KD2nicCJ7lNQztBNO0CaU2Q7nZBRnyIhxrs5TCkarKWoMpYkqiD/cEbsVzLZTPk+ayHTuxFBbELTaV9S0OaFueHaZq9EJCNiJHCdACi6Gvp5NJDTTdmqQaUq2nnKRGqCttKgnJS1KUXC/NImSr4l2+vKilo6q+RQDzg24sDFNA2p2xe2JJ1I4jSU4yTL4vDzLFzQPix7QEVWGiGQExDvEXDhXAwxtRcuZeftog4eONQk61I2A3ZqZk3YWQNNyawmYTM3NX998AAFf4fYFLL/+sXnp5po7iysKN5npq6qyGRl/U9g+rQuJ4CkO2uawAeTnNCSOn346wuHy8x6LV3DDBsalKR3w2LngI9TeNUSdEbUQAuTpr75pnq2UZQzitbYTHkMLiDVQuSygeMONdEfinQzm1Zk1NTcgW97Km+lt7fe4/BBURea4esCHimvEoWv9yG6nD3z53J06dHlAWJyWemjJFW0IMTlRNMwkElhWYyJyLalqCCJrRtMD/YkE9xIyaR8t8MrrmTAUBb3loLtNVI0JarE0zs5YFPiCJHLWVovjv3sxSw8RG2XBF5sfIa0bJgcI61riAEHybKGlqIr+Qf4YGUwWjLT0JlVSzNSkqYUGZYYeJzLekEcAyn9gUuXKAmdosmo/1wGRIm+pwdygiSlDMZSpHRW1NiU3sdKGoejFWeZhiraSd3McDhyQWby+LAkb2z9dHNr4VknJwJ+ValEgAFguT0pG6SWsexafHfGOoVyVs1tYSJJz4Di8rEszNiKdlKx7I/FjNGR0U2EfSlhmHqfokmoJztQIvoM5jwiP5p06zJKYHiDg5Y3bhqJSMy7wnsfR353dt4ZGXeuPa2vY2pQfq+VxPhCNHRePNh8NedMPHKHhusraUmpVOp91tLqlVJCiJqQD0kmdEYeOzcmdtA0rfw/6BoJW9LVb52rG4X8w91rPCgl32t1Mb6wLTq9UXhy012eKT78rr6SUmrQep+VxPhClNxcvVx89WpzdcqZzO8Qbq1B7X1WEuML89uJO5v5y+7kqHPlVriSvmJY8Cmxj+S2/lTmPE5tlSmQKqv+ttI80gGxYHbVGVl2Hy04856c7U8F0q8m9n0KNU4VZ0ylVg/iYbnK4kJbhBWiAiu0skLLkXaej3FQQoomFHcJ+hy5wEs85Sw+d/JTRHVZ3i37CB9h4wLb1sYKsQhm38KlDCik/6LrsvVFWs/VXFJbx1MezQmc0f8O2b4GKmfmkjM1vI+ovsgahqogsx4wn6TsZNhV+ICreJcyzJqKZJ9EfVCeC7Us+uusk5/GGuwdftguOZpCmjRQBzwhwJX6O8Nf+7Fw/ZI7l3fvfLcn+Bbgt6RBSWY1ZFtSkoXNy1k2HFMlTtVTikY+SQ1XLRcCqpc4XgSFNniFKVft9OXCNThUuW87uSx+bPsT2+9wWV14daPwn9ukuKYKa1Pu/F2vxqYIOSbZmr/vTI44v9wgVO78wlvCAFlx6Sf34gjlrA85Dy97PABRjeOCf7oPTOAD5zG935soo96/otkLWO/OxTvPJ2iKIjV4YB0tpCbprm9K0Mn8W3OLZdP/Fv32niV2zBCVhWoq9THJDH5W2I25/vegytbHfZbZFffJj6TKCl+GbYS118M75ZWXwncDb+OCYIvDQHBg5Rk+wkRiXKwnJrWJQrRdivAtcmt7G4q18i2t0Whri4haRDHgcPvFy1e83GSCAOsOPSgsLkCocq6OQAoH/dwH64XpZ+79Jag+C68Wg42orYWXhdnFJtIVhCH38uzroekIL7S/HpqJtsecay/erI9jG60PwZx7b5Q8V9fIntn+UEhk4chakojmbS9vf3mxLRBfcJODUXArhwTW4JwsDihaiiyZYSqafczWAiXchzSla5KqSOdx51CT9RzrUTU1d4Q2GvA8o0heO6PLHbtR/GnYHZ9yrvhH2lLboaEzLXT9oTbs5AABgWKUGzZKBoqvwvJaYe2uc+2Gs3rRvfV869bKm/V/vfVdShCORGNgd6PaoDbukeJoTnolA6exOY6aSPSND0vjkVTQQ/WMVNUyRAkWI0Hz5N4QZdm/Lz3b0Gn7rahgRrTNygEYkSnS6KUjbXy5NldR0vaGKVsm3z26KSPThiQcNKtz/UrhISyXLYfzjbW1lPmWuOB2WhKcjf6917UKGgxU2mC7TQLIhXh7GXl9OxTWb4K8+nYQYm117BATwGkEDF+I8rF4GO6GsEXc9cK5N18669dCoIbCI3VWQ3CbeAN+VfObrBxq2eLCJF7pybxz92410Lo4cS6be1zIP/w9DEiCQeGXNefO5RoGrI+sMp7s0V4Nde1FmAaD0J7RbQ9Zv5P/UeCA1GY+v1f3C4sSNfjUBv2uuyZ44qkb9HZWIRjENlefOBsXq1nt317y4/TkyObqz+5MLdT1YQvhvlrGsdvtc/VuyA6qb7iq1LxtE1UD2sEmZSAhW2aHnSK0M0KEifKU0HYkylfDwKc54nfetjX1HORrDRLsrtIriRPuzdHNtefkejN/GVbR+X7SuTTiLL70BRLmkq4S5tEyc5CXRkoqbVMm/qzkXxnRS6x88MTvwi1ZwztYZ+351sxGcekBcTR34gFsD2LR4ugyDivOy5WoOzcWdW89EFqP8PzroW8jrDsxA8vpwiH5yX1CjfWDZYZB73ZzNe9XUv7zkTgw4NsJg0qjk/NJGOpdbO583pl76swPAYbi8DTUdFVJ8t1sTbiDPiDJfXpjc3Wu+GIpHoeSoYPIg3GY3bo95lx6vDX/vT8KpU9xaR4m2uLxKB+NCLt1+T3Gs/q675Pq7tj1rYuvnNVvQb/CrxOQ3UvGeALG2FwddxefRWPbTeKs3ysODTurY9tNEheikShsxf0zCXHgsnDn4RR4MliFiAyGwXeziDvzmKj0Zn0yXIvKQL/XCLs19at79UFF6H430KVzXvVh/fxgD/5FiivFxUgrJ/VEeLmtVYxH5J6WZGu0vSUeT8bjLck4knkxynsH9q79Y0WOi+F+sFvr/XvUXX60fwtdKzMEe43egS6QWgNzRqngbiBhmtyXHg80ESv7i6Uzc/kbvw6Qn9m6+IikjmDP8c3aRmcPhuWdSb1XSMjLDYyoKintiIQ0G5kdOP9eKa78WJhedn+4ivcxlNdeK9T9YamilNlYcIeXSEZ1Xi47156Cf7vjQ2SEzBb+9V1h7q6zeMcdevga9sD1MXd5hly7c+PuzJg/vjjpzqzAdWH6lyDb4tBIceUugPEygK9i4ESd1HWbtE1Ldqw8bjP4rByYriRI6oySSdFdFdVX/XeDukqv0rA5U7FRU1ZDliQaqIn+KNqNvQYf7RvPKTLq1jVRaqQ+ih6HGQ5PkUufPe6NNPqtRFmyWAmT4/5hr8VFohzP8/if5+J8SwROijGu+yjEDfJXGoPLGNtrNRKsjduwNpZEe3dwQzc3dwTeV6psfdcwjd8VCtaNAQqDwQ7vqVx+zYRJeh37bR5CnAdcFRN3Sbox4G0iioJd30ZRIY3UKnhh4rsK42Pu/EVwPPAonEBKZXdx5T4Gg88MHh2hdieADvx4yZ0cLlM7i+OF2YniqyVcghGCufGt29fB8zbX1nCEvbZa4rJ7XGTT3BstLl0q3BuuQFGcGzrRfRrijyDwfGs7H4E0yMQqSKgwgTstHDIhXFU6ve90uO10rlfJSln9HE3h3xYk3FNuBGcijtXeWOGYRlZKi+x5UTGyA1kNeyfqN3QrayKOcMHeF3wHLgxjxS25qYpUwcDm/bay8Az/vLL40rn9KPjzyw4b9OABjiM9xR3ffDvURAOSD8u9zWbWa2cGiagyVbBd10w6nfi6qbkDaC6UPgPvmuHY/V+imAe0',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.25 00:00:00',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.ccgp-sichuan.gov.cn',
+ 'site_name': '四川政府采购网',
+ 'source': '四川政府采购网',
+ 'time_stamp': 1582627905895,
+ 'tos_code': '02',
+ 'url': 'http://202.61.88.152:9002/view/staticpags/gzgg/2020-02-25/5b5c8a139c204d798e570473374ae4aa.html'}
+2020-02-25 18:51:45,976  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[6/2]
+2020-02-25 18:51:45,981  jy_crawl_helper.py:200 : INFO  Duplicate item:[6f5b1e60735ea0c9b77b9c338c9c711a] total:[page_1-0]
+2020-02-25 18:51:45,982  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[7/2]
+2020-02-25 18:51:45,988  jy_crawl_helper.py:200 : INFO  Duplicate item:[0f1d265b4c15e7f265d7e4799b894511] total:[page_1-1]
+2020-02-25 18:51:45,988  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[8/2]
+2020-02-25 18:51:45,993  jy_crawl_helper.py:200 : INFO  Duplicate item:[ac77d3643cb0425297ca38c7f2865bae] total:[page_1-2]
+2020-02-25 18:51:45,994  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[9/2]
+2020-02-25 18:51:45,998  jy_crawl_helper.py:200 : INFO  Duplicate item:[7a9d11bba151c936d16f4e03f00fd371] total:[page_1-3]
+2020-02-25 18:51:45,998  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[10/2]
+2020-02-25 18:51:46,002  jy_crawl_helper.py:200 : INFO  Duplicate item:[c47044101be2a0c80c92d58a89d74fa1] total:[page_1-4]
+2020-02-25 18:51:46,003  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[11/2]
+2020-02-25 18:51:46,006  jy_crawl_helper.py:200 : INFO  Duplicate item:[a15ea567d26d6ed5c4f9b46e9a219728] total:[page_1-5]
+2020-02-25 18:51:46,007  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[12/2]
+2020-02-25 18:51:46,011  jy_crawl_helper.py:200 : INFO  Duplicate item:[330ba9d4fa86564491102b2f028408e2] total:[page_1-6]
+2020-02-25 18:51:46,011  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[13/2]
+2020-02-25 18:51:46,015  jy_crawl_helper.py:200 : INFO  Duplicate item:[2a0687d024f9f466b104fb88e29cd9cf] total:[page_1-7]
+2020-02-25 18:51:46,016  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[14/2]
+2020-02-25 18:51:46,020  jy_crawl_helper.py:200 : INFO  Duplicate item:[4312cdaf8f3f5f2eb94809dbb94d10a0] total:[page_1-8]
+2020-02-25 18:51:46,021  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[15/2]
+2020-02-25 18:51:46,024  jy_crawl_helper.py:200 : INFO  Duplicate item:[66a86a764950494b1ae5ccd536030355] total:[page_1-9]
+2020-02-25 18:51:46,025  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[16/2]
+2020-02-25 18:51:46,029  jy_crawl_helper.py:200 : INFO  Duplicate item:[c2cbf43102288693979546096831fdec] total:[page_1-10]
+2020-02-25 18:51:46,029  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[17/2]
+2020-02-25 18:51:46,033  jy_crawl_helper.py:200 : INFO  Duplicate item:[f04f706cc91d876bfd260970b53a5d68] total:[page_1-11]
+2020-02-25 18:51:46,033  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[18/2]
+2020-02-25 18:51:46,037  jy_crawl_helper.py:200 : INFO  Duplicate item:[e3a1db6a3c3661ddd83e8bd18586b9a5] total:[page_1-12]
+2020-02-25 18:51:46,038  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[19/2]
+2020-02-25 18:51:46,044  jy_crawl_helper.py:200 : INFO  Duplicate item:[a83b1c14e7ce27b13f124667a51b9fad] total:[page_1-13]
+2020-02-25 18:51:46,046  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[20/2]
+2020-02-25 18:51:46,051  jy_crawl_helper.py:200 : INFO  Duplicate item:[29f4ca10a5daaf6ae85dba4eb936259c] total:[page_1-14]
+2020-02-25 18:51:46,051  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[21/2]
+2020-02-25 18:51:46,055  jy_crawl_helper.py:200 : INFO  Duplicate item:[9671b6a9bb7bf4a2c38e11810478804d] total:[page_1-15]
+2020-02-25 18:51:46,055  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[22/2]
+2020-02-25 18:51:46,059  jy_crawl_helper.py:200 : INFO  Duplicate item:[2c6d6b4a7012c391f0a75c1dfe932e7b] total:[page_1-16]
+2020-02-25 18:51:46,059  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[23/2]
+2020-02-25 18:51:46,063  jy_crawl_helper.py:200 : INFO  Duplicate item:[d6d75614ef7a47b6a59f965886d20441] total:[page_1-17]
+2020-02-25 18:51:46,064  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[24/2]
+2020-02-25 18:51:46,068  jy_crawl_helper.py:200 : INFO  Duplicate item:[cc7cbe698e37ae54fbdbd13bd27bf298] total:[page_1-18]
+2020-02-25 18:51:46,070  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[25/2]
+2020-02-25 18:51:46,075  jy_crawl_helper.py:200 : INFO  Duplicate item:[c30d2a7193125eda796bf0d73bcf24f1] total:[page_1-19]
+2020-02-25 18:51:51,390  ccgp_sichuan.py:313 : INFO  Get page list url, page:[3], url:[http://www.ccgp-sichuan.gov.cn/CmsNewsController.do?channelCode=sjcg1&method=recommendBulletinList&rp=25&title=&moreType=provincebuyBulletinMore&page=2], status:[200], body md5:[579374d84e0c4d9fd2a03b3b1f70347f]
+2020-02-25 18:51:51,391  ccgp_sichuan.py:315 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 20, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '88f4bd16e18cf5fc861ee8dfca90106c', 'total_page_num': 2, 'total_item_num': 5, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-25 18:51:06', 'crawl_end_time': ''}}
+2020-02-25 18:51:51,406  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[1/3]
+2020-02-25 18:51:51,410  jy_crawl_helper.py:200 : INFO  Duplicate item:[ea64422a83bcf4150114f5ca4f683f78] total:[page_1-20]
+2020-02-25 18:51:51,410  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[2/3]
+2020-02-25 18:51:51,415  jy_crawl_helper.py:200 : INFO  Duplicate item:[6e5f1fc585c18b95067d81d1a26f419d] total:[page_1-21]
+2020-02-25 18:51:51,415  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[3/3]
+2020-02-25 18:51:51,419  jy_crawl_helper.py:200 : INFO  Duplicate item:[098fd28e821704c25246b6b9e630f0e9] total:[page_1-22]
+2020-02-25 18:51:51,419  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[4/3]
+2020-02-25 18:51:51,423  jy_crawl_helper.py:200 : INFO  Duplicate item:[aa208d4a8e3061f3c634d607f392ca46] total:[page_1-23]
+2020-02-25 18:51:51,424  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[5/3]
+2020-02-25 18:51:51,427  jy_crawl_helper.py:200 : INFO  Duplicate item:[e3f01b6d6cb4ceda1b6adbfdffb755ec] total:[page_1-24]
+2020-02-25 18:51:51,428  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[6/3]
+2020-02-25 18:51:51,431  jy_crawl_helper.py:200 : INFO  Duplicate item:[1274b99f3f2cd1b86a27d8a814b029e5] total:[page_1-25]
+2020-02-25 18:51:51,432  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[7/3]
+2020-02-25 18:51:51,437  jy_crawl_helper.py:200 : INFO  Duplicate item:[14fb6628351f1aa49eb6e7672c3fe485] total:[page_1-26]
+2020-02-25 18:51:51,438  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[8/3]
+2020-02-25 18:51:51,445  jy_crawl_helper.py:200 : INFO  Duplicate item:[67dd5efa4753974d22826660b3d80f61] total:[page_1-27]
+2020-02-25 18:51:51,446  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[9/3]
+2020-02-25 18:51:51,451  jy_crawl_helper.py:200 : INFO  Duplicate item:[baab0a19676e7f684de60ed25a1aadd3] total:[page_1-28]
+2020-02-25 18:51:51,452  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[10/3]
+2020-02-25 18:51:51,455  jy_crawl_helper.py:200 : INFO  Duplicate item:[2a54f7f09820de7a06829974c7095047] total:[page_1-29]
+2020-02-25 18:51:51,456  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[11/3]
+2020-02-25 18:51:51,460  jy_crawl_helper.py:200 : INFO  Duplicate item:[aff2632315ab034780d531cd76b89c71] total:[page_1-30]
+2020-02-25 18:51:51,460  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[12/3]
+2020-02-25 18:51:51,464  jy_crawl_helper.py:200 : INFO  Duplicate item:[0e1ab2524758472dfa55dc341505bf7e] total:[page_1-31]
+2020-02-25 18:51:51,464  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[13/3]
+2020-02-25 18:51:51,469  jy_crawl_helper.py:200 : INFO  Duplicate item:[e8e3d9617d84a04b46659cf094c15761] total:[page_1-32]
+2020-02-25 18:51:51,470  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[14/3]
+2020-02-25 18:51:51,475  jy_crawl_helper.py:200 : INFO  Duplicate item:[fd6e2ae240ea10e2b2b0e7684068f3e7] total:[page_1-33]
+2020-02-25 18:51:51,476  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[15/3]
+2020-02-25 18:51:51,481  jy_crawl_helper.py:200 : INFO  Duplicate item:[ab1cfccda22db9a76d44ef713b165154] total:[page_1-34]
+2020-02-25 18:51:51,481  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[16/3]
+2020-02-25 18:51:51,488  jy_crawl_helper.py:200 : INFO  Duplicate item:[b5573585f52d3d2a98a887d9ca2b7e09] total:[page_1-35]
+2020-02-25 18:51:51,489  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[17/3]
+2020-02-25 18:51:51,493  jy_crawl_helper.py:200 : INFO  Duplicate item:[98c14e992728a1c5c4234a5a8b086d97] total:[page_1-36]
+2020-02-25 18:51:51,493  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[18/3]
+2020-02-25 18:51:51,497  jy_crawl_helper.py:200 : INFO  Duplicate item:[6cea053537837c89e2076cc8a14c2892] total:[page_1-37]
+2020-02-25 18:51:51,498  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[19/3]
+2020-02-25 18:51:51,504  jy_crawl_helper.py:200 : INFO  Duplicate item:[8212c5dede1cc59653a6043b6cfed5e6] total:[page_1-38]
+2020-02-25 18:51:51,505  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[20/3]
+2020-02-25 18:51:51,510  jy_crawl_helper.py:200 : INFO  Duplicate item:[1e0deac9b9c904ccd3d70991ca854749] total:[page_1-39]
+2020-02-25 18:51:51,510  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[21/3]
+2020-02-25 18:51:51,514  jy_crawl_helper.py:200 : INFO  Duplicate item:[ca96ccd96461e81ab5e878d657edba65] total:[page_1-40]
+2020-02-25 18:51:51,515  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[22/3]
+2020-02-25 18:51:51,518  jy_crawl_helper.py:200 : INFO  Duplicate item:[1a8ce26c2d20b161149f783a03a135a2] total:[page_1-41]
+2020-02-25 18:51:51,518  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[23/3]
+2020-02-25 18:51:51,522  jy_crawl_helper.py:200 : INFO  Duplicate item:[8aad78b177d287a6837a99d33fd1cb27] total:[page_1-42]
+2020-02-25 18:51:51,523  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[24/3]
+2020-02-25 18:51:51,526  jy_crawl_helper.py:200 : INFO  Duplicate item:[eac1ca689732418536fd1fed911a41cd] total:[page_1-43]
+2020-02-25 18:51:51,527  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[25/3]
+2020-02-25 18:51:51,533  jy_crawl_helper.py:200 : INFO  Duplicate item:[bb6a111f9b7e74aafd66acf4e396d07e] total:[page_1-44]
+2020-02-25 18:51:58,807  ccgp_sichuan.py:313 : INFO  Get page list url, page:[4], url:[http://www.ccgp-sichuan.gov.cn/CmsNewsController.do?channelCode=sjcg1&method=recommendBulletinList&rp=25&title=&moreType=provincebuyBulletinMore&page=3], status:[200], body md5:[ba6647eb85970166b66d5538e2090176]
+2020-02-25 18:51:58,807  ccgp_sichuan.py:315 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 45, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '579374d84e0c4d9fd2a03b3b1f70347f', 'total_page_num': 3, 'total_item_num': 5, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-25 18:51:06', 'crawl_end_time': ''}}
+2020-02-25 18:51:58,821  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[1/4]
+2020-02-25 18:51:58,825  jy_crawl_helper.py:200 : INFO  Duplicate item:[86c8bb6db2780724d43f441f90affa3a] total:[page_1-45]
+2020-02-25 18:51:58,826  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[2/4]
+2020-02-25 18:51:58,830  jy_crawl_helper.py:200 : INFO  Duplicate item:[69600c452e81a2b69cd7ff44139c7af4] total:[page_1-46]
+2020-02-25 18:51:58,830  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[3/4]
+2020-02-25 18:51:58,836  jy_crawl_helper.py:200 : INFO  Duplicate item:[4146e75fefbdc65a59d635a4887bf816] total:[page_1-47]
+2020-02-25 18:51:58,837  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[4/4]
+2020-02-25 18:51:58,840  jy_crawl_helper.py:200 : INFO  Duplicate item:[dacb8374941ee7d7eb01561de8b0a17f] total:[page_1-48]
+2020-02-25 18:51:58,840  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[5/4]
+2020-02-25 18:51:58,844  jy_crawl_helper.py:200 : INFO  Duplicate item:[e4d0e5c471ba0f82296450f9b5955aa0] total:[page_1-49]
+2020-02-25 18:51:58,845  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[6/4]
+2020-02-25 18:51:58,849  jy_crawl_helper.py:200 : INFO  Duplicate item:[03f49452ae133adecd0a5f373a00ef76] total:[page_1-50]
+2020-02-25 18:51:58,850  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[7/4]
+2020-02-25 18:51:58,855  jy_crawl_helper.py:200 : INFO  Duplicate item:[43c519f31e8be8a23d506f804559d68b] total:[page_1-51]
+2020-02-25 18:51:58,855  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[8/4]
+2020-02-25 18:51:58,862  jy_crawl_helper.py:200 : INFO  Duplicate item:[bface54505681997b9d92d19ddd9c7df] total:[page_1-52]
+2020-02-25 18:51:58,863  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[9/4]
+2020-02-25 18:51:58,867  jy_crawl_helper.py:200 : INFO  Duplicate item:[6edfc79075194fba8ec770794dde6dff] total:[page_1-53]
+2020-02-25 18:51:58,868  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[10/4]
+2020-02-25 18:51:58,874  jy_crawl_helper.py:200 : INFO  Duplicate item:[68b4c537ca0abff02d6fdd43cc4f7243] total:[page_1-54]
+2020-02-25 18:51:58,874  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[11/4]
+2020-02-25 18:51:58,878  jy_crawl_helper.py:200 : INFO  Duplicate item:[56ef3c9bdd192f80228fc8db30dbc32e] total:[page_1-55]
+2020-02-25 18:51:58,879  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[12/4]
+2020-02-25 18:51:58,883  jy_crawl_helper.py:200 : INFO  Duplicate item:[262da7d9d2666a80537a001958cc5d07] total:[page_1-56]
+2020-02-25 18:51:58,884  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[13/4]
+2020-02-25 18:51:58,888  jy_crawl_helper.py:200 : INFO  Duplicate item:[df226018e40e305b72b4dbb4d82979f3] total:[page_1-57]
+2020-02-25 18:51:58,889  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[14/4]
+2020-02-25 18:51:58,895  jy_crawl_helper.py:200 : INFO  Duplicate item:[1915c89710a3f2d7920a06f008a16437] total:[page_1-58]
+2020-02-25 18:51:58,895  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[15/4]
+2020-02-25 18:51:58,900  jy_crawl_helper.py:200 : INFO  Duplicate item:[c9fbd61be263dfd28cd5afa50ef39135] total:[page_1-59]
+2020-02-25 18:51:58,900  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[16/4]
+2020-02-25 18:51:58,904  jy_crawl_helper.py:200 : INFO  Duplicate item:[2379bc71f54f6136f0b0c402ab2507a5] total:[page_1-60]
+2020-02-25 18:51:58,904  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[17/4]
+2020-02-25 18:51:58,908  jy_crawl_helper.py:200 : INFO  Duplicate item:[edfcfb9edc5ca106a1225d136b6f8369] total:[page_1-61]
+2020-02-25 18:51:58,908  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[18/4]
+2020-02-25 18:51:58,912  jy_crawl_helper.py:200 : INFO  Duplicate item:[085e330245f597111c2b560a335c17f2] total:[page_1-62]
+2020-02-25 18:51:58,913  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[19/4]
+2020-02-25 18:51:58,916  jy_crawl_helper.py:200 : INFO  Duplicate item:[34fe4678b08bbb528bffdea34d258f5c] total:[page_1-63]
+2020-02-25 18:51:58,917  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[20/4]
+2020-02-25 18:51:58,921  jy_crawl_helper.py:200 : INFO  Duplicate item:[1b4f5edf66d2a8c3f33d36029f506a29] total:[page_1-64]
+2020-02-25 18:51:58,922  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[21/4]
+2020-02-25 18:51:58,929  jy_crawl_helper.py:200 : INFO  Duplicate item:[2ac1a334a141b4b8f2725264a12bbd17] total:[page_1-65]
+2020-02-25 18:51:58,929  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[22/4]
+2020-02-25 18:51:58,934  jy_crawl_helper.py:200 : INFO  Duplicate item:[62e4653ff0be13c84e425b814e07458e] total:[page_1-66]
+2020-02-25 18:51:58,935  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[23/4]
+2020-02-25 18:51:58,938  jy_crawl_helper.py:200 : INFO  Duplicate item:[c1a1dceddba7dc0cc3b8b09f25efbc1e] total:[page_1-67]
+2020-02-25 18:51:58,939  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[24/4]
+2020-02-25 18:51:58,942  jy_crawl_helper.py:200 : INFO  Duplicate item:[75e88a27d3830ee067e9ab1803350864] total:[page_1-68]
+2020-02-25 18:51:58,943  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[25/4]
+2020-02-25 18:51:58,947  jy_crawl_helper.py:200 : INFO  Duplicate item:[b02add073a94c95398dcf27578330f7e] total:[page_1-69]
+2020-02-25 18:52:05,128  ccgp_sichuan.py:313 : INFO  Get page list url, page:[5], url:[http://www.ccgp-sichuan.gov.cn/CmsNewsController.do?channelCode=sjcg1&method=recommendBulletinList&rp=25&title=&moreType=provincebuyBulletinMore&page=4], status:[200], body md5:[82a17f11adaf34150b9dbbb3994d683f]
+2020-02-25 18:52:05,128  ccgp_sichuan.py:315 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 70, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'ba6647eb85970166b66d5538e2090176', 'total_page_num': 4, 'total_item_num': 5, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-25 18:51:06', 'crawl_end_time': ''}}
+2020-02-25 18:52:05,138  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[1/5]
+2020-02-25 18:52:05,142  jy_crawl_helper.py:200 : INFO  Duplicate item:[7469439a47ef6df740f0b49a8b67fa8e] total:[page_1-70]
+2020-02-25 18:52:05,143  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[2/5]
+2020-02-25 18:52:05,146  jy_crawl_helper.py:200 : INFO  Duplicate item:[8894992ee1c2fc97b086b19714dead22] total:[page_1-71]
+2020-02-25 18:52:05,147  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[3/5]
+2020-02-25 18:52:05,150  jy_crawl_helper.py:200 : INFO  Duplicate item:[df62dcf32c32f7f6deb661fa11b85919] total:[page_1-72]
+2020-02-25 18:52:05,151  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[4/5]
+2020-02-25 18:52:05,156  jy_crawl_helper.py:200 : INFO  Duplicate item:[1007c913e9cfbe30d8fa195d667ef817] total:[page_1-73]
+2020-02-25 18:52:05,157  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[5/5]
+2020-02-25 18:52:05,165  jy_crawl_helper.py:200 : INFO  Duplicate item:[f5fd834fe96b9d3647721008cab15972] total:[page_1-74]
+2020-02-25 18:52:05,166  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[6/5]
+2020-02-25 18:52:05,171  jy_crawl_helper.py:200 : INFO  Duplicate item:[7484d4c01dcf9a50d6cd872008920949] total:[page_1-75]
+2020-02-25 18:52:05,172  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[7/5]
+2020-02-25 18:52:05,178  jy_crawl_helper.py:200 : INFO  Duplicate item:[466cddb0af607cfedfec6a7f23e9f3b2] total:[page_1-76]
+2020-02-25 18:52:05,178  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[8/5]
+2020-02-25 18:52:05,182  jy_crawl_helper.py:200 : INFO  Duplicate item:[91610f925b40602414fc71156b4db1f5] total:[page_1-77]
+2020-02-25 18:52:05,182  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[9/5]
+2020-02-25 18:52:05,187  jy_crawl_helper.py:200 : INFO  Duplicate item:[448d7b17446dfdc7891b2065f23cfa0c] total:[page_1-78]
+2020-02-25 18:52:05,189  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[10/5]
+2020-02-25 18:52:05,195  jy_crawl_helper.py:200 : INFO  Duplicate item:[ce0427517bea99ba1dadd5176a88617c] total:[page_1-79]
+2020-02-25 18:52:05,195  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[11/5]
+2020-02-25 18:52:05,199  jy_crawl_helper.py:200 : INFO  Duplicate item:[e79aac63f0525f13e6e42d0857b0c0d8] total:[page_1-80]
+2020-02-25 18:52:05,199  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[12/5]
+2020-02-25 18:52:05,203  jy_crawl_helper.py:200 : INFO  Duplicate item:[23d9a0e0c3832e00abdb8d22fbb0033f] total:[page_1-81]
+2020-02-25 18:52:05,203  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[13/5]
+2020-02-25 18:52:05,207  jy_crawl_helper.py:200 : INFO  Duplicate item:[02ea48489886eac322ccd7efd32a9c1f] total:[page_1-82]
+2020-02-25 18:52:05,208  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[14/5]
+2020-02-25 18:52:05,211  jy_crawl_helper.py:200 : INFO  Duplicate item:[f10d14ef63232f017007e9abe57428fc] total:[page_1-83]
+2020-02-25 18:52:05,212  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[15/5]
+2020-02-25 18:52:05,216  jy_crawl_helper.py:200 : INFO  Duplicate item:[4e9acbba4a70948027aa948e9303b92d] total:[page_1-84]
+2020-02-25 18:52:05,216  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[16/5]
+2020-02-25 18:52:05,221  jy_crawl_helper.py:200 : INFO  Duplicate item:[55b690e74f4c22c248552153c2928f47] total:[page_1-85]
+2020-02-25 18:52:05,221  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[17/5]
+2020-02-25 18:52:05,227  jy_crawl_helper.py:200 : INFO  Duplicate item:[0c63d99e6793f490835ae37decd9ccb8] total:[page_1-86]
+2020-02-25 18:52:05,227  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[18/5]
+2020-02-25 18:52:05,231  jy_crawl_helper.py:200 : INFO  Duplicate item:[810cde234bd91ba6b13fdb6cd6b09e1e] total:[page_1-87]
+2020-02-25 18:52:05,232  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[19/5]
+2020-02-25 18:52:05,235  jy_crawl_helper.py:200 : INFO  Duplicate item:[0b94072be98ae0b2aa4b93c3dce6a7d1] total:[page_1-88]
+2020-02-25 18:52:05,236  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[20/5]
+2020-02-25 18:52:05,240  jy_crawl_helper.py:200 : INFO  Duplicate item:[7382dda0a28a37501ed2a97a86f1b1bf] total:[page_1-89]
+2020-02-25 18:52:05,240  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[21/5]
+2020-02-25 18:52:05,244  jy_crawl_helper.py:200 : INFO  Duplicate item:[b6b24fe4a263990e72384ea6180866c6] total:[page_1-90]
+2020-02-25 18:52:05,245  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[22/5]
+2020-02-25 18:52:05,249  jy_crawl_helper.py:200 : INFO  Duplicate item:[995c8cdf66ca3c18de58d528d9f1b048] total:[page_1-91]
+2020-02-25 18:52:05,250  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[23/5]
+2020-02-25 18:52:05,256  jy_crawl_helper.py:200 : INFO  Duplicate item:[0d864f2d706e7223020911abb2c192d6] total:[page_1-92]
+2020-02-25 18:52:05,256  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[24/5]
+2020-02-25 18:52:05,262  jy_crawl_helper.py:200 : INFO  Duplicate item:[84663202ac0fcab01b8cc6f64b38f99e] total:[page_1-93]
+2020-02-25 18:52:05,262  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[25/5]
+2020-02-25 18:52:05,266  jy_crawl_helper.py:200 : INFO  Duplicate item:[ca4b04d552b9b28d8b0a05cffa60cc40] total:[page_1-94]
+2020-02-25 18:52:06,720  logstats.py:48 : INFO  Crawled 5 pages (at 5 pages/min), scraped 5 items (at 5 items/min)
+2020-02-25 18:52:12,463  ccgp_sichuan.py:313 : INFO  Get page list url, page:[6], url:[http://www.ccgp-sichuan.gov.cn/CmsNewsController.do?channelCode=sjcg1&method=recommendBulletinList&rp=25&title=&moreType=provincebuyBulletinMore&page=5], status:[200], body md5:[a3ba8a0dc738c7732b9a9f29924aa08e]
+2020-02-25 18:52:12,464  ccgp_sichuan.py:315 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 95, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '82a17f11adaf34150b9dbbb3994d683f', 'total_page_num': 5, 'total_item_num': 5, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-25 18:51:06', 'crawl_end_time': ''}}
+2020-02-25 18:52:12,480  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[1/6]
+2020-02-25 18:52:12,484  jy_crawl_helper.py:200 : INFO  Duplicate item:[4c117f3b727629216b015d206cb6da52] total:[page_1-95]
+2020-02-25 18:52:12,484  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[2/6]
+2020-02-25 18:52:12,489  jy_crawl_helper.py:200 : INFO  Duplicate item:[c5d04e707a142a32807da84e45d53338] total:[page_1-96]
+2020-02-25 18:52:12,489  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[3/6]
+2020-02-25 18:52:12,493  jy_crawl_helper.py:200 : INFO  Duplicate item:[bad47812fe3cd88b752350de75e32eb6] total:[page_1-97]
+2020-02-25 18:52:12,494  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[4/6]
+2020-02-25 18:52:12,498  jy_crawl_helper.py:200 : INFO  Duplicate item:[6f3ed1bfc2e4b439c7b6ec9daec70446] total:[page_1-98]
+2020-02-25 18:52:12,498  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[5/6]
+2020-02-25 18:52:12,502  jy_crawl_helper.py:200 : INFO  Duplicate item:[0695932b5c8343175b09d1441b1e6169] total:[page_1-99]
+2020-02-25 18:52:12,502  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[6/6]
+2020-02-25 18:52:12,506  jy_crawl_helper.py:200 : INFO  Duplicate item:[cbff30cc3714cf0f5957a97a3ab10117] total:[page_1-100]
+2020-02-25 18:52:12,506  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[7/6]
+2020-02-25 18:52:12,510  jy_crawl_helper.py:200 : INFO  Duplicate item:[2ec8aadff7f2addde369ecb347c178cc] total:[page_1-101]
+2020-02-25 18:52:12,511  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[8/6]
+2020-02-25 18:52:12,516  jy_crawl_helper.py:200 : INFO  Duplicate item:[fd03d88e3016407a41dde338e74e3527] total:[page_1-102]
+2020-02-25 18:52:12,517  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[9/6]
+2020-02-25 18:52:12,522  jy_crawl_helper.py:200 : INFO  Duplicate item:[dfc6c9eb23af05ef9944679fff9f509c] total:[page_1-103]
+2020-02-25 18:52:12,523  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[10/6]
+2020-02-25 18:52:12,527  jy_crawl_helper.py:200 : INFO  Duplicate item:[a0c3188b797528212061227f8bdd2205] total:[page_1-104]
+2020-02-25 18:52:12,527  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[11/6]
+2020-02-25 18:52:12,531  jy_crawl_helper.py:200 : INFO  Duplicate item:[ca0d2b7acc97c60e5ba9d371d0e78745] total:[page_1-105]
+2020-02-25 18:52:12,531  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[12/6]
+2020-02-25 18:52:12,535  jy_crawl_helper.py:200 : INFO  Duplicate item:[1251df4838d734cb12374beb1ed0ce1c] total:[page_1-106]
+2020-02-25 18:52:12,535  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[13/6]
+2020-02-25 18:52:12,539  jy_crawl_helper.py:200 : INFO  Duplicate item:[133e1c44de9d7346554278b7d451c67c] total:[page_1-107]
+2020-02-25 18:52:12,540  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[14/6]
+2020-02-25 18:52:12,544  jy_crawl_helper.py:200 : INFO  Duplicate item:[56cf5549344cd71e24827f939bfd8a6a] total:[page_1-108]
+2020-02-25 18:52:12,546  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[15/6]
+2020-02-25 18:52:12,552  jy_crawl_helper.py:200 : INFO  Duplicate item:[c384b26702ebeb58876d7998739d454e] total:[page_1-109]
+2020-02-25 18:52:12,552  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[16/6]
+2020-02-25 18:52:12,556  jy_crawl_helper.py:200 : INFO  Duplicate item:[8479b8d39e7d3f82939dc1ba09010f3a] total:[page_1-110]
+2020-02-25 18:52:12,556  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[17/6]
+2020-02-25 18:52:12,560  jy_crawl_helper.py:200 : INFO  Duplicate item:[8494185b9ddf7431b2a2af771ba00bf6] total:[page_1-111]
+2020-02-25 18:52:12,561  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[18/6]
+2020-02-25 18:52:12,564  jy_crawl_helper.py:200 : INFO  Duplicate item:[acc774a52fee18aa7469c0ad3e294d04] total:[page_1-112]
+2020-02-25 18:52:12,565  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[19/6]
+2020-02-25 18:52:12,568  jy_crawl_helper.py:200 : INFO  Duplicate item:[e9ea970a3a3d101adcb55c422a58fd7a] total:[page_1-113]
+2020-02-25 18:52:12,569  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[20/6]
+2020-02-25 18:52:12,574  jy_crawl_helper.py:200 : INFO  Duplicate item:[b67847050f52076557f3ffcb5c94e91c] total:[page_1-114]
+2020-02-25 18:52:12,575  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[21/6]
+2020-02-25 18:52:12,578  jy_crawl_helper.py:200 : INFO  Duplicate item:[ad5f970093e8612123cea64b56144fe2] total:[page_1-115]
+2020-02-25 18:52:12,580  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[22/6]
+2020-02-25 18:52:12,583  jy_crawl_helper.py:200 : INFO  Duplicate item:[c10f4fa93b4dfa45d02c23b4b5943e4a] total:[page_1-116]
+2020-02-25 18:52:12,584  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[23/6]
+2020-02-25 18:52:12,588  jy_crawl_helper.py:200 : INFO  Duplicate item:[725b0ac4b4fe2ef6e71c6035936ed710] total:[page_1-117]
+2020-02-25 18:52:12,588  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[24/6]
+2020-02-25 18:52:12,592  jy_crawl_helper.py:200 : INFO  Duplicate item:[d4bf184c5c15b4a86bfcf871a7506892] total:[page_1-118]
+2020-02-25 18:52:12,592  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[25/6]
+2020-02-25 18:52:12,598  jy_crawl_helper.py:200 : INFO  Duplicate item:[2106590501c7343c1d2bbcba5ffd6eaa] total:[page_1-119]
+2020-02-25 18:52:17,733  ccgp_sichuan.py:313 : INFO  Get page list url, page:[7], url:[http://www.ccgp-sichuan.gov.cn/CmsNewsController.do?channelCode=sjcg1&method=recommendBulletinList&rp=25&title=&moreType=provincebuyBulletinMore&page=6], status:[200], body md5:[c969361ef8af8c767b673525422d3c25]
+2020-02-25 18:52:17,734  ccgp_sichuan.py:315 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 120, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'a3ba8a0dc738c7732b9a9f29924aa08e', 'total_page_num': 6, 'total_item_num': 5, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-25 18:51:06', 'crawl_end_time': ''}}
+2020-02-25 18:52:17,745  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[1/7]
+2020-02-25 18:52:17,750  jy_crawl_helper.py:200 : INFO  Duplicate item:[46255045f184056fad75460b9142d98b] total:[page_1-120]
+2020-02-25 18:52:17,750  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[2/7]
+2020-02-25 18:52:17,757  jy_crawl_helper.py:200 : INFO  Duplicate item:[855633491f346321532be8ff81d8c101] total:[page_1-121]
+2020-02-25 18:52:17,759  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[3/7]
+2020-02-25 18:52:17,766  jy_crawl_helper.py:200 : INFO  Duplicate item:[b1aaff21bee372bb308619b125b30e4f] total:[page_1-122]
+2020-02-25 18:52:17,768  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[4/7]
+2020-02-25 18:52:17,773  jy_crawl_helper.py:200 : INFO  Duplicate item:[392a6c380d1ca15d27cb283518d47f59] total:[page_1-123]
+2020-02-25 18:52:17,774  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[5/7]
+2020-02-25 18:52:17,778  jy_crawl_helper.py:200 : INFO  Duplicate item:[03caef31447bea44597b7dc7e28297c9] total:[page_1-124]
+2020-02-25 18:52:17,778  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[6/7]
+2020-02-25 18:52:17,784  jy_crawl_helper.py:200 : INFO  Duplicate item:[645421105af3fd80072e112161921952] total:[page_1-125]
+2020-02-25 18:52:17,785  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[7/7]
+2020-02-25 18:52:17,791  jy_crawl_helper.py:200 : INFO  Duplicate item:[74321c31ec0a1f2ce73491223d038b4d] total:[page_1-126]
+2020-02-25 18:52:17,793  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[8/7]
+2020-02-25 18:52:17,803  jy_crawl_helper.py:200 : INFO  Duplicate item:[7ef95b033f7cae776ace1cbb8e8cefb3] total:[page_1-127]
+2020-02-25 18:52:17,807  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[9/7]
+2020-02-25 18:52:17,818  jy_crawl_helper.py:200 : INFO  Duplicate item:[49b142626e99e21db286231b5075ac8d] total:[page_1-128]
+2020-02-25 18:52:17,819  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[10/7]
+2020-02-25 18:52:17,827  jy_crawl_helper.py:200 : INFO  Duplicate item:[fb869e749f5c40f19bc40814645419a6] total:[page_1-129]
+2020-02-25 18:52:17,828  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[11/7]
+2020-02-25 18:52:17,836  jy_crawl_helper.py:200 : INFO  Duplicate item:[1196ad1b41b530f9e5e33388166c460d] total:[page_1-130]
+2020-02-25 18:52:17,837  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[12/7]
+2020-02-25 18:52:17,842  jy_crawl_helper.py:200 : INFO  Duplicate item:[c587bb76cc089ea4b845b847cc2e1824] total:[page_1-131]
+2020-02-25 18:52:17,842  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[13/7]
+2020-02-25 18:52:17,848  jy_crawl_helper.py:200 : INFO  Duplicate item:[ddd3c139d6914d4832b127b39e0ac156] total:[page_1-132]
+2020-02-25 18:52:17,849  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[14/7]
+2020-02-25 18:52:17,856  jy_crawl_helper.py:200 : INFO  Duplicate item:[27c93a909c8be5b7f130731d2291d192] total:[page_1-133]
+2020-02-25 18:52:17,858  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[15/7]
+2020-02-25 18:52:17,864  jy_crawl_helper.py:200 : INFO  Duplicate item:[c26018b45a33fe8b29697ad8127294f8] total:[page_1-134]
+2020-02-25 18:52:17,865  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[16/7]
+2020-02-25 18:52:17,872  jy_crawl_helper.py:200 : INFO  Duplicate item:[f2fe5dbea8ac412841f876a9bec82db1] total:[page_1-135]
+2020-02-25 18:52:17,872  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[17/7]
+2020-02-25 18:52:17,879  jy_crawl_helper.py:200 : INFO  Duplicate item:[96cfd25b31919ad7aad5670096498d5a] total:[page_1-136]
+2020-02-25 18:52:17,879  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[18/7]
+2020-02-25 18:52:17,883  jy_crawl_helper.py:200 : INFO  Duplicate item:[f67e2570e02550d4ed9a1c4de00c8768] total:[page_1-137]
+2020-02-25 18:52:17,884  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[19/7]
+2020-02-25 18:52:17,888  jy_crawl_helper.py:200 : INFO  Duplicate item:[786d1cd7cb3ec3497554fba5080253bb] total:[page_1-138]
+2020-02-25 18:52:17,889  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[20/7]
+2020-02-25 18:52:17,893  jy_crawl_helper.py:200 : INFO  Duplicate item:[7cfa81bb569fdcc8371236b8111e16d1] total:[page_1-139]
+2020-02-25 18:52:17,898  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[21/7]
+2020-02-25 18:52:17,909  jy_crawl_helper.py:200 : INFO  Duplicate item:[4468e36082404e8a090e1c22a7bf4dc5] total:[page_1-140]
+2020-02-25 18:52:17,909  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[22/7]
+2020-02-25 18:52:17,914  jy_crawl_helper.py:200 : INFO  Duplicate item:[ff33a5c875a23050dbd5f95b7d3dd1f3] total:[page_1-141]
+2020-02-25 18:52:17,915  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[23/7]
+2020-02-25 18:52:17,919  jy_crawl_helper.py:200 : INFO  Duplicate item:[ee6116f954cf556b267e860e14575f2a] total:[page_1-142]
+2020-02-25 18:52:17,920  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[24/7]
+2020-02-25 18:52:17,926  jy_crawl_helper.py:200 : INFO  Duplicate item:[c6cc633e213a85a663886e5811ba35e9] total:[page_1-143]
+2020-02-25 18:52:17,927  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[25/7]
+2020-02-25 18:52:17,934  jy_crawl_helper.py:200 : INFO  Duplicate item:[ea0e29ab3d0ad79ea819d6af0deb20a9] total:[page_1-144]
+2020-02-25 18:52:25,017  ccgp_sichuan.py:313 : INFO  Get page list url, page:[8], url:[http://www.ccgp-sichuan.gov.cn/CmsNewsController.do?channelCode=sjcg1&method=recommendBulletinList&rp=25&title=&moreType=provincebuyBulletinMore&page=7], status:[200], body md5:[9027047726f1966ae075a727c0ea2c69]
+2020-02-25 18:52:25,018  ccgp_sichuan.py:315 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 145, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'c969361ef8af8c767b673525422d3c25', 'total_page_num': 7, 'total_item_num': 5, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-25 18:51:06', 'crawl_end_time': ''}}
+2020-02-25 18:52:25,030  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[1/8]
+2020-02-25 18:52:25,035  jy_crawl_helper.py:200 : INFO  Duplicate item:[427d93009b8da9b59a524611a00c875f] total:[page_1-145]
+2020-02-25 18:52:25,036  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[2/8]
+2020-02-25 18:52:25,041  jy_crawl_helper.py:200 : INFO  Duplicate item:[7ff16e5ca42c2bb50a7a6975cbbdf3a6] total:[page_1-146]
+2020-02-25 18:52:25,041  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[3/8]
+2020-02-25 18:52:25,046  jy_crawl_helper.py:200 : INFO  Duplicate item:[c1d98ccc3371ed1f6c5226b1ec71ad0c] total:[page_1-147]
+2020-02-25 18:52:25,047  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[4/8]
+2020-02-25 18:52:25,050  jy_crawl_helper.py:200 : INFO  Duplicate item:[bc98ee7483ac035a670a2bae8f59fe29] total:[page_1-148]
+2020-02-25 18:52:25,051  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[5/8]
+2020-02-25 18:52:25,057  jy_crawl_helper.py:200 : INFO  Duplicate item:[12ed29e49d34f04f5e3a9e3201b2db9c] total:[page_1-149]
+2020-02-25 18:52:25,058  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[6/8]
+2020-02-25 18:52:25,062  jy_crawl_helper.py:200 : INFO  Duplicate item:[9384a95ae9ae615e5bf95a5e0c8ba563] total:[page_1-150]
+2020-02-25 18:52:25,063  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[7/8]
+2020-02-25 18:52:25,068  jy_crawl_helper.py:200 : INFO  Duplicate item:[6f511b4b5a37296fa93bb72d9cd7e13b] total:[page_1-151]
+2020-02-25 18:52:25,069  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[8/8]
+2020-02-25 18:52:25,080  jy_crawl_helper.py:200 : INFO  Duplicate item:[5f84762c6e228745645e2e50c5eda313] total:[page_1-152]
+2020-02-25 18:52:25,081  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[9/8]
+2020-02-25 18:52:25,085  jy_crawl_helper.py:200 : INFO  Duplicate item:[47537dcebe6b1f10780763e3bfd009cf] total:[page_1-153]
+2020-02-25 18:52:25,086  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[10/8]
+2020-02-25 18:52:25,089  jy_crawl_helper.py:200 : INFO  Duplicate item:[48e03bb9b003d3c3ce88ad3661c49446] total:[page_1-154]
+2020-02-25 18:52:25,090  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[11/8]
+2020-02-25 18:52:25,093  jy_crawl_helper.py:200 : INFO  Duplicate item:[2cc0ae717283e50d0dd9356ae0dee280] total:[page_1-155]
+2020-02-25 18:52:25,094  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[12/8]
+2020-02-25 18:52:25,098  jy_crawl_helper.py:200 : INFO  Duplicate item:[2f020d45d3f161fee499826dc3682fbc] total:[page_1-156]
+2020-02-25 18:52:25,098  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[13/8]
+2020-02-25 18:52:25,102  jy_crawl_helper.py:200 : INFO  Duplicate item:[41ae0f08b3995e3a97191acb7733de50] total:[page_1-157]
+2020-02-25 18:52:25,102  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[14/8]
+2020-02-25 18:52:25,107  jy_crawl_helper.py:200 : INFO  Duplicate item:[7974cb8ac5e1880e20a9e7df2abcdb5a] total:[page_1-158]
+2020-02-25 18:52:25,107  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[15/8]
+2020-02-25 18:52:25,112  jy_crawl_helper.py:200 : INFO  Duplicate item:[207fe94e4b3d081ab5f2bc804151e058] total:[page_1-159]
+2020-02-25 18:52:25,113  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[16/8]
+2020-02-25 18:52:25,120  jy_crawl_helper.py:200 : INFO  Duplicate item:[7a008a23729d2eb56b97b9b8968e2df8] total:[page_1-160]
+2020-02-25 18:52:25,121  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[17/8]
+2020-02-25 18:52:25,126  jy_crawl_helper.py:200 : INFO  Duplicate item:[12a1d348a0e2ef6c3e5333806182ca05] total:[page_1-161]
+2020-02-25 18:52:25,126  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[18/8]
+2020-02-25 18:52:25,131  jy_crawl_helper.py:200 : INFO  Duplicate item:[809ee53d9a43f819fc993463d25516ac] total:[page_1-162]
+2020-02-25 18:52:25,132  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[19/8]
+2020-02-25 18:52:25,136  jy_crawl_helper.py:200 : INFO  Duplicate item:[d0682fa87121c959c639345224ad318b] total:[page_1-163]
+2020-02-25 18:52:25,137  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[20/8]
+2020-02-25 18:52:25,142  jy_crawl_helper.py:200 : INFO  Duplicate item:[c051c868f19aee65fb6de0b1b576b33c] total:[page_1-164]
+2020-02-25 18:52:25,142  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[21/8]
+2020-02-25 18:52:25,147  jy_crawl_helper.py:200 : INFO  Duplicate item:[18ed902e5fe873f7bbc647a071f212af] total:[page_1-165]
+2020-02-25 18:52:25,149  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[22/8]
+2020-02-25 18:52:25,156  jy_crawl_helper.py:200 : INFO  Duplicate item:[5ed19f247df4e3b5ed2604b3a00b44fb] total:[page_1-166]
+2020-02-25 18:52:25,157  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[23/8]
+2020-02-25 18:52:25,161  jy_crawl_helper.py:200 : INFO  Duplicate item:[202799b2c2348326b8790d68fa81e7c2] total:[page_1-167]
+2020-02-25 18:52:25,161  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[24/8]
+2020-02-25 18:52:25,165  jy_crawl_helper.py:200 : INFO  Duplicate item:[47bbdb27475393fcf3b7ef77b3543abe] total:[page_1-168]
+2020-02-25 18:52:25,165  ccgp_sichuan.py:334 : INFO  Parse item, [page_1]-[25/8]
+2020-02-25 18:52:25,169  jy_crawl_helper.py:200 : INFO  Duplicate item:[3b75b871833bb05ce090d9de5a587d91] total:[page_1-169]
+2020-02-25 23:17:18,906  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-25 23:17:18,915  middleware.py:48 : INFO  Enabled spider middlewares:
+['ccgp_sichuan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-25 23:17:18,918  middleware.py:48 : INFO  Enabled item pipelines:
+['ccgp_sichuan.pipelines.CommonPipeline']
+2020-02-25 23:17:18,918  engine.py:257 : INFO  Spider opened
+2020-02-25 23:17:18,926  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-25 23:17:18,927  middlewares.py:62 : INFO  Spider opened: ccgp_sichuan_spider
+2020-02-25 23:17:18,931  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-25 23:17:18,952  ccgp_sichuan.py:218 : INFO  start crawling...
+2020-02-25 23:17:51,634  robotstxt.py:95 : ERROR  Error downloading <GET http://www.ccgp-sichuan.gov.cn/robots.txt>: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    defer.returnValue((yield download_func(request=request, spider=spider)))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion.>]
+2020-02-25 23:17:52,490  ccgp_sichuan.py:313 : INFO  Get page list url, page:[1], url:[http://www.ccgp-sichuan.gov.cn/CmsNewsController.do?channelCode=sjcg1&method=recommendBulletinList&rp=25&title=&moreType=provincebuyBulletinMore&page=0], status:[200], body md5:[776844c402b3ccdeb48b724da4ca407e]
+2020-02-25 23:17:52,491  ccgp_sichuan.py:315 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-25 23:17:18', 'crawl_end_time': ''}}
+2020-02-25 23:18:22,599  middlewares.py:46 : ERROR  process_spider_exception: 192.168.100.176:27017: timed out
+2020-02-25 23:18:22,601  middlewares.py:47 : INFO  try to sleep a while
+2020-02-25 23:28:22,623  middlewares.py:46 : ERROR  process_spider_exception: 192.168.100.176:27017: timed out
+2020-02-25 23:28:22,624  middlewares.py:47 : INFO  try to sleep a while
+2020-02-25 23:38:22,636  middlewares.py:46 : ERROR  process_spider_exception: 192.168.100.176:27017: timed out
+2020-02-25 23:38:22,637  middlewares.py:47 : INFO  try to sleep a while
