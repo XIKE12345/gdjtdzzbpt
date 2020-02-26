@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/hljggzyjyw.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_bingtuan/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_bingtuan/items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_bingtuan/middlewares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_bingtuan/pipelines.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_bingtuan/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_bingtuan/spiders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_bingtuan/spiders/ccgp_bingtuan.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_bingtuan_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/spiders/ccgp_chongqing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/spiders/ccgp_chongqing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_hainan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/spiders/ccgp_hainan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/spiders/ccgp_hainan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_shanxi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jilin/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jilin/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jilin/.idea/jilin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jilin/.idea/libraries/R_User_Library.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jilin/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jilin/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jilin/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shanxi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shanxi/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XHcXgxt5BKJWAbpV0kqLg6wLKH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hljggzyjyw" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ccgp_sichuan/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ccgp_sichuan/spiders/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b26bca9d-ad4c-49d2-9444-37f53ef43ce2" name="Default Changelist" comment="" />
+      <created>1580706501214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1580706501214</updated>
+      <workItem from="1580706502992" duration="345000" />
+      <workItem from="1580707824214" duration="14294000" />
+      <workItem from="1580724228303" duration="294000" />
+      <workItem from="1580778596619" duration="12584000" />
+    </task>
+    <task id="LOCAL-00001" summary="中国南方电网线上采购平台爬虫">
+      <created>1580819105290</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580819105291</updated>
+    </task>
+    <task id="LOCAL-00002" summary="黑龙江公共资源交易平台爬虫">
+      <created>1581324148267</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581324148267</updated>
+    </task>
+    <task id="LOCAL-00003" summary="黑龙江公共资源交易平台爬虫，添加字段">
+      <created>1581941244181</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581941244181</updated>
+    </task>
+    <task id="LOCAL-00004" summary="海南省政府采购网爬虫">
+      <created>1582536026001</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582536026001</updated>
+    </task>
+    <task id="LOCAL-00005" summary="海南省政府采购网爬虫">
+      <created>1582536050167</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582536050167</updated>
+    </task>
+    <task id="LOCAL-00006" summary="四川省政府采购网爬虫">
+      <created>1582600811196</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582600811196</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="中国南方电网线上采购平台爬虫" />
+    <MESSAGE value="黑龙江公共资源交易平台爬虫" />
+    <MESSAGE value="黑龙江公共资源交易平台爬虫，添加字段" />
+    <MESSAGE value="海南省政府采购网爬虫" />
+    <MESSAGE value="四川省政府采购网爬虫" />
+    <option name="LAST_COMMIT_MESSAGE" value="四川省政府采购网爬虫" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1899" y="44" key="CommitChangelistDialog2" timestamp="1582600810442">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state x="1899" y="44" key="CommitChangelistDialog2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600810442" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581941242804" />
+    <state x="463" y="122" key="FileChooserDialogImpl" timestamp="1580779944105">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="122" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580779944105" />
+    <state x="585" y="336" key="Github.ShareDialog" timestamp="1580818859030">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="585" y="336" key="Github.ShareDialog/0.23.1440.825@0.23.1440.825" timestamp="1580818859030" />
+    <state x="448" y="149" key="Github.UntrackedFilesDialog" timestamp="1580818878637">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="448" y="149" key="Github.UntrackedFilesDialog/0.23.1440.825@0.23.1440.825" timestamp="1580818878637" />
+    <state width="1878" height="322" key="GridCell.Tab.0.bottom" timestamp="1582600866922">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1878" height="322" key="GridCell.Tab.0.bottom/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600866922" />
+    <state width="1878" height="322" key="GridCell.Tab.0.center" timestamp="1582600866920">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1878" height="322" key="GridCell.Tab.0.center/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600866920" />
+    <state width="1878" height="322" key="GridCell.Tab.0.left" timestamp="1582600866919">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1878" height="322" key="GridCell.Tab.0.left/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600866919" />
+    <state width="1878" height="322" key="GridCell.Tab.0.right" timestamp="1582600866921">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state width="1878" height="322" key="GridCell.Tab.0.right/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600866921" />
+    <state x="221" y="75" key="SettingsEditor" timestamp="1580811192066">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="221" y="75" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1580811192066" />
+    <state x="1867" y="240" key="Vcs.Push.Dialog.v2" timestamp="1582600865270">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state x="1867" y="240" key="Vcs.Push.Dialog.v2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582600865270" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581941257115" />
+    <state x="395" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1582643757712">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="375" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580778597212" />
+    <state x="1967" y="334" key="com.intellij.ide.util.TipDialog/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582535322413" />
+    <state x="395" y="241" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1582643757712" />
+    <state x="365" y="79" width="709" height="769" key="search.everywhere.popup" timestamp="1581321272831">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1580799203256" />
+    <state x="365" y="79" width="709" height="769" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1581321272831" />
+  </component>
+</project>
