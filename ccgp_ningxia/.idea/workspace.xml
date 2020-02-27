@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f24447b-ed39-4f1a-8313-f30a25ec2d99" name="Default Changelist" comment="东风招投标交易中心电子交易平台,字段添加">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ccgp_ningxia.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_ningxia/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_ningxia/items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_ningxia/middlewares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_ningxia/pipelines.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_ningxia/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_ningxia/spiders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_ningxia/spiders/ccgp_ningxia.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ccgp_ningxia_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jy_common_items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jy_crawl_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/jy_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scrapy.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_bingtuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_bingtuan/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XdxHDMWcsrFSRXKtUyOMeNHSUX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f24447b-ed39-4f1a-8313-f30a25ec2d99" name="Default Changelist" comment="" />
+      <created>1581389682776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581389682776</updated>
+    </task>
+    <task id="LOCAL-00001" summary="湖北省公共资源交易平台 爬虫代码。">
+      <created>1581412271404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581412271405</updated>
+    </task>
+    <task id="LOCAL-00002" summary="广东省公共资源爬虫代码。">
+      <created>1581487239233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581487239233</updated>
+    </task>
+    <task id="LOCAL-00003" summary="中国航发电子招投标平台爬虫">
+      <created>1581567726361</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581567726361</updated>
+    </task>
+    <task id="LOCAL-00004" summary="东风招投标交易中心电子交易平台">
+      <created>1581651261864</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581651261864</updated>
+    </task>
+    <task id="LOCAL-00005" summary="东风招投标交易中心电子交易平台,字段添加">
+      <created>1581930631645</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581930631645</updated>
+    </task>
+    <task id="LOCAL-00006" summary="贵州政府采购网爬虫。。">
+      <created>1582608956299</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582608956299</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="湖北省公共资源交易平台 爬虫代码。" />
+    <MESSAGE value="广东省公共资源爬虫代码。" />
+    <MESSAGE value="中国航发电子招投标平台爬虫" />
+    <MESSAGE value="东风招投标交易中心电子交易平台" />
+    <MESSAGE value="东风招投标交易中心电子交易平台,字段添加" />
+    <MESSAGE value="贵州政府采购网爬虫。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="贵州政府采购网爬虫。。" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1899" y="44" key="CommitChangelistDialog2" timestamp="1582608955703">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state x="1899" y="44" key="CommitChangelistDialog2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582608955703" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581930630161" />
+    <state x="221" y="74" key="SettingsEditor" timestamp="1581412955673">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581412955673" />
+    <state x="1867" y="240" key="Vcs.Push.Dialog.v2" timestamp="1582608964762">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state x="1867" y="240" key="Vcs.Push.Dialog.v2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582608964762" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581930638162" />
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog" timestamp="1581651119560">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1581651119560" />
+    <state x="385" y="172" key="search.everywhere.popup" timestamp="1581487167518">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="385" y="172" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1581487167518" />
+  </component>
+</project>
