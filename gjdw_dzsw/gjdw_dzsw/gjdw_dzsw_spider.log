@@ -1,0 +1,1349 @@
+2020-02-06 14:17:37,065  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:17:37,081  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:17:37,086  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 14:17:37,086  engine.py:257 : INFO  Spider opened
+2020-02-06 14:17:37,100  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:17:37,101  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 14:17:37,104  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 14:17:37,131  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 14:17:47,349  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/common/xssfiltererror.jsp], status:[200], body md5:[4962be20d4d77f8cfe70231e73207296]
+2020-02-06 14:17:47,349  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:17:37', 'crawl_end_time': ''}}
+2020-02-06 14:18:37,999  gjdw_dzsw_spider.py:249 : INFO  []
+2020-02-06 14:22:37,864  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:22:37,878  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:22:37,880  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 14:22:37,881  engine.py:257 : INFO  Spider opened
+2020-02-06 14:22:37,889  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:22:37,889  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 14:22:37,894  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 14:22:37,918  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 14:22:50,254  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/common/xssfiltererror.jsp], status:[200], body md5:[4962be20d4d77f8cfe70231e73207296]
+2020-02-06 14:22:50,255  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:22:37', 'crawl_end_time': ''}}
+2020-02-06 14:22:57,283  gjdw_dzsw_spider.py:249 : INFO  []
+2020-02-06 14:28:16,120  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:28:16,140  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:28:16,148  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 14:28:16,149  engine.py:257 : INFO  Spider opened
+2020-02-06 14:28:16,160  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:28:16,163  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 14:28:16,166  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 14:28:16,190  gjdw_dzsw_spider.py:163 : INFO  start crawling...
+2020-02-06 14:28:29,002  gjdw_dzsw_spider.py:235 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/common/xssfiltererror.jsp], status:[200], body md5:[4962be20d4d77f8cfe70231e73207296]
+2020-02-06 14:28:29,003  gjdw_dzsw_spider.py:237 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:28:16', 'crawl_end_time': ''}}
+2020-02-06 14:28:43,710  gjdw_dzsw_spider.py:248 : INFO  []
+2020-02-06 14:29:12,276  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:29:12,291  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:29:12,296  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 14:29:12,297  engine.py:257 : INFO  Spider opened
+2020-02-06 14:29:12,306  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:29:12,307  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 14:29:12,311  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 14:29:12,332  gjdw_dzsw_spider.py:163 : INFO  start crawling...
+2020-02-06 14:29:24,027  gjdw_dzsw_spider.py:235 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/common/xssfiltererror.jsp], status:[200], body md5:[4962be20d4d77f8cfe70231e73207296]
+2020-02-06 14:29:24,027  gjdw_dzsw_spider.py:237 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:29:12', 'crawl_end_time': ''}}
+2020-02-06 14:29:52,697  gjdw_dzsw_spider.py:248 : INFO  []
+2020-02-06 14:31:43,536  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:31:43,549  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:31:43,552  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 14:31:43,553  engine.py:257 : INFO  Spider opened
+2020-02-06 14:31:43,565  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:31:43,566  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 14:31:43,571  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 14:31:43,601  gjdw_dzsw_spider.py:163 : INFO  start crawling...
+2020-02-06 14:51:18,032  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:51:18,048  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:51:18,050  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 14:51:18,051  engine.py:257 : INFO  Spider opened
+2020-02-06 14:51:18,061  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:51:18,063  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 14:51:18,065  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 14:51:18,087  gjdw_dzsw_spider.py:163 : INFO  start crawling...
+2020-02-06 14:51:24,117  gjdw_dzsw_spider.py:235 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=0], status:[200], body md5:[ed0a7028efb4ca8c6afcfe600d39f192]
+2020-02-06 14:51:24,118  gjdw_dzsw_spider.py:237 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:51:18', 'crawl_end_time': ''}}
+2020-02-06 14:51:34,721  gjdw_dzsw_spider.py:248 : INFO  []
+2020-02-06 14:51:50,440  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:51:50,450  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:51:50,456  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 14:51:50,456  engine.py:257 : INFO  Spider opened
+2020-02-06 14:51:50,464  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:51:50,464  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 14:51:50,467  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 14:51:50,490  gjdw_dzsw_spider.py:163 : INFO  start crawling...
+2020-02-06 14:51:50,891  gjdw_dzsw_spider.py:235 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=0], status:[200], body md5:[ed0a7028efb4ca8c6afcfe600d39f192]
+2020-02-06 14:51:50,892  gjdw_dzsw_spider.py:237 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:51:50', 'crawl_end_time': ''}}
+2020-02-06 14:53:05,868  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:53:05,883  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:53:05,886  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 14:53:05,887  engine.py:257 : INFO  Spider opened
+2020-02-06 14:53:05,896  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:53:05,898  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 14:53:05,900  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 14:53:05,924  gjdw_dzsw_spider.py:163 : INFO  start crawling...
+2020-02-06 14:53:06,333  gjdw_dzsw_spider.py:235 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 14:53:06,333  gjdw_dzsw_spider.py:237 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:53:05', 'crawl_end_time': ''}}
+2020-02-06 14:53:33,650  gjdw_dzsw_spider.py:248 : INFO  []
+2020-02-06 14:54:51,769  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 14:54:51,780  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 14:54:51,785  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 14:54:51,786  engine.py:257 : INFO  Spider opened
+2020-02-06 14:54:51,794  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 14:54:51,795  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 14:54:51,801  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 14:54:51,819  gjdw_dzsw_spider.py:163 : INFO  start crawling...
+2020-02-06 14:54:52,241  gjdw_dzsw_spider.py:235 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 14:54:52,242  gjdw_dzsw_spider.py:237 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 14:54:51', 'crawl_end_time': ''}}
+2020-02-06 14:55:15,528  gjdw_dzsw_spider.py:248 : INFO  []
+2020-02-06 15:03:40,880  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:03:40,889  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:03:40,895  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:03:40,895  engine.py:257 : INFO  Spider opened
+2020-02-06 15:03:40,904  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:03:40,905  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:03:40,909  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:03:40,930  gjdw_dzsw_spider.py:163 : INFO  start crawling...
+2020-02-06 15:03:41,333  gjdw_dzsw_spider.py:235 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:03:41,333  gjdw_dzsw_spider.py:237 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:03:40', 'crawl_end_time': ''}}
+2020-02-06 15:03:54,778  gjdw_dzsw_spider.py:248 : INFO  [<Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" style="background:ur...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//table[@class="font02"]/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>]
+2020-02-06 15:04:06,365  gjdw_dzsw_spider.py:249 : INFO  [<Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" style="background:ur...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left" class="bg_title">\r\n\t...'>, <Selector xpath='//div[@class="contentRight"]/table/tr' data='<tr align="left">\r\n\t\t\t\t\t\t\t\t\t<td class...'>]
+2020-02-06 15:04:13,767  gjdw_dzsw_spider.py:250 : INFO  [<Selector xpath='//table[@class="font02"]' data='<table width="100%" border="0" cellsp...'>]
+2020-02-06 15:04:24,369  gjdw_dzsw_spider.py:251 : INFO  []
+2020-02-06 15:14:38,339  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:14:38,352  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:14:38,355  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:14:38,355  engine.py:257 : INFO  Spider opened
+2020-02-06 15:14:38,367  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:14:38,368  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:14:38,371  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:14:38,391  gjdw_dzsw_spider.py:165 : INFO  start crawling...
+2020-02-06 15:14:38,849  gjdw_dzsw_spider.py:237 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:14:38,849  gjdw_dzsw_spider.py:239 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:14:38', 'crawl_end_time': ''}}
+2020-02-06 15:14:47,880  gjdw_dzsw_spider.py:253 : INFO  []
+2020-02-06 15:14:58,405  middlewares.py:46 : ERROR  process_spider_exception: module 'idlelib.browser' has no attribute 'find_elements_by_xpath'
+2020-02-06 15:14:58,405  middlewares.py:47 : INFO  try to sleep a while
+2020-02-06 15:15:57,311  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:15:57,325  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:15:57,328  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:15:57,329  engine.py:257 : INFO  Spider opened
+2020-02-06 15:15:57,340  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:15:57,341  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:15:57,345  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:15:57,365  gjdw_dzsw_spider.py:165 : INFO  start crawling...
+2020-02-06 15:15:57,784  gjdw_dzsw_spider.py:237 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:15:57,784  gjdw_dzsw_spider.py:239 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:15:57', 'crawl_end_time': ''}}
+2020-02-06 15:16:14,791  gjdw_dzsw_spider.py:254 : INFO  []
+2020-02-06 15:16:55,769  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:16:55,786  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:16:55,789  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:16:55,789  engine.py:257 : INFO  Spider opened
+2020-02-06 15:16:55,800  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:16:55,801  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:16:55,803  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:16:55,824  gjdw_dzsw_spider.py:165 : INFO  start crawling...
+2020-02-06 15:16:56,235  gjdw_dzsw_spider.py:237 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:16:56,236  gjdw_dzsw_spider.py:239 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:16:55', 'crawl_end_time': ''}}
+2020-02-06 15:17:11,866  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a' data='<a href="javascript:void(0);" style="...'>]
+2020-02-06 15:17:26,929  middlewares.py:46 : ERROR  process_spider_exception: module 'idlelib.browser' has no attribute 'find_elements_by_xpath'
+2020-02-06 15:17:26,929  middlewares.py:47 : INFO  try to sleep a while
+2020-02-06 15:19:28,744  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:19:28,758  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:19:28,761  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:19:28,761  engine.py:257 : INFO  Spider opened
+2020-02-06 15:19:28,770  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:19:28,772  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:19:28,775  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:19:28,799  gjdw_dzsw_spider.py:165 : INFO  start crawling...
+2020-02-06 15:19:29,212  gjdw_dzsw_spider.py:237 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:19:29,212  gjdw_dzsw_spider.py:239 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:19:28', 'crawl_end_time': ''}}
+2020-02-06 15:19:40,309  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:19:42,135  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9990000000010345565');
+2020-02-06 15:20:22,301  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9990000000010345565');
+2020-02-06 15:20:22,301  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:20:22,302  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9990000000010345564');
+2020-02-06 15:20:22,302  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9990000000010345564');
+2020-02-06 15:20:22,303  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 15:20:22,303  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014001001','9900000000006340189');
+2020-02-06 15:20:22,303  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014001001','9900000000006340189');
+2020-02-06 15:20:22,304  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:20:22,304  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9990000000010345216');
+2020-02-06 15:20:22,305  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9990000000010345216');
+2020-02-06 15:20:22,305  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','990000...">]
+2020-02-06 15:20:22,305  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9900000000000073526');
+2020-02-06 15:20:22,305  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9900000000000073526');
+2020-02-06 15:20:22,306  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 15:20:22,306  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014001001','9900000000000073413');
+2020-02-06 15:20:22,306  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014001001','9900000000000073413');
+2020-02-06 15:20:22,306  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','990000...">]
+2020-02-06 15:20:22,307  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9900000000000073412');
+2020-02-06 15:20:22,307  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9900000000000073412');
+2020-02-06 15:20:22,307  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','899000...">]
+2020-02-06 15:20:22,308  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014001001','8990000000000126013');
+2020-02-06 15:20:22,308  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014001001','8990000000000126013');
+2020-02-06 15:20:22,308  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','899000...">]
+2020-02-06 15:20:22,308  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014001001','8990000000000126017');
+2020-02-06 15:20:22,309  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014001001','8990000000000126017');
+2020-02-06 15:20:22,309  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','899000...">]
+2020-02-06 15:20:22,310  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014001001','8990000000000126015');
+2020-02-06 15:20:22,311  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014001001','8990000000000126015');
+2020-02-06 15:20:22,311  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 15:20:22,312  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014001001','9900000000006340188');
+2020-02-06 15:20:22,313  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014001001','9900000000006340188');
+2020-02-06 15:20:22,313  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 15:20:22,313  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014001001','9900000000000073432');
+2020-02-06 15:20:22,313  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014001001','9900000000000073432');
+2020-02-06 15:20:22,314  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','990000...">]
+2020-02-06 15:20:22,314  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9900000000000073405');
+2020-02-06 15:20:22,314  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9900000000000073405');
+2020-02-06 15:20:22,314  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 15:20:22,315  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014001001','9900000000006340187');
+2020-02-06 15:20:22,315  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014001001','9900000000006340187');
+2020-02-06 15:20:22,315  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:20:22,315  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9990000000010345041');
+2020-02-06 15:20:22,315  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9990000000010345041');
+2020-02-06 15:20:22,316  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:20:22,316  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9990000000010345040');
+2020-02-06 15:20:22,316  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9990000000010345040');
+2020-02-06 15:20:22,316  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:20:22,316  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9990000000010344770');
+2020-02-06 15:20:22,317  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9990000000010344770');
+2020-02-06 15:20:22,317  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 15:20:22,317  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014001001','9900000000006340186');
+2020-02-06 15:20:22,317  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014001001','9900000000006340186');
+2020-02-06 15:20:22,318  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','990000...">]
+2020-02-06 15:20:22,318  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9900000000000073400');
+2020-02-06 15:20:22,319  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9900000000000073400');
+2020-02-06 15:20:22,319  gjdw_dzsw_spider.py:254 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:20:22,319  gjdw_dzsw_spider.py:257 : INFO  showProjectDetail('014002007','9990000000010345013');
+2020-02-06 15:20:22,319  gjdw_dzsw_spider.py:258 : INFO  showProjectDetail('014002007','9990000000010345013');
+2020-02-06 15:23:30,933  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:23:30,946  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:23:30,949  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:23:30,950  engine.py:257 : INFO  Spider opened
+2020-02-06 15:23:30,964  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:23:30,964  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:23:30,967  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:23:30,986  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 15:23:31,420  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:23:31,420  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:23:30', 'crawl_end_time': ''}}
+2020-02-06 15:23:40,835  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:23:56,331  middlewares.py:46 : ERROR  process_spider_exception: 'SelectorList' object has no attribute 'replace'
+2020-02-06 15:23:56,332  middlewares.py:47 : INFO  try to sleep a while
+2020-02-06 15:24:54,888  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:24:54,901  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:24:54,906  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:24:54,907  engine.py:257 : INFO  Spider opened
+2020-02-06 15:24:54,918  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:24:54,920  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:24:54,923  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:24:54,943  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 15:24:55,353  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:24:55,353  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:24:54', 'crawl_end_time': ''}}
+2020-02-06 15:25:02,477  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:25:17,359  gjdw_dzsw_spider.py:257 : INFO  ('014002007','9990000000010345565');
+2020-02-06 15:26:10,738  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:26:10,751  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:26:10,755  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:26:10,756  engine.py:257 : INFO  Spider opened
+2020-02-06 15:26:10,767  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:26:10,768  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:26:10,771  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:26:10,790  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 15:26:11,179  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:26:11,179  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:26:10', 'crawl_end_time': ''}}
+2020-02-06 15:26:29,516  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:26:32,342  gjdw_dzsw_spider.py:257 : INFO  (
+2020-02-06 15:28:13,286  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:28:13,296  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:28:13,302  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:28:13,303  engine.py:257 : INFO  Spider opened
+2020-02-06 15:28:13,313  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:28:13,314  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:28:13,316  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:28:13,337  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 15:28:13,734  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:28:13,735  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:28:13', 'crawl_end_time': ''}}
+2020-02-06 15:28:21,138  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:28:21,152  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:28:21,155  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:28:21,155  engine.py:257 : INFO  Spider opened
+2020-02-06 15:28:21,168  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:28:21,169  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:28:21,172  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:28:21,193  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 15:28:21,620  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:28:21,621  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:28:21', 'crawl_end_time': ''}}
+2020-02-06 15:28:28,496  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:28:34,467  gjdw_dzsw_spider.py:257 : INFO  ('014002007','9990000000010345565');
+2020-02-06 15:28:37,089  gjdw_dzsw_spider.py:258 : INFO  ('(', "'", '0', '1', '4', '0', '0', '2', '0', '0', '7', "'", ',', "'", '9', '9', '9', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '3', '4', '5', '5', '6', '5', "'", ')', ';')
+2020-02-06 15:30:51,823  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:30:51,839  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:30:51,844  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:30:51,845  engine.py:257 : INFO  Spider opened
+2020-02-06 15:30:51,854  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:30:51,856  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:30:51,860  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:30:51,881  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 15:30:52,712  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:30:52,712  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:30:51', 'crawl_end_time': ''}}
+2020-02-06 15:31:16,893  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:31:25,267  gjdw_dzsw_spider.py:258 : INFO  '014002007','9990000000010345565'
+2020-02-06 15:31:28,781  gjdw_dzsw_spider.py:259 : INFO  ["'", '0', '1', '4', '0', '0', '2', '0', '0', '7', "'", ',', "'", '9', '9', '9', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '3', '4', '5', '5', '6', '5', "'"]
+2020-02-06 15:32:04,912  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:32:04,923  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:32:04,928  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:32:04,928  engine.py:257 : INFO  Spider opened
+2020-02-06 15:32:04,939  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:32:04,940  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:32:04,943  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:32:04,964  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 15:32:05,377  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:32:05,377  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:32:04', 'crawl_end_time': ''}}
+2020-02-06 15:32:10,922  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:32:14,300  gjdw_dzsw_spider.py:258 : INFO  '014002007','9990000000010345565'
+2020-02-06 15:32:16,109  gjdw_dzsw_spider.py:259 : INFO  ["'014002007'", "'9990000000010345565'"]
+2020-02-06 15:32:59,512  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:32:59,525  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:32:59,528  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:32:59,529  engine.py:257 : INFO  Spider opened
+2020-02-06 15:32:59,540  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:32:59,541  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:32:59,544  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:32:59,567  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 15:32:59,978  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:32:59,978  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:32:59', 'crawl_end_time': ''}}
+2020-02-06 15:33:07,698  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:33:13,684  gjdw_dzsw_spider.py:258 : INFO  014002007,9990000000010345565
+2020-02-06 15:33:15,327  gjdw_dzsw_spider.py:259 : INFO  ['014002007', '9990000000010345565']
+2020-02-06 15:45:08,699  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 15:45:08,714  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 15:45:08,717  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 15:45:08,719  engine.py:257 : INFO  Spider opened
+2020-02-06 15:45:08,734  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 15:45:08,736  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 15:45:08,739  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 15:45:08,763  gjdw_dzsw_spider.py:164 : INFO  start crawling...
+2020-02-06 15:45:09,190  gjdw_dzsw_spider.py:236 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[9920168f47e46c6e28752708424ee9d7]
+2020-02-06 15:45:09,190  gjdw_dzsw_spider.py:238 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 5, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 15:45:08', 'crawl_end_time': ''}}
+2020-02-06 15:45:16,880  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 15:45:21,198  gjdw_dzsw_spider.py:258 : INFO  014002007,9990000000010345565
+2020-02-06 15:45:23,744  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9990000000010345565']
+2020-02-06 15:45:27,632  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9990000000010345565.html
+2020-02-06 16:18:17,661  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 16:18:17,662  gjdw_dzsw_spider.py:258 : INFO  014002007,9990000000010345564
+2020-02-06 16:18:17,662  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9990000000010345564']
+2020-02-06 16:18:17,662  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9990000000010345564.html
+2020-02-06 16:18:17,663  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 16:18:17,663  gjdw_dzsw_spider.py:258 : INFO  014001001,9900000000006340189
+2020-02-06 16:18:17,663  gjdw_dzsw_spider.py:260 : INFO  ['014001001', '9900000000006340189']
+2020-02-06 16:18:17,663  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014001001/9900000000006340189.html
+2020-02-06 16:18:17,664  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 16:18:17,665  gjdw_dzsw_spider.py:258 : INFO  014002007,9990000000010345216
+2020-02-06 16:18:17,665  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9990000000010345216']
+2020-02-06 16:18:17,665  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9990000000010345216.html
+2020-02-06 16:18:17,666  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','990000...">]
+2020-02-06 16:18:17,666  gjdw_dzsw_spider.py:258 : INFO  014002007,9900000000000073526
+2020-02-06 16:18:17,667  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9900000000000073526']
+2020-02-06 16:18:17,667  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073526.html
+2020-02-06 16:18:17,667  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 16:18:17,667  gjdw_dzsw_spider.py:258 : INFO  014001001,9900000000000073413
+2020-02-06 16:18:17,668  gjdw_dzsw_spider.py:260 : INFO  ['014001001', '9900000000000073413']
+2020-02-06 16:18:17,668  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014001001/9900000000000073413.html
+2020-02-06 16:18:17,668  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','990000...">]
+2020-02-06 16:18:17,668  gjdw_dzsw_spider.py:258 : INFO  014002007,9900000000000073412
+2020-02-06 16:18:17,669  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9900000000000073412']
+2020-02-06 16:18:17,669  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073412.html
+2020-02-06 16:18:17,669  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','899000...">]
+2020-02-06 16:18:17,669  gjdw_dzsw_spider.py:258 : INFO  014001001,8990000000000126013
+2020-02-06 16:18:17,669  gjdw_dzsw_spider.py:260 : INFO  ['014001001', '8990000000000126013']
+2020-02-06 16:18:17,670  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014001001/8990000000000126013.html
+2020-02-06 16:18:17,670  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','899000...">]
+2020-02-06 16:18:17,670  gjdw_dzsw_spider.py:258 : INFO  014001001,8990000000000126017
+2020-02-06 16:18:17,670  gjdw_dzsw_spider.py:260 : INFO  ['014001001', '8990000000000126017']
+2020-02-06 16:18:17,670  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014001001/8990000000000126017.html
+2020-02-06 16:18:17,671  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','899000...">]
+2020-02-06 16:18:17,671  gjdw_dzsw_spider.py:258 : INFO  014001001,8990000000000126015
+2020-02-06 16:18:17,672  gjdw_dzsw_spider.py:260 : INFO  ['014001001', '8990000000000126015']
+2020-02-06 16:18:17,673  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014001001/8990000000000126015.html
+2020-02-06 16:18:17,674  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 16:18:17,674  gjdw_dzsw_spider.py:258 : INFO  014001001,9900000000006340188
+2020-02-06 16:18:17,675  gjdw_dzsw_spider.py:260 : INFO  ['014001001', '9900000000006340188']
+2020-02-06 16:18:17,675  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014001001/9900000000006340188.html
+2020-02-06 16:18:17,676  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 16:18:17,676  gjdw_dzsw_spider.py:258 : INFO  014001001,9900000000000073432
+2020-02-06 16:18:17,677  gjdw_dzsw_spider.py:260 : INFO  ['014001001', '9900000000000073432']
+2020-02-06 16:18:17,677  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014001001/9900000000000073432.html
+2020-02-06 16:18:17,678  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','990000...">]
+2020-02-06 16:18:17,678  gjdw_dzsw_spider.py:258 : INFO  014002007,9900000000000073405
+2020-02-06 16:18:17,679  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9900000000000073405']
+2020-02-06 16:18:17,679  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073405.html
+2020-02-06 16:18:17,680  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 16:18:17,680  gjdw_dzsw_spider.py:258 : INFO  014001001,9900000000006340187
+2020-02-06 16:18:17,680  gjdw_dzsw_spider.py:260 : INFO  ['014001001', '9900000000006340187']
+2020-02-06 16:18:17,681  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014001001/9900000000006340187.html
+2020-02-06 16:18:17,682  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 16:18:17,683  gjdw_dzsw_spider.py:258 : INFO  014002007,9990000000010345041
+2020-02-06 16:18:17,683  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9990000000010345041']
+2020-02-06 16:18:17,684  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9990000000010345041.html
+2020-02-06 16:18:17,684  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 16:18:17,684  gjdw_dzsw_spider.py:258 : INFO  014002007,9990000000010345040
+2020-02-06 16:18:17,684  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9990000000010345040']
+2020-02-06 16:18:17,685  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9990000000010345040.html
+2020-02-06 16:18:17,685  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 16:18:17,685  gjdw_dzsw_spider.py:258 : INFO  014002007,9990000000010344770
+2020-02-06 16:18:17,685  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9990000000010344770']
+2020-02-06 16:18:17,686  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9990000000010344770.html
+2020-02-06 16:18:17,686  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014001001','990000...">]
+2020-02-06 16:18:17,686  gjdw_dzsw_spider.py:258 : INFO  014001001,9900000000006340186
+2020-02-06 16:18:17,686  gjdw_dzsw_spider.py:260 : INFO  ['014001001', '9900000000006340186']
+2020-02-06 16:18:17,686  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014001001/9900000000006340186.html
+2020-02-06 16:18:17,687  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','990000...">]
+2020-02-06 16:18:17,687  gjdw_dzsw_spider.py:258 : INFO  014002007,9900000000000073400
+2020-02-06 16:18:17,688  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9900000000000073400']
+2020-02-06 16:18:17,689  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073400.html
+2020-02-06 16:18:17,689  gjdw_dzsw_spider.py:253 : INFO  [<Selector xpath='./td[3]/a/@onclick' data="showProjectDetail('014002007','999000...">]
+2020-02-06 16:18:17,690  gjdw_dzsw_spider.py:258 : INFO  014002007,9990000000010345013
+2020-02-06 16:18:17,690  gjdw_dzsw_spider.py:260 : INFO  ['014002007', '9990000000010345013']
+2020-02-06 16:18:17,690  gjdw_dzsw_spider.py:262 : INFO  http://ecp.sgcc.com.cn/html/project/014002007/9990000000010345013.html
+2020-02-06 16:18:17,697  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:23:05,742  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 16:23:05,755  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 16:23:05,758  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 16:23:05,758  engine.py:257 : INFO  Spider opened
+2020-02-06 16:23:05,770  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:23:05,771  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 16:23:05,773  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 16:23:05,797  gjdw_dzsw_spider.py:205 : INFO  start crawling...
+2020-02-06 16:23:06,168  gjdw_dzsw_spider.py:301 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_news_list.jsp?columnName=topic21&site=global&company_id=&column_code1=014001008&column_code2=014002008&pageNo=1], status:[200], body md5:[5c2c934c53d870601a8dbb0d26baf602]
+2020-02-06 16:23:06,168  gjdw_dzsw_spider.py:303 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 16:23:05', 'crawl_end_time': ''}}
+2020-02-06 16:23:51,406  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014002008', '78684');
+2020-02-06 16:24:01,100  gjdw_dzsw_spider.py:328 : INFO  ['014002008', ' 78684']
+2020-02-06 16:28:05,482  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 16:28:05,494  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 16:28:05,501  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 16:28:05,502  engine.py:257 : INFO  Spider opened
+2020-02-06 16:28:05,510  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:28:05,511  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 16:28:05,514  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 16:28:05,536  gjdw_dzsw_spider.py:205 : INFO  start crawling...
+2020-02-06 16:28:05,877  gjdw_dzsw_spider.py:301 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_news_list.jsp?columnName=topic21&site=global&company_id=&column_code1=014001008&column_code2=014002008&pageNo=1], status:[200], body md5:[5c2c934c53d870601a8dbb0d26baf602]
+2020-02-06 16:28:05,877  gjdw_dzsw_spider.py:303 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 16:28:05', 'crawl_end_time': ''}}
+2020-02-06 16:28:14,971  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014002008', '78684');
+2020-02-06 16:28:19,439  gjdw_dzsw_spider.py:328 : INFO  ['014002008', '78684']
+2020-02-06 16:29:35,849  gjdw_dzsw_spider.py:340 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-06 16:29:35,850  gjdw_dzsw_spider.py:434 : ERROR  [6612d7c5c70fd0d55db74ec049d0b952] get_notice_time failed
+Traceback (most recent call last):
+  File "E:\pc\gjdw_dzsw\gjdw_dzsw\spiders\gjdw_dzsw_spider.py", line 427, in __get_notice_time__
+    notice_time = self.selector.xpath('./a[1]/em/text()').extract_first().replace('-', '.').rstrip().lstrip()
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-06 16:29:36,051  gjdw_dzsw_spider.py:364 : INFO  item is: {'_id': '6612d7c5c70fd0d55db74ec049d0b952',
+ 'area': '青岛',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'site': 'ecp.sgcc.com.cn',
+ 'source': '国家电网公司商务平台',
+ 'time_stamp': 1580977775966,
+ 'title': None,
+ 'tos': '工程建设',
+ 'url': 'http://ecp.sgcc.com.cn/html/news/014002008/78684.html'}
+2020-02-06 16:30:06,570  pipelines.py:68 : ERROR  save item to mongodb failed
+Traceback (most recent call last):
+  File "E:\pc\gjdw_dzsw\gjdw_dzsw\pipelines.py", line 66, in process_item
+    self.mongo_db[self.mongo_collection].save(dict(item))
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 3163, in save
+    collation=collation)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 856, in _update_retryable
+    _update, session)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 485, in get_server_session
+    None)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-06 16:30:06,586  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 1 items (at 1 items/min)
+2020-02-06 16:34:49,261  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014001008', '7900000000000087202');
+2020-02-06 16:34:50,874  gjdw_dzsw_spider.py:328 : INFO  ['014001008', '7900000000000087202']
+2020-02-06 16:34:53,576  gjdw_dzsw_spider.py:340 : INFO  Parse item, [zbgg_search]-[2/1]
+2020-02-06 16:37:20,177  gjdw_dzsw_spider.py:434 : ERROR  [87f8da835cc3fb1ff966c791e48e27cb] get_notice_time failed
+Traceback (most recent call last):
+  File "E:\pc\gjdw_dzsw\gjdw_dzsw\spiders\gjdw_dzsw_spider.py", line 427, in __get_notice_time__
+    notice_time = ''
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-02-06 16:37:32,793  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 16:37:32,807  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 16:37:32,813  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 16:37:32,813  engine.py:257 : INFO  Spider opened
+2020-02-06 16:37:32,826  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:37:32,828  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 16:37:32,832  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 16:37:32,854  gjdw_dzsw_spider.py:205 : INFO  start crawling...
+2020-02-06 16:37:33,193  gjdw_dzsw_spider.py:301 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_news_list.jsp?columnName=topic21&site=global&company_id=&column_code1=014001008&column_code2=014002008&pageNo=1], status:[200], body md5:[5c2c934c53d870601a8dbb0d26baf602]
+2020-02-06 16:37:33,193  gjdw_dzsw_spider.py:303 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 16:37:32', 'crawl_end_time': ''}}
+2020-02-06 16:37:39,917  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014002008', '78684');
+2020-02-06 16:37:39,918  gjdw_dzsw_spider.py:328 : INFO  ['014002008', '78684']
+2020-02-06 16:37:39,918  gjdw_dzsw_spider.py:340 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-06 16:37:41,891  gjdw_dzsw_spider.py:368 : ERROR  Handle [http://ecp.sgcc.com.cn/html/news/014002008/78684.html] failed
+Traceback (most recent call last):
+  File "E:\pc\gjdw_dzsw\gjdw_dzsw\spiders\gjdw_dzsw_spider.py", line 355, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "E:\pc\gjdw_dzsw\gjdw_dzsw\spiders\gjdw_dzsw_spider.py", line 392, in get_common_raw_item
+    self.item['notice_time'] = self.__get_notice_time__()
+TypeError: __get_notice_time__() missing 1 required positional argument: 'connect_type'
+2020-02-06 16:38:27,446  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 16:38:27,461  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 16:38:27,464  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 16:38:27,464  engine.py:257 : INFO  Spider opened
+2020-02-06 16:38:27,476  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:38:27,477  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 16:38:27,480  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 16:38:27,503  gjdw_dzsw_spider.py:205 : INFO  start crawling...
+2020-02-06 16:38:27,868  gjdw_dzsw_spider.py:301 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_news_list.jsp?columnName=topic21&site=global&company_id=&column_code1=014001008&column_code2=014002008&pageNo=1], status:[200], body md5:[5c2c934c53d870601a8dbb0d26baf602]
+2020-02-06 16:38:27,868  gjdw_dzsw_spider.py:303 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 16:38:27', 'crawl_end_time': ''}}
+2020-02-06 16:38:33,501  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014002008', '78684');
+2020-02-06 16:38:33,501  gjdw_dzsw_spider.py:328 : INFO  ['014002008', '78684']
+2020-02-06 16:38:33,502  gjdw_dzsw_spider.py:340 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-06 16:43:27,034  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 16:43:27,046  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 16:43:27,049  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 16:43:27,050  engine.py:257 : INFO  Spider opened
+2020-02-06 16:43:27,058  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:43:27,059  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 16:43:27,062  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 16:43:27,083  gjdw_dzsw_spider.py:205 : INFO  start crawling...
+2020-02-06 16:43:27,541  gjdw_dzsw_spider.py:301 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_news_list.jsp?columnName=topic21&site=global&company_id=&column_code1=014001008&column_code2=014002008&pageNo=1], status:[200], body md5:[5c2c934c53d870601a8dbb0d26baf602]
+2020-02-06 16:43:27,541  gjdw_dzsw_spider.py:303 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 16:43:27', 'crawl_end_time': ''}}
+2020-02-06 16:43:39,201  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014002008', '78684');
+2020-02-06 16:43:43,296  gjdw_dzsw_spider.py:328 : INFO  ['014002008', '78684']
+2020-02-06 16:43:43,297  gjdw_dzsw_spider.py:340 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-06 16:43:57,416  gjdw_dzsw_spider.py:364 : INFO  item is: {'_id': '6612d7c5c70fd0d55db74ec049d0b952',
+ 'area': '',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'notice_time': '2020.02.03 00:00:00',
+ 'notice_type': '招标公告',
+ 'site': 'ecp.sgcc.com.cn',
+ 'source': '国家电网公司商务平台',
+ 'time_stamp': 1580978637328,
+ 'title': '国网重庆市电力公司 \r\n'
+          '\t\t\t\t\t\t\r\n'
+          '\t\t\t\t\t  \t\r\n'
+          '\t\t\t\t\t  \t\t\r\n'
+          '\t\t\t\t\t  \t\t\r\n'
+          '\t\t\t\t\t  \t\t\t 国网重庆市电力公司彭水供电分公司2020年第一批次授权采购公开竞争性谈判延期公告...',
+ 'tos': '工程建设',
+ 'url': 'http://ecp.sgcc.com.cn/html/news/014002008/78684.html'}
+2020-02-06 16:44:27,590  pipelines.py:68 : ERROR  save item to mongodb failed
+Traceback (most recent call last):
+  File "E:\pc\gjdw_dzsw\gjdw_dzsw\pipelines.py", line 66, in process_item
+    self.mongo_db[self.mongo_collection].save(dict(item))
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 3163, in save
+    collation=collation)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\collection.py", line 856, in _update_retryable
+    _update, session)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1490, in _retryable_write
+    with self._tmp_session(session) as s:
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1823, in _tmp_session
+    s = self._ensure_session(session)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1810, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1763, in __start_session
+    server_session = self._get_server_session()
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\mongo_client.py", line 1796, in _get_server_session
+    return self._topology.get_server_session()
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 485, in get_server_session
+    None)
+  File "C:\Users\sunhu\AppData\Local\Programs\Python\Python37\lib\site-packages\pymongo\topology.py", line 209, in _select_servers_loop
+    self._error_message(selector))
+pymongo.errors.ServerSelectionTimeoutError: 192.168.100.176:27017: timed out
+2020-02-06 16:44:27,598  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 1 items (at 1 items/min)
+2020-02-06 16:44:27,600  middlewares.py:46 : ERROR  process_spider_exception: 'traceback' object is not callable
+2020-02-06 16:44:27,600  middlewares.py:47 : INFO  try to sleep a while
+2020-02-06 16:47:13,251  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 16:47:13,264  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 16:47:13,267  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 16:47:13,267  engine.py:257 : INFO  Spider opened
+2020-02-06 16:47:13,276  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:47:13,279  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 16:47:13,282  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 16:47:13,308  gjdw_dzsw_spider.py:205 : INFO  start crawling...
+2020-02-06 16:47:13,643  gjdw_dzsw_spider.py:301 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_news_list.jsp?columnName=topic21&site=global&company_id=&column_code1=014001008&column_code2=014002008&pageNo=1], status:[200], body md5:[5c2c934c53d870601a8dbb0d26baf602]
+2020-02-06 16:47:13,643  gjdw_dzsw_spider.py:303 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 16:47:13', 'crawl_end_time': ''}}
+2020-02-06 16:47:15,715  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014002008', '78684');
+2020-02-06 16:47:15,717  gjdw_dzsw_spider.py:328 : INFO  ['014002008', '78684']
+2020-02-06 16:47:15,718  gjdw_dzsw_spider.py:340 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-06 16:47:23,179  gjdw_dzsw_spider.py:461 : INFO  None
+2020-02-06 16:47:26,670  gjdw_dzsw_spider.py:462 : INFO  None
+2020-02-06 16:47:45,155  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 16:47:45,168  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 16:47:45,173  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 16:47:45,174  engine.py:257 : INFO  Spider opened
+2020-02-06 16:47:45,187  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:47:45,188  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 16:47:45,193  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 16:47:45,216  gjdw_dzsw_spider.py:205 : INFO  start crawling...
+2020-02-06 16:47:45,558  gjdw_dzsw_spider.py:301 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_news_list.jsp?columnName=topic21&site=global&company_id=&column_code1=014001008&column_code2=014002008&pageNo=1], status:[200], body md5:[5c2c934c53d870601a8dbb0d26baf602]
+2020-02-06 16:47:45,558  gjdw_dzsw_spider.py:303 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 16:47:45', 'crawl_end_time': ''}}
+2020-02-06 16:47:48,275  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014002008', '78684');
+2020-02-06 16:47:48,277  gjdw_dzsw_spider.py:328 : INFO  ['014002008', '78684']
+2020-02-06 16:47:48,278  gjdw_dzsw_spider.py:340 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-06 16:47:56,073  gjdw_dzsw_spider.py:461 : INFO  None
+2020-02-06 16:47:57,945  gjdw_dzsw_spider.py:462 : INFO  国网重庆市电力公司彭水供电分公司2020年第一批次授权采购公开竞争性谈判延期公告
+2020-02-06 16:49:17,659  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 16:49:17,673  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 16:49:17,678  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 16:49:17,678  engine.py:257 : INFO  Spider opened
+2020-02-06 16:49:17,690  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:49:17,692  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 16:49:17,695  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 16:49:17,716  gjdw_dzsw_spider.py:205 : INFO  start crawling...
+2020-02-06 16:49:18,052  gjdw_dzsw_spider.py:301 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_news_list.jsp?columnName=topic21&site=global&company_id=&column_code1=014001008&column_code2=014002008&pageNo=1], status:[200], body md5:[5c2c934c53d870601a8dbb0d26baf602]
+2020-02-06 16:49:18,052  gjdw_dzsw_spider.py:303 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 16:49:17', 'crawl_end_time': ''}}
+2020-02-06 16:49:20,672  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014002008', '78684');
+2020-02-06 16:49:20,673  gjdw_dzsw_spider.py:328 : INFO  ['014002008', '78684']
+2020-02-06 16:49:20,673  gjdw_dzsw_spider.py:340 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-06 16:49:34,377  gjdw_dzsw_spider.py:461 : INFO  None
+2020-02-06 16:49:35,680  gjdw_dzsw_spider.py:462 : INFO  [国网重庆市电力公司] 
+						
+					  	
+					  		
+					  		
+					  			 国网重庆市电力公司彭水供电分公司2020年第一批次授权采购公开竞争性谈判延期公告...
+2020-02-06 16:50:48,675  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-02-06 16:50:48,685  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-02-06 16:50:48,689  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-02-06 16:50:48,690  engine.py:257 : INFO  Spider opened
+2020-02-06 16:50:48,698  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-02-06 16:50:48,700  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-02-06 16:50:48,705  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-02-06 16:50:48,724  gjdw_dzsw_spider.py:205 : INFO  start crawling...
+2020-02-06 16:50:49,041  gjdw_dzsw_spider.py:301 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_news_list.jsp?columnName=topic21&site=global&company_id=&column_code1=014001008&column_code2=014002008&pageNo=1], status:[200], body md5:[5c2c934c53d870601a8dbb0d26baf602]
+2020-02-06 16:50:49,041  gjdw_dzsw_spider.py:303 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-02-06 16:50:48', 'crawl_end_time': ''}}
+2020-02-06 16:50:56,709  gjdw_dzsw_spider.py:321 : INFO  showNewsDetail( '014002008', '78684');
+2020-02-06 16:50:56,710  gjdw_dzsw_spider.py:328 : INFO  ['014002008', '78684']
+2020-02-06 16:50:56,710  gjdw_dzsw_spider.py:340 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-02-06 16:50:59,492  gjdw_dzsw_spider.py:461 : INFO  None
+2020-02-06 16:51:03,243  gjdw_dzsw_spider.py:462 : INFO  [国网重庆市电力公司] 
+						
+					  	
+					  		
+					  		
+					  			 国网重庆市电力公司彭水供电分公司2020年第一批次授权采购公开竞争性谈判延期公告...

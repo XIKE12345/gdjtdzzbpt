@@ -1,0 +1,345 @@
+2020-03-02 16:46:37,849  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-02 16:46:37,859  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-02 16:46:37,862  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-03-02 16:46:37,863  engine.py:257 : INFO  Spider opened
+2020-03-02 16:46:37,869  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-02 16:46:37,870  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-03-02 16:46:37,873  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-03-02 16:46:37,887  gjdw_dzsw_spider.py:313 : INFO  start crawling...
+2020-03-02 16:46:38,368  gjdw_dzsw_spider.py:406 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[067ef273073ab9829122a97568105ed9]
+2020-03-02 16:46:38,368  gjdw_dzsw_spider.py:408 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-02 16:46:37', 'crawl_end_time': ''}}
+2020-03-02 16:46:38,375  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-03-02 16:46:38,472  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9990000000010347373.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:38,473  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[2/1]
+2020-03-02 16:46:38,549  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9990000000010347372.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:38,550  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[3/1]
+2020-03-02 16:46:38,642  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014001001/9900000000006350193.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:38,643  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[4/1]
+2020-03-02 16:46:38,747  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073611.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:38,747  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[5/1]
+2020-03-02 16:46:38,935  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014001001/9900000000000073609.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:38,936  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[6/1]
+2020-03-02 16:46:39,039  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014001001/9900000000006350192.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:39,039  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[7/1]
+2020-03-02 16:46:39,237  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9990000000010346813.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:39,238  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[8/1]
+2020-03-02 16:46:39,351  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073608.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:39,351  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[9/1]
+2020-03-02 16:46:39,564  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073607.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:39,564  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[10/1]
+2020-03-02 16:46:40,018  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073625.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:40,019  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[11/1]
+2020-03-02 16:46:40,313  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073624.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:40,313  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[12/1]
+2020-03-02 16:46:40,631  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014001001/9900000000000073606.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:40,632  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[13/1]
+2020-03-02 16:46:40,818  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014001001/9900000000006350191.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:40,819  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[14/1]
+2020-03-02 16:46:40,909  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9990000000010346798.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:40,910  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[15/1]
+2020-03-02 16:46:40,996  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9990000000010346611.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:40,996  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[16/1]
+2020-03-02 16:46:41,281  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9990000000010346373.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:41,281  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[17/1]
+2020-03-02 16:46:41,416  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9990000000010346319.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:41,417  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[18/1]
+2020-03-02 16:46:41,575  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014001001/9900000000006350190.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:41,575  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[19/1]
+2020-03-02 16:46:41,894  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014002007/9990000000010346363.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:46:41,894  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[20/1]
+2020-03-02 16:46:42,067  gjdw_dzsw_spider.py:473 : ERROR  Handle [http://ecp.sgcc.com.cn/html/project/014001001/9900000000006350189.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 460, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py", line 508, in get_common_raw_item
+    self.item['tos_code'] = ext_param['tos_code']
+KeyError: 'tos_code'
+2020-03-02 16:47:32,836  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-02 16:47:32,843  middleware.py:48 : INFO  Enabled spider middlewares:
+['gjdw_dzsw.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-02 16:47:32,844  middleware.py:48 : INFO  Enabled item pipelines:
+['gjdw_dzsw.pipelines.CommonPipeline']
+2020-03-02 16:47:32,844  engine.py:257 : INFO  Spider opened
+2020-03-02 16:47:32,849  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-02 16:47:32,849  middlewares.py:62 : INFO  Spider opened: gjdw_dzsw_spider
+2020-03-02 16:47:32,853  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-03-02 16:47:32,864  gjdw_dzsw_spider.py:313 : INFO  start crawling...
+2020-03-02 16:47:33,375  gjdw_dzsw_spider.py:406 : INFO  Get page list url, page:[1], url:[http://ecp.sgcc.com.cn/topic_project_list.jsp?columnName=topic10&site=global&company_id=&status=&project_name=&pageNo=1], status:[200], body md5:[067ef273073ab9829122a97568105ed9]
+2020-03-02 16:47:33,375  gjdw_dzsw_spider.py:408 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 50000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-02 16:47:32', 'crawl_end_time': ''}}
+2020-03-02 16:47:33,382  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-03-02 16:47:33,596  gjdw_dzsw_spider.py:469 : INFO  item is: {'_id': '132be6af667dd9a3f9eb7de33409bf93',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.29 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'ecp.sgcc.com.cn',
+ 'site_name': '国家电网公司商务平台',
+ 'source': '国家电网公司商务平台',
+ 'time_stamp': 1583138853535,
+ 'title': '“总部统一组织监控、省公司具体实施”国网黑龙江省电力有限公司2020年第一批服务类招标采购项目',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ecp.sgcc.com.cn/html/project/014002007/9990000000010347373.html'}
+2020-03-02 16:47:33,655  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[2/1]
+2020-03-02 16:47:33,906  gjdw_dzsw_spider.py:469 : INFO  item is: {'_id': '884f9607e7951e89c2fc55fadc40746f',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.28 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'ecp.sgcc.com.cn',
+ 'site_name': '国家电网公司商务平台',
+ 'source': '国家电网公司商务平台',
+ 'time_stamp': 1583138853829,
+ 'title': '“总部统一组织监控，省公司具体实施”国网山东省电力公司2020年第二次施工、综合服务招标采购',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ecp.sgcc.com.cn/html/project/014002007/9990000000010347372.html'}
+2020-03-02 16:47:33,947  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[3/1]
+2020-03-02 16:47:34,171  gjdw_dzsw_spider.py:469 : INFO  item is: {'_id': '890129fd68076a25bf71ee983467cbe8',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.28 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'ecp.sgcc.com.cn',
+ 'site_name': '国家电网公司商务平台',
+ 'source': '国家电网公司商务平台',
+ 'time_stamp': 1583138854096,
+ 'title': '国网天津市电力公司2020年第二批物资招标采购项目',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ecp.sgcc.com.cn/html/project/014001001/9900000000006350193.html'}
+2020-03-02 16:47:34,208  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[4/1]
+2020-03-02 16:47:34,531  gjdw_dzsw_spider.py:469 : INFO  item is: {'_id': 'b7c057e6d4d68c1ca729462f5df918ee',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.28 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'ecp.sgcc.com.cn',
+ 'site_name': '国家电网公司商务平台',
+ 'source': '国家电网公司商务平台',
+ 'time_stamp': 1583138854455,
+ 'title': '国网客服中心2020年第一批集中采购项目',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ecp.sgcc.com.cn/html/project/014002007/9900000000000073611.html'}
+2020-03-02 16:47:34,542  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[5/1]
+2020-03-02 16:47:34,800  gjdw_dzsw_spider.py:469 : INFO  item is: {'_id': '18a8504e5d4d49f394170b454f513bb2',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJzlXGtzE8fS/myq+A/Dpk5kF5ZWF2xs2XIOGJLjUySHCj4vSb641tJYWljtKrsrX3CoMsXNBoxNwiVgBwLkQnJiG14M8ZX8mFe7kj/xF07PzO5qJa0t+aKEqtcEspfp7md6unt6ema9f9/+Gv40wH8NtTTc6Z/OA8f+1d37+cnjKKWnJXTy30dP9HQjzs/zpyPdPH+s9xj67B+9H59AoUAQ9aqCrIm6qMiCxPPHP+EQl9L1TJTnh4aGAkORgKIm+d5P+WHCK0SIrUu/7qIMJPQE1wWiqcThtCRrMQ8+ofb2dkZOGx/w+5F5fcb8/qpx+Tfj1rXCwk/51Ssbj1/l174x5r4NBY3xKxtfP+rHSVFGfn+X1b0UFhKEPI11AREhfvxlVhyMcd2KrGNZ9/eOZDCH4uwuxul4WOeJ0A4UTwmqhvVYVh/wt3GIJ2x0UZdw18b/XihcXN+YuWLMPPm/sQsbF9eNRzdza49ySw/Yw/zMovHi4cbj5fzMPIE7tRQOhoPG8mL+t98i5sQytMotzW1cvVpYnMtP/FJ4dSn/YtXdu06eSQKRWlwVMzrSAacF74wwKLCnHNLUeIzj9RROY41P4AEhK0EDjT/zZRarI/5QoC0QCaRFOXBG47o6eUa2W7aBtKDCBd4jployHt8Rq7iSTiuyzaIvq0oqHlJFfc+AxVVFknQlQ8wDLnfENqGrGPP0H3rZJ5wRhis4SaJ8FqVUPFAJJK5pVk8DcMkhFUsxTtNHJKylMAY5LvGkAV8DP1FO4OE+GQ/VxhJV8CzvFeNTEzbLM3nbNfuVxEjXDqPX9qwknsLxsz1yJquX6x9YJcRBFJcEDYKRKPcxBcHQk+CD6E9pC+t1n6QkFWAl2IohsYOpN8BiV6eYTnpbmJgWknArgnVZ8gizQEZOckiRJUVIxLgBcfjkJx816ilRa+IQQBbgLwABVA2bQdKwoMZTHGtCkWclcsPuYBjpTcPmfWIM+giw7eFnhMEQ7UMRKPxsKYgMHDQ/YjcghnZUEuJnOVurR8XEvzNJVUhgGMcMr4GiRDkMo5gBExPUJIRprq9fEuSzXFf+/qqxfqdEU9DZTt7p95+ggXA9NXAKgt2pbCYjiVj9FCcrNWC+fGZcufHXaiCyMw3YflR04+igIiYag00dnIdyFLlbEuNnY9wQMFSGAsAEqyTHOJJIfCgMKmQyaEwo8WwaZveApMQFkoMEiIxmnzGzbsy/zt9+lV+/Bf8ac9PGnSvGtcfG8ktj6rmvCRR5+3Xh3hR5/Z/7W6gTdQ4oahrJQhqiEOvPgJrmkJgouYUcJKXAo5P/OtXLISFOoIBGLQWoWAOFMpNWZC3bnxZhSFWsZ1UZFSNXo+8sHhlS1ISvmQSFAJEMunGGE4a2VMcalnBc5+wxYLcWVlAHTirqCOdJQvE7TVwGo2QIdDQoSFlgAmG/y7j8DFRkTs/mF5908ux9EVJp+xDEsdJcp6x9OUEYCDa+e+hJgzYREgGa/Oo35sPZGoUcAgJj5dEWqMop2gjF9LgxfcOcnQSzqSqinWCi2V7h+cWNy5NVCVoIwX8e5lZ/r7ETrUS13y8Z8w9rJDhM+gBNL7/I/fHYvLBQRgAzJDUFzwhi20yJA1tvRWKq1H4sa+Usi3Nui1M2VxkTKDnHLLZBkYEoA+6hOe6gY00/Dhm72thkt7J7VFj4vfDmG+Pyj8bllxu35425e3YLh92HEA+IuIFGSoNiMeSrJPM1jVIHY3x9vvNFPEelrErpD9CXTaNWGw8mHedtz2tALGMhyRE8IslBM0l9RgcgufRr4jkcDYUzwx2QW8PcFg3CZQqLyZQeDQWDf+s4v39fYEhQ5b5+ZXi0H4JfUlWyciL63sDAQMnLXiUzahGiCOHiaozei+D+kBDuiCuSosLth/SnIyMkEqKc9Et4QI+2AI3DkC5DRq330SBqKcJi3CEYY7/1pFZxtMcDQlqURqKIM97MF9YXNmYub6ze4jqK2kChVmCXUdi6MQqpJQTvQVzERrLy0X6wJqxGI5lhpCmSmHBkFptJioZH41lVAwwZRSR20zEA6ZUe7bCoZUXGbuCwkmjcaqaDlDIjyCNnNDbRNyFZ8as4gwUdERWiOKZChsSEnoqG2os6oxpyuiT0A+SsjjvA5qPBDpU2KVG/KEN8Hy1HZmW0FiLL/0j7cjBEHApTmdYIkhsUpM/Q4YrxI/bnMsdDDApEActoO52EeVBQkaj14FhxdhUkqekDXc3i6IAgabhj/z6eL8y/ya/PsyCSf3DJmFoo/Hwhf+21OXZh/76BrEznQJRWsho+aWmlEQ827d83un8f+BceDGSgj5+hr75C1vXn7KUVCEaHo3abZjRiX39+HoSfLzbav482i0PCJOufoYPIwUwcMMCWeSfIwPnLXjES8qp5pMji801YgOttwgHeACKGiueNtWXj6op5d9l8ecelBi2lDH0MYQ56cFQZbhzqJb7XbJUmmsFqmodOE4tiGqBmfZqmPY1NHWxE+un7WIYULnpkvTg29sVxCdN7hpdxs2n/QY2gZmLW3KEGE405FHEVrA9b7Rs5SJo40pA0CpBJgVxwFiW1rVM6BFTqBcQkSRTydhR34GttbbU8jDvIOn6QK3oaPGMI6UMizBZ0MNZILLfpA1hcSeCmUUHKpIRGJSPERX0kRjLNKGfdgVdyNnBKT9a5vTBpxWxu8LZ0wIVMBsuJ7pQoJRoJHek4GdmjDnT6uDkStHUHUeZ0Vd2RRlR3dpzn7Id09vyEzq4V70RZxiqp38U4V/btK4Z2Xxd3kBnaQc6atenM7OvP6roi+yAVjdMM21dqbz5EyWM+MtXdm8v/es+Yeuor4U8JfMiePxFvpc8VQIiF+0iy4LoFWJbhAy5vMujnUQVApn0WY9uiBkkO4QpMLj9kJuG39FZ80sSHCTEhPBirYvjgyy5rYmYbDnrbK7PPCH3LJnY2x/pDLY6lt8Dsfs5Pk59oe3t7hzN4OzA4Qtdkh5nC/C+FizfM+wvm0jT8Z0x9az64VxZvXFap9J9pBkbg+k78pX5Cb+BlgLmLFqD+ErA85GCspYO23bRFp5uphvVeMY0VWMjYOBqbRjdHcr65xerPeQyTyigbYUFiYepDMotTyUxXlsSmDkE6GAsGggRaxduYIDHEgtTZyMTwkGI1EYA7gnee4aOR3eUNLk2X+I6tXGcUYe1uWdjRkZ5Eo4+EB1/TgZichRmVtq7SFCY9FR59oiRwQMVpZRAza6hCZil2Kyi2o9UIp9h825CKpBYsS6Pmq+uFhTtsxnRplDSH1k6yQKwCxgWSCBSrzCeYR2nddpW/IpbQPMvX5STwuaU58+7Vt2s3zDvPIY2Hi8L1F/AErs2FyQPFeFM2Z/vYMsqcms7/sPJ27YGv2SW3mQFsjrQErT66KpBkcea5yqK2G+PsBO4Qyd/svx3uVbkrenM0NeTAT8AdYxzAya38YD4dg9X5JtXuTes4h1g9kvdYAvKk9mAVFjt5VmMkV6xGgoqX7sJPXAK+ol6sDNGdndzSqrGwVhj/tTA1a0zCcI8ZP19n2zhlhVmrJFtSTAIryrKHWYkuOsmDPlHHaY09PtFjq5Hl/STuOil5GwRiBAaqwruhaEpMJLDcQYoanUc2L+r2fPxRrYqExU82LVtFUYTYkiPGBYkKjsDfEz1dbJevoYHookwVbHsL2ftbiG5wUcVYK1rSOZceaLddhbT3SspmnwvQa84qv7D9J1rXOtbzP46Ogb7PmnsRYCfVl86EBH91u8lQChoFQ+6yd0ZVzkCO3yeJGq1hfQDOh2NJSekXpPeZBoBpAseCoUPBIITb0Ps2CbXYkFMbcaHiEzqITZSKpXj2VG5pYYnKTVSTK+MhrXahbe9bK8Y+sM5g8H1KTQsisGjyqm7VA0SkCgjz5rPC5DSs0kjwAyhj9zfGJnIrK4AJgll9MB2ugolBebs2bo6TEPZ2baK0qFcPTC1VMBnTPxlXXtYTQWs1BCUVu9oQ0BBGGPFMMG8La+8LBnkCrS/EghvwX140Vn5ijliYf2yMf73x5JIxP2He/LoojqcxQUJegcGOtizW+VlhgxZZdh4zwsRaSnyXdJCVXmuIGZsj2nk42QRSrZ5cG6RtmE54byNNPfC11y8I1QNutZi5i/hUD7hVA0etoase4KrG1VqjWm3gvANeGELebgIeK0WQJHgneRfLcHJvZoyV29XyrhDLu7YMpdtSzta6aQHdeCimZH9rR2NSVWykUmzpLll9xIY8eutpgXsw7oXFZxtXp/Izt/LfPX3Hxr0V5oxKTeSWHpCN8N0EiqpiPRKP3NI3IBkWqrDqr5fYQx7mNnNrY+x7Mt1cvVIvsS2VYs1r66SrdRXr4dNuY2S2bkzdMpYu7qnFsxhn3LmSn3+cn75S0yLTyiirrDQ9+tkWDIU84wgJIovPChfXjWszbF+81nXldqTU7Cy18PcasJ8vFW5crMFOauHvYf6VWmLzofH7j7n1WTYfVuT9OxqliGfYzS1NFiYWCo9v5JZWjB8u2eay41HaTMpejVJkG6O0G22FPeXkV38x74wXFi7lVn/fnZ7CdbZmb/xb6mkXq0lvDIc8baGw+IT0ceqacfl1bvXuHiwctyPdW8N7EHRZAutS7buTZhz21IQb8F4lG/Fk/7m+WlcmACtcuiwpq0Pu1ey8XVSRClTuSsdeoUoLOlZFQdoOMnLGzJhZMW7c7TlmPvqxsPBkT23YePNr/uaC9VEEPfv2V1qyIMtKVo7Tfapa9NNOCsyly1ybhXupW3qob7ejWOvgtVcYe41r8D0YVvPuc/PamDm7YN58Ziz/8W5Fp3D4z10OHu8+GQ4E3zEdeC+JYdxyS2O51aeVB6RzS9fyK38UFhbNb2866mHbUsj62Xw/C8sJuonltCRqpVtgPKik5AUo2d4cde2Hso082r0qO3nbOr1ubdY5p9fZbqe9u+mc/y5eeOxekhLgd4/Y7mUD2nLzs+xMfF+/QA7s1LC/CJkVaxs4k6nYVWS8S7dOBVUXQTz7nMX9wj608inRIcTf9W+Micnc+mR+ff7t2oNODaKFvVWeVDGWgyGfy5Bcm6Ilx/OzRNTGT3c3Hr9itkH4dKEutDVD3+439JxDSDYOX+V251+KpnKb86/XjXsqomicXfxyc7HsiB4ZQ+SsaPCQE3Psg8GtEXLkjlpaQ0P9P5ZkcihIOzgUz7C2USilvbQPKLiuNulhXwLrgihpXBfB5A+G/eE2l3/pQj9ogR7yinHkmDY5ciEmZfB0egKYc/klimNJ0sgRJDnp3FunOui9hd06JkZOlYXIGTHHr6iyw+zER6euslMYnXrCFkljocPGOntMD/8i+3y3ap0npzphGmeHcYmn83rC4ckuzLmnxuwzpjv2xm4DF+peA1m7a0z9XgHk1LETn/iJ8mGWbvP/84tgxH/6C/8Xp744Wk8wxvRk/ufnFWD+lA9/yzrlHPQo+6fY213117z2I3TWHP/VnHti3vvRnH1U0mvG25mgBpTefmKDzBsi/mALCh2OBoPwH0loHCoHvQN/L8aGoPz+qnnv9ca9xYqxsSGF2lAoyCDVyV6NtbFtwair17xYNR5e93Zfx8Dq6LugiNzyT4XF5fztZ8b6E2NtyhuLcXkSGjHj+BPgzOWWn9s27TlM9MLDiov+Vc9Ry61ez69OloMiJXAv73d7fdHpdx/jaMAx717Nrb4u9flOl/c7mZ6mq9m4fkzQBR4WksWfw5HWYHvgnJiBzJNMUYh+7AMLECkLKWBu6Xphfd0d4ZhAcnhQ1un3zE7EsDXhxI5iv/fENiiI3MpKhd4rwpv7y1AWxutjDWRdNX3FnF0xH16qAdWLF7mlWTYH5ZYmABjrkjk7sXF/up44Cxdu51+u1qa68W/zq1O0hl8/JDAyhYXvqoMJtkRC/rZIqDUUDLXWaQjXvs+XzZlbQwm2hg7VB8px/8dHek5UhxIKk/3I9rbWlr9/+WUgrqQr4MD/SWZLTt9utZj8UFF093rT/uPxSfkAber8KoUMLHZKixGk8CHEdet8LRtmc/xWbvU3EiMQ+gqVU0jCkNXafHnHeHPdePrcqkR4tSZLpbSQsSsbXeyjbmP2uTHzhq17Mtb5ZU/sfeQ7HFQ6Fofb/mZ9R0i/+iv5dDFkf0lnf+Z4hNRZOxpKY4vbcysLLMj6pTg4ngnQ35ECQxWIyyg/MW5+d9GcGANy1K1kRqgVoL8jsqFDc2V0Shd0jD5SxQQ0UDOKSr97R8oA6k6JsvB2bfzUR93db9cmAkckCVF6DalYw+ogTmzyCyZoqz5SS0kpOvlsUOO8ijGu9Yu/pYUaZtUCzFk8LMpDgpw8lxJkdk7a4mx9tons7zaL5lZcvdEajMdS9f+P5YFWMpVrX0hAAzAAXNe7Z2CZzX6LyTtrZJZ9sU8SeOd31lT7vVRYTtg0ZPStMIlQw38BTnp7bQ==',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.28 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'ecp.sgcc.com.cn',
+ 'site_name': '国家电网公司商务平台',
+ 'source': '国家电网公司商务平台',
+ 'time_stamp': 1583138854699,
+ 'title': '鲁能集团、都城伟业集团直属项目公司2020年第3批集中采购物资类招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ecp.sgcc.com.cn/html/project/014001001/9900000000000073609.html'}
+2020-03-02 16:47:34,823  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[6/1]
+2020-03-02 16:47:35,075  gjdw_dzsw_spider.py:469 : INFO  item is: {'_id': '4a4586f5053bc64c036ffef58721ad01',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.02.28 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'ecp.sgcc.com.cn',
+ 'site_name': '国家电网公司商务平台',
+ 'source': '国家电网公司商务平台',
+ 'time_stamp': 1583138854988,
+ 'title': '国网江苏省电力有限公司2020年第一批配网物资协议库存招标采购',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ecp.sgcc.com.cn/html/project/014001001/9900000000006350192.html'}
+2020-03-02 16:47:35,101  gjdw_dzsw_spider.py:445 : INFO  Parse item, [zbgg_search]-[7/1]
