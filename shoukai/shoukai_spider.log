@@ -1,0 +1,516 @@
+2020-03-02 11:47:35,556  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-02 11:47:35,563  middleware.py:48 : INFO  Enabled spider middlewares:
+['shoukai.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-02 11:47:35,566  middleware.py:48 : INFO  Enabled item pipelines:
+['shoukai.pipelines.CommonPipeline']
+2020-03-02 11:47:35,566  engine.py:257 : INFO  Spider opened
+2020-03-02 11:47:35,571  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-02 11:47:35,573  middlewares.py:62 : INFO  Spider opened: shoukai_spider
+2020-03-02 11:47:35,574  warnings.py:110 : WARNING  /Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py:61: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry http://ebidding.shoukaigufen.com.cn in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2020-03-02 11:47:35,580  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6028
+2020-03-02 11:47:35,592  shoukai_spider.py:303 : INFO  start crawling...
+2020-03-02 11:47:35,613  shoukai_spider.py:346 : INFO  Use proxy[] to generate scrapy request
+2020-03-02 11:47:56,691  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-02 11:47:56,697  middleware.py:48 : INFO  Enabled spider middlewares:
+['shoukai.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-02 11:47:56,698  middleware.py:48 : INFO  Enabled item pipelines:
+['shoukai.pipelines.CommonPipeline']
+2020-03-02 11:47:56,699  engine.py:257 : INFO  Spider opened
+2020-03-02 11:47:56,703  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-02 11:47:56,703  middlewares.py:62 : INFO  Spider opened: shoukai_spider
+2020-03-02 11:47:56,705  warnings.py:110 : WARNING  /Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py:61: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry http://ebidding.shoukaigufen.com.cn in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2020-03-02 11:47:56,707  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6029
+2020-03-02 11:47:56,719  shoukai_spider.py:303 : INFO  start crawling...
+2020-03-02 11:48:26,919  shoukai_spider.py:403 : INFO  Get page list url, page:[1], url:[http://ebidding.shoukaigufen.com.cn/skcms/category/bulletinList.html??dates=300&word=&categoryId=88&tabName=%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE&industryName=%E5%B7%A5%E7%A8%8B&status=&page=1], status:[200], body md5:[46472f97d492daeb49ef76933d1bad67]
+2020-03-02 11:48:26,920  shoukai_spider.py:405 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-02 11:47:56', 'crawl_end_time': ''}}
+2020-03-02 11:48:26,999  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-03-02 11:48:27,111  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-02-28/18307.html] content by direct requests
+2020-03-02 11:48:27,114  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-02-28/18307.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:27,120  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[2/1]
+2020-03-02 11:48:27,280  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18198.html] content by direct requests
+2020-03-02 11:48:27,283  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18198.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:27,288  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[3/1]
+2020-03-02 11:48:27,453  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18197.html] content by direct requests
+2020-03-02 11:48:27,454  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18197.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:27,455  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[4/1]
+2020-03-02 11:48:27,553  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18196.html] content by direct requests
+2020-03-02 11:48:27,554  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18196.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:27,554  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[5/1]
+2020-03-02 11:48:27,663  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-13/18194.html] content by direct requests
+2020-03-02 11:48:27,665  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-13/18194.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:27,665  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[6/1]
+2020-03-02 11:48:27,770  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-13/18193.html] content by direct requests
+2020-03-02 11:48:27,771  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-13/18193.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:27,772  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[7/1]
+2020-03-02 11:48:27,873  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-27/18153.html] content by direct requests
+2020-03-02 11:48:27,876  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-27/18153.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:27,877  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[8/1]
+2020-03-02 11:48:27,982  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-27/18152.html] content by direct requests
+2020-03-02 11:48:27,983  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-27/18152.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:27,984  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[9/1]
+2020-03-02 11:48:28,094  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-25/18147.html] content by direct requests
+2020-03-02 11:48:28,095  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-25/18147.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:28,097  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[10/1]
+2020-03-02 11:48:28,198  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18139.html] content by direct requests
+2020-03-02 11:48:28,199  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18139.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:30,286  shoukai_spider.py:403 : INFO  Get page list url, page:[2], url:[http://ebidding.shoukaigufen.com.cn/skcms/category/bulletinList.html??dates=300&word=&categoryId=88&tabName=%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE&industryName=%E5%B7%A5%E7%A8%8B&status=&page=2], status:[200], body md5:[df1597181258b5ab2c59a6d4a619f4a1]
+2020-03-02 11:48:30,286  shoukai_spider.py:405 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '46472f97d492daeb49ef76933d1bad67', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-02 11:47:56', 'crawl_end_time': ''}}
+2020-03-02 11:48:30,297  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[1/2]
+2020-03-02 11:48:30,410  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18138.html] content by direct requests
+2020-03-02 11:48:30,411  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18138.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:30,413  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[2/2]
+2020-03-02 11:48:30,524  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18137.html] content by direct requests
+2020-03-02 11:48:30,525  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18137.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:30,526  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[3/2]
+2020-03-02 11:48:30,623  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18136.html] content by direct requests
+2020-03-02 11:48:30,625  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18136.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:30,626  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[4/2]
+2020-03-02 11:48:30,741  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18135.html] content by direct requests
+2020-03-02 11:48:30,742  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18135.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:30,743  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[5/2]
+2020-03-02 11:48:30,847  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18134.html] content by direct requests
+2020-03-02 11:48:30,849  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-20/18134.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:30,851  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[6/2]
+2020-03-02 11:48:30,956  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-17/18129.html] content by direct requests
+2020-03-02 11:48:30,958  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-17/18129.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:30,959  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[7/2]
+2020-03-02 11:48:31,077  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-16/18127.html] content by direct requests
+2020-03-02 11:48:31,079  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-16/18127.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:31,080  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[8/2]
+2020-03-02 11:48:31,184  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-16/18126.html] content by direct requests
+2020-03-02 11:48:31,186  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-16/18126.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:31,187  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[9/2]
+2020-03-02 11:48:31,295  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-16/18125.html] content by direct requests
+2020-03-02 11:48:31,297  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-16/18125.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:48:31,298  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[10/2]
+2020-03-02 11:48:31,402  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-12/18117.html] content by direct requests
+2020-03-02 11:48:31,403  shoukai_spider.py:453 : ERROR  Handle [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-12/18117.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 440, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/shoukai/shoukai/spiders/shoukai_spider.py", line 489, in get_common_raw_item
+    self.item['norice_type_code'] = ext_param['notice_type_code']
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/item.py", line 98, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'CommonRawItem does not support field: norice_type_code'
+2020-03-02 11:49:15,186  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-02 11:49:15,194  middleware.py:48 : INFO  Enabled spider middlewares:
+['shoukai.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-02 11:49:15,196  middleware.py:48 : INFO  Enabled item pipelines:
+['shoukai.pipelines.CommonPipeline']
+2020-03-02 11:49:15,197  engine.py:257 : INFO  Spider opened
+2020-03-02 11:49:15,202  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-02 11:49:15,202  middlewares.py:62 : INFO  Spider opened: shoukai_spider
+2020-03-02 11:49:15,204  warnings.py:110 : WARNING  /Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/spidermiddlewares/offsite.py:61: URLWarning: allowed_domains accepts only domains, not URLs. Ignoring URL entry http://ebidding.shoukaigufen.com.cn in allowed_domains.
+  warnings.warn(message, URLWarning)
+
+2020-03-02 11:49:15,206  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6030
+2020-03-02 11:49:15,217  shoukai_spider.py:303 : INFO  start crawling...
+2020-03-02 11:49:43,887  shoukai_spider.py:403 : INFO  Get page list url, page:[1], url:[http://ebidding.shoukaigufen.com.cn/skcms/category/bulletinList.html??dates=300&word=&categoryId=88&tabName=%E5%B7%A5%E7%A8%8B%E5%BB%BA%E8%AE%BE&industryName=%E5%B7%A5%E7%A8%8B&status=&page=1], status:[200], body md5:[46472f97d492daeb49ef76933d1bad67]
+2020-03-02 11:49:43,889  shoukai_spider.py:405 : INFO  Crawl info: {'zbgg_search': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 7000000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-02 11:49:15', 'crawl_end_time': ''}}
+2020-03-02 11:49:43,924  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[1/1]
+2020-03-02 11:49:44,032  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-02-28/18307.html] content by direct requests
+2020-03-02 11:49:44,126  shoukai_spider.py:449 : INFO  item is: {'_id': 'e224ec6c26f298c5171dfa7e9c7cbce5',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': 1,
+ 'industry': '工程',
+ 'notice_time': '2020-02-28 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'http://ebidding.shoukaigufen.com.cn',
+ 'site_name': '首开交易平台',
+ 'source': '首开交易平台',
+ 'time_stamp': 1583120984035,
+ 'title': '38住宅地块一期一标段公区及户内精装修总承包招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-02-28/18307.html'}
+2020-03-02 11:49:44,131  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[2/1]
+2020-03-02 11:49:44,238  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18198.html] content by direct requests
+2020-03-02 11:49:44,308  shoukai_spider.py:449 : INFO  item is: {'_id': '461cab7e2e194e0517639542dfcc1dfa',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': 1,
+ 'industry': '工程',
+ 'notice_time': '2020-01-14 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'http://ebidding.shoukaigufen.com.cn',
+ 'site_name': '首开交易平台',
+ 'source': '首开交易平台',
+ 'time_stamp': 1583120984240,
+ 'title': '首开云著名邸一期厨房电器采购安装招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18198.html'}
+2020-03-02 11:49:44,313  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[3/1]
+2020-03-02 11:49:44,410  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18197.html] content by direct requests
+2020-03-02 11:49:44,511  shoukai_spider.py:449 : INFO  item is: {'_id': '262db47615d2d12ad4fc8eeb04928012',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': 1,
+ 'industry': '工程',
+ 'notice_time': '2020-01-14 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'http://ebidding.shoukaigufen.com.cn',
+ 'site_name': '首开交易平台',
+ 'source': '首开交易平台',
+ 'time_stamp': 1583120984412,
+ 'title': '首开云著名邸一期橱柜采购安装招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18197.html'}
+2020-03-02 11:49:44,515  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[4/1]
+2020-03-02 11:49:44,616  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18196.html] content by direct requests
+2020-03-02 11:49:44,698  shoukai_spider.py:449 : INFO  item is: {'_id': '587df736353c7fd00f71c94fc0a74e2e',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': 1,
+ 'industry': '工程',
+ 'notice_time': '2020-01-14 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'http://ebidding.shoukaigufen.com.cn',
+ 'site_name': '首开交易平台',
+ 'source': '首开交易平台',
+ 'time_stamp': 1583120984618,
+ 'title': '首开云著名邸一期墙地砖采购招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-14/18196.html'}
+2020-03-02 11:49:44,703  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[5/1]
+2020-03-02 11:49:44,796  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-13/18194.html] content by direct requests
+2020-03-02 11:49:44,852  shoukai_spider.py:449 : INFO  item is: {'_id': '7448fc5f1b29509e17650e1472978b27',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': 1,
+ 'industry': '工程',
+ 'notice_time': '2020-01-13 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'http://ebidding.shoukaigufen.com.cn',
+ 'site_name': '首开交易平台',
+ 'source': '首开交易平台',
+ 'time_stamp': 1583120984798,
+ 'title': '首开云著名邸一期户内固定家具采购安装招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-13/18194.html'}
+2020-03-02 11:49:44,857  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[6/1]
+2020-03-02 11:49:44,952  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-13/18193.html] content by direct requests
+2020-03-02 11:49:45,040  shoukai_spider.py:449 : INFO  item is: {'_id': '7cad9e9bda9784e4b35b877e23a1bb5c',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJzVW3tzE8ey/9upyneYbHKxdGOtVrIxtmwpRRyoUBWC7zFJ7rmnTlGr3ZG0eLWr7K4s2wlVxgHMM7aBhIdNCIRX6oAhBQRjY6i6XwXtSvrrfIXTvQ9pVzLYDjY5xxSydqZn+jfdPd09Pev+9z7ZN7D/r4O7SM7Iy6l33+mv/6a8CL8J6c9TgydCjtd0aiSZopGJ9DAkijR2T84wChH6dVEaSTL/G/liZ2RAzRd4Q0rLlCGCqhhUgWF7diV35Ysyb9A9u2Kcf7zC52mSGaZjJVUTdaY+wjx2tHr2kjl9o3L+sXlyrjZ3zJy73mGdmrN+nuqwTv6Av7Dr3kz1/hG7DbrsZqZpbpHqgiYVDElVNmd60gYMDMmQacp8crNy55RD6AyuTU1VH90rL92wLp4znz40px/0Rx1aGCRLyjDRqJxkdGNMpnqOUoMhxlgBYBp01IgKus6QnEYzSQYFm4hGaVoSRUnJsnpOLQ7zUraYoQorqHlWUKIa1dWiJtCoLhn0QDwaVfLZ8TTOEk2rqqEbGl9gcc5XM98UZhkQa4QvAUGesnlJeRs8C8W0LAlvg5OkiHT0bTDiFSkPW+StSE9TD1LBqLNytojfFA/yI7zTyhBdE96I40EwEZmOFvgC1Q5kZF7PsQeBb3/UYYCO5t132v5kEAChP+r6vf60Ko6RFIISpREiALUOzKGTagyRRPjOR9zHZir0MbykuD2BLplmDOCoF3gl1S95rRmeZPhIIacqFOFIqf50yjx7p3r/euW7e5WlF/3RdKqL4yJcD9cb2c71AGJ7gijM3MJCk7I5w+Hc1s9vwFj0YSGvw/rlAotB4COwxFwyxqQcJ2adO1NembceHwZ31x/lEeK3iOuP8BHHQRvGx0NUG5EE+jGv0wEQmabKMtVYUf0oS40B3u39TNJhNQM7zZM/VWaObQrnQVUzeDnI0lBVWf9ELSmyyosMunXz6JPy4qnqysqW8bTtRDC+otuMzzFQ1Z+ZVPXw+crDZev4bHn5LvK3leyp2/vi/MZg1GKk6SxTNw9/H5/WVbloUGITqaPxFuN1O1pNt1CU5Yhrv1I++8a7EeaIympWZQtKliG8DDGZib7Cpm3eAcMuyl6fwo8YasFtbwOXSVIbUpDj3NHiGd+U+xQmVbv1Y+3aY1v9NI/6h8/+qCw1WG2Mk7PBBHDwWVUbi6ZhUdSQFLRwZ8eJ0KUnOzlum0e0R0z29Gwz+LRtIE6CYR69a86e3FbgsxS3p9NYfnHNOnx/y7CCDouy8fE6EffWEZvTF625R02I/Y1vHbEPZy9Xx1levOdItnJjaVtjUR7iyvI566d5p3vLEKtGjmqrA+2qA61eO11evFx9fKS6cH8VoP7uzQa6SmRYXDBP/lpePGeedsRS59EfLcqvc1puvPdt8QxoakiWRNrikdKi64xgz7uzwya3EyLo5IXhrKYWFTFR1OTQG/qjNK9A2I6xBwvZMBHgnEA1whVGiaJGNFqgvEG0bDoU395BdnR2kFgnF+5jiH/Z70UiWwwu/kfARSKuMhytNJTid/wNMTek7PYxqVh9kc2TuFHo3XeCkcaJo/YB8pWpEfRhIuN1DqqwaDykpcorZyorC26a4xBuxF79rhshb3D4VvrphtdrrD/1cmIGAJvPJspLs9XZC+bMmdrkYnlxwpq/ai7cgJOqNX+nduGOOX2yvHS+NjXrHDHNhRPVX46+nJgNzuzJrHnDBdVTVwSB4Lkfj6eusnKdmOz8TRCzemQ8zerD2QyLD6yQzo2lI3Eu1huJxSMcF+/+O2ZEm4odmDcAr5lTYxaO0o2U4JTrJQZeR9MAX08emr3GNvdXwN/IqjBcJ2hDidSuPa3MLVi3Js1jj12UbieoXKakJIngEZkYx/0XQ9KqBqeCJMNBPkFlGfQhgKXVnwu8bXnOs4/jgFOZaDCGyfEQ0niGBs33BI8516qsH5+az6b7o9AQ6Bc9ZHB6KIz2gccGQT+bcAYBudg8HUQO6+dn5sI16+rNVabz+me+B5Km8fCovR6rI0WIFebVq6thFVQUlpJkOgHo3Jz55Epl/vCGuXhaev381vxdB0719hFz4XL19HcmpCTHjlYuH7GOP4EvYLPwvfx8rvro9suJw+bRM9VHTx2zRVt+caX8YgFOCXAmejkx+VqQ8BTQIzyj0XjPjYx33ebopnxLS4DE/b78i306+vczTUC5pi6Oz9S+W3G8iHXpqvXwATh/SGOs+RO1SzNostOLGzYDc/6BeWViLdZvojhQhRb99xG3YwLW/JL105H17S5zealye9apYML36sLzysI1e44tl7ujcnNxsnblbOX5SfAJ8KX2/JL55Elntzn9JGY+vR7rMn+bjG2Hj83eXuvbZU5QAldgLjwN7izejiMjEi1RbVDmBfqpKtt1ITfvs40gQdAI+uCkjefWBOnuRhdMREkvyPxYgrgcvRzFnvi19a/Gkkd4jWQKJEkUWiK7ZTo6iCWtL208oYac2teT7DQNb+/wjW9ZYXsH+canVYixGSlLEoHGtqFSZrcEWyFBqC7AzKF14SgWMGOMZmCkHo1zcY6LxTpjPfEd3PZO/bMvxYPjvaxeyrSHO/y8dimCKtIv/rIHuBlakQY6hwTehsGx3YH2/1PV/H6NV5xsEwjaKa/TfUWjvZVMyjszbG/p2oMJ+Agv293xQPduyRiEvGSf8hksaTVkQPAV2sirKQY1STF2KWjJYoJkeFmnHdGodfG+OXPLOn/fOn3YOnHOPPMgMCseoQSNUmWnvpcf/UpSRLVEvNHB2dUsnDR0aYQiANDJahj2SgoudEgap6ssEjj4eoPyGaK8JuT28oaQ2ynLq0LYo0gGmtxe0B+qAAtkGi816cCj2I/luS8lHW+VVoNq62oNms/5kbVIBoqarmprUTmrW4sKtjeY30AOsk1c33juwMDn7T6CQ43vh8J9De/lFqPx4Y9nCLVLR8rLvztFIa+K6fdgjfKZ6NY87Tqr7dd4AxSBO0MSh8Bfx+P+QLROD9X2QYh5v3WiMIusQhspnArZL2zPECydomdCJ7NNyO5WtTwev/ieWG8v19ud2d6bjsW7uFh3ppfu6OyNxzvjMTHjUu6WqCwmARkv5PIQZN1m+9hmHEgfgMALfu6Ad+ZjGppp811WeA3eUfkVOtrqqvgb1mGzo8KoXVkY2FlQwd04lVg3g+npgazEiV1JppfzV2h5PO23LLp+vtIlkaZ5jQlYmxsZC+4RPwENYBpCHx4/IVJu78bYOB6xi7EJ0gs/fX6z81s7r+ZhicxGS1i2eGU1KylBsdpNmJHMVm8dtk7ehBOsU8vyra0JggFRQZYUygRSnACBfaC2Lvxeu/DI+m3Kmlhuni84QFSNetH9VQRNvbDPu1IOXocP7PCuZhLkCVm1efvUP59dxqga4WKRWBfhehMc15/WmujbsNB55aqftofEdiBtC/y21ZrWgfjHKfRMtk/aMtzxSGwHpF+bitu++/9PQoynqbUQ/xHmLTsj8PwKp+i712muCPs8h32Rs3rBKqOqxsbuWn0XVg6ELb7MylBqtF5ouZ4Sebs+EM5BqpZ4XxDA+zknhU67OuMeBxNxLOpy+K+PoJeJuCeIeNwu4biydY7L1clr5eWV9byE8mWM5Vq8tv/r667b/AkDKuJTKtdv3JzrhDRs7AfWiVPm0Zu1C3fqV6WenTU8+dbdSG8iD0h5tnD2zsZ9duv8wZjauLTxxGwuLlZvH65dWKhdv7iVYu5imlhtqgi2N0SwhVy6Gc9tb50yd2BR9WF56fvgZf26VBkYt3Wq7MEr11PWd0dr555b39/cZAH0oqFMmvNL5sxxEPImzx7jcLu/MGex0Gn+cCw4PV63bZyFzJcw+6SY/zsX/ynr4Q/m81PmLw+si98jC/fC7HVabAS6VWLbGm8v+FNFKtedLJzQgq/51I9sTnpx9I45txJ4MSidCm1T0nqhz5y9U16cqE49xC9L50kPBJVInINPpz+MBkbWdv2SAI79/38lJM7FuvC2p5uUl+7uGRg0b0xxvVxP746euDn9JNJLGjkNqMDgtSy+HXogLfPKcNMraqVSiU1TiVfYrDqCaijYL8NALM3CMYZqQ2Pwmd+jZNSPNCqomog1nWQsxsVAEpihdHXG6rU1r34mKXZstM++ffbrh7o0ThMxDJJewMSoGoigdgXOjb+ZTIZJ4eLwWn9l1lw4AUskQa6wUk/xBchLCnXV82tmNfVr0a1/qe3g10WqjUXiLAf/8OXLlrfathxC42XTP5P3n7P2klpq5fw2GA8VC7B58J0JNs7G3jJ/2INUcz6bOdd5p7AS8gm+0FrQVENFJCxWW3iDJEmmqAhYCghl8kYY6OwacjTKF40cbE+Sp9L4ODZhsVslSXu/uXVmZu+HDJbccpLOgtvZC7s/FwqTD0msg0Sj1vxxyIldSjFAiVhCYZvowk2X4tMAxaewVt0hMR9Mw+HJpcoHOUpK0aAe3fFjLpEeIBoCX6aILlHl9lmX6GubaC8ENzYjq6oWCrWuozNMovBhz37vF3Ppljt2KAhCliXdY4Jruv8Pj80hu2wlZUgoGhr7MBxlAa1hSzps98M3VEHeYDVawPp+6C80u2u0wH4AIqwDwoLyXymv2ZgYJszqxTTstFAXiZA6PStTJWvkwk6lLKNqJIQqGyaSQlSHG+LAqwpnTIgJMTDfMM4ZhkmboK2BrZkvSSZJLEw+IiH1b8N/D4N8QiGG45CD3eBhDjGNJg+xA1mjRlFTkCE+HkL7bTZaOJl9wo/pfqsV6zZrS0t3jStoacBRtJmgPlqnBa9R1F89sZQJiclk57ffwueOsGP7r2MWIeKHMWdNh6is03WNcOltjG2vWPtXlA4HMJaCi3fFEyqR/yY7XrNeoLNtXPdNla9PhVYjApcgxj6/iJ0d0rpf8uG6vTetsJ+I4VYxcGspZStgRjYVJsgSt2ZALWMBkHkfSBdDAGV9d6+63ccaWPMAr2kiG+wq9sX5zQmToOZwhCnSwf/BfCXEsI13/mCb4u/QN3Zl2ZCMASrLCYbNiaQoMx12K7634zanfc00k6GCkWAyqixCk90GQUQdxCzRvpVpNPFZ6msyICfPUi3BCLIkQNKKoMN9WL5v+ruEd1f/0wT/rQd438m71uMFp9zWhq9SOT8fhERVKOJRIwz+jBfHQnV1hd17U7wrcYvmuCyQhYDl6d3wXy2F3JiXVg1Dze9LH0yQ9vexUOZdlOUh9ZaU/VhG7wk0fWyPSBCn7HPIVplz0+S/yVh7bR/UEROE7EgY1tX+vsKPpIvARGkPs7YMfZR0BJfskbdhJJv+0fr9eHnpVHn5d/PYWevhNa/PpmVxUYOaWuCzvCOevsZY6/SJ2tmFyuUjhprNyrTDvDVp/TQPGTbeiE7fr94+DH0dlcmn5tSyQ2sen7LOXC8vLtUuz1QvTEN3nzMIRtSbOupU9UleTkx6bN0lQpA1YIEOZx8qL27g1aZt9eSQ14kB38ZS+XWpcmnFvHHEYWk+g8Yl87fJfz47XV48VbuCrK3lWfPkHRCNeeM364fj+KLx2dPWk2tA6W8EYK7gGwYVFLorc8dgCEEfcACyA3ADgZUARsBH8HWPlQV8re3nKeedLHcchJ33cBwr6c6MrHO6C5Nt2+wJ2Rzf1NOIxUnChb/B6ffy2jCJtXmXYUFZ5nCv20DcH9Cwb8EukEMNi7Wt1+9Nou47H3BGxj9Y/Bc9btTR',
+ 'content_code': 1,
+ 'industry': '工程',
+ 'notice_time': '2020-01-13 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'http://ebidding.shoukaigufen.com.cn',
+ 'site_name': '首开交易平台',
+ 'source': '首开交易平台',
+ 'time_stamp': 1583120984954,
+ 'title': '首开云著名邸一期室内木门及五金采购安装招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ebidding.shoukaigufen.com.cn/biddingBulletin/2020-01-13/18193.html'}
+2020-03-02 11:49:45,043  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[7/1]
+2020-03-02 11:49:45,152  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-27/18153.html] content by direct requests
+2020-03-02 11:49:45,236  shoukai_spider.py:449 : INFO  item is: {'_id': '9cad865fc58ce4308f1ad5f08deb13d2',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': 'eJzNW3tzE8ey/9upyneYbHKxdGOtVrIxtmwpBQ5UqDoEn2OSnHNPnaJWuyNp8WpX2V1ZNglVtnmYZ2wDCQ+bEAiv1A2GFBCMjaHqfhW0K+mv8xVu9z6kXclgO9jkmETWzvRM/6a7p7unZ93/waf7Bw78Y3A3yRl5OfX+e/3135QX4Tch/Xlq8ETI8ZpOjSRTNDKRHoZEkcbuyRlGIUK/LkojSebvkS92RgbUfIE3pLRMGSKoikEVGLZ3d3J3vijzBt27O8b5xyt8niaZYTpWUjVRZ+ojzBPHq+evmNO3KhefmKfnanMnzLmbHdaZOeunqQ7r9Pf4C7vuz1QfHLPboMtuZprmFqkuaFLBkFRlc6YnbcDAkAyZpsyntyv3zjiEzuDa1FT18f3y0i3r8gXz2SNz+mF/1KGFQbKkDBONyklGN8ZkqucoNRhijBUApkFHjaig6wzJaTSTZFCwiWiUpiVRlJQsq+fU4jAvZYsZqrCCmmcFJapRXS1qAo3qkkEPxqNRJZ89nMZZomlVNXRD4wsszvl65pvCLANijfAlIMhTNi8p74JnoZiWJeFdcJIUkY6+C0a8IuVhi7wT6WnqISoYdVbOFvGb4iF+hHdaGaJrwltxPAQmItPRAl+g2sGMzOs59hDw7Y86DNDRvP9e258MAiD0R12/159WxTGSQlCiNEIEoNaBOXRSjSGSCN/5iPvYTIU+hpcUtyfQJdOMARz1Aq+k+iWvNcOTDB8p5FSFIhwp1Z9OmefvVR/crBy9X1l62R9Np7o4LsL1cL2R7VwPILYniMLMLSw0KZszHM5t/fwGjEUfFvI6rF8usBgEPgFLzCVjTMpxYtaFc+WVeevJBLi7/iiPEL9FXH+Ej3gYtGHsGqLaiCTQXbxOB0BkmirLVGNF9ZMsNQZ4t/cvkg6rGdhpnv6xMnNiUzgPqprBy0GWhqrK+qdqSZFVXmTQrZvHn5YXz1RXVraMp20ngvEV3WZ8joGq/sykqhMXK4+WrZOz5eVfkb+tZE/d3hfnNwajFiNNZ5m6efj7+LSuykWDEptIHY23GK/b0Wq6haIsR1z7lfLZt96NMEdUVrMqW1CyDOFliMlM9DU2bfMOGHZR9voUfsRQC257G7hMktqQghznjhbP+KbcrzCp2p0fajee2OqnedQ/fPZHZanBamOcnA0mgIPPqtpYNA2LooakoIU7O06ELj3ZyXHbPKK9YrKnZ5vBp20DcRIM8/iv5uzpbQU+S3F7Oo3llzesiQdbhhV0WJSNXetE3FtHbE5ftuYeNyH2N75zxD6cvVwdZ3nxviPZyq2lbY1FeYgryxesH+ed7i1DrBo5qq0OtKsOtHrjbHnxavXJserCg1WA+rs3G+gqkWFxwTz9S3nxgnnWEUudR3+0KL/Jabnx3rfFM6CpIVkSaYtHSouuM4I9784Om9xOiKCTF4azmlpUxERRk0Nv6Y/SvAJhO8YeKmTDRIBzAtUIVxglihrRaIHyBtGy6VB8ewfZ0dlBYp1cuI8h/mV/EIlsMbj4HwEXibjKcLTSUIrf8TfE3JCy28ekYvVFNk/iRqH33wtGGieO2gfI16ZG0IeJjNc5qMKi8ZCWKq+cq6wsuGmOQ7gRe/W7boS8weFb6acbXq+x/tSr8RkAbD4fLy/NVmcvmTPnapOL5cVxa/56Zeqo9fCi+fOEdXayMnnKOVy+Gp8NzubJqXmTBVVSFz6BgHkAj6SugnKdmOD8UxCzeuRwmtWHsxkWH1ghnRtLQ9oZiXOx3kgsHuE4Lv4vTITeGjLwbOBcM33GhBsFGSnBgdbLAbyOpgG+njw0e41t7q+Aa5FVYbhO0IaCqN14VplbsO5MmieeuCjdTtCuTElJEsH5MTGO+y+GpFUNDgBJhoPUgcoyqEEAo6o/F3jbyJxnH8cBpwjRYAyT43mj8QwNmu8JHnOuAVk/PDOfT/dHoSHQL3rI4KBQGO0D5wyCfj7uDAJysXk6CBLWT8/NhRvW9durTOf1z3wHJE3j4VF7M1ZHihAWzOvXV8MqqCgsJcl0AtC5OfPptcr8xIa5eFp68/ytduqgc6y1eveYuXC1evaoCSnJieOVq8ea7Lf8Yq76+O6r8YnK8uPyy4Xyy2vm8eXK/VOvxiffCBieAjqFZzQg77mR6K7bNN1Mb2nJnD7tfl/+2T4U/eeZKaBcSy/WyZna0RVHO9aV69ajh+DzIXux5k/Vrsyg+U4vbtgkzPmH5rXxtVi/jeJAFVr0P0fcjglY80vWj8fWt9PM5aXK3VmncAnfqwsvKgs37Dm2XO6Oys3Fydq185UXp8E/wJfaiyvm06ed3eb005j57Gasy/xtMrYdPjZ7e61vlzkBClyBufAsuLN4O6aMSLREtUGZF+hnqmyXg9x0zzaCBEEj6IMDNh5XE6S7G90xESW9IPNjCeJy9FITe+I3lr0aSx7hNZIpkCRRaInskenoIFayvrTxhBpyal9PjtM0vL3DN75lhe0d5BufViHeZqQsSQQa24ZKmT0SbIUEoboAM4fWhaNYwEQxmoGRehSzjFg8viPWy8W5zvTng5Kh79vF6qVMe7jDz2u3Iqgi/eJve4GboRVpoHNI4G0YHNsdaP8fVc0f0HjFSTKBoJ3yOt1fNNpbyaS8M8P2lq69mHeP8LLdHQ9075GMQchR9it/gSWthgwIvkIbeT3FoCYpxm4FLVlMkAwv67QjGrUuPzBn7lgXH1hnJ6xTF8xzDwOz4slJ0ChVdur7+NGvJEVUS8QbHZxdzcIBQ5dGKAIAnayGYZ+k4EKHpMN0lUUCB19vUD5DlNeE3D7eEHI7ZXlVCHsVyUCT2wf6QxVgXUzjpSYdeBQHsCr3paTjZdJqUG1drUHzOT+yFslAUdNVbS0qZ3VrUcH2BvMbyEHmies7nDs48Hm7j+BI4/uRcF/De7k1aHz44xlC7cqx8vLvTi3IK176PVijaia6pU67vGr7Nd4AReDOkMQh8NfxuD8QrdNDtX0UYj5snSjMIqvQRuqlQvYL2zMEK6bomdDJbBOye1Qtj6cuvifW28v1dmc6t4tdse1crDvTtYPr6RZ7BS7T1eVS7pGoLCYBGS/k8hBk3Wb7tGYcTB+EwAt+7qB31GMammnz3VF4Dd4J+TU62upi+FuWX7OjwqhdUBjYWVDB3TgFWDeD6emBrMSJXUmml/MXZnk85Lcsun7W0iWRpnmNCVibGxkL7sk+AQ1gGkIfnkAhUm7vxth4OGLXYBOkF376/Gbnt3ZezcMSmY1WrmzxympWUoJitZswI5mt3pmwTt+Gk4FTwvKtrQmCAVFBlhTKBFKcAIF9prYu/V679Nj6bcoaX26eLzhAVI16rf11BE29sM+7Ug5ehw/s8K5mEuQJWbV598y/n1/1zu7xHsL1JjiuP6010bdhffPadZs2zkW4GPxHYjuQtgV+22pN60D8wxR6JtsnbSHu2A5IvzYVt33lv27ErvTifyJiPE2thfiPMG/ZGYHn1zhF33VOcyHY5zns+5vVa1YZVTU2dsXqu6dyIGzxHVaGUqP1Hsv1lMjb9YFwDlK1xIeCAN7POSl02pUa9ziYiGMtl8N/fQS9TMQ9QcTjdjnHla1zXK5O3igvr6zn3ZMvYyzX4rX9X990y+ZPGFARn1G5ftHm3CKkYWM/tE6dMY/frl26V78h9eys4cm37iJ6E3lAyrOFs3c2rrFb5w/G1MZdjSdmc3GxeneidmmhdvPyVoq5i2litaki2N4QwRZy6WY8t711ytyBBdZH5aXvgnf061JlYNzWqbIHb1rPWEeP1y68sL67vckC6EVDmTTnl8yZkyDkTZ49xuF2f2nOYqHT/P5EcHq8Zds4C5kvYfZJMf937vtT1qPvzRdnzJ8fWpe/QxbuPdmbtNgIdKvEtjVeWvCnilSuO1k4oQXf7qkf2Zz04vg9c24l8D5QOhXapqT1Qp85e6+8OF6deoRfli6SHggqkTgHn05/GA2MrO36JQEc+//9QggkXV1429NNyku/7h0YNG9Ncb1cT++Onrg5/TTSSxo5DajA4LUsvhR6MC3zynDTm2mlUolNU4lX2Kw6gmoo2O/AQCzNwjGGakNj8Jnfq2TUTzQqqJqINZ1kLMbFQBKYoXR1xuq1Na9+Jil2bLTPvn32W4e6dJgmYhgkvYCJUTUQQe0KnBt/M5kMk8LF4W3+yqy5cAqWSIJcYaWe4guQlxTqqufXzGrqt6Fb/y7boa+LVBuLxFkO/uE7ly0vs205hMY7pn8m7z9n7SW11Mr5XTAeKhZg8+CrEmycjb1j/rAHqeZ8NnOu805hJeRTfI+1oKmGikhYrLbwBkmSTFERsBQQyuSNMNDZNeRolC8aOdieJE+lw4exCYvdKkna+82tMzP7Pmaw5JaTdBbczj7Y/blQmHxMYh0kGrXmT0JO7FKKAUrEEgrbRJduuxSfBSg+g7XqDon5cBoOTy5VPshRUooG9ehOnnCJ9ADREPgyRXSJKnfPu0Rf20T7ILixGVlVtVCodR2dYRKFD3v2+z+bS3fcsUNBELIs6R4TXNOD//XYHLHLVlKGhKKhsY/DURbQGrakw3Y/fEMV5A1WowWs74f+RrO7RwvsRyDCOiAsKP+D8pqNiWHCrF5Mw04LdZEIqdOzMlWyRi7sVMoyqkZCqLJhIilEdbghDryqcMaEmBAD8w3jnGGYtAnaGtia+ZJkksTC5BMSUv85/K8wyCcUYjgOOdgNHuYQ02jyEDuQNWoUNQUZ4uMRtN9mo4WT2af8mO63WrFus7a0dNe4gpYGHEWbCeqjdVrwGkX99RNLmZCYTHZ++y187gg7tv8mZhEifhxz1nSEyjpd1wiX3sbY9pq1f0XpcABjKbh4VzyhEvlvsuMN6wU628Z131T5+lRoNSJwCWLs84vY2SGt+yUfrtt70wr7iRhuFQO3llK2AmZkU2GCLHFrBtQyFgCZ94F0MQRQ1nf3qtt9rIE1D/CaJrLBrmJfnN+cMAlqDkeYIh36K+YrIYZtvOoH2xR/h76xK8uGZAxQWU4wbE4kRZnpsFvxHR63Oe1rppkMFYwEk1FlEZrsNggi6iBmifatTKOJz1JfkwE5eZZqCUaQJQGSVgQd7sPyfdOfI7y/+l8k+G89wPtO/mo9WXDKbW34NpXz81FIVIUiHjXC4M94cSxUV1fYvTfFuxK3aI7LAlkIWJ7eA/+rpZAb89KqYaj5/elDCdL+IRbKvIuyPKTeknIAy+g9gaZd9ogEcco+R2yVOTdN/puMtdf2UR0xQciOhGFd7R8q/Ei6CEyU9jBry9BHSUdwyR55G0ay6R+s30+Wl86Ul383T5y3Ht3w+mxaFhc1qKkFPss74ulrjLXOnqqdX6hcPWao2axMO8w7k9aP85Bh443o9IPq3Qno66hMPjOnlh1a8+SUde5meXGpdnWmemkauvucQTCi3tRRp6pP8mp80mPrLhGCrAELdDj7UHlxA682basnR7xODPg2lsovS5UrK+atYw5L8zk0Lpm/Tf77+dny4pnaNWRtLc+ap++BaMxbv1nfn8T3i8+ftZ7eAEp/IwBzBd8wqKDQXZk7BkMI+oCDkB2AGwisBDACPoKve6ws4CtuP00572e54yDsfIDjWEl3ZmSd012YbNtmT8jm+KaeRixOEi78DU6/j9eGSazNuwwLyjKHe90G4v6Ahn0LdoEcaVisbb1+bxJ13/mAMzL+neL/A8tJzBs=',
+ 'content_code': 1,
+ 'industry': '工程',
+ 'notice_time': '2019-12-27 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'http://ebidding.shoukaigufen.com.cn',
+ 'site_name': '首开交易平台',
+ 'source': '首开交易平台',
+ 'time_stamp': 1583120985154,
+ 'title': '首开云著名邸一期燃气壁挂炉采购招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-27/18153.html'}
+2020-03-02 11:49:45,241  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[8/1]
+2020-03-02 11:49:45,339  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-27/18152.html] content by direct requests
+2020-03-02 11:49:45,401  shoukai_spider.py:449 : INFO  item is: {'_id': '65afcc419c6e7429fd137d0ca0c2dfa7',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': 1,
+ 'industry': '工程',
+ 'notice_time': '2019-12-27 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'http://ebidding.shoukaigufen.com.cn',
+ 'site_name': '首开交易平台',
+ 'source': '首开交易平台',
+ 'time_stamp': 1583120985340,
+ 'title': '首开云著名邸一期淋浴隔断采购安装招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-27/18152.html'}
+2020-03-02 11:49:45,408  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[9/1]
+2020-03-02 11:49:45,524  shoukai_spider.py:566 : INFO  Get [http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-25/18147.html] content by direct requests
+2020-03-02 11:49:45,601  shoukai_spider.py:449 : INFO  item is: {'_id': 'ba11a89bb0a475cfb9a3b6f8db77690f',
+ 'area': '',
+ 'area_code': '670000',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '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',
+ 'content_code': 1,
+ 'industry': '工程',
+ 'notice_time': '2019-12-25 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'http://ebidding.shoukaigufen.com.cn',
+ 'site_name': '首开交易平台',
+ 'source': '首开交易平台',
+ 'time_stamp': 1583120985525,
+ 'title': '首开道义进步村三号地景观方案设计招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://ebidding.shoukaigufen.com.cn/biddingBulletin/2019-12-25/18147.html'}
+2020-03-02 11:49:45,604  shoukai_spider.py:425 : INFO  Parse item, [zbgg_search]-[10/1]
