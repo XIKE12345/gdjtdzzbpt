@@ -1,0 +1,485 @@
+2020-03-03 17:20:38,779  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 17:20:38,785  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_neimenggu.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 17:20:38,787  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_neimenggu.pipelines.CommonPipeline']
+2020-03-03 17:20:38,787  engine.py:257 : INFO  Spider opened
+2020-03-03 17:20:38,792  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 17:20:38,793  middlewares.py:62 : INFO  Spider opened: jy_neimenggu_spider
+2020-03-03 17:20:38,795  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-03-03 17:20:38,804  jy_neimenggu.py:171 : INFO  start crawling...
+2020-03-03 17:21:14,967  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 17:21:14,973  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_neimenggu.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 17:21:14,976  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_neimenggu.pipelines.CommonPipeline']
+2020-03-03 17:21:14,976  engine.py:257 : INFO  Spider opened
+2020-03-03 17:21:14,982  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 17:21:14,982  middlewares.py:62 : INFO  Spider opened: jy_neimenggu_spider
+2020-03-03 17:21:14,984  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-03-03 17:21:14,997  jy_neimenggu.py:171 : INFO  start crawling...
+2020-03-03 17:21:34,585  jy_neimenggu.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[6540cacfb04737fa52fed8ff9bc57a2f]
+2020-03-03 17:21:34,586  jy_neimenggu.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 17:21:14', 'crawl_end_time': ''}}
+2020-03-03 17:21:55,785  jy_neimenggu.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[dc526c33ce7a94ece33faa8b3bbfa707]
+2020-03-03 17:21:55,785  jy_neimenggu.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '6540cacfb04737fa52fed8ff9bc57a2f', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 17:21:14', 'crawl_end_time': ''}}
+2020-03-03 17:22:14,984  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 17:22:27,428  jy_neimenggu.py:266 : INFO  Get page list url, page:[3], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=3], status:[200], body md5:[ff7a15978a9ab846d37d3512a6b0add9]
+2020-03-03 17:22:27,428  jy_neimenggu.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'dc526c33ce7a94ece33faa8b3bbfa707', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 17:21:14', 'crawl_end_time': ''}}
+2020-03-03 17:28:50,803  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 17:28:50,816  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_neimenggu.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 17:28:50,818  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_neimenggu.pipelines.CommonPipeline']
+2020-03-03 17:28:50,819  engine.py:257 : INFO  Spider opened
+2020-03-03 17:28:50,824  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 17:28:50,825  middlewares.py:62 : INFO  Spider opened: jy_neimenggu_spider
+2020-03-03 17:28:50,828  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-03-03 17:28:50,844  jy_neimenggu.py:172 : INFO  start crawling...
+2020-03-03 17:28:50,845  engine.py:133 : ERROR  Error while obtaining start requests
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/engine.py", line 127, in _next_request
+    request = next(slot.start_requests)
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/middlewares.py", line 58, in process_start_requests
+    for r in start_requests:
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy_splash/middleware.py", line 167, in process_start_requests
+    for req in start_requests:
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 206, in start_requests
+    ext_param=_ext_param)
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 242, in get_normal_next_page_url
+    'a': ext_param['type']
+KeyError: 'type'
+2020-03-03 17:28:50,848  engine.py:296 : INFO  Closing spider (finished)
+2020-03-03 17:28:50,876  jy_neimenggu.py:234 : INFO  Spider[jy_neimenggu_spider] closed, reason:[finished]
+2020-03-03 17:28:50,877  statscollectors.py:47 : INFO  Dumping Scrapy stats:
+{'elapsed_time_seconds': 0.024904,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 3, 9, 28, 50, 849336),
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 13,
+ 'memusage/max': 57303040,
+ 'memusage/startup': 57303040,
+ 'start_time': datetime.datetime(2020, 3, 3, 9, 28, 50, 824432)}
+2020-03-03 17:28:50,877  engine.py:327 : INFO  Spider closed (finished)
+2020-03-03 17:29:18,383  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 17:29:18,389  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_neimenggu.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 17:29:18,392  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_neimenggu.pipelines.CommonPipeline']
+2020-03-03 17:29:18,393  engine.py:257 : INFO  Spider opened
+2020-03-03 17:29:18,398  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 17:29:18,399  middlewares.py:62 : INFO  Spider opened: jy_neimenggu_spider
+2020-03-03 17:29:18,401  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-03-03 17:29:18,414  jy_neimenggu.py:172 : INFO  start crawling...
+2020-03-03 17:29:20,522  jy_neimenggu.py:274 : INFO  Get page list url, page:[1], url:[http://www.nmgztb.com.cn/?c=article&tid=3&a=type], status:[200], body md5:[271e91d5b6106246d310ada1b22c61fa]
+2020-03-03 17:29:20,522  jy_neimenggu.py:276 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 17:29:18', 'crawl_end_time': ''}}
+2020-03-03 17:29:20,553  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 17:29:20,558  jy_neimenggu.py:327 : ERROR  Handle [http://www.nmgztb.com.cnNone] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 312, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 353, in get_common_raw_item
+    self.item['title'] = self.__get_title__()
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 419, in __get_title__
+    _ret = self.selector.xpath('./a/@title').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-03-03 17:29:20,559  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 17:29:23,268  jy_neimenggu.py:434 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38698] content by direct requests
+2020-03-03 17:29:23,349  jy_neimenggu.py:323 : INFO  item is: {'_id': 'e48ded3f729f8e053ef2da8edd8b574c',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.01.19 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583227763270,
+ 'title': '中国人民解放军联勤保障部队第九六九医院网络安全设备采购及安装招标公告',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38698'}
+2020-03-03 17:29:23,379  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 17:29:24,741  jy_neimenggu.py:434 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38699] content by direct requests
+2020-03-03 17:29:24,811  jy_neimenggu.py:323 : INFO  item is: {'_id': '179d41eeb4b045fb9a4c4f4a2799c05e',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.01.19 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583227764743,
+ 'title': '中国人民解放军联勤保障部队第九六九医院全院信息化日常运维服务入围比选招标公告',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38699'}
+2020-03-03 17:29:24,818  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 17:29:26,079  jy_neimenggu.py:434 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38697] content by direct requests
+2020-03-03 17:29:26,146  jy_neimenggu.py:323 : INFO  item is: {'_id': '2db062c734fb74da8d81bbda541ea686',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2019.12.27 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583227766081,
+ 'title': '中国人民解放军联勤保障部队第九六九医院体外诊断试剂供货商采购项目招标公告',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38697'}
+2020-03-03 17:29:26,153  jy_neimenggu.py:274 : INFO  Get page list url, page:[2], url:[http://www.nmgztb.com.cn/?c=article&tid=3&a=type&page=2], status:[200], body md5:[19d16290f9b1957577c874ba9a9fb34a]
+2020-03-03 17:29:26,154  jy_neimenggu.py:276 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '271e91d5b6106246d310ada1b22c61fa', 'total_page_num': 1, 'total_item_num': 3, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 17:29:18', 'crawl_end_time': ''}}
+2020-03-03 17:29:26,164  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[1/2]
+2020-03-03 17:29:26,168  jy_neimenggu.py:327 : ERROR  Handle [http://www.nmgztb.com.cnNone] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 312, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 353, in get_common_raw_item
+    self.item['title'] = self.__get_title__()
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 419, in __get_title__
+    _ret = self.selector.xpath('./a/@title').extract_first().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2020-03-03 17:29:26,169  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[2/2]
+2020-03-03 17:29:27,231  jy_neimenggu.py:434 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38645] content by direct requests
+2020-03-03 17:29:27,314  jy_neimenggu.py:323 : INFO  item is: {'_id': '05827ced17cb6772af649f1c042d1f12',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2019.11.29 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583227767234,
+ 'title': '鄂伦春自治旗自然资源局呼伦贝尔市鄂伦春自治旗（2019年自治区级）城乡建设用地增减挂钩项目可研编制、勘测定界、规划实施方案、复垦规划呼伦贝尔市鄂伦春自治旗（2019年自治区级）城乡建设用地增减挂钩项目可研编制、勘测定界、规划实施方案、复垦规划招标公告',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38645'}
+2020-03-03 17:29:27,321  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 17:29:28,932  jy_neimenggu.py:434 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38696] content by direct requests
+2020-03-03 17:29:28,991  jy_neimenggu.py:323 : INFO  item is: {'_id': '29467d560d3852865a907e831b377ad4',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2019.12.26 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583227768935,
+ 'title': '中国人民解放军联勤保障部队第九六九医院机房整改项目招标公告',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38696'}
+2020-03-03 17:29:28,998  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[3/2]
+2020-03-03 17:29:30,934  jy_neimenggu.py:434 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38647] content by direct requests
+2020-03-03 17:29:31,028  jy_neimenggu.py:323 : INFO  item is: {'_id': '57a792c8483a38242aff3c4a7ab146a6',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2019.11.27 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583227770935,
+ 'title': '锡林郭勒盟乌拉盖管理区人民法院审判法庭建设项目（监理标段）三次废标公告',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38647'}
+2020-03-03 17:29:31,033  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 17:29:32,626  jy_neimenggu.py:434 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38694] content by direct requests
+2020-03-03 17:29:32,681  jy_neimenggu.py:323 : INFO  item is: {'_id': 'f0fdc0691b7a133c60c13cbf6775518e',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2019.12.25 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583227772628,
+ 'title': '中国人民解放军联勤保障部队第九六九医院会议系统设备采购及安装',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38694'}
+2020-03-03 17:29:32,688  jy_neimenggu.py:297 : INFO  Parse item, [page_1]-[4/2]
+2020-03-03 17:36:54,223  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 17:36:54,230  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_neimenggu.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 17:36:54,232  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_neimenggu.pipelines.CommonPipeline']
+2020-03-03 17:36:54,232  engine.py:257 : INFO  Spider opened
+2020-03-03 17:36:54,237  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 17:36:54,238  middlewares.py:62 : INFO  Spider opened: jy_neimenggu_spider
+2020-03-03 17:36:54,240  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6026
+2020-03-03 17:36:54,251  jy_neimenggu.py:308 : INFO  start crawling...
+2020-03-03 17:36:55,254  jy_neimenggu.py:410 : INFO  Get page list url, page:[1], url:[http://www.nmgztb.com.cn/?c=article&tid=3&a=type], status:[200], body md5:[271e91d5b6106246d310ada1b22c61fa]
+2020-03-03 17:36:55,254  jy_neimenggu.py:412 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 17:36:54', 'crawl_end_time': ''}}
+2020-03-03 17:36:55,283  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 17:36:56,425  jy_utils.py:56 : WARNING  Get html by proxy failed, please double check proxy srv [http://192.168.100.120:5010]
+2020-03-03 17:36:56,428  jy_neimenggu.py:463 : ERROR  Handle [http://www.nmgztb.com.cnNone] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/urllib3/connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/urllib3/util/connection.py", line 61, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 748, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/urllib3/connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1252, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1298, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1247, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 966, in send
+    self.connect()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/urllib3/connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/urllib3/connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x105aacdd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/urllib3/connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='www.nmgztb.com.cnnone', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x105aacdd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 448, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 490, in get_common_raw_item
+    self.item['content'] = self.__get_content__(detail_url)
+  File "/Users/huike/PycharmProjects/jy_neimenggu/jy_neimenggu/spiders/jy_neimenggu.py", line 580, in __get_content__
+    _r = JyScrapyUtil.request_html_by_proxy(url)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/jy_scrapy_common/jy_utils.py", line 57, in request_html_by_proxy
+    return requests.get(url, timeout=10)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='www.nmgztb.com.cnnone', port=80): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x105aacdd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2020-03-03 17:36:56,441  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 17:36:56,446  jy_crawl_helper.py:226 : INFO  Duplicate item:[e48ded3f729f8e053ef2da8edd8b574c] total:[page_1-0]
+2020-03-03 17:36:56,446  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 17:36:56,450  jy_crawl_helper.py:226 : INFO  Duplicate item:[179d41eeb4b045fb9a4c4f4a2799c05e] total:[page_1-1]
+2020-03-03 17:36:56,451  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 17:36:56,455  jy_crawl_helper.py:226 : INFO  Duplicate item:[2db062c734fb74da8d81bbda541ea686] total:[page_1-2]
+2020-03-03 17:36:56,455  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 17:36:56,460  jy_crawl_helper.py:226 : INFO  Duplicate item:[29467d560d3852865a907e831b377ad4] total:[page_1-3]
+2020-03-03 17:36:56,460  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 17:36:56,464  jy_crawl_helper.py:226 : INFO  Duplicate item:[f0fdc0691b7a133c60c13cbf6775518e] total:[page_1-4]
+2020-03-03 17:36:56,464  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[7/1]
+2020-03-03 17:36:57,248  jy_neimenggu.py:570 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38693] content by direct requests
+2020-03-03 17:36:57,334  jy_neimenggu.py:459 : INFO  item is: {'_id': 'ec210ace7564ed77abfd077e5cb224fb',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2019.12.17 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583228217251,
+ 'title': '赤峰市乌丹至天山段地方高速公路工程招标代理机构招标',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38693'}
+2020-03-03 17:36:57,369  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[8/1]
+2020-03-03 17:36:58,207  jy_neimenggu.py:570 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38692] content by direct requests
+2020-03-03 17:36:58,277  jy_neimenggu.py:459 : INFO  item is: {'_id': '4676684e7d39c49f74ce89ee016e8075',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2019.12.13 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583228218210,
+ 'title': '中国人民解放军联勤保障部队第九六九医院包头院区住院部二、三层部分病房、公共卫生间改造工程',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38692'}
+2020-03-03 17:36:58,286  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[9/1]
+2020-03-03 17:36:59,076  jy_neimenggu.py:570 : INFO  Get [http://www.nmgztb.com.cn/index.php?c=article&id=38689] content by direct requests
+2020-03-03 17:36:59,129  jy_neimenggu.py:459 : INFO  item is: {'_id': '1d391458fabd8af29b31e6a282f0ff53',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2019.12.12 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'source': '内蒙古招标投标公共服务平台--内蒙古招投标网',
+ 'time_stamp': 1583228219078,
+ 'title': '中国人民解放军联勤保障部队第九六九医院测绘项目',
+ 'tos_code': '01',
+ 'url': 'http://www.nmgztb.com.cn/index.php?c=article&id=38689'}
+2020-03-03 17:36:59,140  jy_neimenggu.py:410 : INFO  Get page list url, page:[2], url:[http://www.nmgztb.com.cn/?c=article&tid=3&a=type&page=2], status:[200], body md5:[19d16290f9b1957577c874ba9a9fb34a]
+2020-03-03 17:36:59,140  jy_neimenggu.py:412 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '271e91d5b6106246d310ada1b22c61fa', 'total_page_num': 1, 'total_item_num': 3, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 17:36:54', 'crawl_end_time': ''}}
+2020-03-03 17:36:59,150  jy_neimenggu.py:433 : INFO  Parse item, [page_1]-[1/2]
