@@ -1,0 +1,363 @@
+2020-03-03 16:12:14,782  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 16:12:14,792  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_shanxi.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 16:12:14,795  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_shanxi.pipelines.CommonPipeline']
+2020-03-03 16:12:14,796  engine.py:257 : INFO  Spider opened
+2020-03-03 16:12:14,801  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 16:12:14,802  middlewares.py:62 : INFO  Spider opened: jy_shanxi_spider
+2020-03-03 16:12:14,804  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-03-03 16:12:14,814  jy_shanxi.py:172 : INFO  start crawling...
+2020-03-03 16:12:15,691  jy_shanxi.py:250 : INFO  Get page list url, page:[1], url:[http://www.sxbid.com.cn/f/list-6796f0c147374f85a50199b38ecb0af6.html], status:[200], body md5:[cca8832ec8dcac26910ce86e916a72f4]
+2020-03-03 16:12:15,692  jy_shanxi.py:252 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 16:12:14', 'crawl_end_time': ''}}
+2020-03-03 16:13:14,804  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 16:13:19,900  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 16:13:19,912  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_shanxi.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 16:13:19,917  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_shanxi.pipelines.CommonPipeline']
+2020-03-03 16:13:19,918  engine.py:257 : INFO  Spider opened
+2020-03-03 16:13:19,923  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 16:13:19,924  middlewares.py:62 : INFO  Spider opened: jy_shanxi_spider
+2020-03-03 16:13:19,928  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-03-03 16:13:19,944  jy_shanxi.py:172 : INFO  start crawling...
+2020-03-03 16:13:20,460  jy_shanxi.py:250 : INFO  Get page list url, page:[1], url:[http://www.sxbid.com.cn/f/list-6796f0c147374f85a50199b38ecb0af6.html], status:[200], body md5:[fa9fcb67e11ce13af45f55ec63ef6c0c]
+2020-03-03 16:13:20,460  jy_shanxi.py:252 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 16:13:19', 'crawl_end_time': ''}}
+2020-03-03 16:13:20,499  jy_shanxi.py:321 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 16:13:20,504  jy_shanxi.py:351 : ERROR  Handle [http://www.sxbid.com.cn/f/list-6796f0c147374f85a50199b38ecb0af6.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_shanxi/jy_shanxi/spiders/jy_shanxi.py", line 336, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/jy_shanxi/jy_shanxi/spiders/jy_shanxi.py", line 377, in get_common_raw_item
+    self.item['title'] = self.__get_title__()
+  File "/Users/huike/PycharmProjects/jy_shanxi/jy_shanxi/spiders/jy_shanxi.py", line 440, in __get_title__
+    _ret = self.selector.xpath('./td[2]/@title').extract_first().replace('\\n', '').strip()
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-03-03 16:13:20,508  jy_shanxi.py:321 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 16:13:21,781  jy_shanxi.py:347 : INFO  item is: {'_id': '3a044ed010589bfa71bb0ccb53346219',
+ 'area': '',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223201718,
+ 'title': '吕梁市公安局业务技术用房项目改扩建工程设计招标变更公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-3c59037efdc84103ae51bb980f9d4ec2.html'}
+2020-03-03 16:13:21,814  jy_shanxi.py:321 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 16:13:23,684  jy_shanxi.py:347 : INFO  item is: {'_id': '300566635d1882010b13f86689a06519',
+ 'area': '',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223203608,
+ 'title': '山西医科大学第二医院3.0TMR750W磁共振成像系统三年期保修采购二次招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-1a4ca49344924fdf90678e941dee21b7.html'}
+2020-03-03 16:13:23,692  jy_shanxi.py:321 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 16:19:03,132  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 16:19:03,138  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_shanxi.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 16:19:03,141  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_shanxi.pipelines.CommonPipeline']
+2020-03-03 16:19:03,141  engine.py:257 : INFO  Spider opened
+2020-03-03 16:19:03,147  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 16:19:03,147  middlewares.py:62 : INFO  Spider opened: jy_shanxi_spider
+2020-03-03 16:19:03,149  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-03-03 16:19:03,162  jy_shanxi.py:266 : INFO  start crawling...
+2020-03-03 16:19:03,668  jy_shanxi.py:344 : INFO  Get page list url, page:[1], url:[http://www.sxbid.com.cn/f/list-6796f0c147374f85a50199b38ecb0af6.html], status:[200], body md5:[8666bbb1bfecc8e8dc0cdf4c63979c8c]
+2020-03-03 16:19:03,668  jy_shanxi.py:346 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 16:19:03', 'crawl_end_time': ''}}
+2020-03-03 16:19:03,703  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 16:19:03,708  jy_shanxi.py:445 : ERROR  Handle [http://www.sxbid.com.cn/f/list-6796f0c147374f85a50199b38ecb0af6.html] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_shanxi/jy_shanxi/spiders/jy_shanxi.py", line 430, in parse_list_page_common
+    ext_param=response.meta['param']
+  File "/Users/huike/PycharmProjects/jy_shanxi/jy_shanxi/spiders/jy_shanxi.py", line 471, in get_common_raw_item
+    self.item['title'] = self.__get_title__()
+  File "/Users/huike/PycharmProjects/jy_shanxi/jy_shanxi/spiders/jy_shanxi.py", line 534, in __get_title__
+    _ret = self.selector.xpath('./td[2]/@title').extract_first().replace('\\n', '').strip()
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-03-03 16:19:03,709  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 16:19:04,880  jy_shanxi.py:441 : INFO  item is: {'_id': '2f57f3e48423152177a64636c9b3377c',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223544823,
+ 'title': '山西煤炭运销集团和尚嘴煤业有限公司煤层接替开采项目井巷工程施工招标变更公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-9d50079a0a5d4961920d279dfa0d4884.html'}
+2020-03-03 16:19:04,917  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 16:19:06,041  jy_shanxi.py:441 : INFO  item is: {'_id': 'b829a3bf236d177aa46ad3872c4a172e',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223545951,
+ 'title': '山煤集团大同富利达房地产开发有限公司营销展示中心工程施工招标三次延期公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-ca3a004ef5fc472da6275cfb69ab84c9.html'}
+2020-03-03 16:19:06,050  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 16:19:06,054  jy_crawl_helper.py:226 : INFO  Duplicate item:[3a044ed010589bfa71bb0ccb53346219] total:[page_1-0]
+2020-03-03 16:19:06,055  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 16:19:06,059  jy_crawl_helper.py:226 : INFO  Duplicate item:[300566635d1882010b13f86689a06519] total:[page_1-1]
+2020-03-03 16:19:06,060  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 16:19:07,355  jy_shanxi.py:441 : INFO  item is: {'_id': 'c21c8a186d1eb98754b803dac8c571b1',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223547294,
+ 'title': '鄂东气田大宁—吉县区块吉4—吉10井区煤层气3亿方地面工程外电工程10kV架空线路（2019年井场线）建设项目招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-3cc9b84e7426455fa6764254f0fb8100.html'}
+2020-03-03 16:19:07,363  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[7/1]
+2020-03-03 16:19:08,506  jy_shanxi.py:441 : INFO  item is: {'_id': '31cad253bae6845db62f14407ce06d30',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223548406,
+ 'title': '右玉县2019年度第四、五、六、七批城乡建设用地增减挂钩土地复垦项目招标控制价',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-5de34430fab84857b962dda6d0af8205.html'}
+2020-03-03 16:19:08,514  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[8/1]
+2020-03-03 16:19:09,769  jy_shanxi.py:441 : INFO  item is: {'_id': '08e06916d2a79d168a54be6b360af233',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223549692,
+ 'title': '沁县松村至迎春公路（太焦高铁连接线）县城连接线工程勘察、设计招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-2c59b5af9b4f4b97a0a9677c6e5cebc5.html'}
+2020-03-03 16:19:09,778  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[9/1]
+2020-03-03 16:19:10,933  jy_shanxi.py:441 : INFO  item is: {'_id': '79bc547d7b178c14594445e0ae6df5ab',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223550868,
+ 'title': '五台县春苗幼儿园建设项目招标控制价',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-ab3bb183eda14731ad25ec75be0ec749.html'}
+2020-03-03 16:19:10,941  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[10/1]
+2020-03-03 16:19:12,307  jy_shanxi.py:441 : INFO  item is: {'_id': '30b8ad05d99b210b0de7e9902eafac48',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223552210,
+ 'title': '临汾市中心医院心脑血管综合楼建设项目施工招标变更公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-d26b3e34cdf14e78825e61776c13943a.html'}
+2020-03-03 16:19:12,316  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[11/1]
+2020-03-03 16:19:13,642  jy_shanxi.py:441 : INFO  item is: {'_id': '2cbe08e8bcaad6fb2b4f5b0738a58e3a',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223553547,
+ 'title': '山西煤炭进出口集团左权鑫顺煤业有限公司环境保护设施竣工验收项目招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-4699d3fc6b65472abcda212835d97c99.html'}
+2020-03-03 16:19:13,653  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[12/1]
+2020-03-03 16:19:14,770  jy_shanxi.py:441 : INFO  item is: {'_id': '08127071f99d3949ece7ca494d5646e2',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223554689,
+ 'title': '临汾市中心医院心脑血管综合楼建设项目施工监理招标变更公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-ed836de506a241d983938870a16466b4.html'}
+2020-03-03 16:19:14,780  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[13/1]
+2020-03-03 16:19:16,205  jy_shanxi.py:441 : INFO  item is: {'_id': 'd47bea4cd51fd8f4aa26dced00dbedd7',
+ 'area': '山西',
+ 'area_code': '14',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020-03-03 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.ccgp-guizhou.gov.cn',
+ 'site_name': '山西省招标投标公共服务平台',
+ 'source': '山西省招标投标公共服务平台',
+ 'time_stamp': 1583223556108,
+ 'title': '解放路（北中环街-迎泽大街）联网供热支干线工程（第一标段）招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://www.sxbid.com.cn/f/view-6796f0c147374f85a50199b38ecb0af6-95115b69060b4bebac78c25f4d6f1cf0.html'}
+2020-03-03 16:19:16,214  jy_shanxi.py:415 : INFO  Parse item, [page_1]-[14/1]

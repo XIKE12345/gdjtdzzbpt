@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8f24447b-ed39-4f1a-8313-f30a25ec2d99" name="Default Changelist" comment="东风招投标交易中心电子交易平台,字段添加">
+      <change afterPath="$PROJECT_DIR$/../ccgp_guangxi/.idea/hljggzyjyw.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ccgp_guangxi/ccgp_guangxi_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ccgp_guizhou.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ccgp_hainan.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ccgp_shanxi.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ccgp_sichuan.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ccgp_xinjiang/.idea/ccgp_xinjiang.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ccgp_xinjiang/ccgp_xinjiang/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ccgp_xinjiang/ccgp_xinjiang_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/.idea/crccmall.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/common/jy_common_items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/crccmall/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/crccmall/items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/crccmall/middlewares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/crccmall/pipelines.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/crccmall/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/crccmall/spiders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/crccmall/spiders/crccmall_spider.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/crccmall_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../crccmall/scrapy.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fujian.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fujian/.idea/fujian.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gjdw_dzsw.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jy_chongqing/.idea/hljggzyjyw.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jy_chongqing/ccgp_chongqing_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jy_guizhou/.idea/jy_guizhou.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jy_guizhou/jy_guizhou_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jy_shanxi_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../pachong/.idea/pachong.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../qdgxjt.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/.idea/xizang.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/scrapy.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/xizang/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/xizang/items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/xizang/middlewares.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/xizang/pipelines.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/xizang/run_spider.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/xizang/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/xizang/spiders/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/xizang/spiders/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../xizang/xizang/start.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bdhzb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../bdhzb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_bingtuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_bingtuan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_bingtuan/ccgp_bingtuan/spiders/ccgp_bingtuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_bingtuan/ccgp_bingtuan/spiders/ccgp_bingtuan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_bingtuan/ccgp_bingtuan_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_bingtuan/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crccmall/common/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_bingtuan/common/jy_crawl_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crccmall/common/jy_crawl_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_bingtuan/common/jy_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../crccmall/common/jy_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/spiders/ccgp_chongqing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing/spiders/ccgp_chongqing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_chongqing/ccgp_chongqing_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_chongqing/common/jy_common_items.py" beforeDir="false" afterPath="$PROJECT_DIR$/../xizang/xizang/common/jy_common_items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guangdong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guangdong/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guangdong/ccgp_guangdong/spiders/ccgp_guangdong.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guangdong/ccgp_guangdong/spiders/ccgp_guangdong.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guangdong/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guangdong/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guizhou/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/ccgp_guizhou/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guizhou/ccgp_guizhou/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/ccgp_guizhou/spiders/ccgp_guizhou.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_guizhou/ccgp_guizhou/spiders/ccgp_guizhou.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/ccgp_guizhou_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/common/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../xizang/xizang/common/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/common/jy_crawl_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/../xizang/xizang/common/jy_crawl_helper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_guizhou/common/jy_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../xizang/xizang/common/jy_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_hainan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/spiders/ccgp_hainan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_hainan/ccgp_hainan/spiders/ccgp_hainan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/common/jy_crawl_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_hainan/common/jy_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_ningxia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_ningxia/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_ningxia/ccgp_ningxia/spiders/ccgp_ningxia.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_ningxia/ccgp_ningxia/spiders/ccgp_ningxia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_ningxia/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_ningxia/common/jy_crawl_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_ningxia/common/jy_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_shanxi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/spiders/ccgp_shanxi.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi/spiders/ccgp_shanxi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/ccgp_shanxi_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/common/jy_crawl_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_shanxi/common/jy_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_hainan_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan/spiders/ccgp_sichuan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/ccgp_sichuan_spider.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/common/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/common/jy_crawl_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ccgp_sichuan/common/jy_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ggzy_neimenggu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ggzy_neimenggu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gjdw_dzsw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gjdw_dzsw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gjdw_dzsw/gjdw_dzsw/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gjdw_dzsw/gjdw_dzsw/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/../gjdw_dzsw/gjdw_dzsw/spiders/gjdw_dzsw_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hkgy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hkgy/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jy_guangdong/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jy_guangdong/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jy_henan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jy_henan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jy_jiangsu/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jy_jiangsu/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jy_jilin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jy_jilin/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jy_liaoning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jy_liaoning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lygccgpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lygccgpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lygccgpt/lygccgpt/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../lygccgpt/lygccgpt/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lygccgpt/lygccgpt_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../lygccgpt/lygccgpt_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../qdgxjt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../qdgxjt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shoukai/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../shoukai/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tmzb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tmzb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgdlzbw/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zgdlzbw/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgdlzbw/zgdlzbw/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgdlzbw/zgdlzbw/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgdlzbw/zgdlzbw/spiders/zgdlzbw.py" beforeDir="false" afterPath="$PROJECT_DIR$/../zgdlzbw/zgdlzbw/spiders/zgdlzbw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zgdlzbw/zgdlzbw_spider.log" beforeDir="false" afterPath="$PROJECT_DIR$/../zgdlzbw/zgdlzbw_spider.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zlpt/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zlpt/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zlpt/zlpt_spider.log" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1XdxHDMWcsrFSRXKtUyOMeNHSUX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f24447b-ed39-4f1a-8313-f30a25ec2d99" name="Default Changelist" comment="" />
+      <created>1581389682776</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581389682776</updated>
+    </task>
+    <task id="LOCAL-00001" summary="湖北省公共资源交易平台 爬虫代码。">
+      <created>1581412271404</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1581412271405</updated>
+    </task>
+    <task id="LOCAL-00002" summary="广东省公共资源爬虫代码。">
+      <created>1581487239233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1581487239233</updated>
+    </task>
+    <task id="LOCAL-00003" summary="中国航发电子招投标平台爬虫">
+      <created>1581567726361</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581567726361</updated>
+    </task>
+    <task id="LOCAL-00004" summary="东风招投标交易中心电子交易平台">
+      <created>1581651261864</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1581651261864</updated>
+    </task>
+    <task id="LOCAL-00005" summary="东风招投标交易中心电子交易平台,字段添加">
+      <created>1581930631645</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581930631645</updated>
+    </task>
+    <task id="LOCAL-00006" summary="贵州政府采购网爬虫。。">
+      <created>1582608956299</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582608956299</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="湖北省公共资源交易平台 爬虫代码。" />
+    <MESSAGE value="广东省公共资源爬虫代码。" />
+    <MESSAGE value="中国航发电子招投标平台爬虫" />
+    <MESSAGE value="东风招投标交易中心电子交易平台" />
+    <MESSAGE value="东风招投标交易中心电子交易平台,字段添加" />
+    <MESSAGE value="贵州政府采购网爬虫。。" />
+    <option name="LAST_COMMIT_MESSAGE" value="贵州政府采购网爬虫。。" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1899" y="44" key="CommitChangelistDialog2" timestamp="1583223806928">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state x="1899" y="44" key="CommitChangelistDialog2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1583223806928" />
+    <state x="344" y="38" key="CommitChangelistDialog2/0.23.1440.825@0.23.1440.825" timestamp="1581930630161" />
+    <state x="221" y="74" key="SettingsEditor" timestamp="1581412955673">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="221" y="74" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1581412955673" />
+    <state x="1867" y="240" key="Vcs.Push.Dialog.v2" timestamp="1582608964762">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state x="1867" y="240" key="Vcs.Push.Dialog.v2/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1582608964762" />
+    <state x="320" y="175" key="Vcs.Push.Dialog.v2/0.23.1440.825@0.23.1440.825" timestamp="1581930638162" />
+    <state x="1969" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1583221801004">
+      <screen x="1440" y="23" width="1920" height="1177" />
+    </state>
+    <state x="1969" y="373" key="com.intellij.ide.util.TipDialog/0.23.1440.825/1440.23.1920.1177@1440.23.1920.1177" timestamp="1583221801004" />
+    <state x="397" y="268" key="com.intellij.ide.util.TipDialog/0.23.1440.825@0.23.1440.825" timestamp="1581651119560" />
+    <state x="385" y="172" key="search.everywhere.popup" timestamp="1581487167518">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="385" y="172" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1581487167518" />
+  </component>
+</project>
