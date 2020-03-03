@@ -1,0 +1,964 @@
+2020-03-03 10:19:15,488  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 10:19:15,499  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_henan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 10:19:15,502  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_henan.pipelines.CommonPipeline']
+2020-03-03 10:19:15,502  engine.py:257 : INFO  Spider opened
+2020-03-03 10:19:15,514  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:19:15,516  middlewares.py:62 : INFO  Spider opened: jy_henan_spider
+2020-03-03 10:19:15,519  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-03-03 10:19:15,532  jy_henan.py:174 : INFO  start crawling...
+2020-03-03 10:19:16,545  jy_henan.py:264 : INFO  Get page list url, page:[1], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=1&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[d3c55e9d3f95691e069fa2d43c23e9a7]
+2020-03-03 10:19:16,545  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:19:15', 'crawl_end_time': ''}}
+2020-03-03 10:20:11,838  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 10:20:11,846  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_henan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 10:20:11,849  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_henan.pipelines.CommonPipeline']
+2020-03-03 10:20:11,849  engine.py:257 : INFO  Spider opened
+2020-03-03 10:20:11,855  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:20:11,855  middlewares.py:62 : INFO  Spider opened: jy_henan_spider
+2020-03-03 10:20:11,858  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-03-03 10:20:11,871  jy_henan.py:174 : INFO  start crawling...
+2020-03-03 10:20:12,787  jy_henan.py:264 : INFO  Get page list url, page:[1], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=1&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[d3c55e9d3f95691e069fa2d43c23e9a7]
+2020-03-03 10:20:12,787  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:20:11', 'crawl_end_time': ''}}
+2020-03-03 10:21:11,858  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:21:34,366  jy_henan.py:264 : INFO  Get page list url, page:[2], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=2&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[229ecab73f90f8065ba84ddd53c5b081]
+2020-03-03 10:21:34,366  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'd3c55e9d3f95691e069fa2d43c23e9a7', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:20:11', 'crawl_end_time': ''}}
+2020-03-03 10:22:11,857  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:22:57,271  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 10:22:57,284  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_henan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 10:22:57,286  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_henan.pipelines.CommonPipeline']
+2020-03-03 10:22:57,287  engine.py:257 : INFO  Spider opened
+2020-03-03 10:22:57,295  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:22:57,296  middlewares.py:62 : INFO  Spider opened: jy_henan_spider
+2020-03-03 10:22:57,301  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-03-03 10:22:57,318  jy_henan.py:174 : INFO  start crawling...
+2020-03-03 10:22:58,176  jy_henan.py:264 : INFO  Get page list url, page:[1], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=1&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[d3c55e9d3f95691e069fa2d43c23e9a7]
+2020-03-03 10:22:58,176  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:22:57', 'crawl_end_time': ''}}
+2020-03-03 10:23:13,591  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 10:23:13,599  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_henan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 10:23:13,601  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_henan.pipelines.CommonPipeline']
+2020-03-03 10:23:13,602  engine.py:257 : INFO  Spider opened
+2020-03-03 10:23:13,614  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:23:13,616  middlewares.py:62 : INFO  Spider opened: jy_henan_spider
+2020-03-03 10:23:13,620  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6026
+2020-03-03 10:23:13,651  jy_henan.py:174 : INFO  start crawling...
+2020-03-03 10:23:14,491  jy_henan.py:264 : INFO  Get page list url, page:[1], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=1&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[d3c55e9d3f95691e069fa2d43c23e9a7]
+2020-03-03 10:23:14,491  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:23:13', 'crawl_end_time': ''}}
+2020-03-03 10:24:13,616  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:24:34,357  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 10:24:34,368  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_henan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 10:24:34,373  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_henan.pipelines.CommonPipeline']
+2020-03-03 10:24:34,374  engine.py:257 : INFO  Spider opened
+2020-03-03 10:24:34,380  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:24:34,381  middlewares.py:62 : INFO  Spider opened: jy_henan_spider
+2020-03-03 10:24:34,386  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6027
+2020-03-03 10:24:34,397  jy_henan.py:174 : INFO  start crawling...
+2020-03-03 10:24:35,240  jy_henan.py:264 : INFO  Get page list url, page:[1], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=1&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[d3c55e9d3f95691e069fa2d43c23e9a7]
+2020-03-03 10:24:35,241  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:24:34', 'crawl_end_time': ''}}
+2020-03-03 10:25:34,385  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:25:48,339  jy_henan.py:264 : INFO  Get page list url, page:[2], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=2&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[229ecab73f90f8065ba84ddd53c5b081]
+2020-03-03 10:25:48,339  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'd3c55e9d3f95691e069fa2d43c23e9a7', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:24:34', 'crawl_end_time': ''}}
+2020-03-03 10:26:26,162  jy_henan.py:264 : INFO  Get page list url, page:[3], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=3&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[965067a4f2e7272ca33a81419e6a7de0]
+2020-03-03 10:26:26,162  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '229ecab73f90f8065ba84ddd53c5b081', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:24:34', 'crawl_end_time': ''}}
+2020-03-03 10:26:34,384  logstats.py:48 : INFO  Crawled 4 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:27:15,205  jy_henan.py:264 : INFO  Get page list url, page:[4], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=4&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[dc74ccb6d488153f1c1a65240f7b3596]
+2020-03-03 10:27:15,205  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '965067a4f2e7272ca33a81419e6a7de0', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:24:34', 'crawl_end_time': ''}}
+2020-03-03 10:30:57,305  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 10:30:57,312  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_henan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 10:30:57,314  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_henan.pipelines.CommonPipeline']
+2020-03-03 10:30:57,314  engine.py:257 : INFO  Spider opened
+2020-03-03 10:30:57,319  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:30:57,320  middlewares.py:62 : INFO  Spider opened: jy_henan_spider
+2020-03-03 10:30:57,322  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6028
+2020-03-03 10:30:57,332  jy_henan.py:174 : INFO  start crawling...
+2020-03-03 10:30:58,205  jy_henan.py:264 : INFO  Get page list url, page:[1], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=1&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[d3c55e9d3f95691e069fa2d43c23e9a7]
+2020-03-03 10:30:58,206  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:30:57', 'crawl_end_time': ''}}
+2020-03-03 10:30:58,233  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,236  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,236  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,238  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,238  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,247  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,247  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,248  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,248  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,248  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,248  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,249  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,249  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,249  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,250  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,250  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,250  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,251  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,251  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,251  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,251  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:30:58,252  jy_henan.py:335 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 299, in parse_list_page_common
+    selector['id']) + '?title=' + selector['title']
+KeyError: 'id'
+2020-03-03 10:31:42,425  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 10:31:42,432  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_henan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 10:31:42,434  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_henan.pipelines.CommonPipeline']
+2020-03-03 10:31:42,434  engine.py:257 : INFO  Spider opened
+2020-03-03 10:31:42,439  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:31:42,440  middlewares.py:62 : INFO  Spider opened: jy_henan_spider
+2020-03-03 10:31:42,444  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6029
+2020-03-03 10:31:42,454  jy_henan.py:174 : INFO  start crawling...
+2020-03-03 10:31:43,324  jy_henan.py:264 : INFO  Get page list url, page:[1], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=1&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[d3c55e9d3f95691e069fa2d43c23e9a7]
+2020-03-03 10:31:43,324  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:31:42', 'crawl_end_time': ''}}
+2020-03-03 10:31:43,359  jy_henan.py:304 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 10:31:43,365  jy_henan.py:442 : ERROR  [ef8cba4ad4068adebdb4b87614b063b6] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:43,509  jy_henan.py:330 : INFO  item is: {'_id': 'ef8cba4ad4068adebdb4b87614b063b6',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202703425,
+ 'title': '郑州市惠济区恒大家属院改造项目',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200303/2def0599-1236-4b1e-8e9d-d9c1ef0688e2.html'}
+2020-03-03 10:31:43,548  jy_henan.py:304 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 10:31:43,556  jy_henan.py:442 : ERROR  [00dd41b29ef0604f03a575dab896675e] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:43,722  jy_henan.py:330 : INFO  item is: {'_id': '00dd41b29ef0604f03a575dab896675e',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202703627,
+ 'title': '郑东新区科学谷数字小镇建设项目（一期）EPC总承包招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200303/21a87bc8-1906-4a3a-84f0-f95c4552ca53.html'}
+2020-03-03 10:31:43,733  jy_henan.py:304 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 10:31:43,739  jy_henan.py:442 : ERROR  [163517e475652e91858d9662b68df57d] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:43,912  jy_henan.py:330 : INFO  item is: {'_id': '163517e475652e91858d9662b68df57d',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202703809,
+ 'title': '郑东新区科学谷数字小镇建设项目（一期）监理招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200303/e2f815aa-1aaa-4533-a2a5-628cf371e4af.html'}
+2020-03-03 10:31:43,921  jy_henan.py:304 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 10:31:43,930  jy_henan.py:442 : ERROR  [d2a411e7aa42bce16eb30ab347c68bcb] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:44,067  jy_henan.py:330 : INFO  item is: {'_id': 'd2a411e7aa42bce16eb30ab347c68bcb',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202704001,
+ 'title': '河南省直第三人民医院西院区综合楼改建项目设计招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200303/5afe1eee-a8ad-4f13-83bb-77e7ebe2fd27.html'}
+2020-03-03 10:31:44,075  jy_henan.py:304 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 10:31:44,082  jy_henan.py:442 : ERROR  [d15d6ab055bbfc1ee8d941c5d7543d4d] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:44,231  jy_henan.py:330 : INFO  item is: {'_id': 'd15d6ab055bbfc1ee8d941c5d7543d4d',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202704157,
+ 'title': '郑州大学第一附属医院医疗大数据中心机房建设工程招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200303/28e14d50-8e6d-4ea4-877b-0f6efbe54571.html'}
+2020-03-03 10:31:44,236  jy_henan.py:304 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 10:31:44,244  jy_henan.py:442 : ERROR  [7afd94defb539a12a1473eb8312badd0] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:44,360  jy_henan.py:330 : INFO  item is: {'_id': '7afd94defb539a12a1473eb8312badd0',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202704294,
+ 'title': '河南省社会科学研究基地建设项目室外工程招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200303/567175db-a184-491c-b5db-1aa0d159f81b.html'}
+2020-03-03 10:31:44,367  jy_henan.py:304 : INFO  Parse item, [page_1]-[7/1]
+2020-03-03 10:31:44,373  jy_henan.py:442 : ERROR  [b6547c08be4c85e6bfb9705a7fc8c165] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:44,505  jy_henan.py:330 : INFO  item is: {'_id': 'b6547c08be4c85e6bfb9705a7fc8c165',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202704449,
+ 'title': '卢氏县香菇产业扶贫集群开发项目标准化出菇大棚建设-东明镇后河村基地-招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/12411200062693324H1ad9bd02c7384e97a7adbe5ed09ff615.html'}
+2020-03-03 10:31:44,511  jy_henan.py:304 : INFO  Parse item, [page_1]-[8/1]
+2020-03-03 10:31:44,515  jy_henan.py:442 : ERROR  [47b6a5d2fe4baa7c2af60a7e6d7e24b0] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:44,661  jy_henan.py:330 : INFO  item is: {'_id': '47b6a5d2fe4baa7c2af60a7e6d7e24b0',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202704582,
+ 'title': '卢氏县香菇产业扶贫集群开发项目标准化出菇大棚建设-官坡镇-招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/12411200062693324H4a871b1909b84d2497bddf3bc9a5821f.html'}
+2020-03-03 10:31:44,670  jy_henan.py:304 : INFO  Parse item, [page_1]-[9/1]
+2020-03-03 10:31:44,676  jy_henan.py:442 : ERROR  [2d4b13d2a62287d9e6955d968360b892] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:44,826  jy_henan.py:330 : INFO  item is: {'_id': '2d4b13d2a62287d9e6955d968360b892',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202704738,
+ 'title': '卢氏县朱阳关镇朝阳社区易地搬迁扶贫项目提升改造工程-招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/12411200062693324H9120215ba57048e2b6c56a5d60cffdc7.html'}
+2020-03-03 10:31:44,832  jy_henan.py:304 : INFO  Parse item, [page_1]-[10/1]
+2020-03-03 10:31:44,839  jy_henan.py:442 : ERROR  [79db16c32b5dd578484d3555db2bda04] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:31:44,954  jy_henan.py:330 : INFO  item is: {'_id': '79db16c32b5dd578484d3555db2bda04',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202704898,
+ 'title': '卢氏县香菇产业扶贫集群开发项目标准化出菇大棚建设-潘河乡-招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/12411200062693324Hb80714a1040647a3af5c383308ff62c7.html'}
+2020-03-03 10:31:44,971  jy_henan.py:304 : INFO  Parse item, [page_1]-[11/1]
+2020-03-03 10:31:44,983  jy_henan.py:442 : ERROR  [57cae5559ec01b3ddc6761883150670a] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_henan/jy_henan/spiders/jy_henan.py", line 438, in __get_notice_time__
+    _notice_time = self.selector['issueTime']
+KeyError: 'issueTime'
+2020-03-03 10:33:07,532  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 10:33:07,538  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_henan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 10:33:07,541  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_henan.pipelines.CommonPipeline']
+2020-03-03 10:33:07,541  engine.py:257 : INFO  Spider opened
+2020-03-03 10:33:07,546  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:33:07,548  middlewares.py:62 : INFO  Spider opened: jy_henan_spider
+2020-03-03 10:33:07,552  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6030
+2020-03-03 10:33:07,562  jy_henan.py:174 : INFO  start crawling...
+2020-03-03 10:33:08,494  jy_henan.py:264 : INFO  Get page list url, page:[1], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=1&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[d3c55e9d3f95691e069fa2d43c23e9a7]
+2020-03-03 10:33:08,496  jy_henan.py:266 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:33:07', 'crawl_end_time': ''}}
+2020-03-03 10:33:08,535  jy_henan.py:304 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 10:33:08,539  jy_crawl_helper.py:226 : INFO  Duplicate item:[ef8cba4ad4068adebdb4b87614b063b6] total:[page_1-0]
+2020-03-03 10:33:08,540  jy_henan.py:304 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 10:33:08,546  jy_crawl_helper.py:226 : INFO  Duplicate item:[00dd41b29ef0604f03a575dab896675e] total:[page_1-1]
+2020-03-03 10:33:08,546  jy_henan.py:304 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 10:33:08,551  jy_crawl_helper.py:226 : INFO  Duplicate item:[163517e475652e91858d9662b68df57d] total:[page_1-2]
+2020-03-03 10:33:08,552  jy_henan.py:304 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 10:33:08,558  jy_crawl_helper.py:226 : INFO  Duplicate item:[d2a411e7aa42bce16eb30ab347c68bcb] total:[page_1-3]
+2020-03-03 10:33:08,559  jy_henan.py:304 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 10:33:08,564  jy_crawl_helper.py:226 : INFO  Duplicate item:[d15d6ab055bbfc1ee8d941c5d7543d4d] total:[page_1-4]
+2020-03-03 10:33:08,566  jy_henan.py:304 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 10:33:08,572  jy_crawl_helper.py:226 : INFO  Duplicate item:[7afd94defb539a12a1473eb8312badd0] total:[page_1-5]
+2020-03-03 10:33:08,572  jy_henan.py:304 : INFO  Parse item, [page_1]-[7/1]
+2020-03-03 10:33:08,577  jy_crawl_helper.py:226 : INFO  Duplicate item:[b6547c08be4c85e6bfb9705a7fc8c165] total:[page_1-6]
+2020-03-03 10:33:08,578  jy_henan.py:304 : INFO  Parse item, [page_1]-[8/1]
+2020-03-03 10:33:08,582  jy_crawl_helper.py:226 : INFO  Duplicate item:[47b6a5d2fe4baa7c2af60a7e6d7e24b0] total:[page_1-7]
+2020-03-03 10:33:08,583  jy_henan.py:304 : INFO  Parse item, [page_1]-[9/1]
+2020-03-03 10:33:08,587  jy_crawl_helper.py:226 : INFO  Duplicate item:[2d4b13d2a62287d9e6955d968360b892] total:[page_1-8]
+2020-03-03 10:33:08,587  jy_henan.py:304 : INFO  Parse item, [page_1]-[10/1]
+2020-03-03 10:33:08,592  jy_crawl_helper.py:226 : INFO  Duplicate item:[79db16c32b5dd578484d3555db2bda04] total:[page_1-9]
+2020-03-03 10:33:08,593  jy_henan.py:304 : INFO  Parse item, [page_1]-[11/1]
+2020-03-03 10:33:08,742  jy_henan.py:330 : INFO  item is: {'_id': '57cae5559ec01b3ddc6761883150670a',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202788670,
+ 'title': '2019年度大中型水库移民后期扶持资金项目-招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/12411200062693324Hc5e930bf765445d9a3a93eb3e3b39033.html'}
+2020-03-03 10:33:08,778  jy_henan.py:304 : INFO  Parse item, [page_1]-[12/1]
+2020-03-03 10:33:08,936  jy_henan.py:330 : INFO  item is: {'_id': '9ab6c325204468a64bad865e3a09a5bd',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202788852,
+ 'title': '2019年陕州区张湾乡桥头村生态廊道建设项目-招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/12411200062693324Hdb5e6f4cc07c495095708f2859f13b67.html'}
+2020-03-03 10:33:08,943  jy_henan.py:304 : INFO  Parse item, [page_1]-[13/1]
+2020-03-03 10:33:09,116  jy_henan.py:330 : INFO  item is: {'_id': '0c2afd4fe00a7e19a9ef2a61b85bb48b',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202789037,
+ 'title': '河南宋城城乡供水有限公司供水厂保安、保洁、客服、维修服务项目-招标公告-河南宋城城乡供水有限公司供水厂保安、保洁、客服、维修服务项目',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/A4102000150000000040c6d0b31f964aa0b1171e416d03a586.html'}
+2020-03-03 10:33:09,123  jy_henan.py:304 : INFO  Parse item, [page_1]-[14/1]
+2020-03-03 10:33:09,267  jy_henan.py:330 : INFO  item is: {'_id': 'ffaba4916c4bed5ef04670f1a559008c',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202789202,
+ 'title': '临颍五里河沿河景观带景观工程（临鄢路～纬四路）（三次）施工及监理-招标公告-临颍五里河沿河景观带景观工程（临鄢路～纬四路）（三次）监理',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/0236c3cb-c7a2-40ff-b61d-284c0cc7e88f.html'}
+2020-03-03 10:33:09,275  jy_henan.py:304 : INFO  Parse item, [page_1]-[15/1]
+2020-03-03 10:33:09,411  jy_henan.py:330 : INFO  item is: {'_id': '2ec237251989844ab3382e89f533ac47',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202789343,
+ 'title': '临颍五里河沿河景观带景观工程（临鄢路～纬四路）（三次）施工及监理-招标公告-临颍五里河沿河景观带景观工程（临鄢路～纬四路）（三次）施工',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/57d6c39f-1aa7-43ac-9893-323549124c85.html'}
+2020-03-03 10:33:09,417  jy_henan.py:304 : INFO  Parse item, [page_1]-[16/1]
+2020-03-03 10:33:09,552  jy_henan.py:330 : INFO  item is: {'_id': '9740d9bfaddc97c8a6561b2902350d22',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202789473,
+ 'title': '临颍五里河沿河景观带景观工程（临鄢路～纬四路）（三次）施工及监理-招标公告-临颍五里河沿河景观带景观工程（临鄢路～纬四路）（三次）监理',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/5648a040-79df-4f92-a4f8-21b8183a1082.html'}
+2020-03-03 10:33:09,558  jy_henan.py:304 : INFO  Parse item, [page_1]-[17/1]
+2020-03-03 10:33:09,713  jy_henan.py:330 : INFO  item is: {'_id': '4e3af850976e8ff62e43f0baeecb7d8d',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202789615,
+ 'title': '临颍五里河沿河景观带景观工程（临鄢路～纬四路）（三次）施工及监理-招标公告-临颍五里河沿河景观带景观工程（临鄢路～纬四路）（三次）施工',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/5a27c13c-3337-4cf3-9c68-748b8b23d5a1.html'}
+2020-03-03 10:33:09,719  jy_henan.py:304 : INFO  Parse item, [page_1]-[18/1]
+2020-03-03 10:33:09,913  jy_henan.py:330 : INFO  item is: {'_id': 'a0c500e31b221aa8890538ba234cf35a',
+ 'area': '重庆市',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '政府采购',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583202789823,
+ 'title': '(全电子)滑县2019年高标准农田建设项目(二期)第五批-招标公告-第一标段',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/12410526054702497G1b062aaee0ff436abb2d3ebf7ae56c99.html'}
+2020-03-03 10:33:09,921  jy_henan.py:304 : INFO  Parse item, [page_1]-[19/1]
+2020-03-03 10:38:39,445  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 10:38:39,454  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_henan.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 10:38:39,456  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_henan.pipelines.CommonPipeline']
+2020-03-03 10:38:39,457  engine.py:257 : INFO  Spider opened
+2020-03-03 10:38:39,463  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 10:38:39,464  middlewares.py:62 : INFO  Spider opened: jy_henan_spider
+2020-03-03 10:38:39,466  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6031
+2020-03-03 10:38:39,478  jy_henan.py:456 : INFO  start crawling...
+2020-03-03 10:38:40,311  jy_henan.py:546 : INFO  Get page list url, page:[1], url:[http://hndzzbtb.hndrc.gov.cn/services/hl/getSelect?response=application%2Fjson&pageIndex=1&pageSize=22&day=&sheng=x1&qu=&xian=&title=&timestart=&timeend=&categorynum=002001001&siteguid=3955b792-fb32-4dc1-8935-49ad516ae6db], status:[200], body md5:[d3c55e9d3f95691e069fa2d43c23e9a7]
+2020-03-03 10:38:40,311  jy_henan.py:548 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 10:38:39', 'crawl_end_time': ''}}
+2020-03-03 10:38:40,342  jy_henan.py:586 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 10:38:40,346  jy_crawl_helper.py:226 : INFO  Duplicate item:[ef8cba4ad4068adebdb4b87614b063b6] total:[page_1-0]
+2020-03-03 10:38:40,346  jy_henan.py:586 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 10:38:40,351  jy_crawl_helper.py:226 : INFO  Duplicate item:[00dd41b29ef0604f03a575dab896675e] total:[page_1-1]
+2020-03-03 10:38:40,352  jy_henan.py:586 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 10:38:40,356  jy_crawl_helper.py:226 : INFO  Duplicate item:[163517e475652e91858d9662b68df57d] total:[page_1-2]
+2020-03-03 10:38:40,357  jy_henan.py:586 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 10:38:40,364  jy_crawl_helper.py:226 : INFO  Duplicate item:[d2a411e7aa42bce16eb30ab347c68bcb] total:[page_1-3]
+2020-03-03 10:38:40,364  jy_henan.py:586 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 10:38:40,368  jy_crawl_helper.py:226 : INFO  Duplicate item:[d15d6ab055bbfc1ee8d941c5d7543d4d] total:[page_1-4]
+2020-03-03 10:38:40,368  jy_henan.py:586 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 10:38:40,372  jy_crawl_helper.py:226 : INFO  Duplicate item:[7afd94defb539a12a1473eb8312badd0] total:[page_1-5]
+2020-03-03 10:38:40,373  jy_henan.py:586 : INFO  Parse item, [page_1]-[7/1]
+2020-03-03 10:38:40,377  jy_crawl_helper.py:226 : INFO  Duplicate item:[b6547c08be4c85e6bfb9705a7fc8c165] total:[page_1-6]
+2020-03-03 10:38:40,377  jy_henan.py:586 : INFO  Parse item, [page_1]-[8/1]
+2020-03-03 10:38:40,382  jy_crawl_helper.py:226 : INFO  Duplicate item:[47b6a5d2fe4baa7c2af60a7e6d7e24b0] total:[page_1-7]
+2020-03-03 10:38:40,382  jy_henan.py:586 : INFO  Parse item, [page_1]-[9/1]
+2020-03-03 10:38:40,386  jy_crawl_helper.py:226 : INFO  Duplicate item:[2d4b13d2a62287d9e6955d968360b892] total:[page_1-8]
+2020-03-03 10:38:40,387  jy_henan.py:586 : INFO  Parse item, [page_1]-[10/1]
+2020-03-03 10:38:40,391  jy_crawl_helper.py:226 : INFO  Duplicate item:[79db16c32b5dd578484d3555db2bda04] total:[page_1-9]
+2020-03-03 10:38:40,392  jy_henan.py:586 : INFO  Parse item, [page_1]-[11/1]
+2020-03-03 10:38:40,397  jy_crawl_helper.py:226 : INFO  Duplicate item:[57cae5559ec01b3ddc6761883150670a] total:[page_1-10]
+2020-03-03 10:38:40,398  jy_henan.py:586 : INFO  Parse item, [page_1]-[12/1]
+2020-03-03 10:38:40,403  jy_crawl_helper.py:226 : INFO  Duplicate item:[9ab6c325204468a64bad865e3a09a5bd] total:[page_1-11]
+2020-03-03 10:38:40,403  jy_henan.py:586 : INFO  Parse item, [page_1]-[13/1]
+2020-03-03 10:38:40,410  jy_crawl_helper.py:226 : INFO  Duplicate item:[0c2afd4fe00a7e19a9ef2a61b85bb48b] total:[page_1-12]
+2020-03-03 10:38:40,410  jy_henan.py:586 : INFO  Parse item, [page_1]-[14/1]
+2020-03-03 10:38:40,415  jy_crawl_helper.py:226 : INFO  Duplicate item:[ffaba4916c4bed5ef04670f1a559008c] total:[page_1-13]
+2020-03-03 10:38:40,415  jy_henan.py:586 : INFO  Parse item, [page_1]-[15/1]
+2020-03-03 10:38:40,419  jy_crawl_helper.py:226 : INFO  Duplicate item:[2ec237251989844ab3382e89f533ac47] total:[page_1-14]
+2020-03-03 10:38:40,419  jy_henan.py:586 : INFO  Parse item, [page_1]-[16/1]
+2020-03-03 10:38:40,423  jy_crawl_helper.py:226 : INFO  Duplicate item:[9740d9bfaddc97c8a6561b2902350d22] total:[page_1-15]
+2020-03-03 10:38:40,424  jy_henan.py:586 : INFO  Parse item, [page_1]-[17/1]
+2020-03-03 10:38:40,428  jy_crawl_helper.py:226 : INFO  Duplicate item:[4e3af850976e8ff62e43f0baeecb7d8d] total:[page_1-16]
+2020-03-03 10:38:40,429  jy_henan.py:586 : INFO  Parse item, [page_1]-[18/1]
+2020-03-03 10:38:40,434  jy_crawl_helper.py:226 : INFO  Duplicate item:[a0c500e31b221aa8890538ba234cf35a] total:[page_1-17]
+2020-03-03 10:38:40,434  jy_henan.py:586 : INFO  Parse item, [page_1]-[19/1]
+2020-03-03 10:38:40,589  jy_henan.py:612 : INFO  item is: {'_id': '6a7655f9fc7390b48ffb1d941024854b',
+ 'area': '河南省',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583203120529,
+ 'title': '(全电子)滑县2019年高标准农田建设项目(二期)第五批-招标公告-第二标段',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/12410526054702497G721cf674145d4356b9dac504a12135ba.html'}
+2020-03-03 10:38:40,623  jy_henan.py:586 : INFO  Parse item, [page_1]-[20/1]
+2020-03-03 10:38:40,783  jy_henan.py:612 : INFO  item is: {'_id': '193d9bdceecca8be1f5c11e2abd6a81f',
+ 'area': '河南省',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583203120698,
+ 'title': '(全电子)滑县2019年高标准农田建设项目(二期)第五批-招标公告-第三标段',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/12410526054702497G832e2b49ce8549658c97b6de56619d72.html'}
+2020-03-03 10:38:40,792  jy_henan.py:586 : INFO  Parse item, [page_1]-[21/1]
+2020-03-03 10:38:40,929  jy_henan.py:612 : INFO  item is: {'_id': 'ca7daacf3b2642da06e605c2095cfcda',
+ 'area': '河南省',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583203120842,
+ 'title': '商水县人民医院新建项目',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/cde305ca-ae97-4776-b6d9-1de82ac43108.html'}
+2020-03-03 10:38:40,936  jy_henan.py:586 : INFO  Parse item, [page_1]-[22/1]
+2020-03-03 10:38:41,051  jy_henan.py:612 : INFO  item is: {'_id': '4b438fdc59cbc5c6bb89320165689fed',
+ 'area': '河南省',
+ 'area_code': '41',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.03.02 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'hndzzbtb.hndrc.gov.cn',
+ 'site_name': '河南省电子招标投标公共服务平台',
+ 'source': '河南省电子招标投标公共服务平台',
+ 'time_stamp': 1583203120992,
+ 'title': '安阳市殷都区许家沟乡政府—河西水泥厂（老安林路）综合整治工程招标公告',
+ 'tos': '工程建设',
+ 'tos_code': '01',
+ 'url': 'http://hndzzbtb.hndrc.gov.cn/002/002001/002001001/20200302/ae7f2d48-7d19-4dcd-b873-9e5928c7f450.html'}
