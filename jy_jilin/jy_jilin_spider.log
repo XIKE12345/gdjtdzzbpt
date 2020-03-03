@@ -1,0 +1,347 @@
+2020-03-03 11:47:10,570  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 11:47:10,577  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_jilin.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 11:47:10,579  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_jilin.pipelines.CommonPipeline']
+2020-03-03 11:47:10,580  engine.py:257 : INFO  Spider opened
+2020-03-03 11:47:10,586  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 11:47:10,588  middlewares.py:62 : INFO  Spider opened: jy_jilin_spider
+2020-03-03 11:47:10,589  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-03-03 11:47:10,605  jy_jilin.py:175 : INFO  start crawling...
+2020-03-03 11:47:11,607  jy_jilin.py:261 : INFO  Get page list url, page:[1], url:[http://was.jl.gov.cn/was5/web/search?channelid=237687&page=1&prepage=17&searchword=&callback=result&_=1583206521915], status:[200], body md5:[87b79361372e37f9fa5ee329a21a99a3]
+2020-03-03 11:47:11,608  jy_jilin.py:263 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 11:47:10', 'crawl_end_time': ''}}
+2020-03-03 11:47:11,637  middlewares.py:46 : ERROR  process_spider_exception: Expecting value: line 31 column 1 (char 55)
+2020-03-03 11:47:11,637  middlewares.py:47 : INFO  try to sleep a while
+2020-03-03 11:55:45,989  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 11:55:45,996  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_jilin.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 11:55:45,998  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_jilin.pipelines.CommonPipeline']
+2020-03-03 11:55:45,999  engine.py:257 : INFO  Spider opened
+2020-03-03 11:55:46,007  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 11:55:46,008  middlewares.py:62 : INFO  Spider opened: jy_jilin_spider
+2020-03-03 11:55:46,010  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-03-03 11:55:46,026  jy_jilin.py:175 : INFO  start crawling...
+2020-03-03 11:55:47,056  jy_jilin.py:261 : INFO  Get page list url, page:[1], url:[http://was.jl.gov.cn/was5/web/search?channelid=237687&page=1&prepage=17&searchword=&callback=result&_=1583206521915], status:[200], body md5:[1da81afd9af5b91b8f8adb9ac4a02c41]
+2020-03-03 11:55:47,056  jy_jilin.py:263 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 11:55:46', 'crawl_end_time': ''}}
+2020-03-03 11:55:47,102  middlewares.py:46 : ERROR  process_spider_exception: Expecting value: line 31 column 1 (char 55)
+2020-03-03 11:55:47,103  middlewares.py:47 : INFO  try to sleep a while
+2020-03-03 11:59:15,565  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 11:59:15,572  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_jilin.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 11:59:15,574  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_jilin.pipelines.CommonPipeline']
+2020-03-03 11:59:15,575  engine.py:257 : INFO  Spider opened
+2020-03-03 11:59:15,580  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 11:59:15,581  middlewares.py:62 : INFO  Spider opened: jy_jilin_spider
+2020-03-03 11:59:15,583  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-03-03 11:59:15,597  jy_jilin.py:175 : INFO  start crawling...
+2020-03-03 11:59:16,199  jy_jilin.py:261 : INFO  Get page list url, page:[1], url:[http://was.jl.gov.cn/was5/web/search?channelid=237687&page=1&prepage=17&searchword=&callback=result&_=1583206521915], status:[200], body md5:[85bb1afb43190d8187956ab9ff1a175e]
+2020-03-03 11:59:16,199  jy_jilin.py:263 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 11:59:15', 'crawl_end_time': ''}}
+2020-03-03 11:59:16,230  jy_jilin.py:298 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 11:59:16,235  jy_crawl_helper.py:226 : INFO  Duplicate item:[a0942a178bea50da2e72bde140a11ed1] total:[page_1-0]
+2020-03-03 11:59:16,235  jy_jilin.py:298 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 11:59:16,607  jy_jilin.py:324 : INFO  item is: {'_id': '99764894799914e8a772b123b54ab400',
+ 'area': '江苏省',
+ 'area_code': '32',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '工程建设',
+ 'notice_time': '2020.03.03 10:13:07',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.jl.gov.cn',
+ 'site_name': '吉林省公共资源交易公共服务平台',
+ 'source': '吉林省公共资源交易公共服务平台',
+ 'time_stamp': 1583207956527,
+ 'title': '吉林市前二道乡环境综合治理工程（一期工程-河道及垃圾填埋场）设计招标',
+ 'tos': '政府采购',
+ 'tos_code': '02',
+ 'url': 'http://www.jl.gov.cn/ggzy/gcjs/zbgggc/202003/t20200303_6873727.html'}
+2020-03-03 11:59:16,646  jy_jilin.py:298 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 11:59:16,649  jy_crawl_helper.py:226 : INFO  Duplicate item:[47fd7f06a497b24da88a3dbdb7c51c33] total:[page_1-0]
+2020-03-03 11:59:16,650  jy_jilin.py:298 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 11:59:16,653  jy_crawl_helper.py:226 : INFO  Duplicate item:[5a6ce519306506d77bd04cdbae1bf6b1] total:[page_1-1]
+2020-03-03 11:59:16,653  jy_jilin.py:298 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 11:59:16,657  jy_crawl_helper.py:226 : INFO  Duplicate item:[79754f85a9a78de35acb8b6e1d8eb86f] total:[page_1-2]
+2020-03-03 11:59:16,657  jy_jilin.py:298 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 11:59:17,119  jy_jilin.py:324 : INFO  item is: {'_id': 'b7b694cd1b84c776611d807b426877f5',
+ 'area': '江苏省',
+ 'area_code': '32',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '工程建设',
+ 'notice_time': '2020.03.03 09:50:37',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.jl.gov.cn',
+ 'site_name': '吉林省公共资源交易公共服务平台',
+ 'source': '吉林省公共资源交易公共服务平台',
+ 'time_stamp': 1583207957058,
+ 'title': '2020年吉林高新区老旧小区改造配套基础设施建设项目设计招标公告',
+ 'tos': '政府采购',
+ 'tos_code': '02',
+ 'url': 'http://www.jl.gov.cn/ggzy/gcjs/zbgg/202003/t20200303_6873723.html'}
+2020-03-03 11:59:17,130  jy_jilin.py:298 : INFO  Parse item, [page_1]-[7/1]
+2020-03-03 11:59:17,527  jy_jilin.py:324 : INFO  item is: {'_id': '29c525731d80560018a2d060fc5783af',
+ 'area': '江苏省',
+ 'area_code': '32',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '工程建设',
+ 'notice_time': '2020.03.03 09:35:01',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.jl.gov.cn',
+ 'site_name': '吉林省公共资源交易公共服务平台',
+ 'source': '吉林省公共资源交易公共服务平台',
+ 'time_stamp': 1583207957447,
+ 'title': '2019年汪清县村屯破损道路改造工程（罗子沟镇）',
+ 'tos': '政府采购',
+ 'tos_code': '02',
+ 'url': 'http://www.jl.gov.cn/ggzy/gcjs/bggggc/202003/t20200303_6873741.html'}
+2020-03-03 11:59:17,536  jy_jilin.py:298 : INFO  Parse item, [page_1]-[8/1]
+2020-03-03 11:59:17,539  jy_crawl_helper.py:226 : INFO  Duplicate item:[e1ce7a4104f12335c2e24ba0c6ff52db] total:[page_1-0]
+2020-03-03 11:59:17,540  jy_jilin.py:298 : INFO  Parse item, [page_1]-[9/1]
+2020-03-03 11:59:17,544  jy_crawl_helper.py:226 : INFO  Duplicate item:[5ed49a005b2c0e5c18b78f2ecd0a920d] total:[page_1-1]
+2020-03-03 11:59:17,544  jy_jilin.py:298 : INFO  Parse item, [page_1]-[10/1]
+2020-03-03 13:48:14,005  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 13:48:14,018  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_jilin.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 13:48:14,022  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_jilin.pipelines.CommonPipeline']
+2020-03-03 13:48:14,022  engine.py:257 : INFO  Spider opened
+2020-03-03 13:48:14,030  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 13:48:14,032  middlewares.py:62 : INFO  Spider opened: jy_jilin_spider
+2020-03-03 13:48:14,043  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6026
+2020-03-03 13:48:14,073  jy_jilin.py:895 : INFO  start crawling...
+2020-03-03 13:48:15,120  jy_jilin.py:981 : INFO  Get page list url, page:[1], url:[http://was.jl.gov.cn/was5/web/search?channelid=237687&page=1&prepage=17&searchword=&callback=result&_=], status:[200], body md5:[d93c8fee6dc3e22504533f48781cc655]
+2020-03-03 13:48:15,121  jy_jilin.py:983 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 1000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 13:48:14', 'crawl_end_time': ''}}
+2020-03-03 13:48:15,153  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 13:48:15,159  jy_crawl_helper.py:226 : INFO  Duplicate item:[a0942a178bea50da2e72bde140a11ed1] total:[page_1-0]
+2020-03-03 13:48:15,160  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 13:48:15,163  jy_crawl_helper.py:226 : INFO  Duplicate item:[99764894799914e8a772b123b54ab400] total:[page_1-1]
+2020-03-03 13:48:15,163  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 13:48:15,169  jy_crawl_helper.py:226 : INFO  Duplicate item:[47fd7f06a497b24da88a3dbdb7c51c33] total:[page_1-2]
+2020-03-03 13:48:15,170  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 13:48:15,176  jy_crawl_helper.py:226 : INFO  Duplicate item:[5a6ce519306506d77bd04cdbae1bf6b1] total:[page_1-3]
+2020-03-03 13:48:15,176  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 13:48:15,183  jy_crawl_helper.py:226 : INFO  Duplicate item:[79754f85a9a78de35acb8b6e1d8eb86f] total:[page_1-4]
+2020-03-03 13:48:15,183  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 13:48:15,188  jy_crawl_helper.py:226 : INFO  Duplicate item:[b7b694cd1b84c776611d807b426877f5] total:[page_1-5]
+2020-03-03 13:48:15,189  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[7/1]
+2020-03-03 13:48:15,193  jy_crawl_helper.py:226 : INFO  Duplicate item:[29c525731d80560018a2d060fc5783af] total:[page_1-6]
+2020-03-03 13:48:15,194  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[8/1]
+2020-03-03 13:48:15,198  jy_crawl_helper.py:226 : INFO  Duplicate item:[e1ce7a4104f12335c2e24ba0c6ff52db] total:[page_1-7]
+2020-03-03 13:48:15,200  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[9/1]
+2020-03-03 13:48:15,206  jy_crawl_helper.py:226 : INFO  Duplicate item:[5ed49a005b2c0e5c18b78f2ecd0a920d] total:[page_1-8]
+2020-03-03 13:48:15,206  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[10/1]
+2020-03-03 13:48:15,682  jy_jilin.py:1041 : INFO  item is: {'_id': '83f8b51d2d327f4b4fb63795f93d9043',
+ 'area': '江苏省',
+ 'area_code': '32',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '工程建设',
+ 'notice_time': '2020.03.03 09:15:51',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.jl.gov.cn',
+ 'site_name': '吉林省公共资源交易公共服务平台',
+ 'source': '吉林省公共资源交易公共服务平台',
+ 'time_stamp': 1583214495591,
+ 'title': '四平经济开发区污水截流干管建设项目条子河南河段护岸工程修复',
+ 'tos': '政府采购',
+ 'tos_code': '02',
+ 'url': 'http://www.jl.gov.cn/ggzy/gcjs/zbgg/202003/t20200303_6873722.html'}
+2020-03-03 13:48:15,735  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[11/1]
+2020-03-03 13:48:16,153  jy_jilin.py:1041 : INFO  item is: {'_id': '19e16a8bcd78d18859b30acf09fbb89d',
+ 'area': '江苏省',
+ 'area_code': '32',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '工程建设',
+ 'notice_time': '2020.03.03 08:40:32',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.jl.gov.cn',
+ 'site_name': '吉林省公共资源交易公共服务平台',
+ 'source': '吉林省公共资源交易公共服务平台',
+ 'time_stamp': 1583214496069,
+ 'title': '延吉市居家养老服务中心维修改造工程中标公示',
+ 'tos': '政府采购',
+ 'tos_code': '02',
+ 'url': 'http://www.jl.gov.cn/ggzy/zfcg/zbgg/202003/t20200303_6873750.html'}
+2020-03-03 13:48:16,167  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[12/1]
+2020-03-03 13:48:16,171  jy_crawl_helper.py:226 : INFO  Duplicate item:[6627445ccb1473a72cb304a783ba7262] total:[page_1-0]
+2020-03-03 13:48:16,171  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[13/1]
+2020-03-03 13:48:16,177  jy_crawl_helper.py:226 : INFO  Duplicate item:[896c7a58a724c303e58ca1261ddbeea2] total:[page_1-1]
+2020-03-03 13:48:16,180  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[14/1]
+2020-03-03 13:48:16,604  jy_jilin.py:1041 : INFO  item is: {'_id': '92b0e607acc0791acedb88490801ffd4',
+ 'area': '江苏省',
+ 'area_code': '32',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '工程建设',
+ 'notice_time': '2020.03.02 17:26:08',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.jl.gov.cn',
+ 'site_name': '吉林省公共资源交易公共服务平台',
+ 'source': '吉林省公共资源交易公共服务平台',
+ 'time_stamp': 1583214496508,
+ 'title': '朝阳新苑东侧地块',
+ 'tos': '政府采购',
+ 'tos_code': '02',
+ 'url': 'http://www.jl.gov.cn/ggzy/tdsyq/cjzd/202003/t20200302_6873212.html'}
+2020-03-03 13:48:16,611  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[15/1]
+2020-03-03 13:48:17,113  jy_jilin.py:1041 : INFO  item is: {'_id': 'b272766bc54fdc626b31aa450fb5abe3',
+ 'area': '江苏省',
+ 'area_code': '32',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '工程建设',
+ 'notice_time': '2020.03.02 17:26:07',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.jl.gov.cn',
+ 'site_name': '吉林省公共资源交易公共服务平台',
+ 'source': '吉林省公共资源交易公共服务平台',
+ 'time_stamp': 1583214497036,
+ 'title': '原兴华化工厂地块二',
+ 'tos': '政府采购',
+ 'tos_code': '02',
+ 'url': 'http://www.jl.gov.cn/ggzy/tdsyq/cjzd/202003/t20200302_6873213.html'}
+2020-03-03 13:48:17,119  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[16/1]
+2020-03-03 13:48:17,481  jy_jilin.py:1041 : INFO  item is: {'_id': 'aaa625fe6c65d5dec1365caf741879f4',
+ 'area': '江苏省',
+ 'area_code': '32',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '工程建设',
+ 'notice_time': '2020.03.02 17:26:07',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.jl.gov.cn',
+ 'site_name': '吉林省公共资源交易公共服务平台',
+ 'source': '吉林省公共资源交易公共服务平台',
+ 'time_stamp': 1583214497387,
+ 'title': '盛业小区南地块',
+ 'tos': '政府采购',
+ 'tos_code': '02',
+ 'url': 'http://www.jl.gov.cn/ggzy/tdsyq/cjzd/202003/t20200302_6873211.html'}
+2020-03-03 13:48:17,488  jy_jilin.py:1015 : INFO  Parse item, [page_1]-[17/1]
+2020-03-03 13:48:17,836  jy_jilin.py:1041 : INFO  item is: {'_id': '136cbc152761e726c7547fd6b8d43c81',
+ 'area': '江苏省',
+ 'area_code': '32',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '工程建设',
+ 'notice_time': '2020.03.02 16:29:23',
+ 'notice_type': '采购公告',
+ 'notice_type_code': '0201',
+ 'site': 'www.jl.gov.cn',
+ 'site_name': '吉林省公共资源交易公共服务平台',
+ 'source': '吉林省公共资源交易公共服务平台',
+ 'time_stamp': 1583214497748,
+ 'title': '吉林省桦甸市2019年农村户用厕所改造项目积肥式环保厕所',
+ 'tos': '政府采购',
+ 'tos_code': '02',
+ 'url': 'http://www.jl.gov.cn/ggzy/zfcg/htgs/202003/t20200303_6873495.html'}
