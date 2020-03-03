@@ -1,0 +1,1415 @@
+2020-03-03 14:41:49,597  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:41:49,603  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:41:49,607  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:41:49,607  engine.py:257 : INFO  Spider opened
+2020-03-03 14:41:49,613  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:41:49,613  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:41:49,615  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6023
+2020-03-03 14:41:49,626  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:42:49,613  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:43:23,855  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:43:23,862  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:43:23,864  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:43:23,865  engine.py:257 : INFO  Spider opened
+2020-03-03 14:43:23,870  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:43:23,870  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:43:23,873  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6024
+2020-03-03 14:43:23,883  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:43:55,270  robotstxt.py:22 : WARNING  Failure while parsing robots.txt. File either contains garbage or is in an encoding other than UTF-8, treating it as an empty file.
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/core/downloader/middleware.py", line 44, in process_request
+    defer.returnValue((yield download_func(request=request, spider=spider)))
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/twisted/internet/defer.py", line 1362, in returnValue
+    raise _DefGen_Return(val)
+twisted.internet.defer._DefGen_Return: <404 http://www.lntb.gov.cn/robots.txt>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/scrapyDemo/venv/lib/python3.7/site-packages/scrapy/robotstxt.py", line 15, in decode_robotstxt
+    robotstxt_body = robotstxt_body.decode('utf-8')
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xd5 in position 248: invalid continuation byte
+2020-03-03 14:44:43,261  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:44:43,267  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:44:43,272  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:44:43,273  engine.py:257 : INFO  Spider opened
+2020-03-03 14:44:43,280  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:44:43,280  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:44:43,283  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6025
+2020-03-03 14:44:43,293  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:45:19,631  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[b8ec9cc4eea94de813f486398eae62d0]
+2020-03-03 14:45:19,632  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:44:43', 'crawl_end_time': ''}}
+2020-03-03 14:45:40,358  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[314c18e23ceff49e766f720b8bf6b270]
+2020-03-03 14:45:40,358  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'b8ec9cc4eea94de813f486398eae62d0', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:44:43', 'crawl_end_time': ''}}
+2020-03-03 14:45:43,282  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:45:53,244  jy_liaoning.py:266 : INFO  Get page list url, page:[3], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=3], status:[200], body md5:[1c7bbd325d6444acb909b784dd04e859]
+2020-03-03 14:45:53,244  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '314c18e23ceff49e766f720b8bf6b270', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:44:43', 'crawl_end_time': ''}}
+2020-03-03 14:46:10,670  jy_liaoning.py:266 : INFO  Get page list url, page:[4], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=4], status:[200], body md5:[d9e0cc71cdf6e262b7219faabe7b111a]
+2020-03-03 14:46:10,670  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '1c7bbd325d6444acb909b784dd04e859', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:44:43', 'crawl_end_time': ''}}
+2020-03-03 14:46:25,184  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:46:25,192  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:46:25,194  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:46:25,194  engine.py:257 : INFO  Spider opened
+2020-03-03 14:46:25,200  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:46:25,201  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:46:25,205  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6026
+2020-03-03 14:46:25,220  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:46:42,659  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[88f6d1daa20f249a0d234fdd06ce20eb]
+2020-03-03 14:46:42,659  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:46:25', 'crawl_end_time': ''}}
+2020-03-03 14:47:02,270  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[c3baacdce9be1d0981b48c0bef4563df]
+2020-03-03 14:47:02,270  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '88f6d1daa20f249a0d234fdd06ce20eb', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:46:25', 'crawl_end_time': ''}}
+2020-03-03 14:47:14,786  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:47:14,793  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:47:14,795  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:47:14,796  engine.py:257 : INFO  Spider opened
+2020-03-03 14:47:14,802  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:47:14,804  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:47:14,813  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6027
+2020-03-03 14:47:14,829  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:48:08,560  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:48:08,568  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:48:08,572  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:48:08,573  engine.py:257 : INFO  Spider opened
+2020-03-03 14:48:08,581  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:48:08,582  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:48:08,586  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6028
+2020-03-03 14:48:08,605  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:48:26,085  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[b4f635d4b888b46d0e7d424d1b5cc185]
+2020-03-03 14:48:26,086  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:48:08', 'crawl_end_time': ''}}
+2020-03-03 14:48:39,399  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[cb7466c03d6755aff3586aacf9fb8f28]
+2020-03-03 14:48:39,399  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'b4f635d4b888b46d0e7d424d1b5cc185', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:48:08', 'crawl_end_time': ''}}
+2020-03-03 14:49:03,960  jy_liaoning.py:266 : INFO  Get page list url, page:[3], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=3], status:[200], body md5:[00cda5ee8479e7fdfa10b58980f7b0d2]
+2020-03-03 14:49:03,961  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'cb7466c03d6755aff3586aacf9fb8f28', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:48:08', 'crawl_end_time': ''}}
+2020-03-03 14:49:08,585  logstats.py:48 : INFO  Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:49:25,353  jy_liaoning.py:266 : INFO  Get page list url, page:[4], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=4], status:[200], body md5:[08a1ad805b15f7cbc47dd87d835d06ad]
+2020-03-03 14:49:25,354  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '00cda5ee8479e7fdfa10b58980f7b0d2', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:48:08', 'crawl_end_time': ''}}
+2020-03-03 14:49:51,208  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:49:51,214  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:49:51,218  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:49:51,218  engine.py:257 : INFO  Spider opened
+2020-03-03 14:49:51,224  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:49:51,225  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:49:51,228  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6029
+2020-03-03 14:49:51,242  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:50:13,199  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[57d45c3959da6a4d3a2e5f526907ba3e]
+2020-03-03 14:50:13,199  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:49:51', 'crawl_end_time': ''}}
+2020-03-03 14:50:24,972  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[b68d69eaf4b9d7ae9f5c4fdc0e97ab0e]
+2020-03-03 14:50:24,973  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '57d45c3959da6a4d3a2e5f526907ba3e', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:49:51', 'crawl_end_time': ''}}
+2020-03-03 14:50:33,071  jy_liaoning.py:266 : INFO  Get page list url, page:[3], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=3], status:[200], body md5:[669c20eb4f84267f848c78ade25aad83]
+2020-03-03 14:50:33,072  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'b68d69eaf4b9d7ae9f5c4fdc0e97ab0e', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:49:51', 'crawl_end_time': ''}}
+2020-03-03 14:50:43,038  jy_liaoning.py:266 : INFO  Get page list url, page:[4], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=4], status:[200], body md5:[5459a9a1f3fdb4330c13a23dcd560c68]
+2020-03-03 14:50:43,039  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '669c20eb4f84267f848c78ade25aad83', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:49:51', 'crawl_end_time': ''}}
+2020-03-03 14:50:51,225  logstats.py:48 : INFO  Crawled 4 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:50:54,224  jy_liaoning.py:266 : INFO  Get page list url, page:[5], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=5], status:[200], body md5:[b5dfd12177154154e511e5b194c2ce18]
+2020-03-03 14:50:54,225  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '5459a9a1f3fdb4330c13a23dcd560c68', 'total_page_num': 4, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:49:51', 'crawl_end_time': ''}}
+2020-03-03 14:51:03,214  jy_liaoning.py:266 : INFO  Get page list url, page:[6], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=6], status:[200], body md5:[21a0f30be4f3a39619dfe1c53c124ed5]
+2020-03-03 14:51:03,214  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'b5dfd12177154154e511e5b194c2ce18', 'total_page_num': 5, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:49:51', 'crawl_end_time': ''}}
+2020-03-03 14:51:18,926  jy_liaoning.py:266 : INFO  Get page list url, page:[7], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=7], status:[200], body md5:[faad81f3b2e5f99360672671c5bfc0d9]
+2020-03-03 14:51:18,927  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '21a0f30be4f3a39619dfe1c53c124ed5', 'total_page_num': 6, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:49:51', 'crawl_end_time': ''}}
+2020-03-03 14:51:29,465  jy_liaoning.py:266 : INFO  Get page list url, page:[8], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=8], status:[200], body md5:[160d1f3d6cc80d52f9c71e5de5352a3c]
+2020-03-03 14:51:29,465  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'faad81f3b2e5f99360672671c5bfc0d9', 'total_page_num': 7, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:49:51', 'crawl_end_time': ''}}
+2020-03-03 14:51:43,358  jy_liaoning.py:266 : INFO  Get page list url, page:[9], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=9], status:[200], body md5:[2587be15c1acc2cd66412999f6ca0456]
+2020-03-03 14:51:43,359  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '160d1f3d6cc80d52f9c71e5de5352a3c', 'total_page_num': 8, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:49:51', 'crawl_end_time': ''}}
+2020-03-03 14:51:51,224  logstats.py:48 : INFO  Crawled 9 pages (at 5 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:51:58,127  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:51:58,136  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:51:58,138  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:51:58,138  engine.py:257 : INFO  Spider opened
+2020-03-03 14:51:58,143  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:51:58,144  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:51:58,151  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6030
+2020-03-03 14:51:58,168  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:52:13,564  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[98fec039929091a10cdef4aba6871633]
+2020-03-03 14:52:13,564  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:51:58', 'crawl_end_time': ''}}
+2020-03-03 14:52:31,079  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[4169a1a57a3761296d536ee902e6a0bf]
+2020-03-03 14:52:31,079  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '98fec039929091a10cdef4aba6871633', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:51:58', 'crawl_end_time': ''}}
+2020-03-03 14:52:49,634  jy_liaoning.py:266 : INFO  Get page list url, page:[3], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=3], status:[200], body md5:[941d3169615d77c6e4015648065c5076]
+2020-03-03 14:52:49,634  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '4169a1a57a3761296d536ee902e6a0bf', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:51:58', 'crawl_end_time': ''}}
+2020-03-03 14:52:58,145  logstats.py:48 : INFO  Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:53:01,333  jy_liaoning.py:266 : INFO  Get page list url, page:[4], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=4], status:[200], body md5:[2785892a680725cabbaec2b1bf009922]
+2020-03-03 14:53:01,333  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '941d3169615d77c6e4015648065c5076', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:51:58', 'crawl_end_time': ''}}
+2020-03-03 14:53:20,804  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:53:20,814  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:53:20,816  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:53:20,817  engine.py:257 : INFO  Spider opened
+2020-03-03 14:53:20,827  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:53:20,827  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:53:20,830  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6031
+2020-03-03 14:53:20,845  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:53:32,424  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[35fdb8ea1f0a02ce230af74f4fee4bfb]
+2020-03-03 14:53:32,425  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:53:20', 'crawl_end_time': ''}}
+2020-03-03 14:53:41,019  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[281a7322f3fb8bb55159ac9c8b0e2e78]
+2020-03-03 14:53:41,020  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '35fdb8ea1f0a02ce230af74f4fee4bfb', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:53:20', 'crawl_end_time': ''}}
+2020-03-03 14:53:50,131  jy_liaoning.py:266 : INFO  Get page list url, page:[3], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=3], status:[200], body md5:[c70b3178addf8dc4099f45f8b0b7b200]
+2020-03-03 14:53:50,131  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '281a7322f3fb8bb55159ac9c8b0e2e78', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:53:20', 'crawl_end_time': ''}}
+2020-03-03 14:54:05,585  jy_liaoning.py:266 : INFO  Get page list url, page:[4], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=4], status:[200], body md5:[2cc7e0dd4e81a99cbb4f3b4548e19603]
+2020-03-03 14:54:05,586  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'c70b3178addf8dc4099f45f8b0b7b200', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:53:20', 'crawl_end_time': ''}}
+2020-03-03 14:55:30,080  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 14:55:30,088  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 14:55:30,090  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 14:55:30,091  engine.py:257 : INFO  Spider opened
+2020-03-03 14:55:30,096  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:55:30,097  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 14:55:30,101  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6032
+2020-03-03 14:55:30,114  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 14:55:49,611  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[dee3a1b1f6ad5e25bba99b0f1c202566]
+2020-03-03 14:55:49,612  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:56:02,279  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[372b6a8a595d72a33c35cdd0ee08d3c7]
+2020-03-03 14:56:02,280  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'dee3a1b1f6ad5e25bba99b0f1c202566', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:56:18,085  jy_liaoning.py:266 : INFO  Get page list url, page:[3], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=3], status:[200], body md5:[d5931b9b9cc3980b69a6233e0f91d56b]
+2020-03-03 14:56:18,086  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '372b6a8a595d72a33c35cdd0ee08d3c7', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:56:30,097  logstats.py:48 : INFO  Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:56:32,865  jy_liaoning.py:266 : INFO  Get page list url, page:[4], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=4], status:[200], body md5:[25c6c5bc077236c2282e0a06c7b1c6ad]
+2020-03-03 14:56:32,865  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'd5931b9b9cc3980b69a6233e0f91d56b', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:57:07,349  jy_liaoning.py:266 : INFO  Get page list url, page:[5], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=5], status:[200], body md5:[ac6d76ab130d444808ef06e9815f56f3]
+2020-03-03 14:57:07,349  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '25c6c5bc077236c2282e0a06c7b1c6ad', 'total_page_num': 4, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:57:30,099  logstats.py:48 : INFO  Crawled 5 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:57:33,382  jy_liaoning.py:266 : INFO  Get page list url, page:[6], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=6], status:[200], body md5:[23ba379f0bac0899d04a14664feb15a0]
+2020-03-03 14:57:33,382  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'ac6d76ab130d444808ef06e9815f56f3', 'total_page_num': 5, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:57:47,091  jy_liaoning.py:266 : INFO  Get page list url, page:[7], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=7], status:[200], body md5:[c250b812aaa2d4c66c80e0a90eaf7191]
+2020-03-03 14:57:47,091  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '23ba379f0bac0899d04a14664feb15a0', 'total_page_num': 6, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:58:03,526  jy_liaoning.py:266 : INFO  Get page list url, page:[8], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=8], status:[200], body md5:[a7e87a9d0e06e41f56c066d315a2c326]
+2020-03-03 14:58:03,528  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'c250b812aaa2d4c66c80e0a90eaf7191', 'total_page_num': 7, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:58:28,986  jy_liaoning.py:266 : INFO  Get page list url, page:[9], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=9], status:[200], body md5:[78c829eb381a2eead389d5c60163f054]
+2020-03-03 14:58:28,987  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'a7e87a9d0e06e41f56c066d315a2c326', 'total_page_num': 8, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:58:30,096  logstats.py:48 : INFO  Crawled 9 pages (at 4 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:58:52,717  jy_liaoning.py:266 : INFO  Get page list url, page:[10], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=10], status:[200], body md5:[093815efe6583dfa3c415bc3d2468cae]
+2020-03-03 14:58:52,718  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '78c829eb381a2eead389d5c60163f054', 'total_page_num': 9, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:59:16,248  jy_liaoning.py:266 : INFO  Get page list url, page:[11], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=11], status:[200], body md5:[19c2428e8fe404806025839251c552a4]
+2020-03-03 14:59:16,248  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '093815efe6583dfa3c415bc3d2468cae', 'total_page_num': 10, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:59:27,037  jy_liaoning.py:266 : INFO  Get page list url, page:[12], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=12], status:[200], body md5:[e9bd2b872b7104da4f194f44c713a2b2]
+2020-03-03 14:59:27,038  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '19c2428e8fe404806025839251c552a4', 'total_page_num': 11, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:59:30,099  logstats.py:48 : INFO  Crawled 12 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 14:59:37,508  jy_liaoning.py:266 : INFO  Get page list url, page:[13], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=13], status:[200], body md5:[1e9d450c8a785cb2d02a154b8753bfc8]
+2020-03-03 14:59:37,509  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'e9bd2b872b7104da4f194f44c713a2b2', 'total_page_num': 12, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:59:46,169  jy_liaoning.py:266 : INFO  Get page list url, page:[14], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=14], status:[200], body md5:[c9bb6eca7aa31b6e97fce968c0f5b632]
+2020-03-03 14:59:46,169  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '1e9d450c8a785cb2d02a154b8753bfc8', 'total_page_num': 13, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 14:59:55,750  jy_liaoning.py:266 : INFO  Get page list url, page:[15], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=15], status:[200], body md5:[52062fe48469c6665caf36f8f605db60]
+2020-03-03 14:59:55,751  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'c9bb6eca7aa31b6e97fce968c0f5b632', 'total_page_num': 14, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 14:55:30', 'crawl_end_time': ''}}
+2020-03-03 15:00:06,665  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:00:06,671  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:00:06,673  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:00:06,673  engine.py:257 : INFO  Spider opened
+2020-03-03 15:00:06,678  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:00:06,679  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:00:06,682  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6033
+2020-03-03 15:00:06,696  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:00:32,331  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[9a1dc09bdae3f00b05334734fde766ba]
+2020-03-03 15:00:32,332  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:00:06', 'crawl_end_time': ''}}
+2020-03-03 15:00:42,074  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[15ee74c86a9dee58fb4f33c294d96ce0]
+2020-03-03 15:00:42,075  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '9a1dc09bdae3f00b05334734fde766ba', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:00:06', 'crawl_end_time': ''}}
+2020-03-03 15:01:06,680  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:03:08,293  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:03:08,299  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:03:08,301  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:03:08,301  engine.py:257 : INFO  Spider opened
+2020-03-03 15:03:08,307  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:03:08,307  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:03:08,311  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6034
+2020-03-03 15:03:08,325  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:03:30,718  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[ab121e239551adae2fb67f03b5b36ab0]
+2020-03-03 15:03:30,719  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:03:08', 'crawl_end_time': ''}}
+2020-03-03 15:03:30,758  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:03:50,125  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[4d644d5d0c49b852145ca88c292074f9]
+2020-03-03 15:03:50,125  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'ab121e239551adae2fb67f03b5b36ab0', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:03:08', 'crawl_end_time': ''}}
+2020-03-03 15:03:50,153  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:04:07,798  jy_liaoning.py:266 : INFO  Get page list url, page:[3], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=3], status:[200], body md5:[51f4e805a7a201c04f4a5d644727edd0]
+2020-03-03 15:04:07,798  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '4d644d5d0c49b852145ca88c292074f9', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:03:08', 'crawl_end_time': ''}}
+2020-03-03 15:04:07,832  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:04:08,308  logstats.py:48 : INFO  Crawled 3 pages (at 3 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:04:30,793  jy_liaoning.py:266 : INFO  Get page list url, page:[4], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=4], status:[200], body md5:[4e677a2dce377146a8db95c28f308069]
+2020-03-03 15:04:30,793  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '51f4e805a7a201c04f4a5d644727edd0', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:03:08', 'crawl_end_time': ''}}
+2020-03-03 15:04:30,816  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:04:55,312  jy_liaoning.py:266 : INFO  Get page list url, page:[5], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=5], status:[200], body md5:[341b1c1d967faac4ab90a8e26f035178]
+2020-03-03 15:04:55,313  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '4e677a2dce377146a8db95c28f308069', 'total_page_num': 4, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:03:08', 'crawl_end_time': ''}}
+2020-03-03 15:04:55,351  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:05:08,307  logstats.py:48 : INFO  Crawled 5 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:05:12,829  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:05:12,837  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:05:12,839  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:05:12,840  engine.py:257 : INFO  Spider opened
+2020-03-03 15:05:12,845  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:05:12,845  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:05:12,849  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6035
+2020-03-03 15:05:12,859  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:05:37,937  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[b3c26f1d25cc50ad468e0aff6f43d7b2]
+2020-03-03 15:05:37,938  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:05:12', 'crawl_end_time': ''}}
+2020-03-03 15:06:03,438  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[71c86231e933819d46193442a92a1e82]
+2020-03-03 15:06:03,439  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'b3c26f1d25cc50ad468e0aff6f43d7b2', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:05:12', 'crawl_end_time': ''}}
+2020-03-03 15:06:12,847  logstats.py:48 : INFO  Crawled 2 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:06:35,533  jy_liaoning.py:266 : INFO  Get page list url, page:[3], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=3], status:[200], body md5:[de826b7090a8feb42295202a40be7722]
+2020-03-03 15:06:35,534  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '71c86231e933819d46193442a92a1e82', 'total_page_num': 2, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:05:12', 'crawl_end_time': ''}}
+2020-03-03 15:07:12,847  logstats.py:48 : INFO  Crawled 3 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:07:22,869  jy_liaoning.py:266 : INFO  Get page list url, page:[4], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=4], status:[200], body md5:[55c06bccd9e161611ef534f89e68c3b5]
+2020-03-03 15:07:22,869  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'de826b7090a8feb42295202a40be7722', 'total_page_num': 3, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:05:12', 'crawl_end_time': ''}}
+2020-03-03 15:08:03,068  jy_liaoning.py:266 : INFO  Get page list url, page:[5], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=5], status:[200], body md5:[3374ffeb2c804abe260666057fac4089]
+2020-03-03 15:08:03,069  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '55c06bccd9e161611ef534f89e68c3b5', 'total_page_num': 4, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:05:12', 'crawl_end_time': ''}}
+2020-03-03 15:08:12,846  logstats.py:48 : INFO  Crawled 5 pages (at 2 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:09:12,847  logstats.py:48 : INFO  Crawled 5 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:09:35,582  jy_liaoning.py:266 : INFO  Get page list url, page:[6], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=6], status:[200], body md5:[f2b384e6af701956a97786a9b4138fcf]
+2020-03-03 15:09:35,583  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '3374ffeb2c804abe260666057fac4089', 'total_page_num': 5, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:05:12', 'crawl_end_time': ''}}
+2020-03-03 15:10:12,846  logstats.py:48 : INFO  Crawled 6 pages (at 1 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:10:16,647  jy_liaoning.py:266 : INFO  Get page list url, page:[7], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=7], status:[200], body md5:[f0d762f77fe3fb451929a481bd9aef54]
+2020-03-03 15:10:16,647  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'f2b384e6af701956a97786a9b4138fcf', 'total_page_num': 6, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:05:12', 'crawl_end_time': ''}}
+2020-03-03 15:10:22,182  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:10:22,206  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:10:22,221  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:10:22,222  engine.py:257 : INFO  Spider opened
+2020-03-03 15:10:22,230  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:10:22,231  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:10:22,241  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6036
+2020-03-03 15:10:22,258  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:11:06,436  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[3eb99c8146d74a8ff5594a1a5dd0b109]
+2020-03-03 15:11:06,437  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:10:22', 'crawl_end_time': ''}}
+2020-03-03 15:12:14,981  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:12:14,988  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:12:14,990  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:12:14,990  engine.py:257 : INFO  Spider opened
+2020-03-03 15:12:14,994  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:12:14,995  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:12:14,998  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6037
+2020-03-03 15:12:15,011  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:13:14,996  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:13:26,004  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[3c63d3ba57dbcbc7b1234ee59ca70404]
+2020-03-03 15:13:26,005  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:12:15', 'crawl_end_time': ''}}
+2020-03-03 15:13:26,059  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,062  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,063  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,064  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,065  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,065  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,066  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,069  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,070  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,071  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,072  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,073  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,074  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,074  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,075  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,075  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,076  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,076  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,077  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,077  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,078  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,078  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,079  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,080  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,080  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,081  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,081  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,082  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,082  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,083  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,083  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,083  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,084  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,085  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,085  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,086  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,086  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,087  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,087  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:13:26,088  jy_liaoning.py:324 : ERROR  Handle [] failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 288, in parse_list_page_common
+    _detail_url = 'http://www.lntb.gov.cn/' + selector.xpath(response.meta['param']['xpath_of_detail_url'])
+TypeError: can only concatenate str (not "SelectorList") to str
+2020-03-03 15:15:00,619  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:15:00,628  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:15:00,631  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:15:00,632  engine.py:257 : INFO  Spider opened
+2020-03-03 15:15:00,637  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:15:00,638  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:15:00,642  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6038
+2020-03-03 15:15:00,654  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:16:00,638  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:16:01,189  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[eb3f188fe903fd1b558c03389a2e6748]
+2020-03-03 15:16:01,189  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:15:00', 'crawl_end_time': ''}}
+2020-03-03 15:16:40,072  jy_liaoning.py:266 : INFO  Get page list url, page:[2], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1&SpecialID=0&page=2], status:[200], body md5:[2d1001ac0ba18907f036ffbf2a462d27]
+2020-03-03 15:16:40,073  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': 'eb3f188fe903fd1b558c03389a2e6748', 'total_page_num': 1, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:15:00', 'crawl_end_time': ''}}
+2020-03-03 15:16:50,884  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:16:50,893  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:16:50,896  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:16:50,896  engine.py:257 : INFO  Spider opened
+2020-03-03 15:16:50,901  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:16:50,901  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:16:50,905  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6039
+2020-03-03 15:16:50,917  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:17:50,905  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:18:24,177  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[984d8ef3e97986165a348e097942e76a]
+2020-03-03 15:18:24,178  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:16:50', 'crawl_end_time': ''}}
+2020-03-03 15:18:24,230  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 15:18:24,306  jy_liaoning.py:318 : INFO  item is: {'_id': '8bc738d66bcb9a7aec31af76d240b064',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901907'>]"}
+2020-03-03 15:18:24,342  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 15:18:24,395  jy_liaoning.py:318 : INFO  item is: {'_id': '6c92bddbc97693e5a787e60ad6081351',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901906'>]"}
+2020-03-03 15:18:24,401  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 15:18:24,498  jy_liaoning.py:318 : INFO  item is: {'_id': '706344bd88fdb3143494927689f9c9e8',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901905'>]"}
+2020-03-03 15:18:24,504  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 15:18:24,597  jy_liaoning.py:318 : INFO  item is: {'_id': '171e07f2d9fef16388561ec9ed53f6e9',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901904'>]"}
+2020-03-03 15:18:24,602  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 15:18:24,698  jy_liaoning.py:318 : INFO  item is: {'_id': '013e77accde70b6bd4776992c1e46676',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901903'>]"}
+2020-03-03 15:18:24,707  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 15:18:24,784  jy_liaoning.py:318 : INFO  item is: {'_id': '31b087332d36401059df1658018fc574',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901902'>]"}
+2020-03-03 15:18:24,790  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[7/1]
+2020-03-03 15:18:24,868  jy_liaoning.py:318 : INFO  item is: {'_id': '33dbc339c0f4a24771089936f7763616',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901900'>]"}
+2020-03-03 15:18:24,878  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[8/1]
+2020-03-03 15:18:24,965  jy_liaoning.py:318 : INFO  item is: {'_id': '677ed011559de63fc4c2ca8439c8df42',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901899'>]"}
+2020-03-03 15:18:24,974  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[9/1]
+2020-03-03 15:18:25,069  jy_liaoning.py:318 : INFO  item is: {'_id': 'd6c87e9595d2dcadc8a69abcb947a1f7',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901896'>]"}
+2020-03-03 15:18:25,075  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[10/1]
+2020-03-03 15:18:25,177  jy_liaoning.py:318 : INFO  item is: {'_id': 'edd94183c2c16e555bd7f141fadb0324',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901894'>]"}
+2020-03-03 15:18:25,182  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[11/1]
+2020-03-03 15:18:25,270  jy_liaoning.py:318 : INFO  item is: {'_id': 'e4f6974b565b0187c28161bf9a200d83',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901890'>]"}
+2020-03-03 15:18:25,275  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[12/1]
+2020-03-03 15:18:25,362  jy_liaoning.py:318 : INFO  item is: {'_id': 'bef01e60839e13e5a25aa62c0e2822b1',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901889'>]"}
+2020-03-03 15:18:25,373  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[13/1]
+2020-03-03 15:18:25,473  jy_liaoning.py:318 : INFO  item is: {'_id': '5d1be83f3eb240cbf8b59d30ef7426b6',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901887'>]"}
+2020-03-03 15:18:25,479  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[14/1]
+2020-03-03 15:18:25,557  jy_liaoning.py:318 : INFO  item is: {'_id': 'f9ae22afb56ca63b5940bc27145591ad',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901886'>]"}
+2020-03-03 15:18:25,563  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[15/1]
+2020-03-03 15:18:25,666  jy_liaoning.py:318 : INFO  item is: {'_id': '30f332a8f098ef2a717a518efe8e199a',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901885'>]"}
+2020-03-03 15:18:25,674  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[16/1]
+2020-03-03 15:18:25,767  jy_liaoning.py:318 : INFO  item is: {'_id': '8303e35f8bb3ab047e43a597956f12fe',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901884'>]"}
+2020-03-03 15:18:25,772  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[17/1]
+2020-03-03 15:18:25,853  jy_liaoning.py:318 : INFO  item is: {'_id': '9462736e67a0bc9d22def8b2f6e127f1',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901883'>]"}
+2020-03-03 15:18:25,860  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[18/1]
+2020-03-03 15:18:25,941  jy_liaoning.py:318 : INFO  item is: {'_id': '47d5ddf1e31b71c4172737ebeda70186',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901881'>]"}
+2020-03-03 15:18:25,947  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[19/1]
+2020-03-03 15:18:26,036  jy_liaoning.py:318 : INFO  item is: {'_id': '71e5ccf97fcd38a109079991927e15dc',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901879'>]"}
+2020-03-03 15:18:26,041  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[20/1]
+2020-03-03 15:18:26,132  jy_liaoning.py:318 : INFO  item is: {'_id': '58ad8267b41e407ffbc6bea42a71025a',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901866'>]"}
+2020-03-03 15:18:26,137  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[21/1]
+2020-03-03 15:18:26,235  jy_liaoning.py:318 : INFO  item is: {'_id': '5444634c89ab5d678a21d890773ed385',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901860'>]"}
+2020-03-03 15:18:26,245  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[22/1]
+2020-03-03 15:18:26,309  jy_liaoning.py:318 : INFO  item is: {'_id': '9b992483dca46786ae6136dcf0f0bd15',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901859'>]"}
+2020-03-03 15:18:26,314  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[23/1]
+2020-03-03 15:18:26,373  jy_liaoning.py:318 : INFO  item is: {'_id': '8ff9c65bd7f97501a8609bd2bdb44822',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901772'>]"}
+2020-03-03 15:18:26,380  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[24/1]
+2020-03-03 15:18:26,465  jy_liaoning.py:318 : INFO  item is: {'_id': '178679f8ce37d37ece58a69968df95c9',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901771'>]"}
+2020-03-03 15:18:26,474  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[25/1]
+2020-03-03 15:18:26,530  jy_liaoning.py:318 : INFO  item is: {'_id': '23a06c64ea3c2670aa68390b298f5178',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901770'>]"}
+2020-03-03 15:18:26,535  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[26/1]
+2020-03-03 15:18:26,627  jy_liaoning.py:318 : INFO  item is: {'_id': 'eaea4b61c05aca2cdeee4a12ce6fdb8b',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901769'>]"}
+2020-03-03 15:18:26,634  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[27/1]
+2020-03-03 15:18:26,722  jy_liaoning.py:318 : INFO  item is: {'_id': 'b962a8bffbd1b480692f0917f97693bf',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901767'>]"}
+2020-03-03 15:18:26,731  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[28/1]
+2020-03-03 15:18:26,798  jy_liaoning.py:318 : INFO  item is: {'_id': '40f207a6e7cb610e7dd2492fabe1749f',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901766'>]"}
+2020-03-03 15:18:26,804  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[29/1]
+2020-03-03 15:18:26,885  jy_liaoning.py:318 : INFO  item is: {'_id': 'bef172c6dc7247fd56db528d133ac51b',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901765'>]"}
+2020-03-03 15:18:26,891  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[30/1]
+2020-03-03 15:18:26,985  jy_liaoning.py:318 : INFO  item is: {'_id': '72bff91a7760deb0445b3ce93d7233fd',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901764'>]"}
+2020-03-03 15:18:26,991  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[31/1]
+2020-03-03 15:18:27,086  jy_liaoning.py:318 : INFO  item is: {'_id': '0515659ab1af4154b4a4868bdbc21ab6',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901763'>]"}
+2020-03-03 15:18:27,094  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[32/1]
+2020-03-03 15:18:27,165  jy_liaoning.py:318 : INFO  item is: {'_id': 'aa057013971c0087d355e1e93d031570',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901762'>]"}
+2020-03-03 15:18:27,170  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[33/1]
+2020-03-03 15:18:27,231  jy_liaoning.py:318 : INFO  item is: {'_id': '53f3dcd25346c2137c20019e0baab61a',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901761'>]"}
+2020-03-03 15:18:27,236  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[34/1]
+2020-03-03 15:18:27,341  jy_liaoning.py:318 : INFO  item is: {'_id': '82e93245b885614c48c9a5b45f1710c8',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901760'>]"}
+2020-03-03 15:18:27,348  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[35/1]
+2020-03-03 15:18:27,443  jy_liaoning.py:318 : INFO  item is: {'_id': 'f798ec2eab4d3240464db67c34a654e6',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901758'>]"}
+2020-03-03 15:18:27,450  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[36/1]
+2020-03-03 15:18:27,505  jy_liaoning.py:318 : INFO  item is: {'_id': '34210e98b6ebd00e20d4a1c8e9829c05',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901757'>]"}
+2020-03-03 15:18:27,511  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[37/1]
+2020-03-03 15:18:27,578  jy_liaoning.py:318 : INFO  item is: {'_id': '4b8b9ec6e5d3c5c5d7851845360549af',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901756'>]"}
+2020-03-03 15:18:27,586  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[38/1]
+2020-03-03 15:18:27,666  jy_liaoning.py:318 : INFO  item is: {'_id': 'e8101a7b7cc1b197b21636b2d3e96b81',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901753'>]"}
+2020-03-03 15:18:27,671  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[39/1]
+2020-03-03 15:18:27,766  jy_liaoning.py:318 : INFO  item is: {'_id': '72e813fdf220a054342699d593f036aa',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901751'>]"}
+2020-03-03 15:18:27,773  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[40/1]
+2020-03-03 15:18:27,852  jy_liaoning.py:318 : INFO  item is: {'_id': 'ec982a1eee3aeea05a353491aaa1aaeb',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': "http://www.lntb.gov.cn/[<Selector xpath='./@href' "
+        "data='Article_Show.asp?ArticleID=901749'>]"}
+2020-03-03 15:20:33,196  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:20:33,203  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:20:33,206  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:20:33,207  engine.py:257 : INFO  Spider opened
+2020-03-03 15:20:33,212  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:20:33,212  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:20:33,217  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6040
+2020-03-03 15:20:33,230  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:21:33,213  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:22:06,900  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[d63d704dcf699d7c2341e68648425069]
+2020-03-03 15:22:06,901  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:20:33', 'crawl_end_time': ''}}
+2020-03-03 15:22:06,942  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 15:22:07,016  jy_liaoning.py:318 : INFO  item is: {'_id': '132eba1b47f12d3b0b7a61dbc058c80d',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901907'}
+2020-03-03 15:22:07,041  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 15:22:07,129  jy_liaoning.py:318 : INFO  item is: {'_id': '826a2c32a4d0658213310523c5ec1c92',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901906'}
+2020-03-03 15:22:07,136  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 15:22:07,226  jy_liaoning.py:318 : INFO  item is: {'_id': '6f463195a3340b45a404525c4c852c2b',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901905'}
+2020-03-03 15:22:07,231  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[4/1]
+2020-03-03 15:22:07,322  jy_liaoning.py:318 : INFO  item is: {'_id': '916f845fc3153bb136bc952362ec849e',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901904'}
+2020-03-03 15:22:07,327  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[5/1]
+2020-03-03 15:22:07,386  jy_liaoning.py:318 : INFO  item is: {'_id': '7714862ef36a0d08f67751148f143181',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901903'}
+2020-03-03 15:22:07,391  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[6/1]
+2020-03-03 15:22:07,449  jy_liaoning.py:318 : INFO  item is: {'_id': '60bfe4dd22b4a83d28b6b56500ff0f2e',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901902'}
+2020-03-03 15:22:07,462  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[7/1]
+2020-03-03 15:22:07,564  jy_liaoning.py:318 : INFO  item is: {'_id': '3beae620f5873c9df9c5b2802889383c',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901900'}
+2020-03-03 15:22:07,570  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[8/1]
+2020-03-03 15:22:07,659  jy_liaoning.py:318 : INFO  item is: {'_id': '5f27c99294b4bb6aeb0fa50863d62a09',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901899'}
+2020-03-03 15:22:07,664  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[9/1]
+2020-03-03 15:22:07,726  jy_liaoning.py:318 : INFO  item is: {'_id': 'df5586ce123b46f4523ecb73a6d63d27',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901896'}
+2020-03-03 15:22:07,732  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[10/1]
+2020-03-03 15:22:07,823  jy_liaoning.py:318 : INFO  item is: {'_id': '43e61a60976e06855118e1a32738f361',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901894'}
+2020-03-03 15:22:07,828  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[11/1]
+2020-03-03 15:22:07,902  jy_liaoning.py:318 : INFO  item is: {'_id': '6677af5b8a4a4bab850edcc77dc77365',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901890'}
+2020-03-03 15:22:07,906  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[12/1]
+2020-03-03 15:22:07,998  jy_liaoning.py:318 : INFO  item is: {'_id': 'a1ec3ac0644cac11dfc26086a400843d',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901889'}
+2020-03-03 15:22:08,003  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[13/1]
+2020-03-03 15:22:08,171  jy_liaoning.py:318 : INFO  item is: {'_id': 'b1a0e97ee77f6a180f56c7da27212419',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901887'}
+2020-03-03 15:22:08,177  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[14/1]
+2020-03-03 15:22:08,279  jy_liaoning.py:318 : INFO  item is: {'_id': 'ddacfc9c5fbe10da74fbc3a03e28ce8b',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901886'}
+2020-03-03 15:22:08,286  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[15/1]
+2020-03-03 15:22:08,366  jy_liaoning.py:318 : INFO  item is: {'_id': '55b769220fa1f2de5e1288f45b150661',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901885'}
+2020-03-03 15:22:08,371  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[16/1]
+2020-03-03 15:22:08,468  jy_liaoning.py:318 : INFO  item is: {'_id': '45a918c8f65bbd19457112483749b519',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901884'}
+2020-03-03 15:22:08,478  jy_liaoning.py:292 : INFO  Parse item, [page_1]-[17/1]
+2020-03-03 15:22:08,569  jy_liaoning.py:318 : INFO  item is: {'_id': 'e68d32587e19595168f8404f885b9481',
+ 'content': '',
+ 'site': 'www.lntb.gov.cn',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901883'}
+2020-03-03 15:25:43,699  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:25:43,706  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:25:43,708  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:25:43,709  engine.py:257 : INFO  Spider opened
+2020-03-03 15:25:43,714  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:25:43,714  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:25:43,722  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6041
+2020-03-03 15:25:43,735  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:26:43,716  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:27:43,716  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:28:11,408  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[0289a9f6a077aefae591f71562ec3bb6]
+2020-03-03 15:28:11,408  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:25:43', 'crawl_end_time': ''}}
+2020-03-03 15:28:11,479  jy_liaoning.py:291 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 15:28:11,480  jy_liaoning.py:393 : ERROR  [132eba1b47f12d3b0b7a61dbc058c80d] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 387, in __get_notice_time__
+    _notice_time = self.selector.xpath('./font[1]').extract_first().replace('年', '.').replace('月', '.').replace(
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-03-03 15:28:15,738  jy_liaoning.py:428 : INFO  Get [http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901907] content by direct requests
+2020-03-03 15:28:15,813  jy_liaoning.py:317 : INFO  item is: {'_id': '132eba1b47f12d3b0b7a61dbc058c80d',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '辽宁省招标投标监管网',
+ 'source': '辽宁省招标投标监管网',
+ 'time_stamp': 1583220495740,
+ 'tos_code': '01',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901907'}
+2020-03-03 15:28:15,847  jy_liaoning.py:291 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 15:28:15,848  jy_liaoning.py:393 : ERROR  [826a2c32a4d0658213310523c5ec1c92] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 387, in __get_notice_time__
+    _notice_time = self.selector.xpath('./font[1]').extract_first().replace('年', '.').replace('月', '.').replace(
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-03-03 15:28:19,885  jy_liaoning.py:428 : INFO  Get [http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901906] content by direct requests
+2020-03-03 15:28:19,977  jy_liaoning.py:317 : INFO  item is: {'_id': '826a2c32a4d0658213310523c5ec1c92',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '辽宁省招标投标监管网',
+ 'source': '辽宁省招标投标监管网',
+ 'time_stamp': 1583220499887,
+ 'tos_code': '01',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901906'}
+2020-03-03 15:28:19,986  jy_liaoning.py:291 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 15:28:19,987  jy_liaoning.py:393 : ERROR  [6f463195a3340b45a404525c4c852c2b] get_notice_time failed
+Traceback (most recent call last):
+  File "/Users/huike/PycharmProjects/jy_liaoning/jy_liaoning/spiders/jy_liaoning.py", line 387, in __get_notice_time__
+    _notice_time = self.selector.xpath('./font[1]').extract_first().replace('年', '.').replace('月', '.').replace(
+AttributeError: 'NoneType' object has no attribute 'replace'
+2020-03-03 15:31:17,588  middleware.py:48 : INFO  Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy_splash.SplashCookiesMiddleware',
+ 'scrapy_splash.SplashMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-03-03 15:31:17,604  middleware.py:48 : INFO  Enabled spider middlewares:
+['jy_liaoning.middlewares.CommonSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy_splash.SplashDeduplicateArgsMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-03-03 15:31:17,610  middleware.py:48 : INFO  Enabled item pipelines:
+['jy_liaoning.pipelines.CommonPipeline']
+2020-03-03 15:31:17,611  engine.py:257 : INFO  Spider opened
+2020-03-03 15:31:17,618  logstats.py:48 : INFO  Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-03-03 15:31:17,620  middlewares.py:62 : INFO  Spider opened: jy_liaoning_spider
+2020-03-03 15:31:17,653  telnet.py:74 : INFO  Telnet console listening on 127.0.0.1:6042
+2020-03-03 15:31:17,729  jy_liaoning.py:171 : INFO  start crawling...
+2020-03-03 15:31:41,948  jy_liaoning.py:266 : INFO  Get page list url, page:[1], url:[http://www.lntb.gov.cn/Article_Class2.asp?ClassID=1], status:[200], body md5:[73300a5c27d141aca8c77177ff5c7cdb]
+2020-03-03 15:31:41,949  jy_liaoning.py:268 : INFO  Crawl info: {'page_1': {'stop_parse': False, 'duplicate_records_num': 0, 'failed_page_num': 0, 'duplicate_list_page_num': 0, 'last_list_page_md5': '', 'total_page_num': 0, 'total_item_num': 0, 'stop_page_num': 2000, 'stop_dup_item_num': 500000, 'stop_failed_page_num': 10, 'crawl_start_time': '2020-03-03 15:31:17', 'crawl_end_time': ''}}
+2020-03-03 15:31:42,059  jy_liaoning.py:291 : INFO  Parse item, [page_1]-[1/1]
+2020-03-03 15:31:45,273  jy_liaoning.py:428 : INFO  Get [http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901907] content by direct requests
+2020-03-03 15:31:45,349  jy_liaoning.py:317 : INFO  item is: {'_id': '132eba1b47f12d3b0b7a61dbc058c80d',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.3.3. 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '辽宁省招标投标监管网',
+ 'source': '辽宁省招标投标监管网',
+ 'time_stamp': 1583220705275,
+ 'title': '长江桥改造工程设计',
+ 'tos_code': '01',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901907'}
+2020-03-03 15:31:45,388  jy_liaoning.py:291 : INFO  Parse item, [page_1]-[2/1]
+2020-03-03 15:31:48,745  jy_liaoning.py:428 : INFO  Get [http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901906] content by direct requests
+2020-03-03 15:31:48,847  jy_liaoning.py:317 : INFO  item is: {'_id': '826a2c32a4d0658213310523c5ec1c92',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.3.3. 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '辽宁省招标投标监管网',
+ 'source': '辽宁省招标投标监管网',
+ 'time_stamp': 1583220708747,
+ 'title': '砂山体育公园综合改造项目施工三标段',
+ 'tos_code': '01',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901906'}
+2020-03-03 15:31:48,854  jy_liaoning.py:291 : INFO  Parse item, [page_1]-[3/1]
+2020-03-03 15:31:53,189  jy_liaoning.py:428 : INFO  Get [http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901905] content by direct requests
+2020-03-03 15:31:53,269  jy_liaoning.py:317 : INFO  item is: {'_id': '6f463195a3340b45a404525c4c852c2b',
+ 'area': '辽宁省',
+ 'area_code': '21',
+ 'area_detail': '',
+ 'buyer': '',
+ 'content': '',
+ 'content_code': '1',
+ 'industry': '',
+ 'notice_time': '2020.3.3. 00:00:00',
+ 'notice_type': '招标公告',
+ 'notice_type_code': '0101',
+ 'site': 'www.lntb.gov.cn',
+ 'site_name': '辽宁省招标投标监管网',
+ 'source': '辽宁省招标投标监管网',
+ 'time_stamp': 1583220713192,
+ 'title': '排水防涝二期（二批）-东贸路雨水管线及泵站等5项…',
+ 'tos_code': '01',
+ 'url': 'http://www.lntb.gov.cn/Article_Show.asp?ArticleID=901905'}
+2020-03-03 15:31:53,277  jy_liaoning.py:291 : INFO  Parse item, [page_1]-[4/1]
